@@ -230,20 +230,55 @@ async def approve_post(post_id: str, approved: bool = True):
 
 @router.post("/posts/{post_id}/publish")
 async def publish_post(post_id: str):
-    """发布帖子 (对接 Social Engine/WordPress — 当前为占位)"""
+    """发布帖子到 WordPress (Social Engine 插件接管社媒发布)"""
     if post_id not in _posts:
         raise HTTPException(status_code=404, detail="Post not found")
 
     p = _posts[post_id]
-    # 未来对接: 调用 WordPress REST API + Social Engine 发布到各平台
-    # 目前标记为 ready_to_publish
-    p["status"] = "published"
 
+    # 尝试通过 WordPress REST API 发布
+    wp_result = None
+    try:
+        from backend.app.core.wordpress import get_wp_client
+        wp = get_wp_client()
+        if await wp.test_connection():
+            wp_result = await wp.publish_social_post(
+                platform=p.get("platform", "instagram"),
+                copy_text=p.get("copy", ""),
+                hashtags=p.get("hashtags", []),
+                image_urls=[img for img in (p.get("image_urls", []) or [])],
+                product_name=p.get("product_name", ""),
+            )
+            p["status"] = "published"
+            p["wp_post_id"] = wp_result.get("wordpress_post_id")
+            p["wp_url"] = wp_result.get("wordpress_url")
+    except Exception as e:
+        wp_result = {"error": str(e)}
+
+    if wp_result and "error" not in wp_result:
+        return {
+            "post_id": post_id,
+            "status": "published",
+            "platform": p.get("platform"),
+            "wordpress": wp_result,
+            "message": f"已发布到 WordPress (ID: {wp_result.get('wordpress_post_id')})",
+        }
+
+    # WordPress 未配置或不可用时的回退
+    p["status"] = "ready_to_publish"
     return {
         "post_id": post_id,
-        "status": "published",
+        "status": "ready_to_publish",
         "platform": p.get("platform"),
-        "message": f"帖子已标记为发布 (Social Engine 对接待实现)",
+        "wordpress_unavailable": True,
+        "message": "WordPress 未配置。请启动 WordPress 容器并在 wp-admin 创建 Application Password，配置到 backend/app/core/wordpress.py",
+        "wp_setup_steps": [
+            "1. docker-compose up -d wordpress wordpress-db",
+            "2. 打开 http://localhost:8080 完成 WordPress 安装",
+            "3. 安装 Social Engine / Blog2Social 插件",
+            "4. 在 Users → Profile → Application Passwords 创建密码",
+            "5. 更新 wordpress.py 中的 username 和 app_password",
+        ],
     }
 
 
