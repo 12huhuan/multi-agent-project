@@ -31,19 +31,28 @@ class CopyGeneratorAgent(BaseAgent[CopyGeneratorInput, CopyGeneratorOutput]):
     description = "生成社交媒体平台文案，包含长短版文案、话题标签和行动号召"
 
     def build_prompt(self, input_data: CopyGeneratorInput, context: dict | None = None) -> tuple[str, str]:
+        lang_names = {"en": "English", "zh": "Simplified Chinese", "ja": "Japanese", "ko": "Korean",
+                      "fr": "French", "de": "German", "es": "Spanish"}
+        lang_name = lang_names.get(input_data.language, input_data.language.upper())
+        lang_directive = (
+            f"IMPORTANT: You MUST write ALL output in {lang_name}. "
+            f"All copy, hashtags, CTAs, and content must be in {lang_name}. "
+            f"Do NOT write in English. "
+        ) if input_data.language != "en" else ""
+
         system_prompt = (
             f"You are a social media copywriter for cross-border e-commerce brands. "
             f"Write engaging, platform-optimized copy for {input_data.platform.title()}. "
-            f"Language: {input_data.language.upper()}. "
+            f"Target language: {lang_name}. "
             f"Tone: {input_data.content_tone}. "
+            f"{lang_directive}"
             f"Rules:\n"
-            f"- copy: main post copy, 2-4 paragraphs with line breaks\n"
-            f"- short_copy: 1-2 sentences for image overlay or first line hook\n"
-            f"- hashtags: 5-10 relevant, trending hashtags (include both broad and niche)\n"
-            f"- call_to_action: clear, compelling CTA\n"
+            f"- copy: main post copy, 2-4 paragraphs with line breaks, IN {lang_name}\n"
+            f"- short_copy: 1-2 sentences for image overlay, IN {lang_name}\n"
+            f"- hashtags: 5-10 trending hashtags (mix of {lang_name} and English tags)\n"
+            f"- call_to_action: clear CTA IN {lang_name}\n"
             f"- emoji_suggestions: 3-5 emojis that fit the vibe\n"
             f"- Write naturally, avoid sounding like an ad\n"
-            f"- Use the platform's best practices for formatting\n"
             f"Output must be valid JSON."
         )
 

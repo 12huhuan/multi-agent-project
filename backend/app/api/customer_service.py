@@ -181,7 +181,8 @@ async def send_message_stream(conversation_id: str, request: MessageCreate):
             ),
             context={"task_id": conversation_id},
         )
-        yield f"event: progress\ndata: {json.dumps({'step': 'intent_done', 'intent': intent_result.intent, 'confidence': intent_result.confidence, 'sentiment': intent_result.sentiment}, ensure_ascii=False)}\n\n"
+        detected_language = intent_result.language or language
+        yield f"event: progress\ndata: {json.dumps({'step': 'intent_done', 'intent': intent_result.intent, 'confidence': intent_result.confidence, 'sentiment': intent_result.sentiment, 'language': detected_language}, ensure_ascii=False)}\n\n"
 
         # Phase 2 — 知识检索
         rag_agent = KnowledgeRetrievalAgent()
@@ -205,7 +206,7 @@ async def send_message_stream(conversation_id: str, request: MessageCreate):
                 intent=intent_result.intent,
                 knowledge_chunks=chunk_texts,
                 conversation_history=history_dicts,
-                language=language,
+                language=detected_language,
             ),
             context={"task_id": conversation_id},
         ):
