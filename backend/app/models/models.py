@@ -113,3 +113,90 @@ class KnowledgeDocument(Base):
     content: Mapped[str] = mapped_column(Text, nullable=False)
     chunk_count: Mapped[int] = mapped_column(Integer, default=0)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow)
+
+
+# ═══════════════════════════════════════════════════════════
+# Phase 2: 评论监控
+# ═══════════════════════════════════════════════════════════
+
+class ReviewTask(Base):
+    """评论抓取任务"""
+    __tablename__ = "review_tasks"
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=gen_uuid)
+    product_asin: Mapped[str] = mapped_column(String(100), nullable=False)
+    platform: Mapped[str] = mapped_column(String(50), default="amazon_us")
+    status: Mapped[str] = mapped_column(String(30), default="pending")
+    total_scraped: Mapped[int] = mapped_column(Integer, default=0)
+    average_rating: Mapped[float] = mapped_column(default=0.0)
+    alerts_count: Mapped[int] = mapped_column(Integer, default=0)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    reviews: Mapped[list["Review"]] = relationship(back_populates="task", cascade="all, delete-orphan")
+
+
+class Review(Base):
+    """单条评论"""
+    __tablename__ = "reviews"
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=gen_uuid)
+    task_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("review_tasks.id", ondelete="CASCADE"))
+    reviewer_name: Mapped[str] = mapped_column(String(200), default="Anonymous")
+    rating: Mapped[float] = mapped_column(default=3.0)
+    title: Mapped[str] = mapped_column(Text, default="")
+    content: Mapped[str] = mapped_column(Text, default="")
+    date: Mapped[str | None] = mapped_column(String(50), nullable=True)
+    verified_purchase: Mapped[bool] = mapped_column(default=False)
+    helpful_count: Mapped[int] = mapped_column(Integer, default=0)
+    translated_title: Mapped[str | None] = mapped_column(Text, nullable=True)
+    translated_content: Mapped[str | None] = mapped_column(Text, nullable=True)
+    sentiment: Mapped[str] = mapped_column(String(20), default="neutral")
+    sentiment_score: Mapped[float] = mapped_column(default=5.0)
+    urgency_level: Mapped[str | None] = mapped_column(String(20), nullable=True)
+    alert_level: Mapped[str] = mapped_column(String(20), default="none")
+    reply_suggestion: Mapped[str | None] = mapped_column(Text, nullable=True)
+    reply_status: Mapped[str] = mapped_column(String(20), default="none")
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow)
+
+    task: Mapped["ReviewTask"] = relationship(back_populates="reviews")
+
+
+# ═══════════════════════════════════════════════════════════
+# Phase 2: 社媒内容
+# ═══════════════════════════════════════════════════════════
+
+class SocialTask(Base):
+    """社媒内容生成任务"""
+    __tablename__ = "social_tasks"
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=gen_uuid)
+    product_name: Mapped[str] = mapped_column(Text, nullable=False)
+    category: Mapped[str] = mapped_column(String(200), default="")
+    platforms: Mapped[dict] = mapped_column(JSONB, default=list)
+    target_languages: Mapped[dict] = mapped_column(JSONB, default=list)
+    status: Mapped[str] = mapped_column(String(30), default="pending")
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow)
+
+    posts: Mapped[list["SocialPost"]] = relationship(back_populates="task", cascade="all, delete-orphan")
+
+
+class SocialPost(Base):
+    """社媒帖子"""
+    __tablename__ = "social_posts"
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=gen_uuid)
+    task_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("social_tasks.id", ondelete="CASCADE"))
+    platform: Mapped[str] = mapped_column(String(30), default="instagram")
+    language: Mapped[str] = mapped_column(String(10), default="en")
+    copy: Mapped[str] = mapped_column(Text, default="")
+    short_copy: Mapped[str | None] = mapped_column(Text, nullable=True)
+    hashtags: Mapped[dict] = mapped_column(JSONB, default=list)
+    call_to_action: Mapped[str | None] = mapped_column(Text, nullable=True)
+    image_urls: Mapped[dict] = mapped_column(JSONB, default=list)
+    quality_score: Mapped[float] = mapped_column(default=0.0)
+    quality_verdict: Mapped[str] = mapped_column(String(20), default="approved")
+    status: Mapped[str] = mapped_column(String(20), default="draft")
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow)
+
+    task: Mapped["SocialTask"] = relationship(back_populates="posts")

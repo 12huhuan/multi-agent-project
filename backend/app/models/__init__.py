@@ -7,6 +7,10 @@ from backend.app.models.models import (
     Message,
     Ticket,
     KnowledgeDocument,
+    ReviewTask,
+    Review,
+    SocialTask,
+    SocialPost,
 )
 
 __all__ = [
@@ -16,4 +20,8 @@ __all__ = [
     "Message",
     "Ticket",
     "KnowledgeDocument",
+    "ReviewTask",
+    "Review",
+    "SocialTask",
+    "SocialPost",
 ]

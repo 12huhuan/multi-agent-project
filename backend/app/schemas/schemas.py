@@ -184,3 +184,80 @@ class WorkflowApproveRequest(BaseModel):
     approved: bool
     modifications: dict = Field(default_factory=dict)
     comment: str | None = None
+
+
+# ═══════════════════════════════════════════════════════════
+# Phase 2: 评论监控
+# ═══════════════════════════════════════════════════════════
+
+class ReviewScrapeRequest(BaseModel):
+    product_asin: str = Field(..., min_length=1, description="Amazon ASIN 或产品 URL")
+    platform: str = "amazon_us"
+    max_reviews: int = Field(default=20, ge=1, le=100)
+
+
+class ReviewResponse(BaseModel):
+    id: str
+    product_asin: str
+    reviewer_name: str
+    rating: float
+    title: str
+    content: str
+    translated_title: str = ""
+    translated_content: str = ""
+    sentiment: str = "neutral"
+    sentiment_score: float = 5.0
+    alert_level: str = "none"
+    reply_suggestion: str = ""
+    reply_status: str = "none"  # none | pending | approved | rejected
+    date: str = ""
+    verified_purchase: bool = False
+
+
+class ReviewReplyApproveRequest(BaseModel):
+    approved: bool
+    edited_reply: str | None = None
+    comment: str | None = None
+
+
+class ReviewReplySuggestionResponse(BaseModel):
+    review_id: str
+    subject: str
+    reply_text: str
+    alternative_reply: str
+    tone: str
+    key_points_addressed: list[str] = []
+
+
+# ═══════════════════════════════════════════════════════════
+# Phase 2: 社媒内容
+# ═══════════════════════════════════════════════════════════
+
+class SocialGenerateRequest(BaseModel):
+    product_name: str = Field(..., min_length=1)
+    category: str = ""
+    features: list[str] = Field(default_factory=list)
+    brand_story: str = ""
+    platforms: list[str] = Field(default=["instagram"])  # instagram, threads, pinterest, facebook, tiktok
+    language: str = "en"
+    target_markets: list[str] = Field(default=["US"])
+
+
+class SocialPostResponse(BaseModel):
+    id: str
+    product_name: str
+    platform: str
+    language: str
+    copy: str
+    short_copy: str = ""
+    hashtags: list[str] = []
+    call_to_action: str = ""
+    image_urls: list[str] = []
+    quality_score: float = 0.0
+    quality_verdict: str = "approved"
+    status: str = "draft"  # draft | generated | approved | published
+    created_at: str = ""
+
+
+class SocialPostTranslateRequest(BaseModel):
+    target_language: str = Field(..., min_length=2, max_length=5)
