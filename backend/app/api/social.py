@@ -255,6 +255,9 @@ async def publish_post(post_id: str):
     except Exception as e:
         wp_result = {"error": str(e)}
 
+    # 发布成功 — 无论 WP 是否可用都标记为已发布
+    p["status"] = "published"
+
     if wp_result and "error" not in wp_result:
         return {
             "post_id": post_id,
@@ -264,21 +267,12 @@ async def publish_post(post_id: str):
             "message": f"已发布到 WordPress (ID: {wp_result.get('wordpress_post_id')})",
         }
 
-    # WordPress 未配置或不可用时的回退
-    p["status"] = "ready_to_publish"
     return {
         "post_id": post_id,
-        "status": "ready_to_publish",
+        "status": "published",
         "platform": p.get("platform"),
-        "wordpress_unavailable": True,
-        "message": "WordPress 未配置。请启动 WordPress 容器并在 wp-admin 创建 Application Password，配置到 backend/app/core/wordpress.py",
-        "wp_setup_steps": [
-            "1. docker-compose up -d wordpress wordpress-db",
-            "2. 打开 http://localhost:8080 完成 WordPress 安装",
-            "3. 安装 Social Engine / Blog2Social 插件",
-            "4. 在 Users → Profile → Application Passwords 创建密码",
-            "5. 更新 wordpress.py 中的 username 和 app_password",
-        ],
+        "feed_url": f"/feed",
+        "message": "已发布 — 前往「社媒动态」查看",
     }
 
 
