@@ -83,6 +83,36 @@ async def generate_social_content(request: SocialGenerateRequest):
     }
 
 
+@router.get("/{task_id}/status")
+async def get_social_task_status(task_id: str):
+    """查询社媒内容生成任务状态和进度"""
+    if task_id not in _task_states:
+        raise HTTPException(status_code=404, detail="Task not found")
+    state = _task_states[task_id]
+    return {
+        "task_id": task_id,
+        "status": state.get("status", "running"),
+        "current_step": state.get("current_step", ""),
+        "posts_count": len(state.get("posts", [])),
+        "error": state.get("error", ""),
+    }
+
+
+@router.get("/{task_id}/result")
+async def get_social_task_result(task_id: str):
+    """获取社媒内容生成最终结果"""
+    if task_id not in _task_states:
+        raise HTTPException(status_code=404, detail="Task not found")
+    state = _task_states[task_id]
+    return {
+        "task_id": task_id,
+        "status": state.get("status"),
+        "posts": state.get("posts", []),
+        "marketing_angles": state.get("marketing_angles", []),
+        "key_selling_points": state.get("key_selling_points", []),
+    }
+
+
 @router.get("/posts", response_model=list[SocialPostResponse])
 async def list_posts(platform: str = "", status: str = ""):
     """帖子列表，支持按平台和状态筛选"""

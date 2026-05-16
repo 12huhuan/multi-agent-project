@@ -106,6 +106,40 @@ async def list_reviews(sentiment: str = "", rating: int = 0):
     return results
 
 
+@router.get("/{task_id}/status")
+async def get_review_task_status(task_id: str):
+    """查询评论抓取任务状态和进度"""
+    if task_id not in _task_states:
+        raise HTTPException(status_code=404, detail="Task not found")
+    state = _task_states[task_id]
+    return {
+        "task_id": task_id,
+        "status": state.get("status", "running"),
+        "current_step": state.get("current_step", ""),
+        "total_scraped": state.get("total_scraped", 0),
+        "analyzed_count": state.get("analyzed_count", 0),
+        "negative_count": state.get("negative_count", 0),
+        "alert_count": state.get("alert_count", 0),
+        "error": state.get("error", ""),
+    }
+
+
+@router.get("/{task_id}/result")
+async def get_review_task_result(task_id: str):
+    """获取评论抓取最终结果"""
+    if task_id not in _task_states:
+        raise HTTPException(status_code=404, detail="Task not found")
+    state = _task_states[task_id]
+    return {
+        "task_id": task_id,
+        "status": state.get("status"),
+        "reviews": state.get("reviews", []),
+        "total_scraped": state.get("total_scraped", 0),
+        "negative_count": state.get("negative_count", 0),
+        "alert_count": state.get("alert_count", 0),
+    }
+
+
 @router.get("/stats")
 async def review_stats():
     """评论统计概览"""

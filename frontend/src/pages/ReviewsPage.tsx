@@ -1,6 +1,7 @@
-import { useState, useEffect, useRef } from "react";
-import { Search, Star, AlertTriangle, MessageSquare, Send, Check, X, Loader2, RefreshCw } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Search, Star, AlertTriangle, MessageSquare, Check, X, Loader2, RefreshCw } from "lucide-react";
 import { API_BASE } from "../lib/utils";
+import { taskStore } from "../lib/TaskStore";
 
 interface Review {
   id: string;
@@ -48,7 +49,6 @@ export default function ReviewsPage() {
   const [maxReviews, setMaxReviews] = useState(15);
   const [reviews, setReviews] = useState<Review[]>([]);
   const [loading, setLoading] = useState(false);
-  const [taskId, setTaskId] = useState<string | null>(null);
   const [progress, setProgress] = useState("");
   const [error, setError] = useState("");
   const [sentimentFilter, setSentimentFilter] = useState("");
@@ -56,10 +56,81 @@ export default function ReviewsPage() {
   const [replyText, setReplyText] = useState("");
   const [replyLoading, setReplyLoading] = useState(false);
   const [showTranslation, setShowTranslation] = useState<Record<string, boolean>>({});
-  const wsRef = useRef<WebSocket | null>(null);
+  const [activeTaskId, setActiveTaskId] = useState<string | null>(null);
 
+  // 页面挂载时自动加载已有评论
   useEffect(() => {
     fetchReviews();
+  }, []);
+
+  // 恢复进行中的任务 + 监听 taskStore
+  useEffect(() => {
+    const allTasks = taskStore.getAll();
+    const runningTask = allTasks.find(
+      (t) => t.type === "review" && (t.status === "running" || t.status === "awaiting_review")
+    );
+    if (runningTask) {
+      setActiveTaskId(runningTask.id);
+      setLoading(true);
+      setProgress(runningTask.current_step || runningTask.progress || "");
+    }
+
+    const unsub = taskStore.subscribe(() => {
+      if (!activeTaskId) {
+        // 重新检查
+        const current = taskStore.getAll().find(
+          (t) => t.type === "review" && (t.status === "running" || t.status === "awaiting_review")
+        );
+        if (current) {
+          setActiveTaskId(current.id);
+          setLoading(true);
+          setProgress(current.current_step || current.progress || "");
+        }
+        return;
+      }
+
+      const task = taskStore.get(activeTaskId);
+      if (!task) return;
+
+      setProgress(task.current_step || task.progress || "");
+
+      if (task.status === "awaiting_review" || task.status === "completed") {
+        setLoading(false);
+        setProgress("");
+        // 从 result 加载 reviews
+        if (task.result?.reviews) {
+          const mapped: Review[] = task.result.reviews.map((r: any, i: number) => ({
+            id: r.id || `rev-${i}`,
+            product_asin: r.product_asin || asin,
+            reviewer_name: r.reviewer_name || "Anonymous",
+            rating: r.rating || 0,
+            title: r.title || "",
+            content: r.content || "",
+            translated_title: r.translated_title || "",
+            translated_content: r.translated_content || "",
+            sentiment: r.sentiment || "neutral",
+            sentiment_score: r.sentiment_score || 5.0,
+            alert_level: r.alert_level || "none",
+            reply_suggestion: r.reply_suggestion || "",
+            reply_status: r.reply_status || "none",
+            date: r.date || "",
+            verified_purchase: r.verified_purchase || false,
+          }));
+          setReviews(mapped);
+        }
+      } else if (task.status === "failed") {
+        setLoading(false);
+        setProgress("");
+        setError(task.error || "抓取失败");
+      }
+    });
+
+    return unsub;
+  }, [activeTaskId]);
+
+  // 筛选变更时重新拉取
+  useEffect(() => {
+    if (!loading) fetchReviews();
   }, [sentimentFilter]);
 
   const fetchReviews = async () => {
@@ -83,24 +154,16 @@ export default function ReviewsPage() {
         body: JSON.stringify({ product_asin: asin.trim(), max_reviews: maxReviews }),
       });
       const data = await res.json();
-      setTaskId(data.task_id);
+      const taskId = data.task_id;
+      setActiveTaskId(taskId);
 
-      // WebSocket 追踪进度
-      const ws = new WebSocket(`ws://localhost:8000/api/v1/reviews/${data.task_id}/stream`);
-      wsRef.current = ws;
-      ws.onmessage = (event) => {
-        const msg = JSON.parse(event.data);
-        if (msg.type === "progress") {
-          setProgress(
-            `${msg.current_step} | 抓取: ${msg.total_scraped || 0} | 负面: ${msg.negative_count || 0} | 预警: ${msg.alert_count || 0}`
-          );
-        } else if (msg.type === "done") {
-          setLoading(false);
-          setProgress("");
-          fetchReviews();
-        }
-      };
-      ws.onerror = () => { setLoading(false); setError("WebSocket 连接失败"); };
+      // 加入全局 TaskStore，跨页面持久化
+      taskStore.add({
+        id: taskId,
+        type: "review",
+        status: "running",
+        product_asin: asin.trim(),
+      });
     } catch (err: any) {
       setError(err.message || "抓取失败");
       setLoading(false);
@@ -137,15 +200,10 @@ export default function ReviewsPage() {
     setShowTranslation((prev) => ({ ...prev, [reviewId]: !prev[reviewId] }));
   };
 
-  const renderStars = (rating: number) => {
-    return Array.from({ length: 5 }, (_, i) => (
-      <Star
-        key={i}
-        size={14}
-        className={i < rating ? "fill-yellow-400 text-yellow-400" : "text-gray-300"}
-      />
+  const renderStars = (rating: number) =>
+    Array.from({ length: 5 }, (_, i) => (
+      <Star key={i} size={14} className={i < rating ? "fill-yellow-400 text-yellow-400" : "text-gray-300"} />
     ));
-  };
 
   return (
     <div className="space-y-6">
@@ -159,7 +217,7 @@ export default function ReviewsPage() {
             <input
               value={asin}
               onChange={(e) => setAsin(e.target.value)}
-              placeholder="B0XXXXXXX"
+              placeholder="B0EXAMPLE"
               className="w-full border rounded px-3 py-2 mt-1 text-sm"
             />
           </div>
@@ -243,7 +301,6 @@ export default function ReviewsPage() {
             <h3 className="font-medium text-sm mb-1">{review.title}</h3>
             <p className="text-sm text-gray-600 mb-2">{review.content}</p>
 
-            {/* Translation Toggle */}
             {review.translated_content && (
               <div className="mb-2">
                 <button
@@ -261,7 +318,6 @@ export default function ReviewsPage() {
               </div>
             )}
 
-            {/* Reply Actions */}
             <div className="flex items-center gap-2 mt-2 pt-2 border-t">
               {review.reply_status === "none" && (
                 <button
@@ -303,7 +359,7 @@ export default function ReviewsPage() {
         ))}
       </div>
 
-      {/* Reply Edit Modal (simplified inline) */}
+      {/* Reply Edit Panel */}
       {selectedReview && replyText && (
         <div className="fixed bottom-4 right-4 w-96 bg-white rounded-lg shadow-xl border p-4 z-10">
           <h3 className="font-medium text-sm mb-2">
@@ -326,7 +382,7 @@ export default function ReviewsPage() {
               onClick={() => approveReply(selectedReview.id, true)}
               className="flex items-center gap-1 px-3 py-1 text-xs bg-green-600 text-white rounded hover:bg-green-700"
             >
-              <Send size={12} /> 确认
+              <Check size={12} /> 确认
             </button>
           </div>
         </div>

@@ -1,6 +1,7 @@
-import { useState, useRef } from "react";
-import { Send, Image, Globe, Check, X, Loader2, Star, Languages, RefreshCw, AlertTriangle } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Send, Image, Globe, Check, X, Loader2, Star, RefreshCw, AlertTriangle } from "lucide-react";
 import { API_BASE } from "../lib/utils";
+import { taskStore } from "../lib/TaskStore";
 
 interface Post {
   id: string;
@@ -43,11 +44,76 @@ export default function SocialMediaPage() {
   const [language, setLanguage] = useState("en");
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState(false);
-  const [taskId, setTaskId] = useState<string | null>(null);
   const [progress, setProgress] = useState("");
   const [error, setError] = useState("");
   const [platformTab, setPlatformTab] = useState("all");
-  const wsRef = useRef<WebSocket | null>(null);
+  const [activeTaskId, setActiveTaskId] = useState<string | null>(null);
+
+  // 页面挂载时自动加载已有帖子
+  useEffect(() => {
+    fetchPosts();
+  }, []);
+
+  // 恢复进行中的任务 + 监听 taskStore
+  useEffect(() => {
+    const allTasks = taskStore.getAll();
+    const runningTask = allTasks.find(
+      (t) => t.type === "social" && (t.status === "running" || t.status === "awaiting_review")
+    );
+    if (runningTask) {
+      setActiveTaskId(runningTask.id);
+      setLoading(true);
+      setProgress(runningTask.current_step || runningTask.progress || "");
+    }
+
+    const unsub = taskStore.subscribe(() => {
+      if (!activeTaskId) {
+        const current = taskStore.getAll().find(
+          (t) => t.type === "social" && (t.status === "running" || t.status === "awaiting_review")
+        );
+        if (current) {
+          setActiveTaskId(current.id);
+          setLoading(true);
+          setProgress(current.current_step || current.progress || "");
+        }
+        return;
+      }
+
+      const task = taskStore.get(activeTaskId);
+      if (!task) return;
+
+      setProgress(task.current_step || task.progress || "");
+
+      if (task.status === "awaiting_review" || task.status === "completed") {
+        setLoading(false);
+        setProgress("");
+        if (task.result?.posts) {
+          const mapped: Post[] = task.result.posts.map((p: any, i: number) => ({
+            id: p.id || `post-${i}`,
+            product_name: p.product_name || productName,
+            platform: p.platform || "",
+            language: p.language || "en",
+            copy: p.copy || "",
+            short_copy: p.short_copy || "",
+            hashtags: p.hashtags || [],
+            call_to_action: p.call_to_action || "",
+            image_urls: (p.images || []).map((img: any) => img.url || ""),
+            quality_score: p.quality_score || 0,
+            quality_verdict: p.quality_verdict || "approved",
+            status: p.status || "generated",
+            created_at: p.created_at || new Date().toISOString(),
+          }));
+          setPosts(mapped);
+        }
+      } else if (task.status === "failed") {
+        setLoading(false);
+        setProgress("");
+        setError(task.error || "生成失败");
+      }
+    });
+
+    return unsub;
+  }, [activeTaskId]);
 
   const togglePlatform = (p: string) => {
     setSelectedPlatforms((prev) =>
@@ -82,21 +148,16 @@ export default function SocialMediaPage() {
         }),
       });
       const data = await res.json();
-      setTaskId(data.task_id);
+      const taskId = data.task_id;
+      setActiveTaskId(taskId);
 
-      const ws = new WebSocket(`ws://localhost:8000/api/v1/social/${data.task_id}/stream`);
-      wsRef.current = ws;
-      ws.onmessage = (event) => {
-        const msg = JSON.parse(event.data);
-        if (msg.type === "progress") {
-          setProgress(`${msg.current_step} | 帖子: ${msg.posts_count || 0}`);
-        } else if (msg.type === "done") {
-          setLoading(false);
-          setProgress("");
-          fetchPosts();
-        }
-      };
-      ws.onerror = () => { setLoading(false); setError("WebSocket 连接失败"); };
+      // 加入全局 TaskStore
+      taskStore.add({
+        id: taskId,
+        type: "social",
+        status: "running",
+        product_name: productName.trim(),
+      });
     } catch (err: any) {
       setError(err.message || "生成失败");
       setLoading(false);
@@ -168,7 +229,6 @@ export default function SocialMediaPage() {
           </div>
         </div>
 
-        {/* Platform Selection */}
         <div className="mt-3">
           <label className="text-sm font-medium text-gray-600 mb-1 block">目标平台</label>
           <div className="flex flex-wrap gap-2">
@@ -188,7 +248,6 @@ export default function SocialMediaPage() {
           </div>
         </div>
 
-        {/* Language & Submit */}
         <div className="flex items-end gap-3 mt-3">
           <div className="w-24">
             <label className="text-sm font-medium text-gray-600">语言</label>
@@ -282,15 +341,12 @@ export default function SocialMediaPage() {
               </div>
             </div>
 
-            {/* Copy */}
             <p className="text-sm text-gray-800 whitespace-pre-line mb-3">{post.copy}</p>
 
-            {/* Short Copy */}
             {post.short_copy && (
               <p className="text-xs text-gray-500 mb-2 italic">"{post.short_copy}"</p>
             )}
 
-            {/* Hashtags */}
             {post.hashtags.length > 0 && (
               <div className="flex flex-wrap gap-1 mb-3">
                 {post.hashtags.map((tag, i) => (
@@ -301,27 +357,28 @@ export default function SocialMediaPage() {
               </div>
             )}
 
-            {/* CTA */}
             {post.call_to_action && (
               <p className="text-sm font-medium text-gray-700 mb-3">{post.call_to_action}</p>
             )}
 
-            {/* Images */}
             {post.image_urls.length > 0 && (
               <div className="flex gap-2 mb-3">
                 {post.image_urls.map((url, i) => (
-                  <div key={i} className="w-20 h-20 bg-gray-100 rounded border flex items-center justify-center">
+                  <a key={i} href={url} target="_blank" rel="noreferrer"
+                    className="w-32 h-32 bg-gray-200 rounded border-2 border-gray-300 flex items-center justify-center overflow-hidden hover:border-blue-400 transition-colors"
+                  >
                     {url.startsWith("[image-gen]") ? (
-                      <Image size={20} className="text-gray-400" />
+                      <Image size={24} className="text-gray-400" />
                     ) : (
-                      <img src={url} alt="" className="w-full h-full object-cover rounded" />
+                      <img src={url} alt="social media" className="w-full h-full object-cover"
+                        onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                      />
                     )}
-                  </div>
+                  </a>
                 ))}
               </div>
             )}
 
-            {/* Actions */}
             <div className="flex items-center gap-2 pt-3 border-t">
               {post.status !== "approved" && (
                 <button
@@ -355,4 +412,3 @@ export default function SocialMediaPage() {
     </div>
   );
 }
-
