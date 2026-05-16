@@ -1,0 +1,71 @@
+[
+  {
+    "name": "Bluetooth Headphones",
+    "product_name": "Wireless Bluetooth 5.3 Headphones with Active Noise Cancellation - 40H Battery",
+    "category": "Electronics > Headphones & Earbuds",
+    "features": [
+      "Advanced Active Noise Cancellation (ANC) reduces ambient noise by 95%",
+      "Bluetooth 5.3 with dual-device connection and 15m range",
+      "40-hour battery life with USB-C fast charging (10min = 3h playtime)",
+      "Memory foam ear cushions with 270° rotatable joints",
+      "Built-in AI microphone for crystal-clear calls",
+      "Foldable design with premium travel case included"
+    ],
+    "brand_story": "SoundWave is a California-based audio brand founded in 2018, dedicated to making premium audio accessible. We believe everyone deserves studio-quality sound without the studio price tag. Our engineers previously worked at Bose and Sony.",
+    "image_descriptions": [
+      "Hero shot: Black headphones on white background, 45° angle showing earcups",
+      "Lifestyle shot: Young professional wearing headphones working in modern coffee shop",
+      "Feature callout: Exploded view showing ANC technology and 40mm drivers",
+      "Comparison shot: SoundWave vs competitor noise cancellation graph",
+      "Package contents: Headphones, case, USB-C cable, aux cable, manual"
+    ],
+    "target_platform": "amazon_us",
+    "target_language": "en"
+  },
+  {
+    "name": "Yoga Mat",
+    "product_name": "Premium Non-Slip Yoga Mat 6mm - Eco-Friendly TPE Material with Alignment Lines",
+    "category": "Sports & Outdoors > Yoga > Mats",
+    "features": [
+      "Double-layer TPE material with laser-etched alignment lines",
+      "6mm optimal thickness: cushioning for joints without losing ground feel",
+      "Non-slip texture on both sides, even during hot yoga",
+      "Eco-friendly, 100% recyclable, no PVC/latex/toxins",
+      "Includes carrying strap and storage bag",
+      "72\" x 26\" extra-wide surface for all body types"
+    ],
+    "brand_story": "ZenLife was born in Byron Bay, Australia, where founders Sarah and Mike discovered yoga transformed their lives after corporate burnout. Every mat we sell funds one yoga class for underprivileged communities through our 'One Mat, One Class' program.",
+    "image_descriptions": [
+      "Hero shot: Mat rolled out on hardwood floor, morning sunlight",
+      "Detail shot: Close-up of alignment lines and texture pattern",
+      "Lifestyle shot: Woman in warrior II pose on mat, ocean view background",
+      "Comparison: ZenLife mat vs standard PVC mat sweat test",
+      "Eco credentials: Infographic showing TPE material lifecycle"
+    ],
+    "target_platform": "amazon_us",
+    "target_language": "en"
+  },
+  {
+    "name": "Desk LED Lamp",
+    "product_name": "Architect LED Desk Lamp with 5 Color Modes, Auto-Dimming Sensor, USB-C Charging Port",
+    "category": "Home & Kitchen > Lighting > Desk Lamps",
+    "features": [
+      "5 color temperatures (2700K-6500K) and 10 brightness levels",
+      "Smart auto-dimming sensor adjusts brightness based on ambient light",
+      "50,000-hour LED lifespan with flicker-free technology for eye comfort",
+      "Built-in USB-C 18W fast charging port for phones/tablets",
+      "Memory function remembers your last brightness and color setting",
+      "Sturdy aluminum alloy arm with 180° adjustability"
+    ],
+    "brand_story": "LumiCraft is a Shenzhen-based design studio that blends Bauhaus minimalism with cutting-edge LED engineering. Founded by industrial designer Chen Wei in 2020, we've served over 200,000 home offices worldwide. Every lamp undergoes 47 quality checks before shipping.",
+    "image_descriptions": [
+      "Hero shot: Lamp on modern desk setup, warm light mode",
+      "Detail: Close up of touch-sensitive control panel",
+      "Lifestyle: Home office scene with lamp illuminating keyboard area",
+      "Feature: 5 color modes comparison strip (warm to cool)",
+      "Tech: Exploded diagram showing LED array and heat sink design"
+    ],
+    "target_platform": "amazon_us",
+    "target_language": "en"
+  }
+]

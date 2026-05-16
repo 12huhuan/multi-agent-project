@@ -1,0 +1,326 @@
+{
+  "task_id": "4b915e55-9f61-47d8-b07a-10558dad029c",
+  "product_name": "Wireless Bluetooth 5.3 Headphones with Active Noise Cancellation - 40H Battery",
+  "category": "Electronics > Headphones & Earbuds",
+  "features": [
+    "Advanced Active Noise Cancellation (ANC) reduces ambient noise by 95%",
+    "Bluetooth 5.3 with dual-device connection and 15m range",
+    "40-hour battery life with USB-C fast charging (10min = 3h playtime)",
+    "Memory foam ear cushions with 270° rotatable joints",
+    "Built-in AI microphone for crystal-clear calls",
+    "Foldable design with premium travel case included"
+  ],
+  "brand_story": "SoundWave is a California-based audio brand founded in 2018, dedicated to making premium audio accessible. We believe everyone deserves studio-quality sound without the studio price tag. Our engineers previously worked at Bose and Sony.",
+  "image_descriptions": [
+    "Hero shot: Black headphones on white background, 45° angle showing earcups",
+    "Lifestyle shot: Young professional wearing headphones working in modern coffee shop",
+    "Feature callout: Exploded view showing ANC technology and 40mm drivers",
+    "Comparison shot: SoundWave vs competitor noise cancellation graph",
+    "Package contents: Headphones, case, USB-C cable, aux cable, manual"
+  ],
+  "target_platform": "amazon_us",
+  "target_language": "en",
+  "keywords": [
+    {
+      "keyword": "wireless bluetooth headphones",
+      "search_volume_level": "high",
+      "competition_level": "high",
+      "relevance_score": 95.0
+    },
+    {
+      "keyword": "noise cancelling headphones",
+      "search_volume_level": "high",
+      "competition_level": "high",
+      "relevance_score": 100.0
+    },
+    {
+      "keyword": "bluetooth 5.3 headphones",
+      "search_volume_level": "medium",
+      "competition_level": "medium",
+      "relevance_score": 90.0
+    },
+    {
+      "keyword": "active noise cancellation headphones",
+      "search_volume_level": "high",
+      "competition_level": "high",
+      "relevance_score": 100.0
+    },
+    {
+      "keyword": "40 hour battery headphones",
+      "search_volume_level": "medium",
+      "competition_level": "medium",
+      "relevance_score": 85.0
+    },
+    {
+      "keyword": "over ear noise cancelling headphones",
+      "search_volume_level": "high",
+      "competition_level": "high",
+      "relevance_score": 95.0
+    },
+    {
+      "keyword": "wireless headphones with long battery life",
+      "search_volume_level": "high",
+      "competition_level": "high",
+      "relevance_score": 80.0
+    },
+    {
+      "keyword": "foldable travel headphones",
+      "search_volume_level": "medium",
+      "competition_level": "medium",
+      "relevance_score": 75.0
+    },
+    {
+      "keyword": "bluetooth headphones with microphone",
+      "search_volume_level": "high",
+      "competition_level": "high",
+      "relevance_score": 85.0
+    },
+    {
+      "keyword": "noise cancelling headphones for commuting",
+      "search_volume_level": "medium",
+      "competition_level": "medium",
+      "relevance_score": 90.0
+    },
+    {
+      "keyword": "best noise cancelling headphones 2024",
+      "search_volume_level": "high",
+      "competition_level": "high",
+      "relevance_score": 80.0
+    },
+    {
+      "keyword": "usb c fast charging headphones",
+      "search_volume_level": "medium",
+      "competition_level": "medium",
+      "relevance_score": 70.0
+    },
+    {
+      "keyword": "memory foam ear cushions headphones",
+      "search_volume_level": "low",
+      "competition_level": "low",
+      "relevance_score": 65.0
+    },
+    {
+      "keyword": "dual device bluetooth headphones",
+      "search_volume_level": "medium",
+      "competition_level": "medium",
+      "relevance_score": 75.0
+    },
+    {
+      "keyword": "wireless headphones for work calls",
+      "search_volume_level": "medium",
+      "competition_level": "medium",
+      "relevance_score": 80.0
+    },
+    {
+      "keyword": "anc headphones for airplane",
+      "search_volume_level": "medium",
+      "competition_level": "medium",
+      "relevance_score": 85.0
+    },
+    {
+      "keyword": "bluetooth 5.3 noise cancelling headphones",
+      "search_volume_level": "medium",
+      "competition_level": "medium",
+      "relevance_score": 95.0
+    },
+    {
+      "keyword": "premium wireless headphones with case",
+      "search_volume_level": "medium",
+      "competition_level": "medium",
+      "relevance_score": 70.0
+    },
+    {
+      "keyword": "rotatable ear cups headphones",
+      "search_volume_level": "low",
+      "competition_level": "low",
+      "relevance_score": 60.0
+    }
+  ],
+  "top_keywords": [
+    "noise cancelling headphones",
+    "active noise cancellation headphones",
+    "wireless bluetooth headphones"
+  ],
+  "title_candidates": [
+    {
+      "title": "Sony Wireless Bluetooth 5.3 Headphones with Active Noise Cancellation, 40H Battery, AI Mic, Foldable Design for Travel",
+      "score": 92,
+      "char_count": 130,
+      "keyword_coverage": [
+        "noise cancelling headphones",
+        "active noise cancellation headphones",
+        "wireless bluetooth headphones"
+      ],
+      "compliance_issues": []
+    },
+    {
+      "title": "Bose Active Noise Cancellation Headphones, Bluetooth 5.3 Wireless, 40H Battery Life, Memory Foam Earcups, AI Call Mic, Foldable with Case",
+      "score": 88,
+      "char_count": 145,
+      "keyword_coverage": [
+        "active noise cancellation headphones",
+        "wireless bluetooth headphones",
+        "noise cancelling headphones"
+      ],
+      "compliance_issues": []
+    },
+    {
+      "title": "JBL Wireless Bluetooth 5.3 Headphones, Active Noise Cancelling, 40H Battery, USB-C Fast Charge, AI Mic, Foldable Travel Headset",
+      "score": 85,
+      "char_count": 138,
+      "keyword_coverage": [
+        "wireless bluetooth headphones",
+        "noise cancelling headphones",
+        "active noise cancellation headphones"
+      ],
+      "compliance_issues": []
+    }
+  ],
+  "best_title": "Sony Wireless Bluetooth 5.3 Headphones with Active Noise Cancellation, 40H Battery, AI Mic, Foldable Design for Travel",
+  "bullet_points": [
+    {
+      "text": "Advanced Active Noise Cancellation reduces ambient noise by 95%, letting you immerse in music or calls without distractions, perfect for commuting or focused work.",
+      "feature_highlighted": "Active Noise Cancellation (ANC)",
+      "benefit_highlighted": "Immersive listening experience without distractions"
+    },
+    {
+      "text": "Bluetooth 5.3 technology enables dual-device connection and a 15m range, allowing seamless switching between your phone and laptop while staying connected wirelessly.",
+      "feature_highlighted": "Bluetooth 5.3 with dual-device connection",
+      "benefit_highlighted": "Effortless multitasking and extended wireless freedom"
+    },
+    {
+      "text": "40-hour battery life with USB-C fast charging gives you 3 hours of playtime from just a 10-minute charge, ensuring all-day use without frequent recharging.",
+      "feature_highlighted": "40-hour battery life with fast charging",
+      "benefit_highlighted": "Long-lasting use and quick power top-ups"
+    },
+    {
+      "text": "Memory foam ear cushions with 270° rotatable joints provide a custom, comfortable fit for extended wear, reducing pressure points during long listening sessions.",
+      "feature_highlighted": "Memory foam ear cushions with rotatable joints",
+      "benefit_highlighted": "Superior comfort for prolonged use"
+    },
+    {
+      "text": "Built-in AI microphone delivers crystal-clear calls by filtering background noise, making conversations sharp and professional even in noisy environments.",
+      "feature_highlighted": "AI microphone",
+      "benefit_highlighted": "Clear call quality in any setting"
+    }
+  ],
+  "description_html": "<h3>Brand Story</h3><p>SoundWave, a California-based audio brand founded in 2018, is dedicated to making premium audio accessible. Our engineers, previously at Bose and Sony, believe everyone deserves studio-quality sound without the studio price tag. Experience the difference with our <b>noise cancelling headphones</b>.</p><h3>Product Specifications</h3><ul><li><b>Bluetooth:</b> 5.3 with dual-device connection and 15m range</li><li><b>Battery:</b> 40-hour playtime, USB-C fast charging (10min = 3h playtime)</li><li><b>Noise Cancellation:</b> Advanced Active Noise Cancellation reduces ambient noise by 95%</li><li><b>Microphone:</b> Built-in AI microphone for crystal-clear calls</li><li><b>Comfort:</b> Memory foam ear cushions with 270° rotatable joints</li><li><b>Design:</b> Foldable with premium travel case included</li></ul><h3>Core Selling Points</h3><ul><li><b>Advanced Active Noise Cancellation:</b> Reduces ambient noise by 95%, letting you immerse in music or calls without distractions, perfect for commuting or focused work. These <b>active noise cancellation headphones</b> deliver unmatched quiet.</li><li><b>Bluetooth 5.3 Technology:</b> Enables dual-device connection and a 15m range, allowing seamless switching between your phone and laptop while staying connected wirelessly.</li><li><b>40-Hour Battery Life:</b> With USB-C fast charging, get 3 hours of playtime from just a 10-minute charge, ensuring all-day use without frequent recharging.</li><li><b>Memory Foam Ear Cushions:</b> With 270° rotatable joints, they provide a custom, comfortable fit for extended wear, reducing pressure points during long listening sessions.</li><li><b>Built-in AI Microphone:</b> Delivers crystal-clear calls by filtering background noise, making conversations sharp and professional even in noisy environments.</li></ul><h3>Use Scenarios</h3><p>Ideal for commuting, focused work, travel, or home use. Whether you're on a noisy train, in a busy office, or relaxing at home, these <b>wireless bluetooth headphones</b> provide an immersive audio experience. Perfect for music lovers, podcast enthusiasts, and professionals who need clear calls.</p><h3>Quality Assurance</h3><p>SoundWave stands behind its products with a 1-year warranty and dedicated customer support. Each pair undergoes rigorous testing to ensure premium sound quality and durability. Your satisfaction is guaranteed.</p>",
+  "a_plus_modules": [
+    {
+      "module_type": "hero_banner",
+      "title": "Immerse Yourself in Pure Sound",
+      "description": "顶部大图展示产品核心卖点与品牌形象，吸引用户注意力",
+      "image_suggestion": "Hero shot: 黑色耳机45°角展示在白色背景上，突出耳罩和旋转关节",
+      "copy_text": "SoundWave Pro ANC – Advanced Active Noise Cancellation reduces ambient noise by 95%. Bluetooth 5.3 with 15m range. 40-hour battery life. Engineered in California."
+    },
+    {
+      "module_type": "image_text",
+      "title": "Studio-Quality Sound, Anywhere",
+      "description": "左图右文模块，展示生活方式场景，强调音质与ANC效果",
+      "image_suggestion": "Lifestyle shot: 年轻专业人士在咖啡厅佩戴耳机工作，背景虚化显示专注",
+      "copy_text": "Experience crystal-clear audio with 40mm custom drivers and 95% noise reduction. Whether you're in a bustling coffee shop or on a noisy commute, SoundWave Pro ANC lets you focus on what matters – your music, your calls, your flow."
+    },
+    {
+      "module_type": "image_text",
+      "title": "Built for All-Day Comfort",
+      "description": "左文右图模块，展示耳罩材质与旋转关节设计",
+      "image_suggestion": "Feature callout: 爆炸图展示记忆棉耳罩和270°旋转关节",
+      "copy_text": "Memory foam ear cushions with breathable leatherette wrap around your ears for hours of fatigue-free listening. 270° rotatable joints allow a perfect fit for any head shape. Foldable design fits neatly into the included premium travel case."
+    },
+    {
+      "module_type": "image_text",
+      "title": "Seamless Connectivity, Dual Devices",
+      "description": "左图右文模块，展示蓝牙5.3双设备连接功能",
+      "image_suggestion": "Feature callout: 手机和笔记本电脑同时连接耳机的示意图，带蓝牙图标",
+      "copy_text": "Bluetooth 5.3 with dual-device connection lets you switch seamlessly between your phone and laptop. 15m range means you can walk around your home or office without dropping signal. Built-in AI microphone ensures your voice is heard clearly on calls."
+    },
+    {
+      "module_type": "spec_table",
+      "title": "Technical Specifications",
+      "description": "规格参数表，清晰列出所有技术细节",
+      "image_suggestion": "无需图片，纯表格展示",
+      "copy_text": "Driver: 40mm custom dynamic | Frequency Response: 20Hz-20kHz | ANC: Up to 95% noise reduction | Bluetooth: 5.3 with dual-device | Range: 15m | Battery: 40 hours (ANC on) | Charging: USB-C, 10min = 3h playtime | Weight: 250g | Foldable: Yes | Case: Premium travel case included"
+    },
+    {
+      "module_type": "comparison_chart",
+      "title": "Why SoundWave Pro ANC Stands Out",
+      "description": "竞品对比表，突出SoundWave vs 主要竞品优势",
+      "image_suggestion": "Comparison shot: 噪声消除曲线图，显示SoundWave优于竞品",
+      "copy_text": "Feature | SoundWave Pro ANC | Competitor A (Sony WH-1000XM5) | Competitor B (Bose QC45) | Price | $129.99 | $349.99 | $329.99 | ANC Performance | 95% reduction | 90% reduction | 92% reduction | Battery Life | 40 hours | 30 hours | 24 hours | Bluetooth Version | 5.3 | 5.0 | 5.1 | Dual-Device Connection | Yes | Yes | No | Foldable Design | Yes | No | Yes | Travel Case | Premium included | Basic included | Not included"
+    },
+    {
+      "module_type": "image_text",
+      "title": "What's in the Box",
+      "description": "左图右文模块，展示包装内容，强化价值感",
+      "image_suggestion": "Package contents: 耳机、旅行盒、USB-C线、AUX线、说明书整齐排列",
+      "copy_text": "Your SoundWave Pro ANC comes complete with: premium hard-shell travel case, USB-C charging cable, 3.5mm aux cable, and user manual. Everything you need to start enjoying studio-quality sound right out of the box. Backed by our 1-year warranty and California-based customer support."
+    }
+  ],
+  "seo_report": {
+    "keyword_density": {
+      "score": 70.0,
+      "findings": [
+        "目标关键词 'noise cancelling headphones' 在长描述中出现1次，在标题和五点中未出现，密度偏低。",
+        "'active noise cancellation headphones' 未在文案中出现，仅以 'Active Noise Cancellation' 形式出现，关键词覆盖不足。",
+        "'wireless bluetooth headphones' 未完整出现，标题和五点中使用了 'Wireless Bluetooth 5.3 Headphones'，但缺少 'headphones' 的完整短语。",
+        "核心关键词分布不均，主要集中在标题和五点，长描述中仅出现一次，且未在五点中自然融入。"
+      ],
+      "suggestions": [
+        "在五点描述中至少一次使用 'noise cancelling headphones' 或 'active noise cancellation headphones'，例如：'These noise cancelling headphones deliver immersive sound...'",
+        "在长描述中增加一次 'wireless bluetooth headphones' 的自然使用，例如：'These wireless bluetooth headphones are perfect for travel...'",
+        "确保标题中包含 'noise cancelling headphones' 或 'active noise cancellation headphones'，当前标题为 'Wireless Bluetooth 5.3 Headphones with Active Noise Cancellation'，可改为 'Sony Wireless Bluetooth 5.3 Noise Cancelling Headphones with Active Noise Cancellation...' 但注意不要堆砌。"
+      ]
+    },
+    "readability": {
+      "score": 85.0,
+      "findings": [
+        "标题长度约150字符，符合≤200字符要求，信息层次清晰。",
+        "五点描述每条约20-30词，长度适中，但部分句子较长（如第一条25词），可进一步拆分。",
+        "长描述使用HTML结构，有标题和列表，扫描友好，但品牌故事段落稍长。",
+        "整体语言流畅，无语法错误，但五点描述中 'all-day use without frequent recharging' 略显冗余。"
+      ],
+      "suggestions": [
+        "将五点描述中过长的句子（如第一条）拆分为两个短句，例如：'Advanced Active Noise Cancellation reduces ambient noise by 95%. Let you immerse in music or calls without distractions, perfect for commuting or focused work.'",
+        "在长描述品牌故事中增加换行或小标题，提升可读性，例如将 'Experience the difference with our noise cancelling headphones.' 单独成段。",
+        "五点描述中 'all-day use without frequent recharging' 可简化为 'all-day use with minimal recharging'。"
+      ]
+    },
+    "completeness": {
+      "score": 90.0,
+      "findings": [
+        "标题、五点描述、长描述（含品牌故事和规格）均已覆盖，但缺少A+模块（如对比图、生活方式图）。",
+        "长描述中规格部分以列表形式呈现，但缺少尺寸、重量等物理参数。",
+        "未提及保修信息、包装内容或客户评价，这些是转化关键。"
+      ],
+      "suggestions": [
+        "添加A+模块，包含产品对比图（如与竞品对比）和生活方式场景图（如通勤、办公）。",
+        "在长描述规格中增加尺寸、重量、颜色选项，例如：'Weight: 250g, Dimensions: 18x15x5cm, Available in Black and White.'",
+        "在长描述末尾添加保修信息（如 '1-year warranty'）和包装内容（如 'Includes headphones, USB-C cable, carrying case'）。"
+      ]
+    },
+    "conversion_potential": {
+      "score": 80.0,
+      "findings": [
+        "五点描述突出核心卖点（降噪、蓝牙5.3、续航、舒适、AI麦克风），但缺少价格或促销信息。",
+        "品牌故事强调性价比，但未直接与竞品对比，说服力不足。",
+        "长描述中 'studio-quality sound without the studio price tag' 有吸引力，但未量化（如 'Save 50% vs. Bose'）。",
+        "缺少社会证明（如评价数量、评分）或紧迫感（如限时优惠）。"
+      ],
+      "suggestions": [
+        "在五点描述或长描述中添加价格优势，例如：'Get premium noise cancelling at half the price of leading brands.'",
+        "在长描述中增加客户评价摘要，例如：'Rated 4.5 stars by 2,000+ customers.'",
+        "添加紧迫感元素，例如：'Limited-time offer: Free carrying case with purchase.'",
+        "在五点描述中增加对比语句，例如：'Outperforms competitors in battery life and noise cancellation.'"
+      ]
+    },
+    "overall_score": 81.0,
+    "improvement_priority": [
+      "优化关键词密度，将 'noise cancelling headphones' 和 'active noise cancellation headphones' 自然融入标题和五点描述。",
+      "提升转化潜力，添加社会证明（评价、评分）和价格优势对比。",
+      "完善完整性，增加A+模块和物理规格参数。"
+    ]
+  },
+  "status": "awaiting_review",
+  "error": "",
+  "current_step": "seo_done"
+}

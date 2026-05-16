@@ -1,0 +1,46 @@
+{
+  "mcpServers": {
+    "image-gen": {
+      "command": "node",
+      "args": ["C:\\Users\\YOUR_USERNAME\\Desktop\\Image-Generation-MCP-Server\\build\\index.js"],
+      "env": {
+        "REPLICATE_API_TOKEN": "your-replicate-api-token-here"
+      }
+    },
+    "minimax": {
+      "command": "uvx",
+      "args": ["minimax-mcp"],
+      "env": {
+        "MINIMAX_API_KEY": "your-minimax-api-key-here",
+        "MINIMAX_API_HOST": "https://api.minimax.io"
+      }
+    },
+    "web-scraping": {
+      "command": "npx",
+      "args": ["-y", "webscraping-ai-mcp"]
+    },
+    "amazon-mcp": {
+      "command": "npx",
+      "args": ["-y", "@mcp/amazon-mcp"]
+    },
+    "nlp-sentiment": {
+      "command": "npx",
+      "args": ["-y", "blackmount-nlp-mcp"]
+    },
+    "crontab": {
+      "command": "npx",
+      "args": ["-y", "mcp-crontab-server"]
+    },
+    "wecom-bot": {
+      "command": "npx",
+      "args": ["-y", "wecom-bot-mcp-server"]
+    },
+    "mcp-translate": {
+      "command": "npx",
+      "args": ["-y", "@mcp/deepl-mcp"],
+      "env": {
+        "DEEPL_API_KEY": "your-deepl-api-key-here"
+      }
+    }
+  }
+}

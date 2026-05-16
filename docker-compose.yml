@@ -1,0 +1,123 @@
+version: "3.9"
+
+# =============================================================================
+# Cross-Border Agents — Phase 1: Listing 优化 + 智能客服
+# =============================================================================
+
+services:
+
+  # ── FastAPI Backend ──
+  backend:
+    build:
+      context: .
+      dockerfile: docker/backend.Dockerfile
+    container_name: cb-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - DATABASE_URL=postgresql+asyncpg://${POSTGRES_USER:-cb_user}:${POSTGRES_PASSWORD:-cb_pass_2026}@postgres:5432/${POSTGRES_DB:-crossborder}
+      - REDIS_URL=redis://redis:6379
+      - CHROMA_PERSIST_DIR=/data/chroma
+    volumes:
+      - ./backend:/app/backend
+      - chroma_data:/data/chroma
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - cb-net
+    restart: unless-stopped
+
+  # ── React Frontend (dev) ──
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/frontend.Dockerfile
+    container_name: cb-frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend/src:/app/src
+      - ./frontend/public:/app/public
+      - ./frontend/index.html:/app/index.html
+      - ./frontend/vite.config.ts:/app/vite.config.ts
+      - ./frontend/tsconfig.json:/app/tsconfig.json
+    depends_on:
+      - backend
+    networks:
+      - cb-net
+    restart: unless-stopped
+
+  # ── PostgreSQL ──
+  postgres:
+    image: pgvector/pgvector:pg16  # 含 pgvector 扩展，Phase 2 替代 ChromaDB
+    container_name: cb-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-cb_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-cb_pass_2026}
+      POSTGRES_DB: ${POSTGRES_DB:-crossborder}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./docker/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    networks:
+      - cb-net
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-cb_user} -d ${POSTGRES_DB:-crossborder}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── Redis ──
+  redis:
+    image: redis:7-alpine
+    container_name: cb-redis
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+    networks:
+      - cb-net
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  # ── ChromaDB ──
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: cb-chromadb
+    ports:
+      - "8001:8000"
+    environment:
+      - IS_PERSISTENT=TRUE
+      - PERSIST_DIRECTORY=/chroma/chroma
+    volumes:
+      - chroma_data:/chroma/chroma
+    networks:
+      - cb-net
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/heartbeat"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+
+networks:
+  cb-net:
+    name: cb-net
+    driver: bridge
+
+volumes:
+  postgres_data:
+  redis_data:
+  chroma_data:
