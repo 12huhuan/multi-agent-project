@@ -8,7 +8,7 @@
 
 import { API_BASE } from "./utils";
 
-export type WorkflowType = "listing" | "review" | "social";
+export type WorkflowType = "listing" | "review" | "social" | "selection" | "compliance";
 
 export interface TaskInfo {
   id: string;
@@ -28,6 +28,8 @@ const API_PATHS: Record<WorkflowType, string> = {
   listing: "listing",
   review: "reviews",
   social: "social",
+  selection: "selection",
+  compliance: "compliance",
 };
 
 class TaskStore {
