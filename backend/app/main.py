@@ -23,6 +23,7 @@ from backend.app.api.social import router as social_router
 from backend.app.api.selection import router as selection_router
 from backend.app.api.compliance import router as compliance_router
 from backend.app.api.orchestrator import router as orchestrator_router
+from backend.app.api.ads import router as ads_router
 from backend.app.core.config import settings
 from backend.app.core.db import init_db
 
@@ -63,6 +64,7 @@ app.include_router(social_router)
 app.include_router(selection_router)
 app.include_router(compliance_router)
 app.include_router(orchestrator_router)
+app.include_router(ads_router)
 
 
 @app.get("/health")

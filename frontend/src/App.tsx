@@ -10,6 +10,7 @@ import SelectionPage from "./pages/SelectionPage";
 import CompliancePage from "./pages/CompliancePage";
 import OrchestratorPage from "./pages/OrchestratorPage";
 import PublishedFeedPage from "./pages/PublishedFeedPage";
+import AdsPage from "./pages/AdsPage";
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/compliance" element={<CompliancePage />} />
         <Route path="/orchestrator" element={<OrchestratorPage />} />
         <Route path="/feed" element={<PublishedFeedPage />} />
+        <Route path="/ads" element={<AdsPage />} />
       </Route>
     </Routes>
   );

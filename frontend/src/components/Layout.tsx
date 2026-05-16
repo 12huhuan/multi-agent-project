@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Outlet, NavLink } from "react-router-dom";
-import { LayoutDashboard, FileText, MessageSquare, BookOpen, MessageSquareWarning, Share2, TrendingUp, Shield, Zap, Eye, Loader2 } from "lucide-react";
+import { LayoutDashboard, FileText, MessageSquare, BookOpen, MessageSquareWarning, Share2, TrendingUp, Shield, Zap, Eye, Target, Loader2 } from "lucide-react";
 import { taskStore } from "../lib/TaskStore";
 
 const navItems = [
@@ -14,6 +14,7 @@ const navItems = [
   { to: "/compliance", icon: Shield, label: "合规审查" },
   { to: "/orchestrator", icon: Zap, label: "调度中心" },
   { to: "/feed", icon: Eye, label: "社媒动态" },
+  { to: "/ads", icon: Target, label: "广告管理" },
 ];
 
 export default function Layout() {
