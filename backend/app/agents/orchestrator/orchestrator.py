@@ -25,6 +25,7 @@ class OrchestratorAction(BaseModel):
     reason: str = ""
     status: str = "pending"  # pending | running | done | failed
     result: str = ""
+    data: dict = Field(default_factory=dict)  # 完整结果数据
 
 
 class OrchestratorOutput(BaseModel):
@@ -83,9 +84,10 @@ class OrchestratorAgent(BaseAgent[OrchestratorInput, OrchestratorOutput]):
         notifications = []
         for dec in decisions:
             try:
-                result = await self._execute_action(dec.action, input_data.context)
+                result, data = await self._execute_action(dec.action, input_data.context)
                 dec.status = "done"
-                dec.result = str(result)[:200]
+                dec.result = str(result)[:300]
+                dec.data = data or {}
                 if dec.action == "notify":
                     notifications.append(str(result))
             except Exception as e:
@@ -98,16 +100,16 @@ class OrchestratorAgent(BaseAgent[OrchestratorInput, OrchestratorOutput]):
             notifications=notifications,
         )
 
-    async def _execute_action(self, action: str, ctx: dict) -> Any:
-        """执行具体的调度动作 — 直接调用内部工作流"""
+    async def _execute_action(self, action: str, ctx: dict) -> tuple[str, dict]:
+        """执行具体的调度动作 — 直接调用内部工作流，返回 (摘要, 完整数据)"""
         if action == "select_product":
             if not ctx.get("category"):
-                return "Skipped: no category"
+                return "Skipped: no category", {}
             return await self._run_selection(ctx)
 
         elif action == "run_listing":
             if not ctx.get("product_name"):
-                return "Skipped: no product_name"
+                return "Skipped: no product_name", {}
             return await self._run_listing(ctx)
 
         elif action == "check_compliance":
@@ -115,23 +117,23 @@ class OrchestratorAgent(BaseAgent[OrchestratorInput, OrchestratorOutput]):
 
         elif action == "generate_social":
             if not ctx.get("product_name"):
-                return "Skipped: no product_name"
+                return "Skipped: no product_name", {}
             return await self._run_social(ctx)
 
         elif action == "monitor_reviews":
             if not ctx.get("product_asin"):
-                return "Skipped: no product_asin"
+                return "Skipped: no product_asin", {}
             return await self._run_review_monitor(ctx)
 
         elif action == "notify":
             return await self._send_notification(ctx)
 
         elif action == "approve_and_publish":
-            return "auto-approved chain"
+            return "auto-approved chain", {}
 
-        return f"Unknown action: {action}"
+        return f"Unknown action: {action}", {}
 
-    async def _run_selection(self, ctx: dict) -> str:
+    async def _run_selection(self, ctx: dict) -> tuple[str, dict]:
         try:
             from backend.app.workflows.selection_workflow import selection_workflow, SelectionState
             import uuid
@@ -148,11 +150,15 @@ class OrchestratorAgent(BaseAgent[OrchestratorInput, OrchestratorOutput]):
             result = await selection_workflow.ainvoke(state, {"configurable": {"thread_id": tid}})
             top = result.get("top_pick", "none")
             count = len(result.get("scored_products", []))
-            return f"Found {count} products, top pick: {top}"
+            return f"Found {count} products, top pick: {top}", {
+                "top_pick": top, "product_count": count,
+                "scored_products": result.get("scored_products", []),
+                "category_overview": result.get("category_overview", ""),
+            }
         except Exception as e:
-            return f"Selection failed: {e}"
+            return f"Selection failed: {e}", {"error": str(e)}
 
-    async def _run_listing(self, ctx: dict) -> str:
+    async def _run_listing(self, ctx: dict) -> tuple[str, dict]:
         try:
             from backend.app.workflows.listing_workflow import listing_workflow, ListingState
             import uuid
@@ -169,11 +175,16 @@ class OrchestratorAgent(BaseAgent[OrchestratorInput, OrchestratorOutput]):
                 "status": "running", "error": "", "current_step": "started",
             }
             result = await listing_workflow.ainvoke(state, {"configurable": {"thread_id": tid}})
-            return f"Listing generated: {result.get('best_title', 'N/A')[:60]}"
+            title = result.get("best_title", "N/A")
+            return f"Listing generated: {title[:60]}", {
+                "best_title": title,
+                "bullet_points": result.get("bullet_points", []),
+                "seo_score": result.get("seo_report", {}).get("overall_score", 0),
+            }
         except Exception as e:
-            return f"Listing failed: {e}"
+            return f"Listing failed: {e}", {"error": str(e)}
 
-    async def _run_compliance(self, ctx: dict) -> str:
+    async def _run_compliance(self, ctx: dict) -> tuple[str, dict]:
         try:
             from backend.app.workflows.compliance_workflow import compliance_workflow, ComplianceState
             import uuid
@@ -190,11 +201,17 @@ class OrchestratorAgent(BaseAgent[OrchestratorInput, OrchestratorOutput]):
                 "status": "running", "error": "", "current_step": "started",
             }
             result = await compliance_workflow.ainvoke(state, {"configurable": {"thread_id": tid}})
-            return f"Compliance: {result.get('overall_verdict', 'N/A')}, {result.get('total_issues', 0)} issues"
+            return f"Compliance: {result.get('overall_verdict', 'N/A')}, {result.get('total_issues', 0)} issues", {
+                "verdict": result.get("overall_verdict", ""),
+                "risk_level": result.get("risk_level", ""),
+                "total_issues": result.get("total_issues", 0),
+                "critical_items": result.get("critical_items", []),
+                "action_items": result.get("action_items", []),
+            }
         except Exception as e:
-            return f"Compliance failed: {e}"
+            return f"Compliance failed: {e}", {"error": str(e)}
 
-    async def _run_social(self, ctx: dict) -> str:
+    async def _run_social(self, ctx: dict) -> tuple[str, dict]:
         try:
             from backend.app.workflows.social_workflow import social_workflow, SocialState
             import uuid
@@ -213,12 +230,17 @@ class OrchestratorAgent(BaseAgent[OrchestratorInput, OrchestratorOutput]):
                 "status": "running", "error": "", "current_step": "started",
             }
             result = await social_workflow.ainvoke(state, {"configurable": {"thread_id": tid}})
-            posts = len(result.get("posts", []))
-            return f"Generated {posts} social posts"
+            posts = result.get("posts", [])
+            return f"Generated {len(posts)} social posts", {
+                "post_count": len(posts),
+                "posts": [{"platform": p.get("platform", ""), "copy": p.get("copy", "")[:150],
+                           "hashtags": p.get("hashtags", []), "quality_score": p.get("quality_score", 0)}
+                          for p in posts],
+            }
         except Exception as e:
-            return f"Social failed: {e}"
+            return f"Social failed: {e}", {"error": str(e)}
 
-    async def _run_review_monitor(self, ctx: dict) -> str:
+    async def _run_review_monitor(self, ctx: dict) -> tuple[str, dict]:
         try:
             from backend.app.workflows.review_workflow import review_workflow, ReviewState
             import uuid
@@ -234,17 +256,25 @@ class OrchestratorAgent(BaseAgent[OrchestratorInput, OrchestratorOutput]):
             alerts = result.get("alert_count", 0)
             if alerts > 0:
                 await self._send_notification({"message": f"评论监控预警: {alerts} 条负面预警，请及时处理"})
-            return f"Reviews: {result.get('total_scraped', 0)} scraped, {alerts} alerts"
+            reviews = result.get("reviews", [])
+            return f"Reviews: {result.get('total_scraped', 0)} scraped, {alerts} alerts", {
+                "total_scraped": result.get("total_scraped", 0),
+                "negative_count": result.get("negative_count", 0),
+                "alert_count": alerts,
+                "alerts": [{"reviewer": r.get("reviewer_name", ""), "content": r.get("content", "")[:100],
+                            "alert_level": r.get("alert_level", "none")}
+                           for r in reviews if r.get("alert_level") in ("alert", "critical")][:5],
+            }
         except Exception as e:
-            return f"Review monitor failed: {e}"
+            return f"Review monitor failed: {e}", {"error": str(e)}
 
-    async def _send_notification(self, ctx: dict) -> str:
+    async def _send_notification(self, ctx: dict) -> tuple[str, dict]:
         msg = ctx.get("message", ctx.get("summary", "自动化系统通知"))
         try:
             ok = await send_wecom_message(msg)
-            return f"WeCom notification {'sent' if ok else 'failed (MCP unavailable, logged)'}"
+            return f"WeCom{' sent' if ok else ' unavailable'}", {"sent": ok}
         except Exception:
-            return "Notification logged (WeCom MCP not available)"
+            return "WeCom unavailable", {"sent": False}
 
 try:
     from backend.app.core.wecom import send_wecom_message

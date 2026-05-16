@@ -68,18 +68,68 @@ export default function OrchestratorPage() {
       {lastResult && (
         <div className="bg-white rounded-lg border p-4">
           <h3 className="font-medium text-sm mb-2">最近一次调度</h3>
-          <p className="text-sm text-gray-600 mb-2">{lastResult.summary}</p>
-          <div className="space-y-1">
-            {(lastResult.decisions || []).map((d: any, i: number) => (
-              <div key={i} className="flex items-center gap-2 text-xs">
-                <span className={`px-1.5 py-0.5 rounded ${d.status === 'done' ? 'bg-green-100 text-green-700' : d.status === 'failed' ? 'bg-red-100 text-red-700' : 'bg-gray-100'}`}>
+          <p className="text-sm text-gray-600 mb-3">{lastResult.summary}</p>
+          {(lastResult.decisions || []).map((d: any, i: number) => (
+            <div key={i} className="mb-3 border rounded-lg overflow-hidden">
+              <div className="flex items-center gap-2 p-3 bg-gray-50 text-xs">
+                <span className={`px-1.5 py-0.5 rounded font-medium ${d.status === 'done' ? 'bg-green-100 text-green-700' : d.status === 'failed' ? 'bg-red-100 text-red-700' : 'bg-gray-100'}`}>
                   {d.status || 'pending'}
                 </span>
                 <span className="font-medium">{d.action}</span>
                 <span className="text-gray-500">— {d.reason}</span>
               </div>
-            ))}
-          </div>
+              {d.result && <div className="p-3 text-xs text-gray-700 border-t">{d.result}</div>}
+              {d.data && Object.keys(d.data).length > 0 && (
+                <div className="p-3 border-t bg-gray-50/50 text-xs">
+                  {d.action === 'select_product' && d.data.scored_products && (
+                    <div className="space-y-1">
+                      {d.data.scored_products.slice(0, 5).map((p: any, j: number) => (
+                        <div key={j} className="flex justify-between items-center">
+                          <span>{p.product_name}</span>
+                          <span className="text-gray-500">score: {p.overall_score?.toFixed(1)} | {p.verdict}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  {d.action === 'run_listing' && d.data.best_title && (
+                    <div>
+                      <div className="font-medium mb-1">Best Title:</div>
+                      <div className="text-gray-600">{d.data.best_title}</div>
+                      {d.data.bullet_points && <div className="mt-1 text-gray-500">{d.data.bullet_points.length} bullet points, SEO score: {d.data.seo_score}</div>}
+                    </div>
+                  )}
+                  {d.action === 'check_compliance' && (
+                    <div>
+                      <span className={`font-medium px-1.5 py-0.5 rounded ${d.data.verdict === 'pass' ? 'text-green-700' : d.data.verdict === 'warning' ? 'text-yellow-700' : 'text-red-700'}`}>
+                        {d.data.verdict?.toUpperCase()}
+                      </span>
+                      <span className="ml-2 text-gray-500">{d.data.total_issues} issues, risk: {d.data.risk_level}</span>
+                      {d.data.critical_items?.length > 0 && (
+                        <div className="mt-1 text-red-600">{d.data.critical_items.slice(0, 3).map((c: string, j: number) => <div key={j}>- {c}</div>)}</div>
+                      )}
+                    </div>
+                  )}
+                  {d.action === 'generate_social' && d.data.posts && (
+                    <div className="space-y-1">
+                      {d.data.posts.map((p: any, j: number) => (
+                        <div key={j}>[{p.platform}] score {p.quality_score} — {p.copy?.slice(0, 80)}...</div>
+                      ))}
+                    </div>
+                  )}
+                  {d.action === 'monitor_reviews' && (
+                    <div>
+                      <span>Scraped {d.data.total_scraped}, </span>
+                      <span className="text-red-600">{d.data.negative_count} negative, </span>
+                      <span className="text-red-600 font-medium">{d.data.alert_count} alerts</span>
+                      {d.data.alerts?.length > 0 && (
+                        <div className="mt-1">{d.data.alerts.map((a: any, j: number) => <div key={j} className="text-red-600">- [{a.alert_level}] {a.reviewer}: {a.content?.slice(0, 60)}</div>)}</div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          ))}
         </div>
       )}
 
