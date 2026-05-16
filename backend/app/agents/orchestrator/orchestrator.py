@@ -69,6 +69,9 @@ class OrchestratorAgent(BaseAgent[OrchestratorInput, OrchestratorOutput]):
         return system_prompt, user_prompt
 
     async def run(self, input_data: OrchestratorInput, context: dict | None = None) -> OrchestratorOutput:
+        if input_data.action == "auto":
+            return await self._run_full_pipeline(input_data.context)
+
         system_prompt, user_prompt = self.build_prompt(input_data, context)
         raw = await self._call_llm(system_prompt, user_prompt, max_tokens=1024, temperature=0.2)
         data = self._parse_llm_json(raw)
@@ -97,6 +100,70 @@ class OrchestratorAgent(BaseAgent[OrchestratorInput, OrchestratorOutput]):
         return OrchestratorOutput(
             decisions=decisions,
             summary=data.get("summary", raw[:200]),
+            notifications=notifications,
+        )
+
+    async def _run_full_pipeline(self, ctx: dict) -> OrchestratorOutput:
+        """自动模式: 全流程自动化 — 选品 → Listing → 合规 → 社媒 → 评论监控"""
+        import json
+        decisions = []
+        notifications = []
+        ctx = ctx or {}
+
+        # 如果没给数据，自动生成演示数据
+        if not ctx.get("category"):
+            ctx["category"] = "Kitchen Gadgets"
+        if not ctx.get("product_name"):
+            ctx["product_name"] = "Smart Kitchen Organizer Pro"
+        if not ctx.get("product_asin"):
+            ctx["product_asin"] = "B0EXAMPLE"
+        if not ctx.get("features"):
+            ctx["features"] = ["Premium silicone material", "Smart sensor technology", "Dishwasher safe", "Space-saving design", "Eco-friendly packaging"]
+        if not ctx.get("brand_story"):
+            ctx["brand_story"] = "KitchenPro — innovating smart kitchen solutions since 2018"
+        if not ctx.get("keywords"):
+            ctx["keywords"] = ["kitchen", "organizer", "smart", "silicone", "storage"]
+
+        pipeline = [
+            ("select_product", "Step 1/5: 智能选品 — 分析市场机会"),
+            ("run_listing", "Step 2/5: Listing 优化 — 生成产品页面内容"),
+            ("check_compliance", "Step 3/5: 合规审查 — 检查平台政策合规"),
+            ("generate_social", "Step 4/5: 社媒内容 — 生成推广素材"),
+            ("monitor_reviews", "Step 5/5: 评论监控 — 抓取并分析评论"),
+        ]
+
+        # 流水线累积上下文
+        pipeline_ctx = dict(ctx)
+
+        for action, reason in pipeline:
+            dec = OrchestratorAction(action=action, reason=reason)
+            try:
+                result, data = await self._execute_action(action, pipeline_ctx)
+                dec.status = "done"
+                dec.result = str(result)[:300]
+                dec.data = data or {}
+
+                # 如果选品成功，把 top pick 作为 product_name 继续下几步
+                if action == "select_product" and data.get("top_pick"):
+                    pipeline_ctx["product_name"] = data["top_pick"]
+
+                # 如果 Listing 完成，填入合规需要的上下文
+                if action == "run_listing" and data.get("best_title"):
+                    pipeline_ctx["title"] = data["best_title"]
+                if action == "run_listing" and data.get("bullet_points"):
+                    pipeline_ctx["bullet_points"] = [bp.get("text", "") for bp in data["bullet_points"][:5]]
+                    pipeline_ctx["description"] = data.get("best_title", "")
+
+                if action == "notify":
+                    notifications.append(str(result))
+            except Exception as e:
+                dec.status = "failed"
+                dec.result = str(e)[:200]
+            decisions.append(dec)
+
+        return OrchestratorOutput(
+            decisions=decisions,
+            summary=f"Full pipeline complete: {sum(1 for d in decisions if d.status=='done')}/{len(decisions)} steps succeeded",
             notifications=notifications,
         )
 
