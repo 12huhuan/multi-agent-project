@@ -27,18 +27,27 @@ export default function CustomerServicePage() {
   const [tickets, setTickets] = useState<TicketInfo[]>([]);
   const [ticketLoading, setTicketLoading] = useState(false);
   const [lastTicketId, setLastTicketId] = useState<string | null>(null);
+  const [savedConvs, setSavedConvs] = useState(conversationStore.getAll());
   const chatEndRef = useRef<HTMLDivElement>(null);
 
-  // 恢复上次会话
-  useEffect(() => {
-    const latest = conversationStore.getLatest();
-    if (latest && latest.messages.length > 0) {
-      setConversationId(latest.conversationId);
-      setCustomerId(latest.customerId);
-      setMessages(latest.messages);
-      setHasHistory(true);
+  const refreshSavedConvs = () => setSavedConvs(conversationStore.getAll());
+
+  const restoreConversation = (convId: string, custId: string, msgs: ChatMessage[]) => {
+    setConversationId(convId);
+    setCustomerId(custId);
+    setMessages(msgs);
+    setHasHistory(true);
+  };
+
+  const deleteConversation = (convId: string) => {
+    conversationStore.remove(convId);
+    refreshSavedConvs();
+    if (conversationId === convId) {
+      setConversationId(null);
+      setMessages([]);
+      setHasHistory(false);
     }
-  }, []);
+  };
 
   useEffect(() => {
     return conversationStore.subscribe(() => {
@@ -60,6 +69,7 @@ export default function CustomerServicePage() {
         customerId,
         messages: msgs,
       });
+      refreshSavedConvs();
     }
   };
 
@@ -276,42 +286,28 @@ export default function CustomerServicePage() {
       )}
 
       {!conversationId ? (
-        <div className="max-w-md bg-white rounded-xl border border-slate-200 p-6 space-y-4">
-          {hasHistory && (
-            <button
-              onClick={() => {
-                const latest = conversationStore.getLatest();
-                if (latest) {
-                  setConversationId(latest.conversationId);
-                  setMessages(latest.messages);
-                }
-              }}
-              className="w-full text-left p-3 bg-blue-50 rounded-lg border border-blue-200 hover:bg-blue-100 transition-colors"
-            >
-              <div className="text-sm font-medium text-blue-800">恢复上次对话</div>
-              <div className="text-xs text-blue-500 mt-1">
-                {conversationStore.getLatest()?.messages.length ?? 0} 条消息
-              </div>
-            </button>
-          )}
-
-          <div className="border-t border-slate-100 pt-4">
-            <label className="block text-sm font-medium text-slate-700 mb-2">
-              客户 ID
-            </label>
-            <input
-              type="text"
-              value={customerId}
-              onChange={(e) => setCustomerId(e.target.value)}
-              className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm mb-4"
-            />
-            <button
-              onClick={initConversation}
-              className="w-full bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors"
-            >
-              开始对话
-            </button>
+        <div className="max-w-md mx-auto space-y-4">
+          <div className="bg-white rounded-xl border border-slate-200 p-6">
+            <h3 className="text-sm font-medium text-gray-600 mb-3">新建会话</h3>
+            <input type="text" value={customerId} onChange={(e) => setCustomerId(e.target.value)} placeholder="Customer ID" className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm mb-3" />
+            <button onClick={initConversation} disabled={!customerId.trim()} className="w-full bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 disabled:opacity-50 transition-colors">Start Chat</button>
           </div>
+          {savedConvs.length > 0 && (
+            <div className="bg-white rounded-xl border border-slate-200 p-4">
+              <h3 className="text-sm font-medium text-gray-600 mb-2">历史会话 ({savedConvs.length})</h3>
+              <div className="space-y-2 max-h-64 overflow-auto">
+                {savedConvs.map((conv) => (
+                  <div key={conv.conversationId} className="flex items-center gap-2 p-2 bg-gray-50 rounded-lg text-xs">
+                    <button onClick={() => restoreConversation(conv.conversationId, conv.customerId, conv.messages)} className="flex-1 text-left hover:bg-gray-100 p-1 rounded">
+                      <span className="font-medium">{conv.customerId}</span>
+                      <span className="text-gray-400 ml-2">{conv.messages.length} msgs</span>
+                    </button>
+                    <button onClick={() => deleteConversation(conv.conversationId)} className="text-red-400 hover:text-red-600 px-1">x</button>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       ) : activeTab === "tickets" ? (
         /* 工单面板 */

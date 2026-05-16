@@ -146,9 +146,35 @@ export interface ConversationState {
   messages: ChatMessage[];
 }
 
+const STORAGE_KEY = "cb_conversations";
+
 class ConversationStore {
   private conversations: Map<string, ConversationState> = new Map();
   private listeners: Set<Listener> = new Set();
+
+  constructor() {
+    this.load();
+  }
+
+  private load() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) {
+        const data = JSON.parse(raw);
+        for (const [k, v] of Object.entries(data)) {
+          this.conversations.set(k, v as ConversationState);
+        }
+      }
+    } catch {}
+  }
+
+  private save() {
+    try {
+      const data: Record<string, ConversationState> = {};
+      this.conversations.forEach((v, k) => { data[k] = v; });
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    } catch {}
+  }
 
   subscribe(fn: Listener): () => void {
     this.listeners.add(fn);
@@ -163,6 +189,10 @@ class ConversationStore {
     return this.conversations.get(conversationId);
   }
 
+  getAll(): ConversationState[] {
+    return Array.from(this.conversations.values());
+  }
+
   getLatest(): ConversationState | undefined {
     let latest: ConversationState | undefined;
     for (const c of this.conversations.values()) {
@@ -175,11 +205,13 @@ class ConversationStore {
 
   set(conversationId: string, state: ConversationState) {
     this.conversations.set(conversationId, state);
+    this.save();
     this.notify();
   }
 
   remove(conversationId: string) {
     this.conversations.delete(conversationId);
+    this.save();
     this.notify();
   }
 }
