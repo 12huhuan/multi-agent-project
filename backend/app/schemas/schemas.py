@@ -261,3 +261,37 @@ class SocialPostResponse(BaseModel):
 
 class SocialPostTranslateRequest(BaseModel):
     target_language: str = Field(..., min_length=2, max_length=5)
+
+
+# ═══════════════════════════════════════════════════════════
+# Phase 3: 智能选品
+# ═══════════════════════════════════════════════════════════
+
+class SelectionAnalyzeRequest(BaseModel):
+    category: str = Field(..., min_length=1)
+    keywords: list[str] = Field(default_factory=list)
+    target_market: str = "US"
+    seller_budget: str = "$5000-$15000"
+    seller_strengths: list[str] = Field(default_factory=list)
+
+
+# ═══════════════════════════════════════════════════════════
+# Phase 3: 合规审查
+# ═══════════════════════════════════════════════════════════
+
+class ComplianceReviewRequest(BaseModel):
+    title: str = Field(..., min_length=1)
+    bullet_points: list[str] = Field(default_factory=list)
+    description: str = ""
+    category: str = ""
+    product_features: list[str] = Field(default_factory=list)
+    platform: str = "amazon_us"
+
+
+# ═══════════════════════════════════════════════════════════
+# Phase 3: 调度
+# ═══════════════════════════════════════════════════════════
+
+class OrchestratorRunRequest(BaseModel):
+    action: str = "auto"  # auto | select_product | run_listing | check_compliance | generate_social | monitor_reviews
+    context: dict = Field(default_factory=dict)

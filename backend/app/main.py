@@ -20,6 +20,9 @@ from backend.app.api.customer_service import router as cs_router
 from backend.app.api.knowledge_base import router as kb_router
 from backend.app.api.reviews import router as reviews_router
 from backend.app.api.social import router as social_router
+from backend.app.api.selection import router as selection_router
+from backend.app.api.compliance import router as compliance_router
+from backend.app.api.orchestrator import router as orchestrator_router
 from backend.app.core.config import settings
 from backend.app.core.db import init_db
 
@@ -57,6 +60,9 @@ app.include_router(cs_router)
 app.include_router(kb_router)
 app.include_router(reviews_router)
 app.include_router(social_router)
+app.include_router(selection_router)
+app.include_router(compliance_router)
+app.include_router(orchestrator_router)
 
 
 @app.get("/health")

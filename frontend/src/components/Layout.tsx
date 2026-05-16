@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Outlet, NavLink } from "react-router-dom";
-import { LayoutDashboard, FileText, MessageSquare, BookOpen, MessageSquareWarning, Share2, Loader2 } from "lucide-react";
+import { LayoutDashboard, FileText, MessageSquare, BookOpen, MessageSquareWarning, Share2, TrendingUp, Shield, Zap, Loader2 } from "lucide-react";
 import { taskStore } from "../lib/TaskStore";
 
 const navItems = [
@@ -10,6 +10,9 @@ const navItems = [
   { to: "/knowledge-base", icon: BookOpen, label: "知识库" },
   { to: "/reviews", icon: MessageSquareWarning, label: "评论监控" },
   { to: "/social", icon: Share2, label: "社媒内容" },
+  { to: "/selection", icon: TrendingUp, label: "智能选品" },
+  { to: "/compliance", icon: Shield, label: "合规审查" },
+  { to: "/orchestrator", icon: Zap, label: "调度中心" },
 ];
 
 export default function Layout() {
@@ -30,7 +33,7 @@ export default function Layout() {
       <aside className="w-64 bg-slate-900 text-white p-4 flex flex-col gap-2">
         <div className="text-lg font-bold px-3 py-4 border-b border-slate-700 mb-2">
           CrossBorder Agents
-          <span className="block text-xs text-slate-400 font-normal mt-1">Phase 2 — Review + Social</span>
+          <span className="block text-xs text-slate-400 font-normal mt-1">Phase 3 — Full Automation</span>
         </div>
         <nav className="flex flex-col gap-1">
           {navItems.map(({ to, icon: Icon, label }) => (

@@ -6,6 +6,9 @@ import DashboardPage from "./pages/DashboardPage";
 import KnowledgeBasePage from "./pages/KnowledgeBasePage";
 import ReviewsPage from "./pages/ReviewsPage";
 import SocialMediaPage from "./pages/SocialMediaPage";
+import SelectionPage from "./pages/SelectionPage";
+import CompliancePage from "./pages/CompliancePage";
+import OrchestratorPage from "./pages/OrchestratorPage";
 
 export default function App() {
   return (
@@ -17,6 +20,9 @@ export default function App() {
         <Route path="/knowledge-base" element={<KnowledgeBasePage />} />
         <Route path="/reviews" element={<ReviewsPage />} />
         <Route path="/social" element={<SocialMediaPage />} />
+        <Route path="/selection" element={<SelectionPage />} />
+        <Route path="/compliance" element={<CompliancePage />} />
+        <Route path="/orchestrator" element={<OrchestratorPage />} />
       </Route>
     </Routes>
   );
