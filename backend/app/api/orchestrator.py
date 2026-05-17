@@ -9,8 +9,39 @@ from backend.app.agents.orchestrator.orchestrator import OrchestratorAgent, Orch
 
 router = APIRouter(prefix="/api/v1/orchestrator", tags=["orchestrator"])
 
-_task_states: dict[str, dict] = {}  # task_id → {status, progress, result, ...}
+_task_states: dict[str, dict] = {}
 _logs: list[dict] = []
+
+
+def _merge_result_to_ctx(pipeline_ctx: dict, action: str, data: dict) -> dict:
+    """将当前步骤的结果合并到 pipeline 上下文，供下一步使用"""
+    if action == "select_product" and data.get("top_pick"):
+        pipeline_ctx["product_name"] = data["top_pick"]
+        # 提取选品报告中的 features
+        products = data.get("scored_products", [])
+        if products and isinstance(products[0], dict):
+            first = products[0]
+            if first.get("features"):
+                pipeline_ctx["features"] = first["features"]
+
+    if action == "run_listing":
+        if data.get("best_title"):
+            pipeline_ctx["title"] = data["best_title"]
+            pipeline_ctx["best_title"] = data["best_title"]
+        if data.get("bullet_points"):
+            pipeline_ctx["bullet_points"] = [
+                bp.get("text", "") if isinstance(bp, dict) else str(bp)
+                for bp in data["bullet_points"][:5]
+            ]
+        if data.get("description"):
+            pipeline_ctx["description"] = data["description"]
+        if data.get("seo_score"):
+            pipeline_ctx["seo_score"] = data["seo_score"]
+
+    if action == "generate_social" and data.get("posts"):
+        pipeline_ctx["social_posts"] = data["posts"]
+
+    return pipeline_ctx
 
 
 @router.post("/run")
@@ -32,8 +63,9 @@ async def run_orchestrator(request: OrchestratorRunRequest = None):
 
             if request.action == "auto":
                 ctx = dict(request.context) if request.context else {}
+                pipeline_ctx = await agent._auto_fill_context(ctx, "select_product")
+
                 decisions = []
-                pipeline_ctx = dict(ctx)
                 pipeline = [
                     ("select_product", "Step 1/5: 智能选品"),
                     ("run_listing", "Step 2/5: Listing优化"),
@@ -43,14 +75,17 @@ async def run_orchestrator(request: OrchestratorRunRequest = None):
                 ]
                 for action, label in pipeline:
                     _task_states[task_id]["progress"] = label
+                    # 每步前自动补全上下文
+                    pipeline_ctx = await agent._auto_fill_context(pipeline_ctx, action)
+
                     dec = {"action": action, "reason": label, "status": "running"}
                     try:
                         result_str, data = await agent._execute_action(action, pipeline_ctx)
                         dec["status"] = "done"
                         dec["result"] = str(result_str)[:300]
                         dec["data"] = data or {}
-                        if action == "select_product" and data.get("top_pick"):
-                            pipeline_ctx["product_name"] = data["top_pick"]
+                        # 传递结果到下游
+                        pipeline_ctx = _merge_result_to_ctx(pipeline_ctx, action, data)
                     except Exception as e:
                         dec["status"] = "failed"
                         dec["result"] = str(e)[:200]
@@ -112,7 +147,7 @@ async def get_task_result(task_id: str):
 
 @router.post("/webhook")
 async def orchestrator_webhook(request: dict = {}):
-    """crontab 定时调用的入口 (同步等待, webhook 容忍长时)"""
+    """crontab 定时调用的入口"""
     agent = OrchestratorAgent()
     result = await agent.run(OrchestratorInput(
         action=request.get("action", "auto"),
