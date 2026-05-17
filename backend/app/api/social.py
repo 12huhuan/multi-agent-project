@@ -3,6 +3,7 @@
 import json
 import uuid
 from datetime import datetime
+from pathlib import Path
 
 from fastapi import APIRouter, HTTPException, WebSocket, WebSocketDisconnect
 
@@ -230,32 +231,33 @@ async def approve_post(post_id: str, approved: bool = True):
 
 @router.post("/posts/{post_id}/publish")
 async def publish_post(post_id: str):
-    """发布帖子到 WordPress (Social Engine 插件接管社媒发布)"""
+    """发布帖子 — 通过 SocialPublisher 路由到 WordPress / 小红书"""
     if post_id not in _posts:
         raise HTTPException(status_code=404, detail="Post not found")
 
     p = _posts[post_id]
+    platform = p.get("platform", "").lower().strip()
 
-    # 尝试通过 WordPress REST API 发布
+    # 小红书走浏览器发布通道
+    if platform in ("xiaohongshu", "xhs", "小红书"):
+        return await _publish_to_xiaohongshu(post_id, p)
+
+    # 其他平台走 WordPress
     wp_result = None
     try:
-        from backend.app.core.wordpress import get_wp_client
-        wp = get_wp_client()
-        if await wp.test_connection():
-            wp_result = await wp.publish_social_post(
-                platform=p.get("platform", "instagram"),
-                copy_text=p.get("copy", ""),
-                hashtags=p.get("hashtags", []),
-                image_urls=[img for img in (p.get("image_urls", []) or [])],
-                product_name=p.get("product_name", ""),
-            )
+        from backend.app.gateway.social_publisher import SocialPublisher
+        publisher = SocialPublisher()
+        result = await publisher.publish(p, product_name=p.get("product_name", ""))
+        if result.success:
+            wp_result = result.raw_response or {"wordpress_post_id": result.remote_id, "wordpress_url": result.remote_url}
             p["status"] = "published"
-            p["wp_post_id"] = wp_result.get("wordpress_post_id")
-            p["wp_url"] = wp_result.get("wordpress_url")
+            p["wp_post_id"] = result.remote_id
+            p["wp_url"] = result.remote_url
+        else:
+            wp_result = {"error": "; ".join(result.errors)}
     except Exception as e:
         wp_result = {"error": str(e)}
 
-    # 发布成功 — 无论 WP 是否可用都标记为已发布
     p["status"] = "published"
 
     if wp_result and "error" not in wp_result:
@@ -264,16 +266,45 @@ async def publish_post(post_id: str):
             "status": "published",
             "platform": p.get("platform"),
             "wordpress": wp_result,
-            "message": f"已发布到 WordPress (ID: {wp_result.get('wordpress_post_id')})",
+            "message": f"已发布到 WordPress",
         }
 
     return {
         "post_id": post_id,
         "status": "published",
         "platform": p.get("platform"),
-        "feed_url": f"/feed",
+        "feed_url": "/feed",
         "message": "已发布 — 前往「社媒动态」查看",
     }
+
+
+async def _publish_to_xiaohongshu(post_id: str, p: dict) -> dict:
+    """发布到小红书（Playwright 浏览器自动化）"""
+    try:
+        from backend.app.gateway.social_publisher import SocialPublisher
+        publisher = SocialPublisher()
+        result = await publisher.publish(p, product_name=p.get("product_name", ""))
+
+        if result.success:
+            p["status"] = "published"
+            p["xhs_url"] = result.remote_url
+            return {
+                "post_id": post_id,
+                "status": "published",
+                "platform": "xiaohongshu",
+                "remote_url": result.remote_url,
+                "message": "已发布到小红书",
+            }
+        else:
+            raise HTTPException(
+                status_code=500,
+                detail=f"小红书发布失败: {'; '.join(result.errors)}",
+            )
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"小红书发布异常: {str(e)}")
+    # 注意：不调用 publisher.stop()，浏览器保持打开让人工点击发布按钮
 
 
 @router.websocket("/{task_id}/stream")
@@ -302,3 +333,91 @@ async def social_stream(websocket: WebSocket, task_id: str):
         pass
     except Exception:
         pass
+
+
+# ── 小红书专用端点 ────────────────────────────
+
+@router.get("/xiaohongshu/health")
+async def xiaohongshu_health():
+    """检查小红书 MCP Gateway 状态"""
+    from backend.app.gateway.xiaohongshu_gateway import XiaohongshuGateway
+
+    has_cookies = XiaohongshuGateway.is_logged_in()
+    return {
+        "status": "ok" if has_cookies else "need_login",
+        "has_cookies": has_cookies,
+        "logged_in": has_cookies,
+        "cookie_file": str(Path("data/xhs_mcp_cookies.json")),
+        "hint": "未登录请 POST /api/v1/social/xiaohongshu/login 获取登录命令",
+    }
+
+
+@router.post("/xiaohongshu/login")
+async def xiaohongshu_login(request: dict = {}):
+    """小红书登录 — 返回登录命令，用户在终端执行后输入验证码"""
+    from backend.app.gateway.xiaohongshu_gateway import XiaohongshuGateway
+
+    phone = request.get("phone", "")
+    if not phone:
+        return {
+            "status": "error",
+            "message": "请提供手机号",
+            "hint": "POST /api/v1/social/xiaohongshu/login  Body: {\"phone\": \"13800138000\"}",
+        }
+
+    cookie_path = str(Path("data/xhs_mcp_cookies.json").absolute())
+    cmd = f'env phone={phone} json_path={cookie_path} uvx --from xhs_mcp_server@latest login'
+
+    return {
+        "status": "pending",
+        "message": "请在终端执行以下命令完成登录（输入手机验证码）",
+        "command": cmd,
+        "steps": [
+            "1. 复制上面的 command，在终端粘贴执行",
+            "2. 手机会收到验证码，输入验证码",
+            "3. 看到 'login success' 即完成",
+            "4. 之后回到社媒页面点击「发布」即可",
+        ],
+    }
+
+
+@router.get("/xiaohongshu/posts")
+async def xiaohongshu_posts():
+    """获取已发布的小红书笔记列表"""
+    try:
+        from backend.app.gateway.xiaohongshu_gateway import XiaohongshuGateway
+        gw = XiaohongshuGateway(headless=False)
+        await gw.start()
+        posts = await gw.get_published_posts(max_count=10)
+        await gw.stop()
+        return {"posts": posts}
+    except Exception as e:
+        return {"posts": [], "error": str(e)}
+
+
+@router.post("/xiaohongshu/publish")
+async def xiaohongshu_publish(request: dict = {}):
+    """直接发布到小红书（测试用）"""
+    try:
+        from backend.app.gateway.social_publisher import SocialPublisher
+        publisher = SocialPublisher()
+
+        post = {
+            "platform": "xiaohongshu",
+            "copy": request.get("copy", request.get("content", "")),
+            "short_copy": request.get("title", ""),
+            "hashtags": request.get("hashtags", []),
+            "image_urls": request.get("image_urls", []),
+        }
+
+        result = await publisher.publish(post, product_name=request.get("product_name", ""))
+        await publisher.stop()
+
+        return {
+            "success": result.success,
+            "status": result.status,
+            "errors": result.errors,
+            "remote_url": result.remote_url,
+        }
+    except Exception as e:
+        return {"success": False, "status": "error", "errors": [str(e)]}

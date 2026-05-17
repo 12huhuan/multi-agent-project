@@ -16,6 +16,7 @@ class KeywordResearchInput(BaseModel):
     features: list[str] = Field(default_factory=list)
     target_platform: str = "amazon_us"
     target_language: str = "en"
+    seed_keywords: list[str] = Field(default_factory=list)  # Amazon Autocomplete 真实热词
 
 
 class KeywordItem(BaseModel):
@@ -48,13 +49,20 @@ class KeywordResearchAgent(BaseAgent[KeywordResearchInput, KeywordResearchOutput
 
 输出必须是有效的 JSON 格式。"""
 
+        seed_text = ""
+        if input_data.seed_keywords:
+            seed_text = f"""\n=== 以下是从 Amazon 搜索自动补全获取的真实热门搜索词（按搜索量排序）===
+{", ".join(input_data.seed_keywords[:15])}
+请基于这些真实关键词进行分析，不要凭空编造。补充长尾词和变体，但 top_keywords 优先从上面的词中选取。
+"""
+
         user_prompt = f"""产品名称: {input_data.product_name}
 品类: {input_data.category}
 核心卖点: {", ".join(input_data.features) if input_data.features else "无"}
 目标平台: {input_data.target_platform}
 目标语言: {input_data.target_language}
-
-请分析并输出至少15个关键词，按相关性排序。
+{seed_text}
+请分析并输出至少15个关键词（包含种子词+补充长尾词），按相关性排序。
 返回格式:
 {{
   "keywords": [

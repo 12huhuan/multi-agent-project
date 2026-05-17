@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Search, Star, AlertTriangle, MessageSquare, Check, X, Loader2, RefreshCw } from "lucide-react";
 import { API_BASE } from "../lib/utils";
 import { taskStore } from "../lib/TaskStore";
+import ChartWidget from "../components/ChartWidget";
 
 interface Review {
   id: string;
@@ -268,6 +269,19 @@ export default function ReviewsPage() {
           <RefreshCw size={12} /> 刷新
         </button>
       </div>
+
+      {/* Sentiment Chart */}
+      {reviews.length > 0 && (
+        <ChartWidget
+          type="pie"
+          title="评论情感分布"
+          data={{
+            "正面": reviews.filter(r => r.sentiment === "positive").length,
+            "中性": reviews.filter(r => r.sentiment === "neutral").length,
+            "负面": reviews.filter(r => r.sentiment === "negative").length,
+          }}
+        />
+      )}
 
       {/* Review Cards */}
       <div className="grid gap-4">

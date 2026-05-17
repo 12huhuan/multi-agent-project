@@ -12,7 +12,7 @@ from pydantic import BaseModel, Field
 
 from backend.app.agents.base import BaseAgent
 
-FORCE_ESCALATE_INTENTS = {"refund_request", "complaint", "legal_threat"}
+FORCE_ESCALATE_INTENTS = {"refund_request", "return_request", "complaint", "legal_threat"}
 AUTO_REPLY_INTENTS = {"order_inquiry", "logistics_tracking", "greeting", "stock_inquiry"}
 
 

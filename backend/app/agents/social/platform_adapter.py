@@ -33,6 +33,11 @@ PLATFORM_RULES = {
         "best_practices": "Trend-focused, short catchy sentences, 3-5 trending hashtags, "
                           "emoji-heavy, viral hooks, casual fun tone",
     },
+    "xiaohongshu": {
+        "max_length": 1000, "hashtag_limit": 10,
+        "best_practices": "种草笔记风格，标题≤20字，图文并茂，口语化表达，2-5个话题标签，"
+                          "封面图竖版3:4，内容真实有体验感，避免硬广",
+    },
 }
 
 ANGLE_TEMPLATES = {
@@ -41,6 +46,7 @@ ANGLE_TEMPLATES = {
     "pinterest": "Inspiration board — position as a solution to a problem, with aesthetic appeal and save-worthy tips",
     "facebook": "Community story — tell the brand story and invite discussion, focus on value and community",
     "tiktok": "Trend hook — quick attention-grabbing angle, show transformation or surprise element",
+    "xiaohongshu": "种草笔记 — 真实体验分享，突出使用场景和效果对比，口语化有亲和力，引导互动收藏",
 }
 
 

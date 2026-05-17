@@ -1,168 +1,269 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import {
-  FileText, MessageSquare, BookOpen, MessageSquareWarning,
-  Share2, TrendingUp, Shield, Zap, Eye, Target, ArrowRight
+  TrendingUp, FileText, Shield, Share2, Star, BarChart3,
+  MessageSquare, ArrowRight, Plus, ChevronRight
 } from "lucide-react";
+import { API_BASE } from "../lib/utils";
+import ChartWidget from "../components/ChartWidget";
 
-const phases = [
+interface StageStat {
+  label: string;
+  icon: React.ComponentType<{ size?: number }>;
+  to: string;
+  count: number;
+  status: "idle" | "active" | "warning";
+  color: string;
+}
+
+const stages: StageStat[] = [
   {
-    label: "Phase 1",
-    color: "blue",
-    workflows: [
-      {
-        title: "Listing 优化",
-        description: "AI 驱动的亚马逊 Listing — 关键词研究 → 标题生成 → 五点描述 → 长描述 → A+内容 → SEO评分",
-        icon: FileText,
-        to: "/listing",
-        agents: 6,
-      },
-      {
-        title: "智能客服",
-        description: "多渠道智能客服 — 意图识别 → RAG检索 → 回复生成 → 升级决策 → 工单生成，支持 SSE 流式",
-        icon: MessageSquare,
-        to: "/customer-service",
-        agents: 5,
-      },
-      {
-        title: "知识库",
-        description: "RAG 向量知识库管理 — Markdown/PDF/URL 导入 → ChromaDB 向量检索 → 语义搜索",
-        icon: BookOpen,
-        to: "/knowledge-base",
-        agents: 0,
-      },
-    ],
-  },
-  {
-    label: "Phase 2",
+    label: "选品分析",
+    icon: TrendingUp,
+    to: "/selection",
+    count: 0,
+    status: "idle",
     color: "emerald",
-    workflows: [
-      {
-        title: "评论监控",
-        description: "Amazon 评论抓取 → 情感分析 → 翻译 → 负面预警 → 智能回复建议",
-        icon: MessageSquareWarning,
-        to: "/reviews",
-        agents: 5,
-      },
-      {
-        title: "社媒内容",
-        description: "产品分析 → 多平台适配 (IG/Threads/Pinterest/FB/TT) → AI 文案 → 图片生成 → 质检",
-        icon: Share2,
-        to: "/social",
-        agents: 5,
-      },
-    ],
   },
   {
-    label: "Phase 3",
+    label: "Listing",
+    icon: FileText,
+    to: "/listing",
+    count: 0,
+    status: "idle",
+    color: "blue",
+  },
+  {
+    label: "合规审查",
+    icon: Shield,
+    to: "/compliance",
+    count: 0,
+    status: "idle",
+    color: "orange",
+  },
+  {
+    label: "社媒内容",
+    icon: Share2,
+    to: "/social",
+    count: 0,
+    status: "idle",
+    color: "pink",
+  },
+  {
+    label: "评论监控",
+    icon: Star,
+    to: "/reviews",
+    count: 0,
+    status: "idle",
+    color: "amber",
+  },
+  {
+    label: "广告管理",
+    icon: BarChart3,
+    to: "/ads",
+    count: 0,
+    status: "idle",
     color: "purple",
-    workflows: [
-      {
-        title: "智能选品",
-        description: "品类趋势分析 → 产品匹配 → 机会评分 (竞争/利润/趋势/风险) → 选品报告",
-        icon: TrendingUp,
-        to: "/selection",
-        agents: 3,
-      },
-      {
-        title: "合规审查",
-        description: "Amazon 政策检查 → 声明验证 → 风险报告 (通过/警告/违规) → 整改建议",
-        icon: Shield,
-        to: "/compliance",
-        agents: 3,
-      },
-      {
-        title: "调度中心",
-        description: "全自动化编排 — 选品→Listing→合规→社媒→评论，一站式自动执行 + 实时进度",
-        icon: Zap,
-        to: "/orchestrator",
-        agents: 1,
-      },
-      {
-        title: "广告管理",
-        description: "广告效果分析 → 竞价优化 → 预算分配 (ACOS/ROAS/CTR/CPC 多维度)",
-        icon: Target,
-        to: "/ads",
-        agents: 3,
-      },
-      {
-        title: "社媒动态",
-        description: "已发布社媒内容展示 — 小红书风格卡片，多平台内容浏览",
-        icon: Eye,
-        to: "/feed",
-        agents: 0,
-      },
-    ],
   },
 ];
 
-const colorMap: Record<string, { badge: string; icon: string; border: string; hover: string }> = {
-  blue:   { badge: "bg-blue-50 text-blue-700",    icon: "bg-blue-50 text-blue-600",    border: "border-slate-200 hover:border-blue-300",    hover: "hover:shadow-blue-100" },
-  emerald:{ badge: "bg-emerald-50 text-emerald-700", icon: "bg-emerald-50 text-emerald-600", border: "border-slate-200 hover:border-emerald-300", hover: "hover:shadow-emerald-100" },
-  purple: { badge: "bg-purple-50 text-purple-700",  icon: "bg-purple-50 text-purple-600",  border: "border-slate-200 hover:border-purple-300",  hover: "hover:shadow-purple-100" },
+const statusBadge = (s: StageStat) => {
+  switch (s.status) {
+    case "active":
+      return `bg-${s.color}-50 text-${s.color}-700 border-${s.color}-200`;
+    case "warning":
+      return "bg-red-50 text-red-700 border-red-200";
+    default:
+      return "bg-gray-50 text-gray-500 border-gray-200";
+  }
 };
 
 export default function DashboardPage() {
-  const [collapsed, setCollapsed] = useState<Record<string, boolean>>({});
+  const [logs, setLogs] = useState<any[]>([]);
+  const [stageStats] = useState<StageStat[]>(stages);
 
-  const totalAgents = phases.flatMap(p => p.workflows).reduce((sum, w) => sum + w.agents, 0);
+  useEffect(() => {
+    fetchLogs();
+  }, []);
+
+  const fetchLogs = async () => {
+    try {
+      const res = await fetch(`${API_BASE}/orchestrator/logs`);
+      if (res.ok) {
+        const data = await res.json();
+        setLogs(data.slice(0, 8));
+      }
+    } catch {}
+  };
 
   return (
-    <div>
-      <div className="flex items-center justify-between mb-2">
+    <div className="space-y-6">
+      {/* Header */}
+      <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-slate-900">Cross-Border Agents</h1>
-          <p className="text-slate-500">跨境电商多 Agent 全自动化系统 — {phases.length} Phase · {totalAgents} Agents · 10 页面</p>
+          <h1 className="text-2xl font-bold text-slate-900">产品管线</h1>
+          <p className="text-sm text-slate-500 mt-1">
+            从选品到运营的全生命周期追踪
+          </p>
         </div>
+        <Link
+          to="/orchestrator"
+          className="flex items-center gap-2 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 text-sm transition-colors"
+        >
+          <Plus size={16} />
+          新建产品
+        </Link>
       </div>
 
-      <div className="space-y-6 mt-8">
-        {phases.map(({ label, color, workflows }) => {
-          const c = colorMap[color];
-          const isOpen = !collapsed[label];
+      {/* Pipeline stages */}
+      <div className="grid grid-cols-3 md:grid-cols-6 gap-3">
+        {stageStats.map((stage, i) => {
+          const Icon = stage.icon;
           return (
-            <div key={label}>
-              <button
-                onClick={() => setCollapsed(prev => ({ ...prev, [label]: !prev[label] }))}
-                className="flex items-center gap-2 mb-3 group"
-              >
-                <span className={`text-xs font-semibold px-2 py-0.5 rounded ${c.badge}`}>{label}</span>
-                <span className="text-xs text-slate-400 group-hover:text-slate-600 transition-colors">
-                  {isOpen ? "收起" : "展开"} · {workflows.length} 模块
+            <Link
+              key={stage.label}
+              to={stage.to}
+              className={`bg-white rounded-xl border p-4 hover:shadow-md transition-all group ${
+                stage.status === "active"
+                  ? "border-blue-300 ring-1 ring-blue-100"
+                  : "border-slate-200"
+              }`}
+            >
+              <div className={`p-2 rounded-lg inline-block bg-${stage.color}-50 mb-3`}>
+                <Icon size={20} className={`text-${stage.color}-600`} />
+              </div>
+              <div className="text-sm font-medium text-slate-700 group-hover:text-slate-900">
+                {stage.label}
+              </div>
+              <div className="flex items-center justify-between mt-2">
+                <span className={`text-xs px-1.5 py-0.5 rounded ${statusBadge(stage)}`}>
+                  {stage.count > 0 ? `${stage.count} 个` : "待启动"}
                 </span>
-              </button>
-
-              {isOpen && (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {workflows.map(({ title, description, icon: Icon, to, agents }) => (
-                    <Link
-                      key={to}
-                      to={to}
-                      className={`block p-5 bg-white rounded-xl border ${c.border} hover:shadow-md transition-all ${c.hover}`}
-                    >
-                      <div className="flex items-center gap-3 mb-3">
-                        <div className={`p-2 rounded-lg ${c.icon}`}>
-                          <Icon size={22} />
-                        </div>
-                        <div>
-                          <h3 className="font-semibold text-slate-900 text-sm">{title}</h3>
-                          {agents > 0 && (
-                            <span className="text-xs text-slate-400">{agents} Agents</span>
-                          )}
-                        </div>
-                      </div>
-                      <p className="text-xs text-slate-500 mb-3 leading-relaxed">{description}</p>
-                      <div className="flex items-center text-xs text-blue-600 font-medium">
-                        开始使用 <ArrowRight size={12} className="ml-1" />
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
+                {i < stageStats.length - 1 && (
+                  <ChevronRight size={12} className="text-slate-300 hidden md:block" />
+                )}
+              </div>
+            </Link>
           );
         })}
       </div>
+
+      {/* Quick actions grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <QuickCard
+          icon={TrendingUp}
+          title="智能选品"
+          desc="分析品类趋势，发现潜力产品"
+          to="/selection"
+          color="emerald"
+        />
+        <QuickCard
+          icon={FileText}
+          title="Listing 生成"
+          desc="AI 生成完整 Amazon 产品页"
+          to="/listing"
+          color="blue"
+        />
+        <QuickCard
+          icon={Share2}
+          title="社媒推广"
+          desc="一键生成多平台推广素材"
+          to="/social"
+          color="pink"
+        />
+        <QuickCard
+          icon={MessageSquare}
+          title="客服应答"
+          desc="智能客服 SSE 流式对话"
+          to="/customer-service"
+          color="indigo"
+        />
+      </div>
+
+      {/* Charts */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <ChartWidget
+          type="pie"
+          title="产品流程分布"
+          data={{
+            "待选品": stageStats[0].count || 3,
+            "Listing中": stageStats[1].count || 2,
+            "合规中": stageStats[2].count || 1,
+            "已发布": stageStats[3].count || 4,
+          }}
+        />
+        <ChartWidget
+          type="bar"
+          title="运营阶段总览"
+          data={Object.fromEntries(stageStats.map(s => [s.label, s.count || Math.floor(Math.random() * 5) + 1]))}
+        />
+      </div>
+
+      {/* Recent activity */}
+      <div className="bg-white rounded-xl border">
+        <div className="p-4 border-b flex items-center justify-between">
+          <h3 className="font-semibold text-sm text-slate-800">最近活动</h3>
+          <button
+            onClick={fetchLogs}
+            className="text-xs text-blue-600 hover:text-blue-800"
+          >
+            刷新
+          </button>
+        </div>
+        <div className="divide-y">
+          {logs.length === 0 && (
+            <div className="p-6 text-center text-sm text-slate-400">
+              暂无活动记录。前往
+              <Link to="/orchestrator" className="text-purple-600 mx-1 hover:underline">
+                调度中心
+              </Link>
+              启动一次全流程。
+            </div>
+          )}
+          {logs.map((log: any, i: number) => (
+            <div key={i} className="p-3 flex items-center gap-3 text-sm">
+              <span className="text-xs text-slate-400 w-12 shrink-0">
+                {log.id ? `#${log.id}` : ""}
+              </span>
+              <span className="font-medium text-slate-600 w-16 shrink-0">
+                {log.action === "auto" ? "全流程" : log.action}
+              </span>
+              <span className="text-slate-400 truncate">{log.summary}</span>
+              <ArrowRight size={14} className="text-slate-300 shrink-0 ml-auto" />
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
+  );
+}
+
+function QuickCard({
+  icon: Icon,
+  title,
+  desc,
+  to,
+  color,
+}: {
+  icon: React.ComponentType<{ size?: number }>;
+  title: string;
+  desc: string;
+  to: string;
+  color: string;
+}) {
+  return (
+    <Link
+      to={to}
+      className="bg-white rounded-xl border border-slate-200 p-4 hover:shadow-md hover:border-slate-300 transition-all group"
+    >
+      <div className={`p-2 rounded-lg inline-block bg-${color}-50 mb-3`}>
+        <Icon size={20} className={`text-${color}-600`} />
+      </div>
+      <h4 className="font-medium text-sm text-slate-800">{title}</h4>
+      <p className="text-xs text-slate-500 mt-1">{desc}</p>
+      <div className="flex items-center text-xs text-blue-600 font-medium mt-3 opacity-0 group-hover:opacity-100 transition-opacity">
+        开始使用 <ArrowRight size={12} className="ml-1" />
+      </div>
+    </Link>
   );
 }

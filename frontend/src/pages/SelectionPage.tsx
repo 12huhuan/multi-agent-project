@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { TrendingUp, Target, DollarSign, Star, Loader2 } from "lucide-react";
 import { API_BASE } from "../lib/utils";
 import { taskStore } from "../lib/TaskStore";
+import ChartWidget from "../components/ChartWidget";
 
 export default function SelectionPage() {
   const [category, setCategory] = useState("");
@@ -103,6 +104,32 @@ export default function SelectionPage() {
             <h2 className="font-medium text-lg">Top Pick: {report.top_pick}</h2>
             <p className="text-sm text-gray-600 mt-1">{report.category_overview}</p>
           </div>
+
+          {/* 产品评分对比图 */}
+          {(report.scored_products || []).length > 0 && (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <ChartWidget
+                type="bar"
+                title="产品综合评分对比"
+                data={Object.fromEntries(
+                  (report.scored_products || []).map((p: any) => [p.product_name, p.overall_score || 0])
+                )}
+              />
+              <ChartWidget
+                type="radar"
+                title="Top Pick 多维评分"
+                data={{
+                  "Top Pick": [
+                    report.scored_products?.[0]?.competition_score || 0,
+                    report.scored_products?.[0]?.margin_score || 0,
+                    report.scored_products?.[0]?.trend_score || 0,
+                    report.scored_products?.[0]?.risk_score || 0,
+                  ],
+                }}
+                axes={["竞争度", "利润率", "趋势", "风险"]}
+              />
+            </div>
+          )}
           {(report.scored_products || []).map((p: any, i: number) => (
             <div key={i} className="bg-white rounded-lg border p-4 flex items-center gap-4">
               <div className="flex-1">

@@ -122,7 +122,7 @@ async def send_message(conversation_id: str, request: MessageCreate):
     }
     _messages[conversation_id].append(agent_msg)
 
-    # 如果需要升级，创建工单
+    # 如果需要升级，创建工单 + 发送通知
     if escalation_action in ("escalate", "suggest_human"):
         ticket_data = final_state.get("ticket", {}) or {}
         ticket_id = str(uuid.uuid4())
@@ -135,6 +135,8 @@ async def send_message(conversation_id: str, request: MessageCreate):
             "assigned_to": None,
             "created_at": datetime.now(),
         }
+        import asyncio
+        asyncio.create_task(_notify_ticket(ticket_id, _tickets[ticket_id], final_state))
 
     return MessageResponse(
         id=agent_msg_id,
@@ -263,6 +265,12 @@ async def send_message_stream(conversation_id: str, request: MessageCreate):
                 "assigned_to": None,
                 "created_at": datetime.now(),
             }
+            # 异步发送通知
+            import asyncio
+            asyncio.create_task(_notify_ticket(ticket_id, _tickets[ticket_id], {
+                "intent": intent_result.intent,
+                "user_message": request.content,
+            }))
 
         yield f"event: done\ndata: {json.dumps({'message_id': agent_msg_id, 'intent': intent_result.intent, 'auto_reply': escalation_result.action == 'auto_reply', 'ticket_id': ticket_id, 'escalation_action': escalation_result.action}, ensure_ascii=False)}\n\n"
 
@@ -335,3 +343,25 @@ async def update_ticket(ticket_id: str, update: dict):
         assigned_to=t.get("assigned_to"),
         created_at=t["created_at"],
     )
+
+
+async def _notify_ticket(ticket_id: str, ticket: dict, state: dict):
+    """工单生成后发送通知（邮件 + Server酱）"""
+    try:
+        from backend.app.core.wecom import send_notification
+        priority = ticket.get("priority", "medium")
+        summary = ticket.get("summary", "")
+        intent = state.get("intent", "")
+        user_msg = state.get("user_message", "")[:100]
+
+        title = f"🚨 [{priority.upper()}] 客服工单 #{ticket_id[:8]}"
+        content = (
+            f"意图: {intent}\n"
+            f"用户消息: {user_msg}\n"
+            f"摘要: {summary}\n"
+            f"优先级: {priority}\n"
+            f"状态: 待处理"
+        )
+        await send_notification(title, content)
+    except Exception:
+        pass

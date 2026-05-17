@@ -25,6 +25,7 @@ const PLATFORM_LABELS: Record<string, string> = {
   pinterest: "Pinterest",
   facebook: "Facebook",
   tiktok: "TikTok",
+  xiaohongshu: "小红书",
 };
 
 const PLATFORM_COLORS: Record<string, string> = {
@@ -33,6 +34,7 @@ const PLATFORM_COLORS: Record<string, string> = {
   pinterest: "border-red-200 hover:border-red-400",
   facebook: "border-blue-200 hover:border-blue-400",
   tiktok: "border-slate-300 hover:border-slate-500",
+  xiaohongshu: "border-red-300 hover:border-red-500",
 };
 
 export default function SocialMediaPage() {
@@ -180,6 +182,21 @@ export default function SocialMediaPage() {
       await fetch(`${API_BASE}/social/posts/${postId}/approve?approved=true`, { method: "POST" });
       fetchPosts();
     } catch {}
+  };
+
+  const publishPost = async (postId: string) => {
+    try {
+      const res = await fetch(`${API_BASE}/social/posts/${postId}/publish`, { method: "POST" });
+      const data = await res.json();
+      if (data.status === "published") {
+        alert(`已发布！${data.message || ""}`);
+        fetchPosts();
+      } else {
+        alert("发布失败: " + (data.detail || JSON.stringify(data)));
+      }
+    } catch (e: any) {
+      alert("发布异常: " + e.message);
+    }
   };
 
   const filteredPosts = platformTab === "all" ? posts : posts.filter((p) => p.platform === platformTab);
@@ -380,13 +397,26 @@ export default function SocialMediaPage() {
             )}
 
             <div className="flex items-center gap-2 pt-3 border-t">
-              {post.status !== "approved" && (
+              {post.status !== "approved" && post.status !== "published" && (
                 <button
                   onClick={() => approvePost(post.id)}
                   className="flex items-center gap-1 text-xs text-green-600 hover:text-green-800"
                 >
                   <Check size={12} /> 通过
                 </button>
+              )}
+              {(post.status === "approved") && (
+                <button
+                  onClick={() => publishPost(post.id)}
+                  className="flex items-center gap-1 text-xs bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"
+                >
+                  <Send size={12} /> 发布
+                </button>
+              )}
+              {post.status === "published" && (
+                <span className="flex items-center gap-1 text-xs text-blue-600">
+                  <Check size={12} /> 已发布
+                </span>
               )}
               <div className="flex items-center gap-1">
                 {["zh", "ja", "fr", "de", "es"].map((lang) => (

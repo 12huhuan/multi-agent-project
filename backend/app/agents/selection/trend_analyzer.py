@@ -1,7 +1,10 @@
 """
-趋势分析 Agent — 分析品类市场趋势。
+趋势分析 Agent — LLM 分析品类市场趋势。
 
-根据品类/关键词分析热度、竞争度和增长潜力。
+数据来源:
+  - 主要: LLM 自身市场知识
+  - 可选增强: AmazonDataCollector 通过 Playwright 抓取实时搜索数据
+    调用 /api/v1/selection/scrape 端点手动触发
 """
 
 from pydantic import BaseModel, Field
@@ -17,11 +20,12 @@ class TrendAnalyzerInput(BaseModel):
 
 class TrendItem(BaseModel):
     keyword: str = ""
-    search_trend: str = "stable"  # rising | stable | declining
-    competition_level: str = "medium"  # low | medium | high
+    search_trend: str = "stable"
+    competition_level: str = "medium"
     avg_price_range: str = "$20-$50"
-    growth_potential: str = "medium"  # low | medium | high
+    growth_potential: str = "medium"
     seasonality: str = "year-round"
+    data_source: str = "llm"
 
 
 class TrendAnalyzerOutput(BaseModel):
@@ -30,6 +34,8 @@ class TrendAnalyzerOutput(BaseModel):
     market_size_estimate: str = ""
     top_competitors: list[str] = Field(default_factory=list)
     recommended_niches: list[str] = Field(default_factory=list)
+    raw_search_data: list[dict] = Field(default_factory=list)
+    data_source: str = "llm"
 
 
 class TrendAnalyzerAgent(BaseAgent[TrendAnalyzerInput, TrendAnalyzerOutput]):
@@ -42,7 +48,7 @@ class TrendAnalyzerAgent(BaseAgent[TrendAnalyzerInput, TrendAnalyzerOutput]):
             f"Analyze product categories and identify market trends for {input_data.target_market} market.\n"
             "Rules:\n"
             "- category_overview: 1-paragraph summary of the current market state\n"
-            "- trends: 5-8 keyword trends with search_volume, competition, price range, growth, seasonality\n"
+            "- trends: 5-8 keyword trends with search_trend, competition_level, avg_price_range, growth_potential, seasonality\n"
             "- market_size_estimate: rough estimate (e.g. '$500M/year, growing 15% YoY')\n"
             "- top_competitors: 3-5 leading brands/products\n"
             "- recommended_niches: 3-5 underserved sub-niches with opportunity\n"
@@ -61,7 +67,8 @@ class TrendAnalyzerAgent(BaseAgent[TrendAnalyzerInput, TrendAnalyzerOutput]):
 
         return system_prompt, user_prompt
 
-    async def run(self, input_data: TrendAnalyzerInput, context: dict | None = None) -> TrendAnalyzerOutput:
+    async def run(self, input_data: TrendAnalyzerInput,
+                  context: dict | None = None) -> TrendAnalyzerOutput:
         import time
         system_prompt, user_prompt = self.build_prompt(input_data, context)
         start = time.time()
@@ -69,17 +76,32 @@ class TrendAnalyzerAgent(BaseAgent[TrendAnalyzerInput, TrendAnalyzerOutput]):
         duration_ms = int((time.time() - start) * 1000)
 
         data = self._parse_llm_json(raw)
-        try:
-            trends = [TrendItem(**t) for t in data.get("trends", [])]
-            result = TrendAnalyzerOutput(
-                category_overview=data.get("category_overview", raw[:200]),
-                trends=trends,
-                market_size_estimate=data.get("market_size_estimate", ""),
-                top_competitors=data.get("top_competitors", []),
-                recommended_niches=data.get("recommended_niches", []),
-            )
-        except Exception:
-            result = TrendAnalyzerOutput(category_overview=raw[:200])
+
+        # 容错：LLM 输出字段名可能有轻微差异
+        raw_trends = data.get("trends", [])
+        trends = []
+        for t in raw_trends:
+            try:
+                trends.append(TrendItem(
+                    keyword=t.get("keyword", t.get("term", "")),
+                    search_trend=t.get("search_trend", t.get("trend", "stable")),
+                    competition_level=t.get("competition_level", t.get("competition", "medium")),
+                    avg_price_range=t.get("avg_price_range", t.get("price_range", "$20-$50")),
+                    growth_potential=t.get("growth_potential", t.get("growth", "medium")),
+                    seasonality=t.get("seasonality", t.get("season", "year-round")),
+                    data_source="llm",
+                ))
+            except Exception:
+                pass
+
+        result = TrendAnalyzerOutput(
+            category_overview=data.get("category_overview", raw[:200]),
+            trends=trends,
+            market_size_estimate=data.get("market_size_estimate", ""),
+            top_competitors=data.get("top_competitors", []),
+            recommended_niches=data.get("recommended_niches", []),
+            data_source="llm",
+        )
 
         tid = context.get("task_id") if context else None
         if tid:

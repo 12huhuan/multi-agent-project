@@ -56,6 +56,8 @@ seo_agent = SEOScoringAgent()
 
 async def keyword_research_node(state: ListingState) -> ListingState:
     try:
+        # 如果有从 Amazon Autocomplete 爬取的真实种子关键词，传给 Agent 作为分析基础
+        seed_keywords = state.get("top_keywords", []) or state.get("keywords", [])
         result = await kw_agent.run(
             KeywordResearchInput(
                 product_name=state["product_name"],
@@ -63,11 +65,18 @@ async def keyword_research_node(state: ListingState) -> ListingState:
                 features=state["features"],
                 target_platform=state["target_platform"],
                 target_language=state["target_language"],
+                seed_keywords=seed_keywords if isinstance(seed_keywords, list) else [],
             ),
             context={"task_id": state["task_id"]},
         )
-        state["keywords"] = [k.model_dump() for k in result.keywords]
-        state["top_keywords"] = result.top_keywords
+        # 保留 Amazon 热词 + LLM 分析的合并结果，去重
+        amazon_kws = {kw if isinstance(kw, str) else kw.get("keyword", "") for kw in seed_keywords if kw}
+        llm_kws = [k.model_dump() for k in result.keywords]
+        state["keywords"] = llm_kws
+        # top_keywords 优先用 Amazon 真实热词，LLM 补充
+        combined = [kw for kw in seed_keywords if isinstance(kw, str) and kw]
+        combined += result.top_keywords
+        state["top_keywords"] = list(dict.fromkeys(combined))[:10]  # 去重取前10
         state["current_step"] = "keywords_done"
     except Exception as e:
         state["error"] = str(e)

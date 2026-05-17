@@ -30,6 +30,10 @@ class SelectionState(TypedDict):
     scored_products: list[dict]
     top_pick: str
 
+    # 数据来源追踪
+    raw_search_data: list[dict]
+    data_source: str
+
     status: str
     error: str
     current_step: str
@@ -53,6 +57,8 @@ async def trend_node(state: SelectionState) -> SelectionState:
         state["category_overview"] = result.category_overview
         state["trends"] = [t.model_dump() for t in result.trends]
         state["recommended_niches"] = result.recommended_niches
+        state["raw_search_data"] = result.raw_search_data
+        state["data_source"] = result.data_source
         state["current_step"] = "trend_done"
     except Exception as e:
         state["error"] = str(e)

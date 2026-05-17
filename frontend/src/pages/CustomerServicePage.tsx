@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { API_BASE } from "../lib/utils";
 import { conversationStore, type ChatMessage } from "../lib/TaskStore";
-import { Send, MessageSquare, AlertCircle, Check, Clock, Ticket, RefreshCw } from "lucide-react";
+import { Send, MessageSquare, AlertCircle, Check, Clock, Ticket, RefreshCw, Mic, MicOff } from "lucide-react";
 
 interface TicketInfo {
   id: string;
@@ -19,6 +19,8 @@ export default function CustomerServicePage() {
   const [conversationId, setConversationId] = useState<string | null>(null);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState("");
+  const [isListening, setIsListening] = useState(false);
+  const recognitionRef = useRef<any>(null);
   const [loading, setLoading] = useState(false);
   const [hasHistory, setHasHistory] = useState(false);
   const [streamingText, setStreamingText] = useState("");
@@ -104,6 +106,44 @@ export default function CustomerServicePage() {
     setMessages([]);
     setHasHistory(false);
     persist([]);
+  };
+
+  const toggleVoice = () => {
+    const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+      alert("你的浏览器不支持语音识别，请使用 Chrome");
+      return;
+    }
+
+    if (isListening) {
+      recognitionRef.current?.stop();
+      setIsListening(false);
+      return;
+    }
+
+    const recognition = new SpeechRecognition();
+    recognition.lang = "zh-CN"; // 默认中文，可切换
+    recognition.interimResults = false;
+    recognition.continuous = false;
+    recognition.maxAlternatives = 1;
+
+    recognition.onresult = (event: any) => {
+      const transcript = event.results[0][0].transcript;
+      setInput((prev) => prev + transcript);
+    };
+
+    recognition.onerror = (event: any) => {
+      console.error("语音识别错误:", event.error);
+      setIsListening(false);
+    };
+
+    recognition.onend = () => {
+      setIsListening(false);
+    };
+
+    recognitionRef.current = recognition;
+    recognition.start();
+    setIsListening(true);
   };
 
   const sendMessage = async () => {
@@ -463,6 +503,18 @@ export default function CustomerServicePage() {
                 disabled={loading}
                 className="flex-1 px-3 py-2 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 disabled:opacity-50"
               />
+              <button
+                onClick={toggleVoice}
+                disabled={loading}
+                className={`px-3 py-2 rounded-lg transition-colors ${
+                  isListening
+                    ? "bg-red-500 text-white animate-pulse"
+                    : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                }`}
+                title={isListening ? "停止录音" : "语音输入"}
+              >
+                {isListening ? <MicOff size={18} /> : <Mic size={18} />}
+              </button>
               <button
                 onClick={sendMessage}
                 disabled={loading || !input.trim()}
