@@ -40,11 +40,14 @@ class BaseAgent(ABC, Generic[I, O]):
         from backend.app.core.llm_provider import get_llm
 
         llm = get_llm()
-        response = await llm.chat([
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt},
-        ], **kwargs)
-        return response.content
+        try:
+            response = await llm.chat([
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ], **kwargs)
+            return response.content
+        finally:
+            await llm.close()
 
     async def _call_llm_stream(self, system_prompt: str, user_prompt: str, **kwargs):
         """流式调用 LLM，逐 token yield。"""
