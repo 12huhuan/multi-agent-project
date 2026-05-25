@@ -25,6 +25,7 @@ from backend.app.api.compliance import router as compliance_router
 from backend.app.api.orchestrator import router as orchestrator_router
 from backend.app.api.ads import router as ads_router
 from backend.app.api.charts import router as charts_router
+from backend.app.api.router import router as nl_router
 from backend.app.core.config import settings
 from backend.app.core.db import init_db, run_migrations
 
@@ -45,7 +46,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title=settings.app_name,
     version=settings.version,
-    description="跨境电商多 Agent 系统 — Phase 1+2: Listing + 客服 + 评论监控 + 社媒内容",
+    description="跨境电商多 Agent 系统 — NL路由 + 3链路(选品上架/营销推广/售后监控) + 全链路调度",
     lifespan=lifespan,
 )
 
@@ -68,6 +69,7 @@ app.include_router(compliance_router)
 app.include_router(orchestrator_router)
 app.include_router(ads_router)
 app.include_router(charts_router)
+app.include_router(nl_router)
 
 
 @app.get("/health")
@@ -82,6 +84,16 @@ async def health_check():
 @app.get("/api/agents")
 async def list_agents():
     return {
+        "router": {
+            "name": "nl_router",
+            "description": "自然语言路由 Agent — 意图识别 + 链路分发",
+            "chains": [
+                {"id": "selection_listing", "name": "选品上架链", "flow": "selection → listing → compliance"},
+                {"id": "marketing", "name": "营销推广链", "flow": "social → ads"},
+                {"id": "aftersales", "name": "售后监控链", "flow": "review → customer_service"},
+                {"id": "full_pipeline", "name": "全链路调度", "flow": "选品上架 → 营销推广 → 售后监控"},
+            ],
+        },
         "agents": [
             # Phase 1: Listing
             {"name": "keyword_research", "workflow": "listing", "description": "关键词研究与搜索意图分析"},
