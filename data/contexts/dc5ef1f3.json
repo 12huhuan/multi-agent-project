@@ -1,0 +1,139 @@
+{
+  "product_id": "dc5ef1f3",
+  "current_stage": "monitored",
+  "created_at": "2026-05-19T07:36:59.270582Z",
+  "updated_at": "2026-05-19T07:40:01.595690Z",
+  "version": 6,
+  "identity": {
+    "product_id": "ef7b9461-cf1b-45be-b888-2e22cc29c547",
+    "category": "",
+    "subcategory": null,
+    "brand_name": null,
+    "brand_story": null,
+    "target_market": "US",
+    "language": "en",
+    "seller_budget": "$5000-$15000",
+    "seller_strengths": [],
+    "platforms": []
+  },
+  "market_insight": {
+    "category_overview": "",
+    "market_size_estimate": "",
+    "market_growth_trend": "",
+    "top_competitors": [],
+    "recommended_niches": [],
+    "top_pick_product": "",
+    "scored_alternatives": [],
+    "inferred_selling_points": [],
+    "inferred_target_audience": "",
+    "inferred_price_range": "",
+    "inferred_material": null,
+    "competitor_keywords": [],
+    "differentiation_angle": "",
+    "extraction_confidence": 0.0
+  },
+  "listing": {
+    "keywords": [],
+    "top_keywords": [],
+    "title_candidates": [],
+    "best_title": "",
+    "bullet_points": [],
+    "description_html": "",
+    "a_plus_modules": [],
+    "seo_report": {},
+    "human_approved": false
+  },
+  "compliance": {
+    "policy_issues": [
+      {
+        "location": "Title",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The title contains the phrase 'Best Quality', which is a prohibited superlative claim.",
+        "suggestion": "Remove 'Best Quality' and replace with factual descriptors like 'High Quality' or 'Premium'."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Pricing/Promotional Language",
+        "severity": "Medium",
+        "description": "Bullet point includes 'Limited Time Offer - 50% Off', which is promotional pricing language not allowed in standard listings.",
+        "suggestion": "Remove promotional pricing language. Use only factual product features."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Medical/Health Claims",
+        "severity": "High",
+        "description": "The description states 'Cures headaches and improves vision', which is an unapproved medical claim.",
+        "suggestion": "Remove all medical claims unless the product is approved for such claims. Use only general wellness language."
+      },
+      {
+        "location": "Title",
+        "issue_type": "Formatting Issues",
+        "severity": "Low",
+        "description": "The title uses all capital letters for 'AMAZING PRODUCT', which violates formatting guidelines.",
+        "suggestion": "Use standard capitalization (e.g., 'Amazing Product')."
+      }
+    ],
+    "claim_issues": [],
+    "overall_verdict": "",
+    "risk_level": "medium",
+    "total_issues": 4,
+    "critical_items": [],
+    "action_items": [
+      "Remove 'Best Quality' and replace with factual descriptors like 'High Quality' or 'Premium'.",
+      "Remove promotional pricing language. Use only factual product features.",
+      "Remove all medical claims unless the product is approved for such claims. Use only general wellness language.",
+      "Use standard capitalization (e.g., 'Amazing Product')."
+    ],
+    "human_reviewed": false
+  },
+  "social": {
+    "marketing_angles": [],
+    "target_audience": "",
+    "content_tones": [],
+    "key_selling_points": [],
+    "visual_style": [],
+    "hashtag_themes": [],
+    "posts": [],
+    "human_approved": false
+  },
+  "platform": {
+    "asin": null,
+    "amazon_url": null,
+    "amazon_publish_status": "draft",
+    "amazon_publish_errors": [],
+    "amazon_published_at": null,
+    "social_publish_status": {},
+    "social_post_urls": {}
+  },
+  "reviews": {
+    "total_reviews": 10,
+    "average_rating": 0.0,
+    "sentiment_distribution": {},
+    "negative_alert_count": 3,
+    "top_alerts": [
+      {
+        "reviewer": "Emily K.",
+        "content": "Disappointed with the quality. Stopped working after 2 weeks.",
+        "alert_level": "alert"
+      },
+      {
+        "reviewer": "Tom S.",
+        "content": "Defective unit. Doesn't turn on.",
+        "alert_level": "critical"
+      },
+      {
+        "reviewer": "David P.",
+        "content": "Color doesn't match the photos. Returning it.",
+        "alert_level": "alert"
+      }
+    ],
+    "last_monitored_at": "2026-05-19T07:40:01.595690Z"
+  },
+  "ads": {
+    "campaigns": [],
+    "total_budget": 0.0,
+    "total_spend": 0.0,
+    "acos": null
+  }
+}

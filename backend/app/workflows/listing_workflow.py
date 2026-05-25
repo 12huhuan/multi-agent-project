@@ -1,8 +1,8 @@
 """
-Listing 优化工作流 — LangGraph StateGraph。
+Listing 生成工作流 — LangGraph StateGraph。
 
 Agent 链:
-产品输入 → [1.关键词研究] → [2.标题生成] → [3.五点描述] → [4.长描述] → [5.A+内容] → [6.SEO评分] → Human Review
+产品输入 → [1.关键词研究] → [2.标题生成] → [3.五点描述] → [4.长描述] → [5.A+内容] → [6.产品图片] → [7.SEO评分] → Human Review
 """
 
 from typing import TypedDict
@@ -15,6 +15,7 @@ from backend.app.agents.listing.title_generation import TitleGenerationAgent, Ti
 from backend.app.agents.listing.bullet_points import BulletPointsAgent, BulletPointsInput
 from backend.app.agents.listing.description import DescriptionAgent, DescriptionInput
 from backend.app.agents.listing.aplus_content import APlusContentAgent, APlusContentInput
+from backend.app.agents.listing.product_images import ProductImageAgent, ProductImageInput
 from backend.app.agents.listing.seo_scoring import SEOScoringAgent, SEOScoringInput
 
 
@@ -37,6 +38,7 @@ class ListingState(TypedDict):
     bullet_points: list[dict]
     description_html: str
     a_plus_modules: list[dict]
+    product_images: list[dict]
     seo_report: dict
 
     # 状态
@@ -51,6 +53,7 @@ title_agent = TitleGenerationAgent()
 bp_agent = BulletPointsAgent()
 desc_agent = DescriptionAgent()
 aplus_agent = APlusContentAgent()
+img_agent = ProductImageAgent()
 seo_agent = SEOScoringAgent()
 
 
@@ -179,6 +182,27 @@ async def aplus_content_node(state: ListingState) -> ListingState:
     return state
 
 
+async def product_images_node(state: ListingState) -> ListingState:
+    if state["status"] == "failed":
+        return state
+    try:
+        result = await img_agent.run(
+            ProductImageInput(
+                product_name=state["product_name"],
+                category=state.get("category", ""),
+                features=state.get("features", []),
+                image_descriptions=state.get("image_descriptions", []),
+            ),
+            context={"task_id": state["task_id"]},
+        )
+        state["product_images"] = [img.model_dump() for img in result.images]
+        state["current_step"] = "images_done"
+    except Exception as e:
+        state["error"] = str(e)
+        state["status"] = "failed"
+    return state
+
+
 async def seo_scoring_node(state: ListingState) -> ListingState:
     if state["status"] == "failed":
         return state
@@ -205,7 +229,7 @@ async def seo_scoring_node(state: ListingState) -> ListingState:
 
 
 def build_listing_workflow() -> StateGraph:
-    """构建 Listing 优化 LangGraph 工作流"""
+    """构建 Listing 生成 LangGraph 工作流"""
     workflow = StateGraph(ListingState)
 
     workflow.add_node("keyword_research", keyword_research_node)
@@ -213,6 +237,7 @@ def build_listing_workflow() -> StateGraph:
     workflow.add_node("bullet_points", bullet_points_node)
     workflow.add_node("description", description_node)
     workflow.add_node("aplus_content", aplus_content_node)
+    workflow.add_node("product_images", product_images_node)
     workflow.add_node("seo_scoring", seo_scoring_node)
 
     workflow.set_entry_point("keyword_research")
@@ -220,7 +245,8 @@ def build_listing_workflow() -> StateGraph:
     workflow.add_edge("title_generation", "bullet_points")
     workflow.add_edge("bullet_points", "description")
     workflow.add_edge("description", "aplus_content")
-    workflow.add_edge("aplus_content", "seo_scoring")
+    workflow.add_edge("aplus_content", "product_images")
+    workflow.add_edge("product_images", "seo_scoring")
     workflow.add_edge("seo_scoring", END)
 
     return workflow

@@ -1,0 +1,102 @@
+{
+  "product_id": "8706a70a",
+  "current_stage": "listed",
+  "created_at": "2026-05-17T04:57:26.335814Z",
+  "updated_at": "2026-05-17T04:57:26.335814Z",
+  "version": 3,
+  "identity": {
+    "product_id": "027575d1-960e-4cb1-a27f-8eb0d78b47ed",
+    "category": "Yoga Pants",
+    "subcategory": null,
+    "brand_name": null,
+    "brand_story": null,
+    "target_market": "US",
+    "language": "en",
+    "seller_budget": "$5000-$15000",
+    "seller_strengths": [],
+    "platforms": []
+  },
+  "market_insight": {
+    "category_overview": "The yoga pants market is growing...",
+    "market_size_estimate": "",
+    "market_growth_trend": "",
+    "top_competitors": [],
+    "recommended_niches": [
+      "eco yoga pants"
+    ],
+    "top_pick_product": "High-Waist Yoga Pants",
+    "scored_alternatives": [
+      {
+        "product_name": "High-Waist Yoga Pants",
+        "overall_score": 7.5
+      }
+    ],
+    "inferred_selling_points": [],
+    "inferred_target_audience": "",
+    "inferred_price_range": "",
+    "inferred_material": null,
+    "competitor_keywords": [],
+    "differentiation_angle": "",
+    "extraction_confidence": 0.0
+  },
+  "listing": {
+    "keywords": [],
+    "top_keywords": [],
+    "title_candidates": [],
+    "best_title": "Premium High-Waist Yoga Pants",
+    "bullet_points": [
+      {
+        "text": "4-way stretch"
+      }
+    ],
+    "description_html": "<p>Test</p>",
+    "a_plus_modules": [],
+    "seo_report": {
+      "overall_score": 85.0
+    },
+    "human_approved": false
+  },
+  "compliance": {
+    "policy_issues": [],
+    "claim_issues": [],
+    "overall_verdict": "",
+    "risk_level": "",
+    "total_issues": 0,
+    "critical_items": [],
+    "action_items": [],
+    "human_reviewed": false
+  },
+  "social": {
+    "marketing_angles": [],
+    "target_audience": "",
+    "content_tones": [],
+    "key_selling_points": [],
+    "visual_style": [],
+    "hashtag_themes": [],
+    "posts": [],
+    "human_approved": false
+  },
+  "platform": {
+    "asin": null,
+    "amazon_url": null,
+    "amazon_publish_status": "draft",
+    "amazon_publish_errors": [],
+    "amazon_published_at": null,
+    "social_publish_status": {},
+    "social_post_urls": {}
+  },
+  "reviews": {
+    "total_reviews": 0,
+    "average_rating": 0.0,
+    "sentiment_distribution": {},
+    "negative_alert_count": 0,
+    "top_alerts": [],
+    "last_monitored_at": null
+  },
+  "ads": {
+    "campaigns": [],
+    "total_budget": 0.0,
+    "total_spend": 0.0,
+    "acos": null
+  }
+}

@@ -14,6 +14,14 @@ CREATE TABLE IF NOT EXISTS listing_tasks (
     target_language TEXT NOT NULL DEFAULT 'en',
     features JSONB DEFAULT '[]',
     brand_story TEXT,
+    status TEXT NOT NULL DEFAULT 'pending',
+    keywords JSONB DEFAULT '[]',
+    top_keywords JSONB DEFAULT '[]',
+    title_candidates JSONB DEFAULT '[]',
+    bullet_points JSONB DEFAULT '[]',
+    description_html TEXT DEFAULT '',
+    a_plus_modules JSONB DEFAULT '[]',
+    seo_report JSONB DEFAULT '{}',
     created_at TIMESTAMPTZ DEFAULT NOW(),
     updated_at TIMESTAMPTZ DEFAULT NOW()
 );
@@ -81,3 +89,28 @@ CREATE INDEX IF NOT EXISTS idx_agent_executions_task ON agent_executions(task_id
 CREATE INDEX IF NOT EXISTS idx_messages_conversation ON messages(conversation_id);
 CREATE INDEX IF NOT EXISTS idx_tickets_status ON tickets(status);
 CREATE INDEX IF NOT EXISTS idx_listing_tasks_status ON listing_tasks(status);
+
+-- 社媒图片 (独立存储，与帖子关联)
+CREATE TABLE IF NOT EXISTS social_images (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    post_id UUID REFERENCES social_posts(id) ON DELETE CASCADE,
+    url TEXT DEFAULT '',
+    alt_text TEXT,
+    prompt TEXT,
+    storage_path TEXT,
+    width INTEGER,
+    height INTEGER,
+    format TEXT,
+    created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_social_images_post ON social_images(post_id);
+
+-- Phase 2/3 增量：为 listing_tasks 补齐生成结果列 (ALTER TABLE 幂等需要手动跑，此处记录)
+-- ALTER TABLE listing_tasks ADD COLUMN IF NOT EXISTS keywords JSONB DEFAULT '[]';
+-- ALTER TABLE listing_tasks ADD COLUMN IF NOT EXISTS top_keywords JSONB DEFAULT '[]';
+-- ALTER TABLE listing_tasks ADD COLUMN IF NOT EXISTS title_candidates JSONB DEFAULT '[]';
+-- ALTER TABLE listing_tasks ADD COLUMN IF NOT EXISTS bullet_points JSONB DEFAULT '[]';
+-- ALTER TABLE listing_tasks ADD COLUMN IF NOT EXISTS description_html TEXT DEFAULT '';
+-- ALTER TABLE listing_tasks ADD COLUMN IF NOT EXISTS a_plus_modules JSONB DEFAULT '[]';
+-- ALTER TABLE listing_tasks ADD COLUMN IF NOT EXISTS seo_report JSONB DEFAULT '{}';

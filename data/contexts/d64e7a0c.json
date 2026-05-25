@@ -1,0 +1,614 @@
+{
+  "product_id": "d64e7a0c",
+  "current_stage": "monitored",
+  "created_at": "2026-05-17T04:48:43.999294Z",
+  "updated_at": "2026-05-17T04:51:38.467424Z",
+  "version": 6,
+  "identity": {
+    "product_id": "38f962ab-0415-4131-b37c-e4e5b91cbb97",
+    "category": "Smart Watch",
+    "subcategory": null,
+    "brand_name": null,
+    "brand_story": null,
+    "target_market": "US",
+    "language": "en",
+    "seller_budget": "$5000-$15000",
+    "seller_strengths": [],
+    "platforms": []
+  },
+  "market_insight": {
+    "category_overview": "The smartwatch market on Amazon US is highly competitive and mature, driven by health-conscious consumers and tech enthusiasts. Key players dominate with advanced health tracking, seamless smartphone integration, and premium designs. The market is shifting towards affordable alternatives with specialized features like blood pressure monitoring, sleep tracking, and rugged durability for outdoor use. Growth is fueled by increasing adoption of wearable tech for fitness and chronic disease management.",
+    "market_size_estimate": "",
+    "market_growth_trend": "",
+    "top_competitors": [],
+    "recommended_niches": [
+      "Smart watches with FDA-cleared blood pressure monitoring for hypertension management",
+      "Rugged smart watches with thermal imaging for outdoor professionals",
+      "Smart watches with fall detection and emergency alerts for seniors",
+      "Eco-friendly smart watches with solar charging and recycled materials",
+      "Smart watches with built-in CGM (continuous glucose monitor) integration for diabetics"
+    ],
+    "top_pick_product": "blood pressure smart watch",
+    "scored_alternatives": [
+      {
+        "product_name": "smart watch for women",
+        "competition_score": 6.0,
+        "margin_score": 6.0,
+        "trend_score": 7.0,
+        "risk_score": 7.0,
+        "overall_score": 6.5,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "blood pressure smart watch",
+        "competition_score": 7.0,
+        "margin_score": 7.0,
+        "trend_score": 9.0,
+        "risk_score": 6.0,
+        "overall_score": 7.3,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "kids smart watch",
+        "competition_score": 6.0,
+        "margin_score": 6.0,
+        "trend_score": 7.0,
+        "risk_score": 7.0,
+        "overall_score": 6.5,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "rugged smart watch",
+        "competition_score": 6.0,
+        "margin_score": 6.0,
+        "trend_score": 6.0,
+        "risk_score": 7.0,
+        "overall_score": 6.3,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "smart watch with GPS",
+        "competition_score": 5.0,
+        "margin_score": 6.0,
+        "trend_score": 5.0,
+        "risk_score": 6.0,
+        "overall_score": 5.5,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "fitness tracker smart watch",
+        "competition_score": 5.0,
+        "margin_score": 6.0,
+        "trend_score": 5.0,
+        "risk_score": 6.0,
+        "overall_score": 5.5,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "smart watch for seniors",
+        "competition_score": 7.0,
+        "margin_score": 7.0,
+        "trend_score": 8.0,
+        "risk_score": 7.0,
+        "overall_score": 7.3,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      }
+    ],
+    "inferred_selling_points": [],
+    "inferred_target_audience": "",
+    "inferred_price_range": "",
+    "inferred_material": null,
+    "competitor_keywords": [],
+    "differentiation_angle": "",
+    "extraction_confidence": 0.0
+  },
+  "listing": {
+    "keywords": [
+      {
+        "keyword": "blood pressure smart watch",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 100.0
+      },
+      {
+        "keyword": "smart watch with blood pressure monitor",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 95.0
+      },
+      {
+        "keyword": "blood pressure monitor watch",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 90.0
+      },
+      {
+        "keyword": "health smart watch",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "fitness tracker blood pressure",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "ergonomic smart watch",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "durable smart watch for men",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 70.0
+      },
+      {
+        "keyword": "easy to use blood pressure watch",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "premium smart watch for health",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 78.0
+      },
+      {
+        "keyword": "long lasting battery smart watch",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 72.0
+      },
+      {
+        "keyword": "eco-friendly smart watch",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 65.0
+      },
+      {
+        "keyword": "blood pressure watch for seniors",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 88.0
+      },
+      {
+        "keyword": "smart watch for hypertension",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 82.0
+      },
+      {
+        "keyword": "best blood pressure smart watch 2025",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 90.0
+      },
+      {
+        "keyword": "affordable blood pressure watch",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "waterproof blood pressure smart watch",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 76.0
+      },
+      {
+        "keyword": "smart watch with heart rate and blood pressure",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 92.0
+      },
+      {
+        "keyword": "blood pressure tracking watch",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 85.0
+      }
+    ],
+    "top_keywords": [
+      "blood pressure smart watch",
+      "smart watch with blood pressure monitor",
+      "blood pressure monitor watch",
+      "smart watch with heart rate and blood pressure",
+      "best blood pressure smart watch 2025"
+    ],
+    "title_candidates": [
+      {
+        "title": "FitTrack Blood Pressure Smart Watch with Heart Rate Monitor, Ergonomic Design, Durable Smart Watch for Men Women, Blood Pressure Monitor Watch for Daily Health Tracking",
+        "score": 92,
+        "char_count": 168,
+        "keyword_coverage": [
+          "blood pressure smart watch",
+          "smart watch with heart rate and blood pressure",
+          "blood pressure monitor watch"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "HealthPro Blood Pressure Monitor Watch, Smart Watch with Blood Pressure and Heart Rate, Premium Quality Ergonomic Smart Watch for Adults, Easy to Use Durable Fitness Tracker",
+        "score": 88,
+        "char_count": 174,
+        "keyword_coverage": [
+          "blood pressure monitor watch",
+          "smart watch with blood pressure monitor",
+          "smart watch with heart rate and blood pressure"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "VitalSync Smart Watch with Blood Pressure Monitor, Best Blood Pressure Smart Watch 2025, Ergonomic Durable Design for Men Women, Heart Rate and Blood Pressure Tracking Watch",
+        "score": 85,
+        "char_count": 178,
+        "keyword_coverage": [
+          "smart watch with blood pressure monitor",
+          "best blood pressure smart watch 2025",
+          "blood pressure smart watch"
+        ],
+        "compliance_issues": [
+          "'Best' may be considered subjective claim; use cautiously"
+        ]
+      }
+    ],
+    "best_title": "FitTrack Blood Pressure Smart Watch with Heart Rate Monitor, Ergonomic Design, Durable Smart Watch for Men Women, Blood Pressure Monitor Watch for Daily Health Tracking",
+    "bullet_points": [
+      {
+        "text": "Accurately monitor your blood pressure and heart rate in real-time with this advanced blood pressure smart watch, designed for effortless health tracking throughout your day.",
+        "feature_highlighted": "Real-time blood pressure and heart rate monitoring",
+        "benefit_highlighted": "Effortless health tracking"
+      },
+      {
+        "text": "Crafted from premium quality materials with an ergonomic design, this smart watch with blood pressure monitor ensures durability and all-day comfort, making it the best blood pressure smart watch 2025 for daily wear.",
+        "feature_highlighted": "Premium quality materials and ergonomic design",
+        "benefit_highlighted": "Durability and all-day comfort"
+      },
+      {
+        "text": "Enjoy easy-to-use functionality with a touchscreen interface and intuitive controls, allowing you to quickly access your blood pressure monitor watch readings and other health metrics.",
+        "feature_highlighted": "Easy-to-use touchscreen interface",
+        "benefit_highlighted": "Quick access to health metrics"
+      },
+      {
+        "text": "Built to last with a durable construction and long-lasting battery, this smart watch with heart rate and blood pressure supports your active lifestyle without frequent recharging.",
+        "feature_highlighted": "Durable construction and long-lasting battery",
+        "benefit_highlighted": "Supports active lifestyle without frequent recharging"
+      },
+      {
+        "text": "Committed to sustainability, this blood pressure smart watch comes in eco-friendly packaging, reducing environmental impact while delivering reliable health monitoring features.",
+        "feature_highlighted": "Eco-friendly packaging",
+        "benefit_highlighted": "Reduces environmental impact"
+      }
+    ],
+    "description_html": "<h3>Brand Introduction</h3><p>Track your heart and your rhythm with a <b>blood pressure smart watch</b> that blends medical-grade precision into everyday style—because your health shouldn't require a second screen. This <b>smart watch with blood pressure monitor</b> is designed for those who value both accuracy and elegance, making it the <b>best blood pressure smart watch 2025</b> for proactive health management.</p><h3>Product Parameters</h3><ul><li><b>Display:</b> High-resolution touchscreen interface</li><li><b>Sensors:</b> Advanced optical heart rate and blood pressure sensors</li><li><b>Battery:</b> Long-lasting rechargeable battery (up to 7 days typical use)</li><li><b>Materials:</b> Premium quality materials including stainless steel and hypoallergenic silicone</li><li><b>Water Resistance:</b> IP68 rated for daily wear and sweat resistance</li><li><b>Compatibility:</b> iOS and Android via dedicated app</li></ul><h3>Core Selling Points</h3><ul><li><b>Accurate Health Monitoring:</b> Accurately monitor your blood pressure and heart rate in real-time with this advanced <b>blood pressure smart watch</b>, designed for effortless health tracking throughout your day.</li><li><b>Premium & Ergonomic Design:</b> Crafted from premium quality materials with an ergonomic design, this <b>smart watch with blood pressure monitor</b> ensures durability and all-day comfort, making it the <b>best blood pressure smart watch 2025</b> for daily wear.</li><li><b>Easy-to-Use Functionality:</b> Enjoy easy-to-use functionality with a touchscreen interface and intuitive controls, allowing you to quickly access your <b>blood pressure monitor watch</b> readings and other health metrics.</li><li><b>Durable & Long-Lasting:</b> Built to last with a durable construction and long-lasting battery, this <b>smart watch with heart rate and blood pressure</b> supports your active lifestyle without frequent recharging.</li><li><b>Eco-Friendly Packaging:</b> Committed to sustainability, this <b>blood pressure smart watch</b> comes in eco-friendly packaging, reducing environmental impact while delivering reliable health monitoring features.</li></ul><h3>Use Scenarios</h3><p>Whether you are at home, in the office, or on the go, this <b>smart watch with blood pressure monitor</b> seamlessly integrates into your daily routine. Use it during workouts to track heart rate and blood pressure trends, while traveling to stay on top of your health, or as a discreet wellness companion during busy workdays. It is also ideal for seniors who need simple, reliable monitoring without complex setups.</p><h3>Quality Assurance</h3><p>Each <b>blood pressure smart watch</b> undergoes rigorous testing to ensure accuracy and durability. We stand behind our product with a 12-month warranty and dedicated customer support. The premium quality materials and advanced sensors are designed to meet high standards, giving you peace of mind with every reading. Plus, the eco-friendly packaging reflects our commitment to sustainable practices.</p>",
+    "a_plus_modules": [
+      {
+        "module_type": "hero_banner",
+        "title": "Your Health, Your Rhythm",
+        "description": "首屏大图模块，展示产品核心价值与品牌调性",
+        "image_suggestion": "一张高清产品主图（960x600），模特佩戴手表在自然光下，背景简洁突出手表质感，同时显示血压测量界面",
+        "copy_text": "Track your heart and your rhythm with a blood pressure smart watch that blends medical-grade precision into everyday style—because your health shouldn't require a second screen."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Premium Materials, Lasting Comfort",
+        "description": "左图右文模块，强调优质材料与人体工学设计",
+        "image_suggestion": "特写手表表带材质和表盘细节，展示柔软硅胶表带和金属边框质感",
+        "copy_text": "Crafted from premium, skin-friendly materials with an ergonomic curved back that sits comfortably on your wrist all day. Built to last through workouts, sleep, and daily wear."
+      },
+      {
+        "module_type": "image_text",
+        "title": "One-Tap Blood Pressure Monitoring",
+        "description": "左文右图模块，突出易用性和核心功能",
+        "image_suggestion": "手指触摸手表屏幕进行血压测量的特写，屏幕显示血压数值",
+        "copy_text": "Simply tap and hold to get accurate blood pressure readings in seconds. No complicated setup, no extra cuffs—just intuitive health tracking at your fingertips."
+      },
+      {
+        "module_type": "spec_table",
+        "title": "Technical Specifications",
+        "description": "规格参数表，清晰列出关键功能参数",
+        "image_suggestion": "无需图片，表格形式呈现",
+        "copy_text": "Blood Pressure Monitoring: Medical-grade sensor, ±3mmHg accuracy\nDisplay: 1.3-inch AMOLED touchscreen\nBattery: 14-day typical usage, 7-day heavy usage\nWater Resistance: IP68 (swim-proof)\nCompatibility: iOS 10.0+ / Android 6.0+\nMaterials: Hypoallergenic silicone strap, stainless steel bezel\nWeight: 45g"
+      },
+      {
+        "module_type": "comparison_chart",
+        "title": "Why Choose Our Smart Watch?",
+        "description": "竞品对比表，突出核心优势",
+        "image_suggestion": "无需图片，表格形式呈现",
+        "copy_text": "Feature | Our Watch | Competitor A | Competitor B\nMedical-grade BP sensor | ✓ | ✗ | ✗\nErgonomic design | ✓ | ✓ | ✗\n14-day battery | ✓ | 5 days | 7 days\nEco-friendly packaging | ✓ | ✗ | ✗\nIP68 waterproof | ✓ | IP67 | IP68"
+      },
+      {
+        "module_type": "image_text",
+        "title": "Eco-Friendly, Inside and Out",
+        "description": "左图右文模块，强调环保包装与品牌责任",
+        "image_suggestion": "展示环保包装盒打开状态，内含手表和简约配件，背景为自然元素",
+        "copy_text": "We believe caring for your health also means caring for the planet. Our packaging is 100% recyclable and plastic-free, so you can feel good about your purchase from the moment it arrives."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Built to Last, Day After Day",
+        "description": "左文右图模块，强调耐用性与长期价值",
+        "image_suggestion": "手表在不同场景（跑步、游泳、办公）中的使用拼图，展示全天候耐用性",
+        "copy_text": "With a robust IP68 water resistance rating and a scratch-resistant display, this smart watch is engineered to keep up with your active lifestyle—rain or shine, workout or workday."
+      }
+    ],
+    "seo_report": {
+      "keyword_density": {
+        "score": 0.0,
+        "findings": [],
+        "suggestions": []
+      },
+      "readability": {
+        "score": 0.0,
+        "findings": [],
+        "suggestions": []
+      },
+      "completeness": {
+        "score": 0.0,
+        "findings": [],
+        "suggestions": []
+      },
+      "conversion_potential": {
+        "score": 0.0,
+        "findings": [],
+        "suggestions": []
+      },
+      "overall_score": 0.0,
+      "improvement_priority": []
+    },
+    "human_approved": false
+  },
+  "compliance": {
+    "policy_issues": [
+      {
+        "location": "title/bullets/description",
+        "issue_type": "prohibited_claim",
+        "severity": "medium",
+        "description": "Found prohibited term: 'best'",
+        "suggestion": "Replace 'best' with compliant alternative"
+      },
+      {
+        "location": "title/bullets/description",
+        "issue_type": "prohibited_claim",
+        "severity": "high",
+        "description": "Found prohibited term: 'heal'",
+        "suggestion": "Replace 'heal' with compliant alternative"
+      },
+      {
+        "location": "Title",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The title contains 'Best Blood Pressure Smart Watch 2025' which is a superlative claim implying superiority over competitors, violating Amazon's policy against subjective claims like 'best'.",
+        "suggestion": "Remove 'best' and rephrase to focus on features, e.g., 'FitTrack Blood Pressure Smart Watch with Heart Rate Monitor, Ergonomic Design, Durable Smart Watch for Men Women, Blood Pressure Monitor Watch for Daily Health Tracking'."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "Bullet point 2 states 'the best blood pressure smart watch 2025', which is a superlative claim violating Amazon's policy on subjective claims.",
+        "suggestion": "Remove 'the best' and rephrase to 'a top choice for blood pressure smart watch in 2025' or simply describe features without superlatives."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The description includes 'the best blood pressure smart watch 2025', which is a superlative claim violating Amazon's policy.",
+        "suggestion": "Remove 'the best' and rephrase to 'a leading blood pressure smart watch for 2025' or focus on factual features."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Medical/Health Claims",
+        "severity": "Medium",
+        "description": "Bullet point 1 claims 'Accurately monitor your blood pressure and heart rate in real-time' without specifying that the device is not a medical device or that readings are for reference only, which may imply medical-grade accuracy.",
+        "suggestion": "Add a disclaimer such as 'Readings are for reference only and not intended for medical diagnosis' or rephrase to 'Track your blood pressure and heart rate trends'."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Medical/Health Claims",
+        "severity": "Medium",
+        "description": "The description mentions 'medical-grade precision', which may imply the device is a medical instrument, potentially violating Amazon's policy on medical claims unless the product is approved as a medical device.",
+        "suggestion": "Remove 'medical-grade precision' and rephrase to 'high-precision sensors' or 'advanced sensor technology'."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Formatting Issues",
+        "severity": "Low",
+        "description": "Bullet point 5 mentions 'eco-friendly packaging' which is a sustainability claim that may require substantiation or certification.",
+        "suggestion": "Ensure the claim is verifiable or rephrase to 'packaged with recyclable materials' if applicable."
+      }
+    ],
+    "claim_issues": [
+      {
+        "claim_text": "Accurately monitor your blood pressure and heart rate in real-time with this advanced blood pressure smart watch",
+        "issue": "unsubstantiated",
+        "risk_level": "high",
+        "explanation": "No evidence (e.g., clinical validation, FDA clearance, or accuracy studies) is provided to support the claim of 'accurate' monitoring. Smartwatch blood pressure readings are often less reliable than medical devices.",
+        "fix_suggestion": "Remove 'accurately' or add a disclaimer such as 'Readings are for reference only and not for medical diagnosis.'"
+      },
+      {
+        "claim_text": "best blood pressure smart watch 2025",
+        "issue": "exaggerated",
+        "risk_level": "high",
+        "explanation": "The claim 'best' is a superlative that implies superiority over all competitors without any comparative evidence or third-party validation. It is subjective and unsubstantiated.",
+        "fix_suggestion": "Replace with 'a top choice for blood pressure monitoring in 2025' or remove the superlative."
+      },
+      {
+        "claim_text": "medical-grade precision",
+        "issue": "misleading",
+        "risk_level": "high",
+        "explanation": "The term 'medical-grade precision' suggests the device meets clinical standards for accuracy, but no certification or regulatory approval is mentioned. This could mislead consumers into relying on it for medical decisions.",
+        "fix_suggestion": "Remove 'medical-grade precision' or specify the actual accuracy standard (e.g., 'FDA-cleared for spot-check blood pressure monitoring')."
+      },
+      {
+        "claim_text": "long-lasting battery",
+        "issue": "unsubstantiated",
+        "risk_level": "medium",
+        "explanation": "No specific battery life (e.g., hours or days) is provided, making the claim vague and unverifiable. 'Long-lasting' is subjective without data.",
+        "fix_suggestion": "Specify battery life under typical usage conditions, e.g., 'Up to 7 days on a single charge.'"
+      },
+      {
+        "claim_text": "eco-friendly packaging",
+        "issue": "unsubstantiated",
+        "risk_level": "low",
+        "explanation": "The claim of 'eco-friendly' packaging is not supported by details (e.g., recycled materials, certifications like FSC). This could be seen as greenwashing.",
+        "fix_suggestion": "Provide specifics, e.g., 'Packaging made from 100% recycled cardboard' or remove the claim."
+      }
+    ],
+    "overall_verdict": "",
+    "risk_level": "critical",
+    "total_issues": 13,
+    "critical_items": [
+      "[Policy] Found prohibited term: 'heal'",
+      "[Claim] No evidence (e.g., clinical validation, FDA clearance, or accuracy studies) is provided to support the claim of 'accurate' monitoring. Smartwatch blood pressure readings are often less reliable than medical devices.",
+      "[Claim] The claim 'best' is a superlative that implies superiority over all competitors without any comparative evidence or third-party validation. It is subjective and unsubstantiated.",
+      "[Claim] The term 'medical-grade precision' suggests the device meets clinical standards for accuracy, but no certification or regulatory approval is mentioned. This could mislead consumers into relying on it for medical decisions."
+    ],
+    "action_items": [
+      "Replace 'best' with compliant alternative",
+      "Replace 'heal' with compliant alternative",
+      "Remove 'best' and rephrase to focus on features, e.g., 'FitTrack Blood Pressure Smart Watch with Heart Rate Monitor, Ergonomic Design, Durable Smart Watch for Men Women, Blood Pressure Monitor Watch for Daily Health Tracking'.",
+      "Remove 'the best' and rephrase to 'a top choice for blood pressure smart watch in 2025' or simply describe features without superlatives.",
+      "Remove 'the best' and rephrase to 'a leading blood pressure smart watch for 2025' or focus on factual features.",
+      "Add a disclaimer such as 'Readings are for reference only and not intended for medical diagnosis' or rephrase to 'Track your blood pressure and heart rate trends'.",
+      "Remove 'medical-grade precision' and rephrase to 'high-precision sensors' or 'advanced sensor technology'.",
+      "Ensure the claim is verifiable or rephrase to 'packaged with recyclable materials' if applicable.",
+      "Remove 'accurately' or add a disclaimer such as 'Readings are for reference only and not for medical diagnosis.'",
+      "Replace with 'a top choice for blood pressure monitoring in 2025' or remove the superlative.",
+      "Remove 'medical-grade precision' or specify the actual accuracy standard (e.g., 'FDA-cleared for spot-check blood pressure monitoring').",
+      "Specify battery life under typical usage conditions, e.g., 'Up to 7 days on a single charge.'",
+      "Provide specifics, e.g., 'Packaging made from 100% recycled cardboard' or remove the claim."
+    ],
+    "human_reviewed": false
+  },
+  "social": {
+    "marketing_angles": [
+      "Health empowerment: Showcasing how the watch helps users take control of their heart health and blood pressure monitoring seamlessly throughout the day.",
+      "Lifestyle integration: Demonstrating the watch as a stylish, everyday accessory that fits into work, exercise, and relaxation routines.",
+      "Unboxing & first impressions: Highlighting the premium packaging and build quality to build trust and excitement.",
+      "Before/after health journey: Featuring user stories or data visualizations showing improved health metrics over time.",
+      "Comparison & reliability: Comparing the watch's accuracy and ease of use with traditional blood pressure cuffs."
+    ],
+    "target_audience": "Health-conscious adults aged 35-65, including busy professionals, fitness enthusiasts, and seniors who want a convenient, non-intrusive way to monitor blood pressure and overall wellness. They value quality, durability, and eco-friendly products, and are active on social media seeking trustworthy health tech solutions.",
+    "content_tones": [
+      "Empowering and informative",
+      "Modern and aspirational",
+      "Warm and reassuring"
+    ],
+    "key_selling_points": [
+      "Premium quality materials for a luxurious feel and long-lasting performance",
+      "Ergonomic design for all-day comfort and accurate readings",
+      "Easy-to-use interface with one-touch blood pressure monitoring",
+      "Eco-friendly packaging aligning with sustainable values",
+      "Durable build for active lifestyles and daily wear"
+    ],
+    "visual_style": [],
+    "hashtag_themes": [],
+    "posts": [
+      {
+        "platform": "instagram",
+        "copy": "Your health is your most valuable asset. The new blood pressure smart watch is designed to empower you to take control of your wellness, effortlessly.",
+        "hashtags": [
+          "#HealthTech",
+          "#SmartWatch",
+          "#BloodPressureMonitor",
+          "#WellnessJourney",
+          "#EcoFriendly",
+          "#HealthyLiving",
+          "#WearableTech",
+          "#EmpowerYourHealth",
+          "#ActiveLifestyle",
+          "#SeniorWellness"
+        ],
+        "quality_score": 7.0
+      },
+      {
+        "platform": "threads",
+        "copy": "I used to dread checking my blood pressure. The bulky cuffs, the awkward positioning, the whole ‘medical procedure’ vibe. It felt like a chore, not a ",
+        "hashtags": [
+          "BloodPressureSmartWatch",
+          "HealthTech",
+          "WellnessJourney",
+          "SmartWatch",
+          "HealthyLiving",
+          "EcoFriendly",
+          "WearableTech",
+          "HeartHealth",
+          "FitnessTracker",
+          "SelfCare"
+        ],
+        "quality_score": 7.3
+      },
+      {
+        "platform": "pinterest",
+        "copy": "Your health isn’t just a number—it’s a lifestyle. 🌿\n\nMeet the blood pressure smart watch that blends premium quality with everyday ease. Designed with",
+        "hashtags": [
+          "#HealthTech",
+          "#SmartWatch",
+          "#BloodPressureMonitor",
+          "#WellnessTips",
+          "#EcoFriendlyLiving",
+          "#HeartHealth",
+          "#ActiveLifestyle",
+          "#WearableTech",
+          "#SeniorWellness",
+          "#SelfCare"
+        ],
+        "quality_score": 8.0
+      }
+    ],
+    "human_approved": false
+  },
+  "platform": {
+    "asin": null,
+    "amazon_url": null,
+    "amazon_publish_status": "draft",
+    "amazon_publish_errors": [],
+    "amazon_published_at": null,
+    "social_publish_status": {},
+    "social_post_urls": {}
+  },
+  "reviews": {
+    "total_reviews": 10,
+    "average_rating": 0.0,
+    "sentiment_distribution": {},
+    "negative_alert_count": 2,
+    "top_alerts": [
+      {
+        "reviewer": "David P.",
+        "content": "Color doesn't match the photos. Returning it.",
+        "alert_level": "alert"
+      },
+      {
+        "reviewer": "Maria G.",
+        "content": "Arrived damaged. The box was crushed.",
+        "alert_level": "alert"
+      }
+    ],
+    "last_monitored_at": "2026-05-17T04:51:38.465935Z"
+  },
+  "ads": {
+    "campaigns": [],
+    "total_budget": 0.0,
+    "total_spend": 0.0,
+    "acos": null
+  }
+}

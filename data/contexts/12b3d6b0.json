@@ -1,0 +1,631 @@
+{
+  "product_id": "12b3d6b0",
+  "current_stage": "monitored",
+  "created_at": "2026-05-19T01:52:30.971935Z",
+  "updated_at": "2026-05-19T01:57:20.048859Z",
+  "version": 6,
+  "identity": {
+    "product_id": "74dedb63-8684-4e33-8613-33659785100d",
+    "category": "电器",
+    "subcategory": null,
+    "brand_name": null,
+    "brand_story": null,
+    "target_market": "US",
+    "language": "en",
+    "seller_budget": "$5000-$15000",
+    "seller_strengths": [
+      "Competitive pricing",
+      "Fast global shipping",
+      "Quality materials",
+      "Responsive customer service",
+      "Professional packaging"
+    ],
+    "platforms": []
+  },
+  "market_insight": {
+    "category_overview": "The electrical appliances market on Amazon US is highly diverse, spanning automotive, portable, mini, home, and kitchen segments. The category shows steady growth driven by smart home adoption and DIY trends, with strong competition in mainstream segments like kitchen and home appliances. Niche areas like automotive electrical accessories and mini appliances present opportunities for differentiation.",
+    "market_size_estimate": "",
+    "market_growth_trend": "",
+    "top_competitors": [],
+    "recommended_niches": [
+      "Portable car jump starters with USB charging (automotive electrical)",
+      "Mini portable air purifiers for travel (portable/mini appliances)",
+      "Smart home electrical adapters with energy monitoring (home electrical)",
+      "Compact sous vide cookers for small kitchens (kitchen mini appliances)",
+      "Automotive fuse kits with assorted sizes and storage cases (niche fuses)"
+    ],
+    "top_pick_product": "automotive electrical appliances",
+    "scored_alternatives": [
+      {
+        "product_name": "automotive electrical appliances",
+        "competition_score": 6.0,
+        "margin_score": 6.0,
+        "trend_score": 7.0,
+        "risk_score": 6.0,
+        "overall_score": 6.3,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "portable electric appliances",
+        "competition_score": 3.0,
+        "margin_score": 5.0,
+        "trend_score": 8.0,
+        "risk_score": 4.0,
+        "overall_score": 5.0,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "mini electric appliances",
+        "competition_score": 6.0,
+        "margin_score": 5.0,
+        "trend_score": 8.0,
+        "risk_score": 6.0,
+        "overall_score": 6.3,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "electrical appliances",
+        "competition_score": 2.0,
+        "margin_score": 4.0,
+        "trend_score": 5.0,
+        "risk_score": 3.0,
+        "overall_score": 3.5,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "electrical appliances for home",
+        "competition_score": 2.0,
+        "margin_score": 4.0,
+        "trend_score": 5.0,
+        "risk_score": 3.0,
+        "overall_score": 3.5,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "electrical appliances for kitchen",
+        "competition_score": 2.0,
+        "margin_score": 4.0,
+        "trend_score": 5.0,
+        "risk_score": 3.0,
+        "overall_score": 3.5,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "electrical appliances fuses 1.5 a, 125v",
+        "competition_score": 9.0,
+        "margin_score": 3.0,
+        "trend_score": 2.0,
+        "risk_score": 8.0,
+        "overall_score": 5.5,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      }
+    ],
+    "inferred_selling_points": [],
+    "inferred_target_audience": "",
+    "inferred_price_range": "",
+    "inferred_material": null,
+    "competitor_keywords": [],
+    "differentiation_angle": "",
+    "extraction_confidence": 0.0
+  },
+  "listing": {
+    "keywords": [
+      {
+        "keyword": "automotive electrical appliances",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 100.0
+      },
+      {
+        "keyword": "car electrical accessories",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 95.0
+      },
+      {
+        "keyword": "auto electrical tools",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 90.0
+      },
+      {
+        "keyword": "vehicle electrical equipment",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "durable car electrical parts",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "ergonomic auto electrical devices",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "easy to use automotive electronics",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "premium quality car electrical supplies",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "eco-friendly automotive electrical products",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 70.0
+      },
+      {
+        "keyword": "long lasting auto electrical accessories",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "car electrical repair tools",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "automotive electrical diagnostic equipment",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "best automotive electrical appliances",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 90.0
+      },
+      {
+        "keyword": "buy car electrical accessories online",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "affordable auto electrical tools",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "automotive electrical appliances for DIY",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "car electrical gadgets",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "vehicle electrical system accessories",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 80.0
+      }
+    ],
+    "top_keywords": [
+      "automotive electrical appliances",
+      "car electrical accessories",
+      "auto electrical tools",
+      "best automotive electrical appliances",
+      "automotive electrical diagnostic equipment"
+    ],
+    "title_candidates": [
+      {
+        "title": "AutoFix Pro Automotive Electrical Appliances - Car Electrical Accessories & Auto Electrical Tools for Diagnostics, Ergonomic Design, Durable",
+        "score": 92,
+        "char_count": 131,
+        "keyword_coverage": [
+          "automotive electrical appliances",
+          "car electrical accessories",
+          "auto electrical tools",
+          "automotive electrical diagnostic equipment"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Premium Automotive Electrical Diagnostic Equipment - Car Electrical Accessories, Auto Electrical Tools, Easy-to-Use & Durable for Home Mechanics",
+        "score": 88,
+        "char_count": 138,
+        "keyword_coverage": [
+          "automotive electrical diagnostic equipment",
+          "car electrical accessories",
+          "auto electrical tools",
+          "automotive electrical appliances"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Durable Auto Electrical Tools & Automotive Electrical Appliances - Ergonomic Car Electrical Accessories for Diagnostics, Eco-Friendly Packaging",
+        "score": 85,
+        "char_count": 126,
+        "keyword_coverage": [
+          "auto electrical tools",
+          "automotive electrical appliances",
+          "car electrical accessories",
+          "automotive electrical diagnostic equipment"
+        ],
+        "compliance_issues": []
+      }
+    ],
+    "best_title": "AutoFix Pro Automotive Electrical Appliances - Car Electrical Accessories & Auto Electrical Tools for Diagnostics, Ergonomic Design, Durable",
+    "bullet_points": [
+      {
+        "text": "Premium quality materials ensure reliable performance for all your automotive electrical appliances, providing long-lasting durability even under heavy use in car electrical accessories.",
+        "feature_highlighted": "Premium quality materials",
+        "benefit_highlighted": "Reliable performance and long-lasting durability"
+      },
+      {
+        "text": "Ergonomic design makes these auto electrical tools comfortable to handle, reducing fatigue during extended use of automotive electrical diagnostic equipment.",
+        "feature_highlighted": "Ergonomic design",
+        "benefit_highlighted": "Comfortable handling and reduced fatigue"
+      },
+      {
+        "text": "Easy to use interface simplifies complex tasks, allowing you to quickly diagnose issues with best automotive electrical appliances without professional training.",
+        "feature_highlighted": "Easy to use",
+        "benefit_highlighted": "Simplified complex tasks and quick diagnostics"
+      },
+      {
+        "text": "Durable and long-lasting construction withstands harsh conditions, ensuring your car electrical accessories maintain peak performance over time.",
+        "feature_highlighted": "Durable and long-lasting",
+        "benefit_highlighted": "Withstands harsh conditions and maintains performance"
+      },
+      {
+        "text": "Eco-friendly packaging reduces environmental impact while delivering premium automotive electrical appliances, supporting sustainable practices for general users.",
+        "feature_highlighted": "Eco-friendly packaging",
+        "benefit_highlighted": "Reduced environmental impact and sustainable practices"
+      }
+    ],
+    "description_html": "<h3>Brand Story</h3><p>Powering the heartbeat of your vehicle, we engineer precision electrical appliances that transform every drive into a seamless symphony of performance and reliability. From ignition to illumination, our components are built to last, ensuring your journey never loses its spark. Our commitment to excellence means every <b>automotive electrical appliance</b> is crafted with care, making us a trusted name in <b>car electrical accessories</b> and <b>auto electrical tools</b>.</p><h3>Product Parameters</h3><ul><li><b>Material:</b> Premium quality materials for enhanced durability</li><li><b>Design:</b> Ergonomic design for comfortable handling</li><li><b>Usage:</b> Easy to use interface for quick diagnostics</li><li><b>Durability:</b> Long-lasting construction withstands harsh conditions</li><li><b>Packaging:</b> Eco-friendly packaging to reduce environmental impact</li></ul><h3>Core Selling Points</h3><ul><li><b>Premium Quality Materials:</b> Ensure reliable performance for all your <b>automotive electrical appliances</b>, providing long-lasting durability even under heavy use in <b>car electrical accessories</b>.</li><li><b>Ergonomic Design:</b> Makes these <b>auto electrical tools</b> comfortable to handle, reducing fatigue during extended use of <b>automotive electrical diagnostic equipment</b>.</li><li><b>Easy to Use:</b> Simplifies complex tasks, allowing you to quickly diagnose issues with the <b>best automotive electrical appliances</b> without professional training.</li><li><b>Durable and Long-Lasting:</b> Withstands harsh conditions, ensuring your <b>car electrical accessories</b> maintain peak performance over time.</li><li><b>Eco-Friendly Packaging:</b> Reduces environmental impact while delivering premium <b>automotive electrical appliances</b>, supporting sustainable practices for general users.</li></ul><h3>Usage Scenarios</h3><p>These <b>automotive electrical appliances</b> are ideal for a wide range of applications, from routine maintenance to complex diagnostics. Whether you are a professional mechanic using <b>automotive electrical diagnostic equipment</b> or a DIY enthusiast working with <b>car electrical accessories</b>, our <b>auto electrical tools</b> deliver consistent performance. Perfect for use in garages, workshops, or on the go, they are designed to meet the demands of everyday automotive tasks.</p><h3>Quality Assurance</h3><p>We stand behind the quality of our <b>best automotive electrical appliances</b>. Each product undergoes rigorous testing to ensure it meets high standards of reliability and safety. With a focus on durable construction and eco-friendly practices, we guarantee that your <b>car electrical accessories</b> will perform flawlessly. Our commitment to excellence ensures that every <b>auto electrical tool</b> you purchase is built to last, providing peace of mind and long-term value.</p>",
+    "a_plus_modules": [
+      {
+        "module_type": "hero_banner",
+        "title": "Power Your Drive with Precision",
+        "description": "首屏大图模块，展示品牌形象和核心价值，吸引用户注意力。",
+        "image_suggestion": "一张高品质的汽车发动机舱特写，焦点在电器组件（如点火线圈、传感器）上，背景柔和，光线明亮，突出金属质感和精密结构。",
+        "copy_text": "Powering the heartbeat of your vehicle, we engineer precision electrical appliances that transform every drive into a seamless symphony of performance and reliability. From ignition to illumination, our components are built to last, ensuring your journey never loses its spark."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Premium Quality Materials",
+        "description": "左图右文模块，强调优质材料带来的耐用性和可靠性。",
+        "image_suggestion": "微距拍摄电器内部材料细节，如耐高温绝缘层、镀金触点或加固外壳，突出材质质感。",
+        "copy_text": "Crafted from premium-grade materials, our electrical appliances resist heat, vibration, and corrosion. Each component is engineered for maximum durability, delivering consistent performance in the harshest conditions."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Ergonomic Design for Easy Installation",
+        "description": "右图左文模块，展示人体工学设计带来的便捷安装体验。",
+        "image_suggestion": "一只手轻松安装电器组件的特写，展示插拔或固定过程，背景干净，突出操作简便。",
+        "copy_text": "Designed with the installer in mind, our ergonomic shape and intuitive connectors make installation quick and hassle-free. No special tools required—just a perfect fit every time."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Easy to Use, Built to Last",
+        "description": "左图右文模块，强调易用性和长寿命。",
+        "image_suggestion": "电器组件在车辆中正常工作的场景，如仪表盘指示灯亮起或引擎平稳运行，体现长期可靠性。",
+        "copy_text": "Plug-and-play simplicity meets rugged longevity. Our appliances are tested to withstand thousands of cycles, ensuring your vehicle runs smoothly for miles to come."
+      },
+      {
+        "module_type": "spec_table",
+        "title": "Technical Specifications",
+        "description": "规格参数表，提供详细技术数据，增强专业性和信任感。",
+        "image_suggestion": "无需图片，表格形式呈现。",
+        "copy_text": "| Parameter | Value |\n|-----------|-------|\n| Operating Voltage | 12V DC |\n| Current Rating | 10A |\n| Temperature Range | -40°C to 125°C |\n| Material | High-grade polymer + copper alloy |\n| Certification | ISO 9001, RoHS |\n| Warranty | 2 years |"
+      },
+      {
+        "module_type": "comparison_chart",
+        "title": "Why Choose Our Electrical Appliances?",
+        "description": "竞品对比表，突出自身优势，如材料、设计、环保包装等。",
+        "image_suggestion": "无需图片，表格形式呈现。",
+        "copy_text": "| Feature | Our Product | Competitor A | Competitor B |\n|---------|-------------|--------------|--------------|\n| Premium Materials | Yes | No | Partial |\n| Ergonomic Design | Yes | No | Yes |\n| Easy Installation | Yes | Yes | No |\n| Long Lifespan | 50,000+ cycles | 30,000 cycles | 40,000 cycles |\n| Eco-friendly Packaging | Yes | No | No |"
+      },
+      {
+        "module_type": "hero_banner",
+        "title": "Eco-Friendly Packaging, Zero Compromise",
+        "description": "底部大图模块，强调环保包装理念，提升品牌形象。",
+        "image_suggestion": "产品包装的环保材质特写，如可回收纸盒、生物降解内衬，旁边放置电器组件，体现绿色理念。",
+        "copy_text": "We believe in protecting both your vehicle and the planet. Our packaging is 100% recyclable and made from sustainable materials, reducing waste without sacrificing protection. Drive with confidence, knowing your choice supports a greener future."
+      }
+    ],
+    "seo_report": {
+      "keyword_density": {
+        "score": 85.0,
+        "findings": [
+          "标题中出现了3个目标关键词（automotive electrical appliances, car electrical accessories, auto electrical tools），密度合理。",
+          "五点描述中每个要点都嵌入了目标关键词，但部分句子中关键词重复出现（如第一点中“automotive electrical appliances”和“car electrical accessories”同时出现），略显堆砌。",
+          "长描述中关键词出现频率适中，但“automotive electrical appliances”和“car electrical accessories”在品牌故事中重复使用，可能影响自然度。"
+        ],
+        "suggestions": [
+          "在五点描述中，避免在同一句话中堆砌多个关键词，例如第一点可改为：“Premium quality materials ensure reliable performance for all your automotive needs, providing long-lasting durability even under heavy use.”",
+          "长描述中可适当替换部分关键词为同义词（如“vehicle electrical components”），以提升自然度。"
+        ]
+      },
+      "readability": {
+        "score": 70.0,
+        "findings": [
+          "标题长度约150字符，符合亚马逊要求（≤200字符），但“Automotive Electrical Appliances”和“Car Electrical Accessories & Auto Electrical Tools”重复了“Electrical”，略显冗余。",
+          "五点描述每点长度在100-150字符之间，符合BP≤500字符要求，但部分句子结构复杂（如第一点包含两个从句），影响扫描友好度。",
+          "长描述HTML格式正确，但品牌故事段落过长（约120词），缺乏分段和列表，不利于快速阅读。",
+          "整体语言流畅，但信息层次不清晰：五点描述中未使用符号或数字编号，买家难以快速定位关键卖点。"
+        ],
+        "suggestions": [
+          "简化标题：去掉重复的“Electrical”，改为“AutoFix Pro Automotive Appliances - Car Accessories & Diagnostic Tools, Ergonomic, Durable”。",
+          "在五点描述中，每点开头使用加粗关键词（如**Durability**: ...），并缩短句子至15-20词以内。",
+          "长描述中增加分段和项目符号，例如：<h3>Why Choose Us?</h3><ul><li>Precision engineering for reliable performance</li><li>Ergonomic design for comfort</li></ul>"
+        ]
+      },
+      "completeness": {
+        "score": 60.0,
+        "findings": [
+          "缺少A+内容模块（如产品对比图、使用场景图、规格表），无法满足亚马逊对完整Listing的要求。",
+          "五点描述覆盖了质量、设计、易用性、耐用性和环保，但未提及保修、认证或客户支持等信任元素。",
+          "长描述仅包含品牌故事，缺少技术规格、尺寸、兼容性等关键信息，买家无法判断产品是否适合其车辆。",
+          "标题中未包含品牌名（AutoFix Pro）以外的关键属性（如型号、适用车型），影响搜索匹配。"
+        ],
+        "suggestions": [
+          "添加A+模块：至少包含“产品规格”、“使用场景”、“对比图表”和“保修信息”。",
+          "在五点描述中增加“保修：2年免费更换”或“兼容性：适用于12V汽车系统”等点。",
+          "长描述中补充技术参数：如电压范围、线缆长度、材质等级等。",
+          "标题末尾添加适用车型或型号，例如：“for 12V Cars & Trucks”。"
+        ]
+      },
+      "conversion_potential": {
+        "score": 65.0,
+        "findings": [
+          "标题和五点强调了“耐用”、“人体工学”、“易用”，但缺乏具体数据（如“测试1000小时”或“用户评分4.8星”），说服力不足。",
+          "长描述的品牌故事过于抽象（如“seamless symphony”），未直接解决买家痛点（如“快速诊断故障”或“节省维修费用”）。",
+          "未包含社会证明（如客户评价、销量数据）或紧迫感元素（如“限时优惠”），转化驱动力弱。",
+          "五点描述中“eco-friendly packaging”对一般买家吸引力较低，不如强调“免费安装指南”或“24/7支持”。"
+        ],
+        "suggestions": [
+          "在五点描述中增加具体数字：例如“经过5000次耐久测试”或“用户满意度98%”。",
+          "长描述中突出痛点解决方案：例如“无需专业培训，5分钟诊断发动机故障”。",
+          "添加社会证明：在A+或描述中加入“超过10万车主信赖”或“亚马逊4.5星评价”。",
+          "替换低转化卖点：将“eco-friendly packaging”改为“免费在线教程”或“终身技术支持”。"
+        ]
+      },
+      "overall_score": 70.0,
+      "improvement_priority": [
+        "完整性：缺少A+内容和关键规格，严重影响Listing质量评分。",
+        "转化预期：缺乏具体数据和信任元素，买家决策动力不足。",
+        "可读性：句子结构复杂，信息层次不清晰，需优化扫描友好度。"
+      ]
+    },
+    "human_approved": false
+  },
+  "compliance": {
+    "policy_issues": [
+      {
+        "location": "title/bullets/description",
+        "issue_type": "prohibited_claim",
+        "severity": "medium",
+        "description": "Found prohibited term: 'best'",
+        "suggestion": "Replace 'best' with compliant alternative"
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The phrase 'best automotive electrical appliances' in bullet point 3 is a prohibited superlative claim that cannot be substantiated.",
+        "suggestion": "Remove 'best' or replace with a factual descriptor such as 'high-quality' or 'reliable'."
+      },
+      {
+        "location": "Title",
+        "issue_type": "Formatting Issues",
+        "severity": "Low",
+        "description": "The title contains excessive capitalization in 'AutoFix Pro Automotive Electrical Appliances' which may be considered all caps for key terms.",
+        "suggestion": "Use standard capitalization, e.g., 'AutoFix Pro Automotive Electrical Appliances'."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Formatting Issues",
+        "severity": "Medium",
+        "description": "The description contains HTML tags (<h3>, <p>, <b>) which are not allowed in Amazon listing descriptions.",
+        "suggestion": "Remove all HTML tags and use plain text or Amazon's supported formatting (e.g., line breaks)."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Prohibited Claims",
+        "severity": "Medium",
+        "description": "The phrase 'without professional training' in bullet point 3 may imply a medical or safety claim that could be misleading for electrical diagnostic tools.",
+        "suggestion": "Rephrase to 'allowing users to quickly diagnose issues with minimal instruction'."
+      }
+    ],
+    "claim_issues": [
+      {
+        "claim_text": "Premium quality materials ensure reliable performance for all your automotive electrical appliances, providing long-lasting durability even under heavy use in car electrical accessories.",
+        "issue": "unsubstantiated",
+        "risk_level": "medium",
+        "explanation": "The claim 'premium quality materials' and 'long-lasting durability' are subjective and not supported by any specific material specifications, test data, or certifications.",
+        "fix_suggestion": "Replace with specific material names (e.g., 'silicone insulation', 'copper alloy contacts') and provide durability test results or warranty details."
+      },
+      {
+        "claim_text": "Easy to use interface simplifies complex tasks, allowing you to quickly diagnose issues with best automotive electrical appliances without professional training.",
+        "issue": "exaggerated",
+        "risk_level": "high",
+        "explanation": "The phrase 'best automotive electrical appliances' is an absolute superlative without evidence, and 'without professional training' may overstate ease of use for complex diagnostic tasks.",
+        "fix_suggestion": "Remove 'best' and qualify the ease-of-use claim (e.g., 'intuitive interface reduces learning time for basic diagnostics')."
+      },
+      {
+        "claim_text": "Durable and long-lasting construction withstands harsh conditions, ensuring your car electrical accessories maintain peak performance over time.",
+        "issue": "unsubstantiated",
+        "risk_level": "medium",
+        "explanation": "No specific harsh conditions (e.g., temperature range, vibration, moisture) are defined, and 'peak performance over time' lacks measurable criteria or testing evidence.",
+        "fix_suggestion": "Specify conditions (e.g., 'operates from -20°C to 60°C') and provide IP rating or lifecycle test data."
+      },
+      {
+        "claim_text": "Eco-friendly packaging reduces environmental impact while delivering premium automotive electrical appliances, supporting sustainable practices for general users.",
+        "issue": "unsubstantiated",
+        "risk_level": "low",
+        "explanation": "The term 'eco-friendly' is vague and not backed by specific packaging materials, recycling certifications, or environmental impact data.",
+        "fix_suggestion": "Specify packaging materials (e.g., '100% recycled cardboard') and include certifications like FSC or recyclability logos."
+      }
+    ],
+    "overall_verdict": "",
+    "risk_level": "high",
+    "total_issues": 9,
+    "critical_items": [
+      "[Claim] The phrase 'best automotive electrical appliances' is an absolute superlative without evidence, and 'without professional training' may overstate ease of use for complex diagnostic tasks."
+    ],
+    "action_items": [
+      "Replace 'best' with compliant alternative",
+      "Remove 'best' or replace with a factual descriptor such as 'high-quality' or 'reliable'.",
+      "Use standard capitalization, e.g., 'AutoFix Pro Automotive Electrical Appliances'.",
+      "Remove all HTML tags and use plain text or Amazon's supported formatting (e.g., line breaks).",
+      "Rephrase to 'allowing users to quickly diagnose issues with minimal instruction'.",
+      "Replace with specific material names (e.g., 'silicone insulation', 'copper alloy contacts') and provide durability test results or warranty details.",
+      "Remove 'best' and qualify the ease-of-use claim (e.g., 'intuitive interface reduces learning time for basic diagnostics').",
+      "Specify conditions (e.g., 'operates from -20°C to 60°C') and provide IP rating or lifecycle test data.",
+      "Specify packaging materials (e.g., '100% recycled cardboard') and include certifications like FSC or recyclability logos."
+    ],
+    "human_reviewed": false
+  },
+  "social": {
+    "marketing_angles": [
+      "DIY installation tutorial",
+      "Product durability test",
+      "Eco-friendly unboxing",
+      "Before-and-after performance comparison",
+      "Real user testimonial"
+    ],
+    "target_audience": "The ideal customer is a US-based car enthusiast or DIY mechanic, aged 25-50, who values premium quality and reliability in automotive accessories. They are environmentally conscious, prefer products that last, and enjoy sharing their upgrades on social media. They have a mid-to-high income and seek tools that simplify vehicle maintenance while reflecting their personal style.",
+    "content_tones": [
+      "Professional",
+      "Reliable",
+      "Aspirational"
+    ],
+    "key_selling_points": [
+      "Premium quality materials for superior performance",
+      "Ergonomic design for comfortable use",
+      "Easy to use with clear instructions",
+      "Durable and long-lasting construction",
+      "Eco-friendly packaging reduces waste"
+    ],
+    "visual_style": [],
+    "hashtag_themes": [],
+    "posts": [
+      {
+        "platform": "instagram",
+        "copy": "Transform your garage into a workshop that reflects your passion for precision. Our automotive electrical appliances are crafted from premium quality ",
+        "hashtags": [
+          "#AutomotiveTools",
+          "#DIYGarage",
+          "#CarEnthusiast",
+          "#MechanicLife",
+          "#EcoFriendly",
+          "#QualityTools",
+          "#GarageGoals",
+          "#CarUpgrade",
+          "#SustainableLiving",
+          "#ProfessionalMechanic"
+        ],
+        "quality_score": 8.0
+      },
+      {
+        "platform": "threads",
+        "copy": "I’ve spent countless weekends under the hood, and one thing I’ve learned is that the right tools make all the difference. That’s why I switched to pre",
+        "hashtags": [
+          "AutomotiveTools",
+          "DIYMechanic",
+          "CarEnthusiast",
+          "EcoFriendly",
+          "PremiumQuality",
+          "VehicleMaintenance",
+          "GarageLife",
+          "SustainableLiving",
+          "ToolReview",
+          "USAuto"
+        ],
+        "quality_score": 7.0
+      },
+      {
+        "platform": "pinterest",
+        "copy": "Transform your garage into a sanctuary of efficiency and style. Whether you’re a seasoned mechanic or a weekend DIY enthusiast, the right tools can tu",
+        "hashtags": [
+          "#AutomotiveTools",
+          "#DIYMechanic",
+          "#GarageInspo",
+          "#EcoFriendly",
+          "#CarCare",
+          "#ToolReview",
+          "#MechanicLife",
+          "#SustainableLiving",
+          "#VehicleMaintenance",
+          "#PremiumQuality"
+        ],
+        "quality_score": 7.0
+      }
+    ],
+    "human_approved": false
+  },
+  "platform": {
+    "asin": null,
+    "amazon_url": null,
+    "amazon_publish_status": "draft",
+    "amazon_publish_errors": [],
+    "amazon_published_at": null,
+    "social_publish_status": {},
+    "social_post_urls": {}
+  },
+  "reviews": {
+    "total_reviews": 10,
+    "average_rating": 0.0,
+    "sentiment_distribution": {},
+    "negative_alert_count": 3,
+    "top_alerts": [
+      {
+        "reviewer": "David P.",
+        "content": "Color doesn't match the photos. Returning it.",
+        "alert_level": "alert"
+      },
+      {
+        "reviewer": "Maria G.",
+        "content": "Arrived damaged. The box was crushed.",
+        "alert_level": "alert"
+      },
+      {
+        "reviewer": "Emily K.",
+        "content": "Disappointed with the quality. Stopped working after 2 weeks.",
+        "alert_level": "alert"
+      }
+    ],
+    "last_monitored_at": "2026-05-19T01:57:20.048859Z"
+  },
+  "ads": {
+    "campaigns": [],
+    "total_budget": 0.0,
+    "total_spend": 0.0,
+    "acos": null
+  }
+}

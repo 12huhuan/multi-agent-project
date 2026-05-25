@@ -1,0 +1,643 @@
+{
+  "product_id": "b9e83306",
+  "current_stage": "monitored",
+  "created_at": "2026-05-17T07:58:04.196980Z",
+  "updated_at": "2026-05-17T08:00:54.840998Z",
+  "version": 6,
+  "identity": {
+    "product_id": "31fb6e36-d392-416c-bf07-08b625e2437d",
+    "category": "Mechanical Keyboard",
+    "subcategory": null,
+    "brand_name": null,
+    "brand_story": null,
+    "target_market": "US",
+    "language": "en",
+    "seller_budget": "$5000-$15000",
+    "seller_strengths": [
+      "Competitive pricing",
+      "Fast global shipping",
+      "Quality materials",
+      "Responsive customer service",
+      "Professional packaging"
+    ],
+    "platforms": []
+  },
+  "market_insight": {
+    "category_overview": "The mechanical keyboard market on Amazon US is experiencing robust growth, driven by a surge in remote work, gaming, and enthusiast customization. The category is highly competitive, with a wide range of products from budget-friendly options to premium, customizable boards. Key trends include a shift towards wireless connectivity, hot-swappable switches, and aesthetic customization (e.g., RGB lighting, keycaps). The market is saturated with established brands, but there is still room for niche innovation, particularly in ergonomic designs and specialized use cases like programming or content creation.",
+    "market_size_estimate": "",
+    "market_growth_trend": "",
+    "top_competitors": [],
+    "recommended_niches": [
+      "Ergonomic split mechanical keyboards for programmers (e.g., with tenting and thumb clusters)",
+      "Ultra-compact 40% keyboards for minimalist desk setups",
+      "Silent mechanical keyboards for open office environments (with dampened switches)",
+      "Customizable modular keyboards with swappable numpads and macro pads",
+      "Eco-friendly mechanical keyboards made from recycled materials or bamboo"
+    ],
+    "top_pick_product": "Premium Mechanical Keyboard",
+    "scored_alternatives": [
+      {
+        "product_name": "Premium Mechanical Keyboard",
+        "competition_score": 6.0,
+        "margin_score": 8.0,
+        "trend_score": 8.0,
+        "risk_score": 7.0,
+        "overall_score": 7.3,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Mechanical Keyboard Professional",
+        "competition_score": 7.0,
+        "margin_score": 7.0,
+        "trend_score": 7.0,
+        "risk_score": 7.0,
+        "overall_score": 7.0,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Mechanical Keyboard High Quality",
+        "competition_score": 6.0,
+        "margin_score": 7.0,
+        "trend_score": 7.0,
+        "risk_score": 7.0,
+        "overall_score": 6.8,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Mechanical Keyboard Wireless",
+        "competition_score": 3.0,
+        "margin_score": 6.0,
+        "trend_score": 9.0,
+        "risk_score": 5.0,
+        "overall_score": 5.8,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Mechanical Keyboard Bluetooth",
+        "competition_score": 3.0,
+        "margin_score": 5.0,
+        "trend_score": 8.0,
+        "risk_score": 5.0,
+        "overall_score": 5.3,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Best Mechanical Keyboard",
+        "competition_score": 2.0,
+        "margin_score": 6.0,
+        "trend_score": 8.0,
+        "risk_score": 4.0,
+        "overall_score": 5.0,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Mechanical Keyboard",
+        "competition_score": 2.0,
+        "margin_score": 5.0,
+        "trend_score": 6.0,
+        "risk_score": 4.0,
+        "overall_score": 4.3,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Cheap Mechanical Keyboard",
+        "competition_score": 1.0,
+        "margin_score": 2.0,
+        "trend_score": 4.0,
+        "risk_score": 3.0,
+        "overall_score": 2.5,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Mechanical Keyboard for Sale",
+        "competition_score": 1.0,
+        "margin_score": 3.0,
+        "trend_score": 3.0,
+        "risk_score": 2.0,
+        "overall_score": 2.3,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      }
+    ],
+    "inferred_selling_points": [],
+    "inferred_target_audience": "",
+    "inferred_price_range": "",
+    "inferred_material": null,
+    "competitor_keywords": [],
+    "differentiation_angle": "",
+    "extraction_confidence": 0.0
+  },
+  "listing": {
+    "keywords": [
+      {
+        "keyword": "premium mechanical keyboard",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 100.0
+      },
+      {
+        "keyword": "ergonomic mechanical keyboard",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 95.0
+      },
+      {
+        "keyword": "durable mechanical keyboard",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 90.0
+      },
+      {
+        "keyword": "mechanical keyboard for office",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "best mechanical keyboard 2025",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "mechanical keyboard with eco-friendly packaging",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "long lasting mechanical keyboard",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "wireless mechanical keyboard",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "mechanical keyboard for gaming",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 70.0
+      },
+      {
+        "keyword": "quiet mechanical keyboard",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 65.0
+      },
+      {
+        "keyword": "full size mechanical keyboard",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 70.0
+      },
+      {
+        "keyword": "mechanical keyboard under 100",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 60.0
+      },
+      {
+        "keyword": "mechanical keyboard with wrist rest",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "premium keyboard for programmers",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "mechanical keyboard easy to clean",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 70.0
+      },
+      {
+        "keyword": "mechanical keyboard vs membrane",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 50.0
+      },
+      {
+        "keyword": "buy mechanical keyboard online",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 65.0
+      },
+      {
+        "keyword": "mechanical keyboard for typing",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 80.0
+      }
+    ],
+    "top_keywords": [
+      "premium mechanical keyboard",
+      "ergonomic mechanical keyboard",
+      "durable mechanical keyboard"
+    ],
+    "title_candidates": [
+      {
+        "title": "Premium Mechanical Keyboard Ergonomic Design Durable Full Size Keyboard for Office and Gaming",
+        "score": 92,
+        "char_count": 95,
+        "keyword_coverage": [
+          "premium mechanical keyboard",
+          "ergonomic mechanical keyboard",
+          "durable mechanical keyboard"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Ergonomic Premium Mechanical Keyboard with Durable Build Easy to Use for Typists and Gamers Eco-Friendly Packaging",
+        "score": 88,
+        "char_count": 108,
+        "keyword_coverage": [
+          "premium mechanical keyboard",
+          "ergonomic mechanical keyboard",
+          "durable mechanical keyboard"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Durable Mechanical Keyboard Premium Quality Ergonomic Design Easy to Use for Home Office Work",
+        "score": 85,
+        "char_count": 90,
+        "keyword_coverage": [
+          "premium mechanical keyboard",
+          "ergonomic mechanical keyboard",
+          "durable mechanical keyboard"
+        ],
+        "compliance_issues": []
+      }
+    ],
+    "best_title": "Premium Mechanical Keyboard Ergonomic Design Durable Full Size Keyboard for Office and Gaming",
+    "bullet_points": [
+      {
+        "text": "Premium mechanical keyboard crafted with high-grade aluminum frame and PBT keycaps, delivering a luxurious typing feel and exceptional durability for long-term use.",
+        "feature_highlighted": "Premium materials (aluminum frame, PBT keycaps)",
+        "benefit_highlighted": "Luxurious feel and exceptional durability"
+      },
+      {
+        "text": "Ergonomic mechanical keyboard featuring a sculpted key layout and adjustable tilt legs, reducing wrist strain and enhancing comfort during extended typing sessions.",
+        "feature_highlighted": "Ergonomic design (sculpted layout, adjustable tilt)",
+        "benefit_highlighted": "Reduces wrist strain and enhances comfort"
+      },
+      {
+        "text": "Durable mechanical keyboard with hot-swappable switches and reinforced USB-C connection, ensuring easy customization and reliable performance for years.",
+        "feature_highlighted": "Hot-swappable switches and reinforced USB-C",
+        "benefit_highlighted": "Easy customization and long-lasting reliability"
+      },
+      {
+        "text": "Easy-to-use mechanical keyboard with plug-and-play functionality and dedicated media controls, allowing seamless setup and quick access to volume and playback.",
+        "feature_highlighted": "Plug-and-play and dedicated media controls",
+        "benefit_highlighted": "Seamless setup and quick media access"
+      },
+      {
+        "text": "Eco-friendly packaging made from recycled materials, reducing environmental impact while delivering a premium unboxing experience for conscious consumers.",
+        "feature_highlighted": "Eco-friendly packaging (recycled materials)",
+        "benefit_highlighted": "Reduces environmental impact and premium unboxing"
+      }
+    ],
+    "description_html": "<h3>Brand Story</h3><p>Every keystroke should feel intentional. Crafted for those who demand precision and soul in every click, this keyboard transforms your workspace into a command center of flow and focus. Our brand is built on the philosophy that a <b>premium mechanical keyboard</b> is not just a tool, but an extension of your creativity and productivity.</p><h3>Product Specifications</h3><ul><li><b>Frame Material:</b> High-grade aluminum alloy</li><li><b>Keycaps:</b> Durable PBT material with double-shot injection</li><li><b>Switch Type:</b> Hot-swappable mechanical switches (compatible with 3-pin and 5-pin)</li><li><b>Connection:</b> USB-C, reinforced for long-lasting use</li><li><b>Layout:</b> Full-size with sculpted key arrangement</li><li><b>Tilt Legs:</b> Adjustable, two-stage for ergonomic comfort</li><li><b>Media Controls:</b> Dedicated keys for volume and playback</li><li><b>Packaging:</b> Eco-friendly, made from recycled materials</li></ul><h3>Core Selling Points</h3><ul><li><b>Premium Quality Materials:</b> Crafted with a high-grade aluminum frame and PBT keycaps, this <b>premium mechanical keyboard</b> delivers a luxurious typing feel and exceptional durability for long-term use.</li><li><b>Ergonomic Design:</b> Featuring a sculpted key layout and adjustable tilt legs, this <b>ergonomic mechanical keyboard</b> reduces wrist strain and enhances comfort during extended typing sessions.</li><li><b>Easy to Use:</b> With plug-and-play functionality and dedicated media controls, this keyboard allows seamless setup and quick access to volume and playback.</li><li><b>Durable and Long-Lasting:</b> Hot-swappable switches and a reinforced USB-C connection ensure easy customization and reliable performance for years, making it a truly <b>durable mechanical keyboard</b>.</li><li><b>Eco-Friendly Packaging:</b> Made from recycled materials, our packaging reduces environmental impact while delivering a premium unboxing experience for conscious consumers.</li></ul><h3>Usage Scenarios</h3><p>Whether you are a programmer coding late into the night, a writer crafting your next novel, or a gamer seeking precision in every move, this <b>premium mechanical keyboard</b> is designed to elevate your experience. Its <b>ergonomic mechanical keyboard</b> features make it ideal for office work, home setups, or any environment where comfort and performance matter. The <b>durable mechanical keyboard</b> construction ensures it withstands heavy daily use, from intense typing sessions to creative workflows.</p><h3>Quality Assurance</h3><p>We stand behind the quality of our product. Each keyboard undergoes rigorous testing to ensure it meets the highest standards of performance and durability. From the reinforced USB-C connection to the hot-swappable switch sockets, every component is built to last. Our commitment to excellence means you can trust this <b>premium mechanical keyboard</b> to deliver consistent, reliable performance for years to come.</p>",
+    "a_plus_modules": [
+      {
+        "module_type": "hero_banner",
+        "title": "Precision Meets Soul",
+        "description": "顶部大图展示键盘整体，搭配品牌标语，吸引注意力",
+        "image_suggestion": "一张高分辨率的产品主图（960x600），键盘置于干净桌面，背景柔和，突出金属质感与RGB灯光效果",
+        "copy_text": "Every keystroke should feel intentional. Crafted for those who demand precision and soul in every click."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Premium Materials, Uncompromising Build",
+        "description": "左图右文，展示键盘材质细节，强调耐用性和品质",
+        "image_suggestion": "特写键盘侧面或键帽材质，展示铝合金框架、PBT键帽或机械轴体细节",
+        "copy_text": "Built from aircraft-grade aluminum and double-shot PBT keycaps, this keyboard withstands millions of keystrokes without fading or wear. Feel the solid weight and premium texture with every touch."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Ergonomic Design for All-Day Comfort",
+        "description": "左文右图，展示人体工学设计，强调长时间使用的舒适性",
+        "image_suggestion": "展示键盘侧面倾斜角度，或用户手部在键盘上打字的场景，突出手腕支撑或阶梯式键帽",
+        "copy_text": "Designed with a stepped keycap profile and adjustable tilt legs, your wrists stay neutral and relaxed even during marathon typing sessions. Say goodbye to fatigue and hello to flow."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Effortless Setup, Instant Productivity",
+        "description": "左图右文，强调即插即用和易用性",
+        "image_suggestion": "展示键盘连接电脑的USB线缆或无线接收器，或简洁的桌面布置图",
+        "copy_text": "No drivers, no software, no hassle. Simply plug in via USB-C or pair via Bluetooth and start typing within seconds. Compatible with Windows, Mac, and Linux out of the box."
+      },
+      {
+        "module_type": "spec_table",
+        "title": "Technical Specifications",
+        "description": "规格参数表，提供详细技术数据，帮助用户决策",
+        "image_suggestion": "无需图片，或可搭配一张键盘俯视图作为背景",
+        "copy_text": "Switch Type: Cherry MX Blue/Brown/Red | Keycap Material: PBT Double-Shot | Frame: Aluminum Alloy | Connectivity: USB-C / Bluetooth 5.0 | Battery Life: Up to 80 hours (wireless) | Key Rollover: N-Key | Weight: 1.2 kg | Dimensions: 440 x 135 x 38 mm"
+      },
+      {
+        "module_type": "comparison_chart",
+        "title": "Why Choose Our Keyboard?",
+        "description": "竞品对比表，突出本产品优势",
+        "image_suggestion": "无需图片，使用表格形式对比",
+        "copy_text": "Feature | Our Keyboard | Competitor A | Competitor B\n--- | --- | --- | ---\nBuild Material | Aluminum + PBT | Plastic + ABS | Plastic + ABS\nErgonomic Tilt | Yes (2 levels) | No | Yes (1 level)\nWireless Range | 10m | 5m | 8m\nBattery Life | 80 hours | 40 hours | 60 hours\nEco-Friendly Packaging | 100% recycled | Standard | Standard"
+      },
+      {
+        "module_type": "image_text",
+        "title": "Eco-Friendly Packaging, Guilt-Free Choice",
+        "description": "左文右图，展示环保包装，强调品牌责任",
+        "image_suggestion": "展示键盘包装盒，使用再生纸板、无塑料填充物，或附带环保说明卡片",
+        "copy_text": "We believe great products shouldn't cost the earth. Our packaging is made from 100% recycled materials and is fully biodegradable. Unbox with pride, knowing you've made a sustainable choice."
+      }
+    ],
+    "seo_report": {
+      "keyword_density": {
+        "score": 70.0,
+        "findings": [
+          "目标关键词在标题、五点描述和长描述中均有出现，但标题中三个关键词连续堆叠，略显刻意。",
+          "五点描述中每个要点开头都重复使用目标关键词，虽然有助于SEO，但降低了自然度。",
+          "长描述中关键词出现频率合理，没有过度堆砌。"
+        ],
+        "suggestions": [
+          "标题中避免连续堆叠关键词，可改为更自然的表达，如 'Premium Ergonomic Mechanical Keyboard – Durable Full Size for Office and Gaming'。",
+          "五点描述中每个要点开头不必都重复关键词，可分散使用，例如第一点用 'premium mechanical keyboard'，第二点用 'ergonomic design'，第三点用 'durable build'。",
+          "确保关键词在描述中自然融入，而非强行插入。"
+        ]
+      },
+      "readability": {
+        "score": 75.0,
+        "findings": [
+          "标题长度约100字符，符合要求，但关键词堆叠影响流畅度。",
+          "五点描述每个要点约20-30词，简洁明了，但开头重复关键词略显冗余。",
+          "长描述HTML结构清晰，但品牌故事部分语言略显抽象，可能降低扫描友好度。",
+          "五点描述中 'easy-to-use' 和 'eco-friendly packaging' 与目标关键词关联度低，略显突兀。"
+        ],
+        "suggestions": [
+          "标题优化为更自然的语序，如 'Premium Ergonomic Mechanical Keyboard – Durable Full Size for Office and Gaming'。",
+          "五点描述中减少关键词重复，将 'easy-to-use' 和 'eco-friendly' 整合到其他要点中，或作为独立卖点但避免与关键词冲突。",
+          "长描述品牌故事部分可增加具体使用场景，如 'Whether you're coding, gaming, or writing, this keyboard delivers consistent performance.'，提升可读性。"
+        ]
+      },
+      "completeness": {
+        "score": 85.0,
+        "findings": [
+          "标题、五点描述、长描述（含品牌故事和规格）均已覆盖，但缺少A+内容（如对比图、生活方式图）。",
+          "五点描述涵盖了材质、人体工学、耐用性、易用性和环保包装，信息较全面。",
+          "长描述中规格部分仅列出框架和键帽材质，缺少轴体类型、连接方式、尺寸重量等关键信息。"
+        ],
+        "suggestions": [
+          "补充A+模块，添加产品对比图、使用场景图（如办公、游戏）和详细规格表。",
+          "在长描述规格部分增加轴体类型（如红轴、青轴）、连接方式（有线/无线）、尺寸重量、兼容系统等信息。",
+          "五点描述中可加入保修信息或客户评价摘要，增强信任感。"
+        ]
+      },
+      "conversion_potential": {
+        "score": 65.0,
+        "findings": [
+          "标题和五点描述突出了核心卖点（材质、人体工学、耐用性），但缺乏情感共鸣和差异化。",
+          "环保包装是独特卖点，但放在五点最后，可能被忽略。",
+          "长描述品牌故事部分过于抽象，未能直接解决买家痛点（如长时间打字疲劳、游戏延迟）。",
+          "缺少社会证明（如销量、评分、名人推荐）和紧迫感（如限时优惠）。"
+        ],
+        "suggestions": [
+          "在五点描述或长描述中增加具体场景化描述，如 'Reduce wrist pain after 8-hour coding sessions' 或 'Achieve faster response times in competitive gaming'。",
+          "将环保包装提前到第二或第三点，并强调其对环保意识买家的吸引力。",
+          "长描述品牌故事部分可加入用户痛点，如 'Tired of cheap keyboards that break after months? Our premium mechanical keyboard is built to last.'。",
+          "在描述末尾加入限时优惠或保修承诺，如 '30-day money-back guarantee' 或 'Limited-time free shipping'。"
+        ]
+      },
+      "overall_score": 74.0,
+      "improvement_priority": [
+        "优化标题和五点描述的关键词密度，避免堆砌，提升自然度。",
+        "增强转化预期，加入具体场景化描述和社会证明元素。",
+        "补充A+内容和详细规格，提升完整性和专业度。"
+      ]
+    },
+    "human_approved": false
+  },
+  "compliance": {
+    "policy_issues": [
+      {
+        "location": "Title",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The word 'Premium' in the title may be considered a subjective claim that could imply superiority without substantiation, which is prohibited under Amazon's policy on exaggerated claims.",
+        "suggestion": "Remove 'Premium' from the title or replace with a factual descriptor like 'Full-Size Mechanical Keyboard'."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The phrase 'premium mechanical keyboard' in the first bullet point is a subjective claim that may be seen as unsubstantiated superiority.",
+        "suggestion": "Replace 'premium' with factual attributes such as 'high-grade aluminum frame and PBT keycaps'."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Prohibited Claims",
+        "severity": "Medium",
+        "description": "The claim 'exceptional durability' in the first bullet point is subjective and could be considered an exaggerated claim without evidence.",
+        "suggestion": "Rephrase to 'durability for long-term use' or remove 'exceptional'."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Prohibited Claims",
+        "severity": "Medium",
+        "description": "The phrase 'reliable performance for years' in the third bullet point is a guarantee of longevity, which is not allowed unless backed by a warranty or specific data.",
+        "suggestion": "Change to 'reliable performance' or specify warranty details if applicable."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Prohibited Claims",
+        "severity": "Medium",
+        "description": "The claim 'premium unboxing experience' in the fifth bullet point is subjective and may be seen as an exaggerated claim.",
+        "suggestion": "Remove 'premium' or rephrase to 'eco-friendly unboxing experience'."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The phrase 'premium mechanical keyboard' in the description is a subjective claim that could imply superiority without substantiation.",
+        "suggestion": "Remove 'premium' or replace with factual language like 'mechanical keyboard with aluminum frame'."
+      }
+    ],
+    "claim_issues": [
+      {
+        "claim_text": "Premium mechanical keyboard crafted with high-grade aluminum frame and PBT keycaps, delivering a luxurious typing feel and exceptional durability for long-term use.",
+        "issue": "unsubstantiated",
+        "risk_level": "low",
+        "explanation": "The claim 'luxurious typing feel' and 'exceptional durability' are subjective and lack specific evidence or benchmarks (e.g., lifespan tests, material certifications).",
+        "fix_suggestion": "Replace with objective statements such as 'aluminum frame and PBT keycaps for consistent feel and resistance to wear' or provide test data."
+      },
+      {
+        "claim_text": "Ergonomic mechanical keyboard featuring a sculpted key layout and adjustable tilt legs, reducing wrist strain and enhancing comfort during extended typing sessions.",
+        "issue": "unsubstantiated",
+        "risk_level": "medium",
+        "explanation": "The claim that the keyboard 'reduces wrist strain' is a health-related benefit that requires ergonomic studies or certifications (e.g., ANSI/HFES 100). Without evidence, it may mislead consumers.",
+        "fix_suggestion": "Add a qualifier like 'may help reduce strain' or reference ergonomic design principles, and include a disclaimer that individual results vary."
+      },
+      {
+        "claim_text": "Durable mechanical keyboard with hot-swappable switches and reinforced USB-C connection, ensuring easy customization and reliable performance for years.",
+        "issue": "unsubstantiated",
+        "risk_level": "low",
+        "explanation": "The phrase 'reliable performance for years' is a durability claim without supporting data (e.g., switch lifespan ratings, connector test cycles).",
+        "fix_suggestion": "Specify expected lifespan (e.g., 'rated for 50 million keystrokes') or replace with 'designed for long-term use'."
+      },
+      {
+        "claim_text": "Eco-friendly packaging made from recycled materials, reducing environmental impact while delivering a premium unboxing experience for conscious consumers.",
+        "issue": "unsubstantiated",
+        "risk_level": "medium",
+        "explanation": "The claim 'eco-friendly' and 'reducing environmental impact' requires specifics (e.g., percentage of recycled content, certifications like FSC). Without details, it may be considered greenwashing.",
+        "fix_suggestion": "Provide exact recycled content percentage and any environmental certifications, or rephrase to 'packaging made with recycled materials'."
+      }
+    ],
+    "overall_verdict": "",
+    "risk_level": "medium",
+    "total_issues": 10,
+    "critical_items": [],
+    "action_items": [
+      "Remove 'Premium' from the title or replace with a factual descriptor like 'Full-Size Mechanical Keyboard'.",
+      "Replace 'premium' with factual attributes such as 'high-grade aluminum frame and PBT keycaps'.",
+      "Rephrase to 'durability for long-term use' or remove 'exceptional'.",
+      "Change to 'reliable performance' or specify warranty details if applicable.",
+      "Remove 'premium' or rephrase to 'eco-friendly unboxing experience'.",
+      "Remove 'premium' or replace with factual language like 'mechanical keyboard with aluminum frame'.",
+      "Replace with objective statements such as 'aluminum frame and PBT keycaps for consistent feel and resistance to wear' or provide test data.",
+      "Add a qualifier like 'may help reduce strain' or reference ergonomic design principles, and include a disclaimer that individual results vary.",
+      "Specify expected lifespan (e.g., 'rated for 50 million keystrokes') or replace with 'designed for long-term use'.",
+      "Provide exact recycled content percentage and any environmental certifications, or rephrase to 'packaging made with recycled materials'."
+    ],
+    "human_reviewed": false
+  },
+  "social": {
+    "marketing_angles": [
+      "unboxing",
+      "lifestyle",
+      "ergonomic benefits",
+      "durability test",
+      "eco-friendly packaging"
+    ],
+    "target_audience": "Tech-savvy professionals and gamers aged 25-45 in the US, who value premium build quality, ergonomic comfort for long typing or gaming sessions, and sustainable practices. They are early adopters of high-end peripherals and seek products that combine aesthetics with performance.",
+    "content_tones": [
+      "professional",
+      "aspirational",
+      "playful"
+    ],
+    "key_selling_points": [
+      "Premium quality materials for a luxurious feel",
+      "Ergonomic design reduces strain during extended use",
+      "Durable and long-lasting construction",
+      "Easy to use with plug-and-play setup",
+      "Eco-friendly packaging aligns with sustainability values"
+    ],
+    "visual_style": [],
+    "hashtag_themes": [],
+    "posts": [
+      {
+        "platform": "instagram",
+        "copy": "Upgrade your workspace with a keyboard that matches your ambition. Crafted from premium quality materials, this mechanical keyboard delivers a tactile",
+        "hashtags": [
+          "PremiumMechanicalKeyboard",
+          "ErgonomicDesign",
+          "TechLifestyle",
+          "SustainableTech",
+          "WorkspaceInspo",
+          "GamingSetup",
+          "MechanicalKeyboardLove",
+          "EcoFriendly",
+          "ProductivityTools",
+          "USTech"
+        ],
+        "quality_score": 8.0
+      },
+      {
+        "platform": "threads",
+        "copy": "There’s something about the right keyboard that changes how you work. It’s not just about the clack or the feel—it’s about how it supports your flow, ",
+        "hashtags": [
+          "mechanicalkeyboard",
+          "ergonomicdesign",
+          "premiumbuild",
+          "sustainabletech",
+          "keyboardenthusiast",
+          "productivitygear",
+          "gamingperipherals",
+          "desksetup",
+          "techlife",
+          "longlastingquality"
+        ],
+        "quality_score": 8.0
+      },
+      {
+        "platform": "pinterest",
+        "copy": "Struggling with wrist fatigue during long work or gaming sessions? Your keyboard setup might be the issue. A premium mechanical keyboard isn't just ab",
+        "hashtags": [
+          "MechanicalKeyboard",
+          "ErgonomicSetup",
+          "DeskInspo",
+          "TechProfessionals",
+          "GamingGear",
+          "SustainableTech",
+          "WorkspaceGoals",
+          "ProductivityTips",
+          "PremiumBuild",
+          "EcoFriendly"
+        ],
+        "quality_score": 8.0
+      }
+    ],
+    "human_approved": false
+  },
+  "platform": {
+    "asin": null,
+    "amazon_url": null,
+    "amazon_publish_status": "draft",
+    "amazon_publish_errors": [],
+    "amazon_published_at": null,
+    "social_publish_status": {},
+    "social_post_urls": {}
+  },
+  "reviews": {
+    "total_reviews": 10,
+    "average_rating": 0.0,
+    "sentiment_distribution": {},
+    "negative_alert_count": 1,
+    "top_alerts": [
+      {
+        "reviewer": "Maria G.",
+        "content": "Arrived damaged. The box was crushed.",
+        "alert_level": "alert"
+      }
+    ],
+    "last_monitored_at": "2026-05-17T08:00:54.840998Z"
+  },
+  "ads": {
+    "campaigns": [],
+    "total_budget": 0.0,
+    "total_spend": 0.0,
+    "acos": null
+  }
+}

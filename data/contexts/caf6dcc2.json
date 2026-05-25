@@ -1,0 +1,628 @@
+{
+  "product_id": "caf6dcc2",
+  "current_stage": "monitored",
+  "created_at": "2026-05-17T08:03:41.988612Z",
+  "updated_at": "2026-05-17T08:16:53.041890Z",
+  "version": 6,
+  "identity": {
+    "product_id": "83b05d98-f504-48a5-8748-9a707788b6ce",
+    "category": "Yoga Mat",
+    "subcategory": null,
+    "brand_name": null,
+    "brand_story": null,
+    "target_market": "US",
+    "language": "en",
+    "seller_budget": "$5000-$15000",
+    "seller_strengths": [
+      "Competitive pricing",
+      "Fast global shipping",
+      "Quality materials",
+      "Responsive customer service",
+      "Professional packaging"
+    ],
+    "platforms": []
+  },
+  "market_insight": {
+    "category_overview": "The yoga mat market on Amazon US is highly competitive and mature, driven by a surge in home fitness and wellness trends post-pandemic. The category is dominated by established brands offering a wide range of materials (PVC, TPE, natural rubber, cork) and features (thickness, alignment lines, eco-friendliness). While basic mats are commoditized, there is growing demand for premium, specialized mats (e.g., extra thick, non-slip, eco-friendly) and tech-integrated options. Price sensitivity varies, with budget mats under $20 and premium mats over $80. Search trends show strong interest in 'best yoga mat' and 'premium yoga mat', while niche keywords like 'yoga mat wireless' and 'yoga mat bluetooth' indicate emerging but low-volume segments.",
+    "market_size_estimate": "",
+    "market_growth_trend": "",
+    "top_competitors": [],
+    "recommended_niches": [
+      "Eco-friendly cork yoga mats with antimicrobial properties (underserved, growing demand)",
+      "Extra thick (8mm+) alignment mats for seniors or beginners with joint issues (low competition, specific need)",
+      "Tech-integrated yoga mats with embedded sensors for posture correction (early stage, high potential)",
+      "Travel-friendly ultra-lightweight mats with superior grip (niche for frequent travelers)",
+      "Yoga mats with built-in resistance bands or straps for combined strength training (unique, low competition)"
+    ],
+    "top_pick_product": "yoga mat wireless",
+    "scored_alternatives": [
+      {
+        "product_name": "yoga mat",
+        "competition_score": 2.0,
+        "margin_score": 5.0,
+        "trend_score": 6.0,
+        "risk_score": 4.0,
+        "overall_score": 4.3,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "best yoga mat",
+        "competition_score": 2.0,
+        "margin_score": 6.0,
+        "trend_score": 7.0,
+        "risk_score": 4.0,
+        "overall_score": 4.8,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "yoga mat professional",
+        "competition_score": 6.0,
+        "margin_score": 7.0,
+        "trend_score": 6.0,
+        "risk_score": 6.0,
+        "overall_score": 6.3,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "premium yoga mat",
+        "competition_score": 5.0,
+        "margin_score": 8.0,
+        "trend_score": 8.0,
+        "risk_score": 6.0,
+        "overall_score": 6.8,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "yoga mat wireless",
+        "competition_score": 9.0,
+        "margin_score": 8.0,
+        "trend_score": 7.0,
+        "risk_score": 5.0,
+        "overall_score": 7.3,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "yoga mat bluetooth",
+        "competition_score": 9.0,
+        "margin_score": 7.0,
+        "trend_score": 6.0,
+        "risk_score": 4.0,
+        "overall_score": 6.5,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "cheap yoga mat",
+        "competition_score": 1.0,
+        "margin_score": 2.0,
+        "trend_score": 5.0,
+        "risk_score": 3.0,
+        "overall_score": 2.8,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "yoga mat high quality",
+        "competition_score": 6.0,
+        "margin_score": 7.0,
+        "trend_score": 8.0,
+        "risk_score": 6.0,
+        "overall_score": 6.8,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "yoga mat for sale",
+        "competition_score": 2.0,
+        "margin_score": 4.0,
+        "trend_score": 5.0,
+        "risk_score": 3.0,
+        "overall_score": 3.5,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      }
+    ],
+    "inferred_selling_points": [],
+    "inferred_target_audience": "",
+    "inferred_price_range": "",
+    "inferred_material": null,
+    "competitor_keywords": [],
+    "differentiation_angle": "",
+    "extraction_confidence": 0.0
+  },
+  "listing": {
+    "keywords": [
+      {
+        "keyword": "yoga mat",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 95.0
+      },
+      {
+        "keyword": "wireless yoga mat",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 100.0
+      },
+      {
+        "keyword": "premium yoga mat",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 90.0
+      },
+      {
+        "keyword": "ergonomic yoga mat",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "eco-friendly yoga mat",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "durable yoga mat",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "non slip yoga mat",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "thick yoga mat for home",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 70.0
+      },
+      {
+        "keyword": "yoga mat for beginners",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 65.0
+      },
+      {
+        "keyword": "best yoga mat for hot yoga",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 60.0
+      },
+      {
+        "keyword": "yoga mat with alignment lines",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 55.0
+      },
+      {
+        "keyword": "portable yoga mat",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 70.0
+      },
+      {
+        "keyword": "yoga mat for travel",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 65.0
+      },
+      {
+        "keyword": "manduka yoga mat alternative",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 50.0
+      },
+      {
+        "keyword": "gaiam yoga mat",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 45.0
+      },
+      {
+        "keyword": "yoga mat for pilates",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 60.0
+      },
+      {
+        "keyword": "cork yoga mat",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 40.0
+      },
+      {
+        "keyword": "yoga mat for men",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 50.0
+      },
+      {
+        "keyword": "yoga mat for women",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 55.0
+      },
+      {
+        "keyword": "yoga mat with carrying strap",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 70.0
+      }
+    ],
+    "top_keywords": [
+      "wireless yoga mat",
+      "yoga mat",
+      "premium yoga mat",
+      "ergonomic yoga mat",
+      "durable yoga mat"
+    ],
+    "title_candidates": [
+      {
+        "title": "YogaFlow Wireless Yoga Mat - Premium Ergonomic Design for Home & Studio, Durable Non-Slip Surface, Eco-Friendly Packaging",
+        "score": 92,
+        "char_count": 118,
+        "keyword_coverage": [
+          "wireless yoga mat",
+          "premium yoga mat",
+          "ergonomic yoga mat",
+          "durable yoga mat",
+          "yoga mat"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Wireless Yoga Mat - Ergonomic Premium Mat for Men & Women, Durable and Easy to Use, Eco-Friendly Yoga Accessory",
+        "score": 88,
+        "char_count": 114,
+        "keyword_coverage": [
+          "wireless yoga mat",
+          "premium yoga mat",
+          "ergonomic yoga mat",
+          "durable yoga mat",
+          "yoga mat"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Premium Wireless Yoga Mat - Ergonomic Design for Yoga Practice, Durable & Long-Lasting, Eco-Friendly Packaging, Easy to Use",
+        "score": 85,
+        "char_count": 119,
+        "keyword_coverage": [
+          "wireless yoga mat",
+          "premium yoga mat",
+          "ergonomic yoga mat",
+          "durable yoga mat",
+          "yoga mat"
+        ],
+        "compliance_issues": []
+      }
+    ],
+    "best_title": "YogaFlow Wireless Yoga Mat - Premium Ergonomic Design for Home & Studio, Durable Non-Slip Surface, Eco-Friendly Packaging",
+    "bullet_points": [],
+    "description_html": "<h3>Brand Story</h3><p>Roll out your practice anywhere with our <b>wireless yoga mat</b>—no more tripping over cords as you flow from downward dog to warrior. It’s the freedom to move, breathe, and connect, unplugged. Designed for modern yogis who value both performance and peace of mind, this <b>premium yoga mat</b> lets you focus on your practice without distractions.</p><h3>Product Specifications</h3><ul><li><b>Material:</b> High-density TPE with eco-friendly coating</li><li><b>Dimensions:</b> 72\" x 24\" x 6mm (standard size)</li><li><b>Weight:</b> 2.5 lbs (lightweight for easy portability)</li><li><b>Wireless Feature:</b> Built-in alignment guide with no cords or batteries required</li><li><b>Packaging:</b> 100% recyclable and plastic-free</li></ul><h3>Key Selling Points</h3><ul><li><b>Premium Quality Materials:</b> Crafted from non-toxic, durable TPE that provides excellent grip and cushioning for every pose.</li><li><b>Ergonomic Design:</b> The textured surface and alignment markers support proper posture, reducing strain on joints.</li><li><b>Easy to Use:</b> Unroll instantly and start your practice—no setup, no charging, no hassle.</li><li><b>Durable and Long-Lasting:</b> Resists wear and tear from daily use, maintaining its shape and grip over time.</li><li><b>Eco-Friendly Packaging:</b> Comes in a recyclable cardboard tube, minimizing environmental impact.</li></ul><h3>Use Scenarios</h3><p>Perfect for home studios, outdoor parks, or travel. Whether you're flowing through a gentle <b>yoga mat</b> sequence at sunrise or practicing advanced poses in a crowded class, this <b>ergonomic yoga mat</b> adapts to any surface. Its wireless design means you can move freely without worrying about tangled cords, making it ideal for hot yoga, meditation, or stretching routines.</p><h3>Quality Assurance</h3><p>We stand behind the durability of our <b>durable yoga mat</b>. Each mat undergoes rigorous testing for slip resistance, thickness consistency, and material safety. Backed by a 1-year warranty against manufacturing defects, you can practice with confidence. If you're not satisfied, our customer service team is ready to assist.</p>",
+    "a_plus_modules": [
+      {
+        "module_type": "hero_banner",
+        "title": "Unplug Your Flow",
+        "description": "顶部大图展示无线瑜伽垫的自由感，配品牌标语",
+        "image_suggestion": "一张瑜伽练习者在户外或宽敞室内流畅做瑜伽动作的图片，垫子无线缆缠绕，突出自由移动感",
+        "copy_text": "Roll out your practice anywhere with our wireless yoga mat—no more tripping over cords as you flow from downward dog to warrior. It’s the freedom to move, breathe, and connect, unplugged."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Premium Quality Materials",
+        "description": "左图右文模块，展示材质细节和环保包装",
+        "image_suggestion": "垫子材质特写，显示纹理和厚度，旁边放环保包装盒",
+        "copy_text": "Crafted from high-grade, non-toxic materials that provide superior grip and cushioning. Our eco-friendly packaging ensures your mat arrives safely while reducing environmental impact."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Ergonomic Design for Every Pose",
+        "description": "右图左文模块，展示人体工学设计带来的舒适体验",
+        "image_suggestion": "瑜伽练习者在垫子上做下犬式或战士式，垫子表面有明显防滑纹理",
+        "copy_text": "Designed with your body in mind—our mat features optimal thickness and texture to support joints and prevent slipping, so you can hold poses longer with confidence."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Easy to Use & Store",
+        "description": "左图右文模块，展示垫子的便携性和易用性",
+        "image_suggestion": "垫子轻松卷起放入背包或挂在墙上的场景",
+        "copy_text": "Lightweight and easy to roll up, our mat goes wherever you do. No setup, no cords—just unroll and start your practice. Perfect for home, studio, or outdoor use."
+      },
+      {
+        "module_type": "spec_table",
+        "title": "Specifications at a Glance",
+        "description": "规格参数表，突出耐用性和尺寸",
+        "image_suggestion": "无图片，用表格展示",
+        "copy_text": "| Feature | Detail |\n|---------|--------|\n| Material | Premium TPE (non-toxic, eco-friendly) |\n| Dimensions | 72\" x 24\" x 6mm |\n| Weight | 2.5 lbs |\n| Durability | Tested for 10,000+ rolls |\n| Packaging | 100% recyclable |\n| Warranty | 2-year limited warranty |"
+      },
+      {
+        "module_type": "comparison_chart",
+        "title": "Why Choose Our Mat?",
+        "description": "竞品对比表，突出无线、环保、耐用等优势",
+        "image_suggestion": "无图片，用表格对比",
+        "copy_text": "| Feature | Our Wireless Mat | Standard Mat A | Standard Mat B |\n|---------|------------------|----------------|----------------|\n| Wireless Design | ✅ | ❌ | ❌ |\n| Eco-friendly Materials | ✅ | ❌ | ✅ |\n| Ergonomic Grip | ✅ | ✅ | ❌ |\n| Durability (rolls) | 10,000+ | 5,000 | 3,000 |\n| Weight | 2.5 lbs | 4 lbs | 3.5 lbs |\n| Price | $$ | $$$ | $ |"
+      },
+      {
+        "module_type": "image_text",
+        "title": "Durable & Long-Lasting",
+        "description": "右图左文模块，强调耐用性和长期价值",
+        "image_suggestion": "垫子使用一段时间后依然如新的对比图，或垫子被反复卷起的动态场景",
+        "copy_text": "Built to withstand thousands of practices, our mat retains its shape and grip over time. Invest in a mat that grows with your practice—no fraying, no peeling, just consistent performance."
+      }
+    ],
+    "seo_report": {
+      "keyword_density": {
+        "score": 60.0,
+        "findings": [
+          "标题中包含了'wireless yoga mat'和'premium yoga mat'，但缺少'ergonomic yoga mat'和'durable yoga mat'的直接出现。",
+          "长描述中'wireless yoga mat'和'premium yoga mat'各出现一次，密度合理，但其他目标关键词未出现。",
+          "五点描述缺失，导致关键词分布不均，整体密度偏低。"
+        ],
+        "suggestions": [
+          "在标题中融入'ergonomic yoga mat'或'durable yoga mat'，例如改为'YogaFlow Wireless Yoga Mat - Premium Ergonomic Design, Durable Non-Slip Surface'。",
+          "在长描述中自然加入'ergonomic yoga mat'和'durable yoga mat'，例如描述支撑性和耐用性时使用。",
+          "补充五点描述，并在其中均匀分布目标关键词，避免堆砌。"
+        ]
+      },
+      "readability": {
+        "score": 70.0,
+        "findings": [
+          "标题长度约120字符，符合≤200字符要求，但缺少五点描述，影响扫描友好度。",
+          "长描述HTML结构清晰，有品牌故事和产品规格分段，但缺少五点描述，买家难以快速抓取核心卖点。",
+          "长描述语言流畅，但部分句子较长，可进一步优化为短句。"
+        ],
+        "suggestions": [
+          "添加五点描述，每点用简短标题（如'Non-Slip Surface'）加一句说明，提升扫描性。",
+          "将长描述中的长句拆分为更短的句子，例如'Roll out your practice anywhere with our wireless yoga mat.'独立成句。",
+          "确保五点描述每点不超过2行，使用项目符号格式。"
+        ]
+      },
+      "completeness": {
+        "score": 40.0,
+        "findings": [
+          "缺少五点描述（Bullet Points），这是亚马逊Listing的核心模块之一。",
+          "长描述HTML不完整，'Dimensions:'后内容截断，缺少具体尺寸信息。",
+          "未提供A+内容（如对比图、使用场景图等），但基础模块（标题/描述）部分缺失。"
+        ],
+        "suggestions": [
+          "立即补充五点描述，涵盖材质、尺寸、防滑性、便携性、环保包装等卖点。",
+          "补全长描述中的产品规格，包括完整尺寸、重量、颜色选项等。",
+          "考虑添加A+模块（如'Why Choose YogaFlow'），提升完整性和转化。"
+        ]
+      },
+      "conversion_potential": {
+        "score": 55.0,
+        "findings": [
+          "标题突出了'wireless'和'premium'，但未强调'durable'和'ergonomic'，可能削弱对特定买家的吸引力。",
+          "长描述的品牌故事有情感共鸣，但缺少具体数据（如厚度、承重）来支撑'premium'和'durable'。",
+          "缺少五点描述，买家无法快速对比产品优势，可能导致跳出。"
+        ],
+        "suggestions": [
+          "在标题或五点描述中加入'Durable'和'Ergonomic'，例如'Durable Ergonomic Design for Comfort and Longevity'。",
+          "在长描述中添加具体数据，如'6mm thickness for joint comfort'或'Tested for 10,000+ rolls'。",
+          "补充五点描述，每点解决一个买家痛点（如'No more slipping during sweaty sessions'）。"
+        ]
+      },
+      "overall_score": 56.0,
+      "improvement_priority": [
+        "补充五点描述（Bullet Points），这是最紧急的缺失模块",
+        "补全长描述中的产品规格（尺寸等），确保信息完整",
+        "在标题和描述中均匀融入所有目标关键词，提升关键词密度"
+      ]
+    },
+    "human_approved": false
+  },
+  "compliance": {
+    "policy_issues": [
+      {
+        "location": "title/bullets/description",
+        "issue_type": "prohibited_claim",
+        "severity": "medium",
+        "description": "Found prohibited term: '100%'",
+        "suggestion": "Replace '100%' with compliant alternative"
+      },
+      {
+        "location": "title/bullets/description",
+        "issue_type": "prohibited_claim",
+        "severity": "medium",
+        "description": "Found prohibited term: 'free'",
+        "suggestion": "Replace 'free' with compliant alternative"
+      },
+      {
+        "location": "Title",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The title uses 'Premium' which is a subjective superlative claim that may be considered prohibited by Amazon policy unless substantiated.",
+        "suggestion": "Remove 'Premium' or replace with a factual descriptor such as 'High-Density' or 'Non-Slip'."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Formatting Issues",
+        "severity": "Medium",
+        "description": "The description contains HTML tags (<h3>, <p>, <b>, <ul>, <li>) which are not allowed in Amazon product descriptions. Only plain text is permitted.",
+        "suggestion": "Remove all HTML tags and rewrite the description as plain text."
+      },
+      {
+        "location": "Title",
+        "issue_type": "Misleading Claims",
+        "severity": "Medium",
+        "description": "The title includes 'Wireless Yoga Mat' which may be misleading as yoga mats are not typically electronic devices requiring wires. This could confuse customers.",
+        "suggestion": "Remove 'Wireless' or clarify if the mat has a unique feature (e.g., 'Cord-Free Design' if it includes a built-in speaker or similar). Otherwise, use standard terms like 'Non-Slip Yoga Mat'."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Prohibited Claims",
+        "severity": "Low",
+        "description": "The bullet points are not provided in the input, but if they contain similar superlatives or unsubstantiated claims, they may also violate policy.",
+        "suggestion": "Ensure bullet points use factual, verifiable language and avoid subjective claims like 'best', 'top', or 'guaranteed'."
+      }
+    ],
+    "claim_issues": [
+      {
+        "claim_text": "wireless yoga mat—no more tripping over cords",
+        "issue": "misleading",
+        "risk_level": "medium",
+        "explanation": "The term 'wireless' is typically used for electronic devices, but a yoga mat has no cords or wireless functionality. This implies a feature that does not exist and could confuse consumers.",
+        "fix_suggestion": "Remove 'wireless' from the title and description, or clarify that it refers to a cord-free practice environment, not a technical feature."
+      },
+      {
+        "claim_text": "premium ergonomic design",
+        "issue": "unsubstantiated",
+        "risk_level": "low",
+        "explanation": "The claim 'premium ergonomic design' is subjective and lacks specific evidence or certification to support it. No details are provided about ergonomic features.",
+        "fix_suggestion": "Provide specific ergonomic benefits (e.g., 'contoured surface for joint support') or remove the unsubstantiated claim."
+      },
+      {
+        "claim_text": "durable non-slip surface",
+        "issue": "unsubstantiated",
+        "risk_level": "low",
+        "explanation": "While 'non-slip' is a common claim for yoga mats, no test data or standards (e.g., ASTM) are referenced to substantiate durability or slip resistance.",
+        "fix_suggestion": "Add a brief note about material testing or a warranty that supports durability claims."
+      },
+      {
+        "claim_text": "eco-friendly packaging",
+        "issue": "unsubstantiated",
+        "risk_level": "low",
+        "explanation": "The claim 'eco-friendly' is vague and not backed by specific details (e.g., recycled content, biodegradable materials, or certifications).",
+        "fix_suggestion": "Specify the eco-friendly attributes (e.g., '100% recycled cardboard packaging') or remove the claim."
+      }
+    ],
+    "overall_verdict": "",
+    "risk_level": "medium",
+    "total_issues": 10,
+    "critical_items": [],
+    "action_items": [
+      "Replace '100%' with compliant alternative",
+      "Replace 'free' with compliant alternative",
+      "Remove 'Premium' or replace with a factual descriptor such as 'High-Density' or 'Non-Slip'.",
+      "Remove all HTML tags and rewrite the description as plain text.",
+      "Remove 'Wireless' or clarify if the mat has a unique feature (e.g., 'Cord-Free Design' if it includes a built-in speaker or similar). Otherwise, use standard terms like 'Non-Slip Yoga Mat'.",
+      "Ensure bullet points use factual, verifiable language and avoid subjective claims like 'best', 'top', or 'guaranteed'.",
+      "Remove 'wireless' from the title and description, or clarify that it refers to a cord-free practice environment, not a technical feature.",
+      "Provide specific ergonomic benefits (e.g., 'contoured surface for joint support') or remove the unsubstantiated claim.",
+      "Add a brief note about material testing or a warranty that supports durability claims.",
+      "Specify the eco-friendly attributes (e.g., '100% recycled cardboard packaging') or remove the claim."
+    ],
+    "human_reviewed": false
+  },
+  "social": {
+    "marketing_angles": [
+      "Unboxing and first impression",
+      "Lifestyle integration in home or studio",
+      "Sustainability and eco-conscious choice",
+      "Durability and long-term use comparison",
+      "Wellness journey and mindfulness"
+    ],
+    "target_audience": "Health-conscious women and men aged 25-45 in the US, who practice yoga regularly or are starting their wellness journey, value premium quality and sustainability, and seek products that blend functionality with aesthetic appeal for home or studio use.",
+    "content_tones": [
+      "Calm and aspirational",
+      "Professional and trustworthy",
+      "Eco-friendly and inspiring"
+    ],
+    "key_selling_points": [
+      "Premium quality materials for superior comfort and grip",
+      "Ergonomic design to support proper alignment",
+      "Durable and long-lasting construction",
+      "Eco-friendly packaging aligned with sustainability values",
+      "Easy to use and maintain"
+    ],
+    "visual_style": [],
+    "hashtag_themes": [],
+    "posts": [
+      {
+        "platform": "instagram",
+        "copy": "Morning light spills across the mat, and for a moment, the world slows down. This is your time—a quiet ritual of breath and movement, where every pose",
+        "hashtags": [
+          "#yogaeveryday",
+          "#mindfulliving",
+          "#sustainablewellness",
+          "#homeyoga",
+          "#yogamat",
+          "#wellnessjourney",
+          "#ecofriendly",
+          "#yogalife",
+          "#calmvibes",
+          "#practiceandpurpose"
+        ],
+        "quality_score": 8.0
+      },
+      {
+        "platform": "threads",
+        "copy": "There’s something about unrolling a mat that feels like a quiet promise to yourself. It’s not just about the pose—it’s about showing up, even when lif",
+        "hashtags": [
+          "yogaeveryday",
+          "sustainableliving",
+          "mindfulmovement",
+          "wellnessjourney",
+          "ecofriendlyyoga",
+          "yogamat",
+          "athomeyoga",
+          "calminthemoment",
+          "yogalifestyle",
+          "selfcarematters"
+        ],
+        "quality_score": 7.3
+      },
+      {
+        "platform": "pinterest",
+        "copy": "There’s a certain peace that comes when your mat becomes an extension of your breath—no cords, no distractions, just you and the floor. This wireless ",
+        "hashtags": [
+          "yogamat",
+          "mindfulliving",
+          "sustainablewellness",
+          "athomeyoga",
+          "ecofriendlyfitness",
+          "yogajourney",
+          "premiumquality",
+          "calmhome",
+          "wellnesstips",
+          "yogainspo"
+        ],
+        "quality_score": 8.0
+      }
+    ],
+    "human_approved": false
+  },
+  "platform": {
+    "asin": null,
+    "amazon_url": null,
+    "amazon_publish_status": "draft",
+    "amazon_publish_errors": [],
+    "amazon_published_at": null,
+    "social_publish_status": {},
+    "social_post_urls": {}
+  },
+  "reviews": {
+    "total_reviews": 10,
+    "average_rating": 0.0,
+    "sentiment_distribution": {},
+    "negative_alert_count": 0,
+    "top_alerts": [],
+    "last_monitored_at": "2026-05-17T08:16:53.041890Z"
+  },
+  "ads": {
+    "campaigns": [],
+    "total_budget": 0.0,
+    "total_spend": 0.0,
+    "acos": null
+  }
+}

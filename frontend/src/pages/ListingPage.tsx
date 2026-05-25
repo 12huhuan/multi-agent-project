@@ -1,19 +1,62 @@
 import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import { API_BASE } from "../lib/utils";
 import { taskStore } from "../lib/TaskStore";
 import { Check, X, Edit3, Eye, RotateCcw } from "lucide-react";
 
 export default function ListingPage() {
+  const [searchParams] = useSearchParams();
+  const urlTaskId = searchParams.get("taskId");
   const [productName, setProductName] = useState("");
   const [category, setCategory] = useState("");
   const [features, setFeatures] = useState("");
   const [brandStory, setBrandStory] = useState("");
+  const [imageDescriptions, setImageDescriptions] = useState("");
   const [platform, setPlatform] = useState("amazon_us");
   const [language, setLanguage] = useState("en");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [tasks, setTasks] = useState(taskStore.getAll());
   const [selectedTaskId, setSelectedTaskId] = useState<string | null>(null);
+  const [loadingUrlTask, setLoadingUrlTask] = useState(false);
+
+  // 从 URL 参数加载 orchestrator 创建的 listing 任务
+  useEffect(() => {
+    if (!urlTaskId) return;
+    const existing = taskStore.get(urlTaskId);
+    if (existing && existing.result) {
+      setSelectedTaskId(urlTaskId);
+      return;
+    }
+    setLoadingUrlTask(true);
+    setSelectedTaskId(urlTaskId);
+
+    // 注册到 TaskStore 并开始轮询
+    taskStore.add({
+      id: urlTaskId,
+      type: "listing",
+      status: "running",
+      product_name: "Loading...",
+      progress: "...",
+    });
+    taskStore.refresh(urlTaskId);
+
+    // 定时检查是否加载完成
+    const interval = setInterval(() => {
+      const t = taskStore.get(urlTaskId);
+      if (t?.result) {
+        setLoadingUrlTask(false);
+        clearInterval(interval);
+      }
+    }, 1000);
+    // 10s 超时
+    const timeout = setTimeout(() => {
+      setLoadingUrlTask(false);
+      clearInterval(interval);
+    }, 10000);
+
+    return () => { clearInterval(interval); clearTimeout(timeout); };
+  }, [urlTaskId]);
 
   useEffect(() => {
     return taskStore.subscribe(() => {
@@ -41,6 +84,7 @@ export default function ListingPage() {
           category,
           features: features.split("\n").filter(Boolean),
           brand_story: brandStory || null,
+          product_images_descriptions: imageDescriptions.split("\n").filter(Boolean),
           target_platform: platform,
           target_language: language,
         }),
@@ -72,7 +116,7 @@ export default function ListingPage() {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold text-slate-900 mb-2">Listing 优化</h1>
+      <h1 className="text-2xl font-bold text-slate-900 mb-2">Listing 生成</h1>
       {runningCount > 0 && (
         <p className="text-sm text-blue-600 mb-4">
           后台 {runningCount} 个任务进行中，切换页面不会中断
@@ -135,11 +179,18 @@ export default function ListingPage() {
               placeholder="品牌理念与故事..." />
           </div>
 
+          <div>
+            <label className="block text-sm font-medium text-slate-700 mb-1">产品图片描述 (可选，每行一个)</label>
+            <textarea value={imageDescriptions} onChange={(e) => setImageDescriptions(e.target.value)}
+              className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm h-20 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              placeholder="Main product on white background&#10;Product in use by customer&#10;Close-up detail shot" />
+          </div>
+
           {error && <div className="text-red-500 text-sm bg-red-50 p-2 rounded">{error}</div>}
 
           <button type="submit" disabled={loading}
             className="w-full bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors disabled:opacity-50">
-            {loading ? "提交中..." : "开始 Listing 优化"}
+            {loading ? "提交中..." : "开始 Listing 生成"}
           </button>
         </form>
 
@@ -189,7 +240,12 @@ export default function ListingPage() {
           )}
 
           {/* 详情 */}
-          {selectedTask?.result && selectedTask?.status === "awaiting_review" ? (
+          {loadingUrlTask ? (
+            <div className="bg-white rounded-xl border border-slate-200 p-6 text-center text-slate-400">
+              <div className="animate-spin w-8 h-8 border-2 border-blue-600 border-t-transparent rounded-full mx-auto mb-2" />
+              正在从服务器加载任务...
+            </div>
+          ) : selectedTask?.result && selectedTask?.status === "awaiting_review" ? (
             <ReviewPanel
               taskId={selectedTask.id}
               result={selectedTask.result}
@@ -396,6 +452,26 @@ function ReviewPanel({ taskId, result, onUpdated }: { taskId: string; result: an
         </section>
       )}
 
+      {/* Product Images */}
+      {result.product_images?.length > 0 && (
+        <section>
+          <h4 className="text-sm font-semibold text-slate-600 mb-2">产品图片 ({result.product_images.length})</h4>
+          <div className="grid grid-cols-2 gap-2">
+            {result.product_images.map((img: any, i: number) => (
+              <div key={i} className="border rounded overflow-hidden bg-white">
+                <img
+                  src={img.url || img}
+                  alt={img.description || `Image ${i + 1}`}
+                  className="w-full h-36 object-cover"
+                  onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
+                />
+                {img.description && <p className="p-1 text-xs text-gray-500 truncate">{img.description}</p>}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* A+ Content */}
       {result.a_plus_content?.modules?.length > 0 && (
         <section>
@@ -459,7 +535,7 @@ function ResultCard({ result, status }: { result: any; status?: string }) {
   return (
     <div className="bg-white rounded-xl border border-slate-200 p-6 space-y-4 max-h-[600px] overflow-auto">
       <div className="flex items-center justify-between">
-        <h3 className="font-semibold text-slate-700">优化结果</h3>
+        <h3 className="font-semibold text-slate-700">生成结果</h3>
         {status && (
           <span className={`text-xs px-2 py-0.5 rounded-full ${
             status === "completed" ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"
@@ -529,6 +605,26 @@ function ResultCard({ result, status }: { result: any; status?: string }) {
                   {mod.title && <span className="text-xs font-medium text-slate-700">{mod.title}</span>}
                 </div>
                 {mod.content && <p className="text-xs text-slate-600">{mod.content}</p>}
+                {mod.image_suggestion && <p className="text-xs text-blue-500 mt-0.5">图片建议: {mod.image_suggestion}</p>}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {result.product_images?.length > 0 && (
+        <section>
+          <h4 className="text-sm font-semibold text-slate-600 mb-2">产品图片 ({result.product_images.length})</h4>
+          <div className="grid grid-cols-2 gap-2">
+            {result.product_images.map((img: any, i: number) => (
+              <div key={i} className="border rounded overflow-hidden bg-white">
+                <img
+                  src={img.url || img}
+                  alt={img.description || `Image ${i + 1}`}
+                  className="w-full h-36 object-cover"
+                  onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
+                />
+                {img.description && <p className="p-1 text-xs text-gray-500 truncate">{img.description}</p>}
               </div>
             ))}
           </div>

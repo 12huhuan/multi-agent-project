@@ -1,0 +1,633 @@
+{
+  "product_id": "42651f38",
+  "current_stage": "monitored",
+  "created_at": "2026-05-18T03:59:23.216799Z",
+  "updated_at": "2026-05-18T04:03:23.789051Z",
+  "version": 6,
+  "identity": {
+    "product_id": "941003ab-3ac1-4a48-8aad-71f6512e6198",
+    "category": "厨房用品",
+    "subcategory": null,
+    "brand_name": null,
+    "brand_story": null,
+    "target_market": "US",
+    "language": "en",
+    "seller_budget": "$5000-$15000",
+    "seller_strengths": [
+      "Competitive pricing",
+      "Fast global shipping",
+      "Quality materials",
+      "Responsive customer service",
+      "Professional packaging"
+    ],
+    "platforms": []
+  },
+  "market_insight": {
+    "category_overview": "The US kitchenware market on Amazon is highly competitive and mature, driven by a mix of everyday essentials and specialized products. Current trends show strong demand for space-saving solutions (RV, portable, mini), ergonomic designs (arthritis-friendly), and premium materials (professional-grade utensils). The category is also seeing growth in themed sets (kids, Pioneer Woman) and value-driven deals. Seasonality peaks around holidays and summer camping season, with steady year-round demand for core items.",
+    "market_size_estimate": "",
+    "market_growth_trend": "",
+    "top_competitors": [],
+    "recommended_niches": [
+      "Ergonomic kitchenware for arthritis sufferers (e.g., easy-grip peelers, jar openers)",
+      "Compact/RV kitchenware sets (stackable, multi-functional, lightweight)",
+      "Kids' cooking kits with safety features (e.g., blunt knives, non-slip bowls)",
+      "Portable kitchenware for camping/van life (collapsible, durable materials like silicone)",
+      "Mini kitchenware for small apartments/dorms (space-saving, aesthetic designs)"
+    ],
+    "top_pick_product": "kitchenware for rv",
+    "scored_alternatives": [
+      {
+        "product_name": "kitchenware for rv",
+        "competition_score": 9.0,
+        "margin_score": 7.0,
+        "trend_score": 9.0,
+        "risk_score": 8.0,
+        "overall_score": 8.3,
+        "verdict": "strong_buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "premium kitchenware utensils",
+        "competition_score": 5.0,
+        "margin_score": 8.0,
+        "trend_score": 6.0,
+        "risk_score": 6.0,
+        "overall_score": 6.3,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "portable kitchenware",
+        "competition_score": 7.0,
+        "margin_score": 6.0,
+        "trend_score": 8.0,
+        "risk_score": 7.0,
+        "overall_score": 7.0,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "kids kitchenware set",
+        "competition_score": 2.0,
+        "margin_score": 5.0,
+        "trend_score": 3.0,
+        "risk_score": 4.0,
+        "overall_score": 3.5,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "kitchenware for arthritis",
+        "competition_score": 9.0,
+        "margin_score": 7.0,
+        "trend_score": 7.0,
+        "risk_score": 8.0,
+        "overall_score": 7.8,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "mini kitchenware",
+        "competition_score": 7.0,
+        "margin_score": 6.0,
+        "trend_score": 9.0,
+        "risk_score": 7.0,
+        "overall_score": 7.3,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "pioneer woman kitchenware",
+        "competition_score": 1.0,
+        "margin_score": 4.0,
+        "trend_score": 1.0,
+        "risk_score": 2.0,
+        "overall_score": 2.0,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      }
+    ],
+    "inferred_selling_points": [],
+    "inferred_target_audience": "",
+    "inferred_price_range": "",
+    "inferred_material": null,
+    "competitor_keywords": [],
+    "differentiation_angle": "",
+    "extraction_confidence": 0.0
+  },
+  "listing": {
+    "keywords": [
+      {
+        "keyword": "rv kitchenware",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 100.0
+      },
+      {
+        "keyword": "rv kitchen supplies",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 95.0
+      },
+      {
+        "keyword": "camping kitchen set",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 90.0
+      },
+      {
+        "keyword": "rv cooking utensils",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 88.0
+      },
+      {
+        "keyword": "space saving kitchenware",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "compact kitchen tools for rv",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 82.0
+      },
+      {
+        "keyword": "durable rv kitchen accessories",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "ergonomic kitchen utensils",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 78.0
+      },
+      {
+        "keyword": "eco friendly kitchenware",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "rv cooking gear",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 73.0
+      },
+      {
+        "keyword": "lightweight kitchen set for travel",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 70.0
+      },
+      {
+        "keyword": "best rv kitchen gadgets",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 68.0
+      },
+      {
+        "keyword": "non stick cookware for rv",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 65.0
+      },
+      {
+        "keyword": "portable kitchenware",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 60.0
+      },
+      {
+        "keyword": "rv kitchen organization",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 58.0
+      },
+      {
+        "keyword": "camping cookware set",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 55.0
+      },
+      {
+        "keyword": "easy clean kitchen utensils",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 52.0
+      },
+      {
+        "keyword": "rv kitchen essentials",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 50.0
+      }
+    ],
+    "top_keywords": [
+      "rv kitchenware",
+      "rv kitchen supplies",
+      "camping kitchen set",
+      "rv cooking utensils",
+      "space saving kitchenware"
+    ],
+    "title_candidates": [
+      {
+        "title": "RV Kitchenware Set - Space Saving Camping Kitchen Supplies with Ergonomic Design, Durable RV Cooking Utensils for Travel",
+        "score": 92,
+        "char_count": 118,
+        "keyword_coverage": [
+          "rv kitchenware",
+          "rv kitchen supplies",
+          "camping kitchen set",
+          "rv cooking utensils",
+          "space saving kitchenware"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Premium RV Kitchen Supplies - Eco-Friendly Camping Kitchen Set with Ergonomic Utensils, Space Saving Design for Easy Use on the Road",
+        "score": 88,
+        "char_count": 125,
+        "keyword_coverage": [
+          "rv kitchen supplies",
+          "camping kitchen set",
+          "rv cooking utensils",
+          "space saving kitchenware"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Durable RV Kitchenware - Space Saving Camping Cooking Utensils Set, Ergonomic RV Kitchen Supplies for Travel and Outdoor Adventures",
+        "score": 85,
+        "char_count": 121,
+        "keyword_coverage": [
+          "rv kitchenware",
+          "camping kitchen set",
+          "rv cooking utensils",
+          "space saving kitchenware",
+          "rv kitchen supplies"
+        ],
+        "compliance_issues": []
+      }
+    ],
+    "best_title": "RV Kitchenware Set - Space Saving Camping Kitchen Supplies with Ergonomic Design, Durable RV Cooking Utensils for Travel",
+    "bullet_points": [
+      {
+        "text": "Premium quality materials ensure your rv kitchenware withstands the rigors of travel, offering durable and long-lasting performance for every camping kitchen set adventure.",
+        "feature_highlighted": "Premium quality materials",
+        "benefit_highlighted": "Durable and long-lasting performance for travel"
+      },
+      {
+        "text": "Ergonomic design of these rv cooking utensils reduces hand fatigue, making meal prep easy to use and comfortable during extended camping trips.",
+        "feature_highlighted": "Ergonomic design",
+        "benefit_highlighted": "Reduces hand fatigue for comfortable meal prep"
+      },
+      {
+        "text": "Space saving kitchenware design maximizes storage in your rv, allowing you to pack more rv kitchen supplies without clutter.",
+        "feature_highlighted": "Space saving design",
+        "benefit_highlighted": "Maximizes storage and reduces clutter"
+      },
+      {
+        "text": "Eco-friendly packaging aligns with sustainable living, ensuring your camping kitchen set arrives safely while minimizing environmental impact.",
+        "feature_highlighted": "Eco-friendly packaging",
+        "benefit_highlighted": "Minimizes environmental impact"
+      },
+      {
+        "text": "Easy to use features make these rv cooking utensils ideal for quick meals on the go, enhancing your outdoor cooking experience with simplicity.",
+        "feature_highlighted": "Easy to use",
+        "benefit_highlighted": "Enhances outdoor cooking with simplicity"
+      }
+    ],
+    "description_html": "<h3>Brand Story</h3><p>Designed for life on the move, our RV kitchenware turns every campsite into a culinary escape—durable, compact, and ready for the open road. Whether you're a weekend warrior or a full-time traveler, our camping kitchen set is built to enhance your outdoor cooking experience.</p><h3>Product Specifications</h3><ul><li><b>Material:</b> Premium quality materials including stainless steel and BPA-free silicone</li><li><b>Design:</b> Ergonomic design for comfortable grip and reduced hand fatigue</li><li><b>Storage:</b> Space saving kitchenware design maximizes RV storage</li><li><b>Packaging:</b> Eco-friendly packaging for sustainable travel</li><li><b>Usage:</b> Ideal for RV, camping, and outdoor adventures</li></ul><h3>Key Features</h3><ul><li><b>Premium Quality Materials:</b> Our RV kitchenware withstands the rigors of travel, offering durable and long-lasting performance for every camping kitchen set adventure.</li><li><b>Ergonomic Design:</b> These RV cooking utensils reduce hand fatigue, making meal prep easy to use and comfortable during extended camping trips.</li><li><b>Space Saving:</b> Space saving kitchenware design maximizes storage in your RV, allowing you to pack more RV kitchen supplies without clutter.</li><li><b>Eco-Friendly Packaging:</b> Aligns with sustainable living, ensuring your camping kitchen set arrives safely while minimizing environmental impact.</li><li><b>Easy to Use:</b> Features make these RV cooking utensils ideal for quick meals on the go, enhancing your outdoor cooking experience with simplicity.</li></ul><h3>Usage Scenarios</h3><p>Perfect for RV trips, camping, tailgating, and outdoor picnics. Our RV kitchen supplies are designed to make cooking on the road effortless—whether you're preparing a full meal at a campsite or a quick snack during a pit stop. The space saving kitchenware fits neatly into compact RV cabinets, while the ergonomic design ensures comfort during extended use.</p><h3>Quality Assurance</h3><p>We stand behind the durability of our RV kitchenware. Each piece is crafted from premium quality materials and rigorously tested for long-lasting performance. If you're not satisfied, our customer service team is ready to assist. Enjoy peace of mind with every camping kitchen set purchase.</p>",
+    "a_plus_modules": [
+      {
+        "module_type": "hero_banner",
+        "title": "Elevate Your Campsite Kitchen",
+        "description": "顶部大图模块，展示RV厨房用具在户外露营场景中的使用效果，突出品牌故事和核心卖点。",
+        "image_suggestion": "一张960x600的高清图片，展示一套完整的RV厨房用具摆放在露营桌上，背景是壮丽的自然风光（如山脉或森林），阳光洒落，营造温馨户外氛围。",
+        "copy_text": "Designed for life on the move, our RV kitchenware turns every campsite into a culinary escape—durable, compact, and ready for the open road."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Premium Quality Materials",
+        "description": "左图右文模块，强调产品材质的高品质和耐用性。",
+        "image_suggestion": "一张特写图片，展示锅具或餐具的材质细节（如不锈钢表面、防刮涂层），光线反射出质感。",
+        "copy_text": "Crafted from premium stainless steel and BPA-free materials, our kitchenware withstands the rigors of travel while keeping your meals safe and delicious."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Ergonomic Design for Easy Use",
+        "description": "右图左文模块，突出人体工学设计和易用性。",
+        "image_suggestion": "一张图片展示用户手持带有防滑手柄的锅铲或刀具，手部姿势自然舒适，旁边有折叠收纳的细节。",
+        "copy_text": "Ergonomically shaped handles and lightweight construction make every task effortless—whether you're stirring soup or slicing veggies, comfort is key."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Durable & Long-Lasting",
+        "description": "左图右文模块，强调产品的耐用性和长期使用价值。",
+        "image_suggestion": "一张对比图片：左边是旧款普通厨房用具（有磨损），右边是品牌产品（完好如新），或者展示产品经过多次折叠/使用后依然坚固。",
+        "copy_text": "Built to last through countless road trips, our kitchenware resists rust, warping, and scratches—so you can focus on creating memories, not replacing gear."
+      },
+      {
+        "module_type": "comparison_chart",
+        "title": "Why Choose Our RV Kitchenware?",
+        "description": "竞品对比表，将本产品与普通厨房用具在关键维度上对比，突出优势。",
+        "image_suggestion": "无需图片，但可配一个简洁的图标或品牌logo作为背景装饰。",
+        "copy_text": "| Feature | Our RV Kitchenware | Ordinary Kitchenware |\n|---------|-------------------|---------------------|\n| Material | Premium stainless steel + BPA-free | Mixed metals/plastic |\n| Ergonomic Handle | Yes, non-slip grip | Often basic |\n| Compact Storage | Nestable & foldable | Bulky |\n| Eco-friendly Packaging | 100% recyclable | Plastic-heavy |\n| Durability | Rust-proof, scratch-resistant | Prone to wear |"
+      },
+      {
+        "module_type": "spec_table",
+        "title": "Specifications at a Glance",
+        "description": "规格参数表，清晰列出产品尺寸、重量、材质等关键参数。",
+        "image_suggestion": "一张产品全家福图片（如所有锅具、餐具、收纳袋排列整齐），作为表格背景或侧边装饰。",
+        "copy_text": "| Item | Specification |\n|------|---------------|\n| Material | 304 Stainless Steel, Silicone, BPA-free Plastic |\n| Set Includes | 1 Pot (2L), 1 Pan, 2 Plates, 2 Bowls, 2 Cutlery Sets |\n| Weight | 1.2 kg (entire set) |\n| Dimensions (packed) | 25 x 20 x 15 cm |\n| Dishwasher Safe | Yes (except silicone parts) |\n| Packaging | 100% recyclable cardboard box |"
+      },
+      {
+        "module_type": "image_text",
+        "title": "Eco-Friendly Packaging",
+        "description": "左文右图模块，强调环保包装，呼应品牌可持续理念。",
+        "image_suggestion": "一张图片展示产品被包裹在可回收纸板盒中，旁边有绿色植物或自然元素，突出环保主题。",
+        "copy_text": "We believe in protecting the planet we explore. That's why our packaging is 100% recyclable and plastic-free—so your adventure starts with a smaller footprint."
+      }
+    ],
+    "seo_report": {
+      "keyword_density": {
+        "score": 70.0,
+        "findings": [
+          "核心关键词在标题和五点描述中均有出现，但部分关键词（如“rv kitchenware”）在五点描述中重复过多，略显堆砌。",
+          "“camping kitchen set”和“rv cooking utensils”在五点描述中多次出现，但分布合理。",
+          "“space saving kitchenware”仅在标题和五点中出现一次，密度偏低。"
+        ],
+        "suggestions": [
+          "减少“rv kitchenware”在五点描述中的重复次数，每点最多出现一次。",
+          "在长描述中自然融入“space saving kitchenware”和“rv kitchen supplies”，以平衡密度。",
+          "避免在五点描述中连续使用相同关键词，可替换为同义词或代词。"
+        ]
+      },
+      "readability": {
+        "score": 65.0,
+        "findings": [
+          "标题长度约120字符，符合要求，但“Space Saving Camping Kitchen Supplies”与“Durable RV Cooking Utensils”之间缺少连接词，略显生硬。",
+          "五点描述中每点均以“-”开头，但部分句子过长（如第一点），影响扫描友好度。",
+          "长描述HTML结构清晰，但“Product Specifications”列表未完整显示，且缺少段落分隔。"
+        ],
+        "suggestions": [
+          "在标题中添加“-”或“|”分隔不同卖点，如“RV Kitchenware Set - Space Saving & Durable Camping Kitchen Supplies”。",
+          "缩短五点描述中每点的句子长度，控制在15-20词以内，使用短句和符号（如✓）增强可读性。",
+          "完成长描述中的“Product Specifications”列表，并添加换行或图标提升视觉层次。"
+        ]
+      },
+      "completeness": {
+        "score": 75.0,
+        "findings": [
+          "标题、五点描述和长描述均已包含，但缺少A+模块（如对比图、使用场景图）。",
+          "长描述中“Product Specifications”列表不完整（以“red”结尾），且未包含尺寸、重量等关键信息。",
+          "缺少客户评价或认证标识（如BPA-free认证细节）。"
+        ],
+        "suggestions": [
+          "添加A+模块，包含产品尺寸对比图、使用场景图（如RV厨房实拍）和材质特写。",
+          "补全“Product Specifications”列表，加入“Dimensions: XX x XX x XX inches”、“Weight: XX lbs”等信息。",
+          "在长描述中增加“Certifications”小节，强调BPA-free和食品安全认证。"
+        ]
+      },
+      "conversion_potential": {
+        "score": 60.0,
+        "findings": [
+          "标题和五点强调了“space saving”和“ergonomic”，但未明确解决RV用户的痛点（如易清洁、防滑）。",
+          "长描述的品牌故事有情感共鸣，但缺乏具体数据（如节省多少空间、耐用测试结果）。",
+          "五点描述中“easy to use”和“comfortable”过于泛泛，未提供具体使用场景或对比。"
+        ],
+        "suggestions": [
+          "在五点描述中增加具体数据，如“Saves 30% storage space compared to standard kitchen sets”。",
+          "在长描述中添加“What's Included”列表，明确套装内容（如锅、铲、刀具等），增强信任感。",
+          "加入用户痛点解决方案，如“Non-slip handles for wet hands”或“Easy-clean silicone coating”。"
+        ]
+      },
+      "overall_score": 68.0,
+      "improvement_priority": [
+        "补全长描述中的产品规格和A+模块，提升完整性。",
+        "优化五点描述的可读性和具体性，增强转化预期。",
+        "平衡关键词密度，避免堆砌并覆盖所有目标词。"
+      ]
+    },
+    "human_approved": false
+  },
+  "compliance": {
+    "policy_issues": [
+      {
+        "location": "title/bullets/description",
+        "issue_type": "prohibited_claim",
+        "severity": "medium",
+        "description": "Found prohibited term: 'free'",
+        "suggestion": "Replace 'free' with compliant alternative"
+      },
+      {
+        "location": "Title",
+        "issue_type": "Formatting Issue",
+        "severity": "low",
+        "description": "The title uses 'RV' in all caps, which may be considered inconsistent with standard capitalization rules. However, 'RV' is an acronym and is acceptable.",
+        "suggestion": "No change needed; acronyms are allowed."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Prohibited Claims",
+        "severity": "medium",
+        "description": "The bullet point 'Premium quality materials ensure your rv kitchenware withstands the rigors of travel, offering durable and long-lasting performance' implies durability and long-lasting performance, which could be interpreted as an unsubstantiated claim. However, it is not a direct superlative like 'best' or '#1'.",
+        "suggestion": "Consider rephrasing to avoid implying guaranteed performance, e.g., 'Designed for durability during travel.'"
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Formatting Issue",
+        "severity": "low",
+        "description": "The bullet point 'Easy to use features make these rv cooking utensils ideal for quick meals on the go' uses 'rv' in lowercase, which is inconsistent with the title's capitalization.",
+        "suggestion": "Capitalize 'RV' for consistency."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Formatting Issue",
+        "severity": "low",
+        "description": "The description contains an incomplete HTML tag: '<li><b>Design:</b> Ergonomic design for comfortable grip and red' is cut off, likely missing closing tags.",
+        "suggestion": "Complete the HTML properly, e.g., '<li><b>Design:</b> Ergonomic design for comfortable grip and red handle.</li>'"
+      },
+      {
+        "location": "Description",
+        "issue_type": "Formatting Issue",
+        "severity": "low",
+        "description": "The description uses '<h3>' tags, which are not allowed in Amazon product descriptions. Only basic HTML like <p>, <b>, <ul>, <li> are permitted.",
+        "suggestion": "Replace <h3> with <b> or <p> tags, e.g., '<b>Brand Story</b>'."
+      }
+    ],
+    "claim_issues": [
+      {
+        "claim_text": "Premium quality materials ensure your rv kitchenware withstands the rigors of travel, offering durable and long-lasting performance for every camping kitchen set adventure.",
+        "issue": "unsubstantiated",
+        "risk_level": "low",
+        "explanation": "The claim 'premium quality materials' and 'durable and long-lasting performance' are subjective and not backed by specific evidence such as material tests, certifications, or user reviews.",
+        "fix_suggestion": "Replace with specific material details (e.g., '18/8 stainless steel') and add a durability guarantee or test results."
+      },
+      {
+        "claim_text": "Ergonomic design of these rv cooking utensils reduces hand fatigue, making meal prep easy to use and comfortable during extended camping trips.",
+        "issue": "unsubstantiated",
+        "risk_level": "low",
+        "explanation": "The claim that the design 'reduces hand fatigue' is a health-related benefit without supporting ergonomic studies or user testimonials.",
+        "fix_suggestion": "Add a statement like 'tested by campers for comfort' or reference ergonomic design principles."
+      },
+      {
+        "claim_text": "Space saving kitchenware design maximizes storage in your rv, allowing you to pack more rv kitchen supplies without clutter.",
+        "issue": "exaggerated",
+        "risk_level": "low",
+        "explanation": "The phrase 'maximizes storage' is an absolute claim that may overstate the benefit; actual space savings depend on the user's RV layout and other items.",
+        "fix_suggestion": "Rephrase to 'helps save space' or 'designed to fit compactly in RV cabinets'."
+      },
+      {
+        "claim_text": "Eco-friendly packaging aligns with sustainable living, ensuring your camping kitchen set arrives safely while minimizing environmental impact.",
+        "issue": "unsubstantiated",
+        "risk_level": "low",
+        "explanation": "The term 'eco-friendly' is vague and not supported by specific details about packaging materials or certifications (e.g., recycled content, biodegradable).",
+        "fix_suggestion": "Specify packaging materials (e.g., '100% recycled cardboard') or include a sustainability certification."
+      },
+      {
+        "claim_text": "Easy to use features make these rv cooking utensils ideal for quick meals on the go, enhancing your outdoor cooking experience with simplicity.",
+        "issue": "exaggerated",
+        "risk_level": "low",
+        "explanation": "The claim 'enhancing your outdoor cooking experience with simplicity' is subjective and not measurable; 'ideal for quick meals' may not apply to all users.",
+        "fix_suggestion": "Replace with specific features (e.g., 'lightweight and easy to clean') and avoid absolute language."
+      }
+    ],
+    "overall_verdict": "",
+    "risk_level": "medium",
+    "total_issues": 11,
+    "critical_items": [],
+    "action_items": [
+      "Replace 'free' with compliant alternative",
+      "No change needed; acronyms are allowed.",
+      "Consider rephrasing to avoid implying guaranteed performance, e.g., 'Designed for durability during travel.'",
+      "Capitalize 'RV' for consistency.",
+      "Complete the HTML properly, e.g., '<li><b>Design:</b> Ergonomic design for comfortable grip and red handle.</li>'",
+      "Replace <h3> with <b> or <p> tags, e.g., '<b>Brand Story</b>'.",
+      "Replace with specific material details (e.g., '18/8 stainless steel') and add a durability guarantee or test results.",
+      "Add a statement like 'tested by campers for comfort' or reference ergonomic design principles.",
+      "Rephrase to 'helps save space' or 'designed to fit compactly in RV cabinets'.",
+      "Specify packaging materials (e.g., '100% recycled cardboard') or include a sustainability certification.",
+      "Replace with specific features (e.g., 'lightweight and easy to clean') and avoid absolute language."
+    ],
+    "human_reviewed": false
+  },
+  "social": {
+    "marketing_angles": [
+      "Space-saving solutions: Show how the kitchenware fits perfectly in small RV kitchens",
+      "Adventure-ready cooking: Highlight durability and ease of use for outdoor/travel cooking",
+      "Lifestyle integration: Feature real RVers using the products in scenic locations",
+      "Eco-conscious travel: Emphasize eco-friendly packaging and sustainable materials",
+      "Before/after: Compare cramped RV kitchens with organized, efficient setups using the products"
+    ],
+    "target_audience": "The ideal customer is a US-based outdoor enthusiast or full-time RVer, aged 30-55, who values quality, convenience, and sustainability. They likely own or rent an RV for weekend getaways or long-term travel, prioritize efficient use of limited space, and enjoy cooking meals on the road. They are environmentally conscious and seek durable, well-designed products that enhance their mobile lifestyle without compromising on aesthetics or functionality.",
+    "content_tones": [
+      "Adventurous and aspirational",
+      "Practical and informative",
+      "Warm and community-focused"
+    ],
+    "key_selling_points": [
+      "Premium quality materials for long-lasting use in rugged conditions",
+      "Ergonomic design for comfortable handling in tight RV spaces",
+      "Easy to use and clean, saving time on the road",
+      "Eco-friendly packaging aligns with sustainable travel values",
+      "Durable construction withstands frequent travel and storage"
+    ],
+    "visual_style": [],
+    "hashtag_themes": [],
+    "posts": [
+      {
+        "platform": "instagram",
+        "copy": "There’s nothing quite like the smell of fresh coffee brewing as the sun rises over the mountains. ☕️ With our rugged kitchenware, you can whip up a go",
+        "hashtags": [
+          "#RVLife",
+          "#VanLife",
+          "#OutdoorCooking",
+          "#SustainableTravel",
+          "#AdventureAwaits",
+          "#KitchenOnWheels",
+          "#MobileCuisine",
+          "#EcoFriendlyLiving",
+          "#FullTimeRV",
+          "#TravelWithPurpose"
+        ],
+        "quality_score": 8.3
+      },
+      {
+        "platform": "threads",
+        "copy": "There’s something special about cooking a meal in your RV while parked at the edge of a canyon, with the sunset painting the sky. But let’s be real—RV",
+        "hashtags": [
+          "#RVLife",
+          "#VanLife",
+          "#CampingCooking",
+          "#AdventureReady",
+          "#SustainableTravel",
+          "#OutdoorKitchen",
+          "#RoadTripCooking",
+          "#MobileLiving",
+          "#EcoFriendlyGear",
+          "#TinyKitchen"
+        ],
+        "quality_score": 7.3
+      },
+      {
+        "platform": "pinterest",
+        "copy": "Your RV kitchen is the heart of your home on wheels, but cramped counters and constant jostling can turn meal prep into a challenge. That’s why invest",
+        "hashtags": [
+          "RVLife",
+          "VanLife",
+          "OutdoorCooking",
+          "SustainableTravel",
+          "KitchenInspo",
+          "AdventureAwaits",
+          "MobileKitchen",
+          "RoadTripReady",
+          "EcoFriendlyLiving",
+          "TinyLiving"
+        ],
+        "quality_score": 8.0
+      }
+    ],
+    "human_approved": false
+  },
+  "platform": {
+    "asin": null,
+    "amazon_url": null,
+    "amazon_publish_status": "draft",
+    "amazon_publish_errors": [],
+    "amazon_published_at": null,
+    "social_publish_status": {},
+    "social_post_urls": {}
+  },
+  "reviews": {
+    "total_reviews": 10,
+    "average_rating": 0.0,
+    "sentiment_distribution": {},
+    "negative_alert_count": 1,
+    "top_alerts": [
+      {
+        "reviewer": "Emily K.",
+        "content": "Disappointed with the quality. Stopped working after 2 weeks.",
+        "alert_level": "alert"
+      }
+    ],
+    "last_monitored_at": "2026-05-18T04:03:23.789051Z"
+  },
+  "ads": {
+    "campaigns": [],
+    "total_budget": 0.0,
+    "total_spend": 0.0,
+    "acos": null
+  }
+}

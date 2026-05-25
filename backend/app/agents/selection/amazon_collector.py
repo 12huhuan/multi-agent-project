@@ -44,11 +44,30 @@ class AmazonProductCard(BaseModel):
     url_suffix: str = ""
 
 
+class BSRInfo(BaseModel):
+    """Best Sellers Rank 条目"""
+    rank: int = 0
+    category: str = ""
+    subcategory: str = ""
+
+
+class AmazonProductDetail(BaseModel):
+    """商品详情页数据"""
+    asin: str = ""
+    title: str = ""
+    price: str = ""
+    rating: float = 0.0
+    review_count: int = 0
+    bsr_rankings: list[BSRInfo] = Field(default_factory=list)
+    first_available: str = ""
+
+
 class AmazonSearchResult(BaseModel):
     keyword: str = ""
     total_results_estimate: str = ""
     products: list[AmazonProductCard] = Field(default_factory=list)
     source: str = "live"  # "live" | "simulated"
+    extra: dict = Field(default_factory=dict)  # BSR details, etc.
 
 
 class AmazonDataCollector:
@@ -152,6 +171,167 @@ class AmazonDataCollector:
         for kw in keywords[:5]:
             results[kw] = await self.search(kw, num_pages=1)
         return results
+
+    # ── 商品详情页抓取（BSR / 类目排名） ─────────
+
+    async def get_product_detail(self, asin: str) -> AmazonProductDetail:
+        """抓取单个 ASIN 的商品详情页，提取 BSR 和类目排名"""
+        await self._ensure_started()
+        if not self._started or not self._browser:
+            return AmazonProductDetail(asin=asin, title="(browser not available)")
+
+        url = f"https://www.amazon.com/dp/{asin}"
+        page = None
+
+        for attempt in range(self.MAX_RETRIES):
+            try:
+                page = await self._context.new_page()
+                await page.goto(url, wait_until="domcontentloaded", timeout=20000)
+                await asyncio.sleep(1.5)
+
+                detail = await page.evaluate("""() => {
+                    const result = { bsr_rankings: [], first_available: '' };
+
+                    // ----- 1. 提取标题 -----
+                    const titleEl = document.querySelector('#productTitle');
+                    result.title = titleEl ? titleEl.textContent.trim() : '';
+
+                    // ----- 2. 提取价格 -----
+                    const priceWhole = document.querySelector('.a-price-whole');
+                    const priceFraction = document.querySelector('.a-price-fraction');
+                    if (priceWhole) {
+                        result.price = '$' + priceWhole.textContent.trim();
+                        if (priceFraction) result.price += '.' + priceFraction.textContent.trim();
+                    }
+
+                    // ----- 3. 提取评分和评论数 -----
+                    const ratingEl = document.querySelector('#acrPopover .a-icon-alt, [data-hook="rating-out-of-text"]');
+                    if (ratingEl) {
+                        const m = ratingEl.textContent.match(/(\\d+(\\.\\d+)?)/);
+                        result.rating = m ? parseFloat(m[1]) : 0;
+                    }
+                    const reviewsEl = document.querySelector('#acrCustomerReviewText');
+                    if (reviewsEl) {
+                        const m = reviewsEl.textContent.match(/([\\d,]+)/);
+                        result.review_count = m ? parseInt(m[1].replace(/,/g, '')) : 0;
+                    }
+
+                    // ----- 4. 提取 BSR（Best Sellers Rank） -----
+                    // BSR 可能出现在多个位置：detailBullets, productDetails_techSpec, 或 #detailBulletsWrapper_feature_div
+                    const containers = [
+                        document.querySelector('#detailBulletsWrapper_feature_div'),
+                        document.querySelector('#productDetails_detailBullets_sections1'),
+                        document.querySelector('#productDetails_techSpec_section_1'),
+                        document.querySelector('#detailBullets_feature_div'),
+                    ];
+
+                    for (const container of containers) {
+                        if (!container) continue;
+                        const text = container.textContent;
+                        if (!text.includes('Best Sellers Rank') && !text.includes('Best Sellersランク')) continue;
+
+                        // 解析 BSR 行: "#1,234 in Category (See Top 100)"
+                        const bsrLines = text.split(/\\n/);
+                        for (const line of bsrLines) {
+                            // 匹配 "Best Sellers Rank" 那行及其后续行
+                            const rankMatch = line.match(/#([\\d,]+)\\s+in\\s+(.+?)(?:\\s*\\(See Top 100\\))?$/);
+                            if (rankMatch) {
+                                const rank = parseInt(rankMatch[1].replace(/,/g, ''));
+                                const category = rankMatch[2].trim();
+                                result.bsr_rankings.push({
+                                    rank: rank,
+                                    category: category,
+                                    subcategory: ''
+                                });
+                            }
+                        }
+                    }
+
+                    // 备用：直接从整个页面文本中正则提取 BSR
+                    if (result.bsr_rankings.length === 0) {
+                        const bodyText = document.body.textContent;
+                        const bsrSectionMatch = bodyText.match(/Best Sellers Rank[:\\s]*([\\s\\S]*?)(?=\\n\\n|$)/);
+                        if (bsrSectionMatch) {
+                            const bsrText = bsrSectionMatch[1];
+                            const rankRegex = /#([\\d,]+)\\s+in\\s+(.+?)(?=\\s+(?:#\\d|$))/g;
+                            let m;
+                            while ((m = rankRegex.exec(bsrText)) !== null) {
+                                result.bsr_rankings.push({
+                                    rank: parseInt(m[1].replace(/,/g, '')),
+                                    category: m[2].trim(),
+                                    subcategory: ''
+                                });
+                            }
+                        }
+                    }
+
+                    // 如果只有一个 BSR 条目，第一个是大类，后面的（#开头的）是子类
+                    const bsrs = result.bsr_rankings;
+                    if (bsrs.length > 1) {
+                        for (let i = 1; i < bsrs.length; i++) {
+                            bsrs[i].subcategory = bsrs[i].category;
+                            bsrs[i].category = bsrs[0].category;
+                        }
+                    }
+
+                    // ----- 5. 提取首次上架时间 -----
+                    const availEl = document.querySelector('#productDetails_detailBullets_sections1 tr:last-child td, #detailBullets_feature_div .a-row:last-child');
+                    if (availEl) {
+                        const dateMatch = availEl.textContent.match(/\\d{4}/);
+                        if (dateMatch) result.first_available = dateMatch[0];
+                    }
+
+                    return result;
+                }""")
+
+                await page.close()
+                return AmazonProductDetail(asin=asin, **detail)
+
+            except Exception:
+                if page:
+                    try:
+                        await page.close()
+                    except Exception:
+                        pass
+                if attempt < self.MAX_RETRIES - 1:
+                    await asyncio.sleep(2 * (attempt + 1))
+                continue
+
+        return AmazonProductDetail(asin=asin)
+
+    async def enrich_search_results(
+        self, keyword: str, num_pages: int = 1, enrich_count: int = 10
+    ) -> AmazonSearchResult:
+        """
+        搜索 + 自动为前 N 个产品抓取 BSR 详情，一步到位拿到完整的选品数据。
+
+        Args:
+            keyword: 搜索关键词
+            num_pages: 搜索页数
+            enrich_count: 要抓详情页的产品数量（取搜索结果前 N 个）
+        """
+        result = await self.search(keyword, num_pages=num_pages)
+
+        if result.source != "live":
+            return result
+
+        details = []
+        for p in result.products[:enrich_count]:
+            if not p.url_suffix:
+                continue
+            asin = p.url_suffix.replace("/dp/", "").split("?")[0].split("/")[0]
+            if len(asin) < 8:
+                continue
+            detail = await self.get_product_detail(asin)
+            details.append(detail)
+            await asyncio.sleep(random.uniform(0.5, 1.5))
+
+        result.products = result.products  # keep original cards, BSR attached via detail lookup
+        # 将 BSR 注入到 product card 的扩展属性中
+        result.extra = {
+            "bsr_details": {d.asin: d.model_dump() for d in details if d.bsr_rankings},
+        }
+        return result
 
     # ── Playwright 实时抓取 ─────────────────────────
 

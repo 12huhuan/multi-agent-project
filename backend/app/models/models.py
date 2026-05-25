@@ -1,4 +1,4 @@
-"""Phase 1 数据模型 — Listing 优化 + 智能客服"""
+"""Phase 1 数据模型 — Listing 生成 + 智能客服"""
 
 import uuid
 from datetime import datetime
@@ -15,7 +15,7 @@ def gen_uuid():
 
 
 class ListingTask(Base):
-    """Listing 优化任务"""
+    """Listing 生成任务（含生成结果持久化）"""
     __tablename__ = "listing_tasks"
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=gen_uuid)
@@ -26,6 +26,15 @@ class ListingTask(Base):
     features: Mapped[dict] = mapped_column(JSONB, default=list)
     brand_story: Mapped[str | None] = mapped_column(Text, nullable=True)
     status: Mapped[str] = mapped_column(String(30), default="pending")
+    # 生成结果持久化
+    keywords: Mapped[dict] = mapped_column(JSONB, default=list)
+    top_keywords: Mapped[dict] = mapped_column(JSONB, default=list)
+    title_candidates: Mapped[dict] = mapped_column(JSONB, default=list)
+    bullet_points: Mapped[dict] = mapped_column(JSONB, default=list)
+    description_html: Mapped[str] = mapped_column(Text, default="")
+    a_plus_modules: Mapped[dict] = mapped_column(JSONB, default=list)
+    seo_report: Mapped[dict] = mapped_column(JSONB, default=dict)
+    product_images: Mapped[dict] = mapped_column(JSONB, default=list)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow)
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow, onupdate=datetime.utcnow)
 
@@ -200,3 +209,42 @@ class SocialPost(Base):
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow)
 
     task: Mapped["SocialTask"] = relationship(back_populates="posts")
+    images: Mapped[list["SocialImage"]] = relationship(back_populates="post", cascade="all, delete-orphan")
+
+
+class OrchestratorRun(Base):
+    """调度运行记录 — 持久化所有步骤结果"""
+    __tablename__ = "orchestrator_runs"
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=gen_uuid)
+    action: Mapped[str] = mapped_column(String(50), default="auto")
+    category: Mapped[str | None] = mapped_column(String(200), nullable=True)
+    target_market: Mapped[str | None] = mapped_column(String(10), nullable=True)
+    context: Mapped[dict] = mapped_column(JSONB, default=dict)
+    status: Mapped[str] = mapped_column(String(30), default="running")
+    progress: Mapped[str | None] = mapped_column(String(200), nullable=True)
+    decisions: Mapped[dict] = mapped_column(JSONB, default=list)
+    summary: Mapped[str | None] = mapped_column(Text, nullable=True)
+    total_steps: Mapped[int] = mapped_column(Integer, default=0)
+    completed_steps: Mapped[int] = mapped_column(Integer, default=0)
+    error: Mapped[str | None] = mapped_column(Text, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow, onupdate=datetime.utcnow)
+
+
+class SocialImage(Base):
+    """社媒图片 — 独立存储，与帖子关联"""
+    __tablename__ = "social_images"
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=gen_uuid)
+    post_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("social_posts.id", ondelete="CASCADE"))
+    url: Mapped[str] = mapped_column(Text, default="")
+    alt_text: Mapped[str | None] = mapped_column(Text, nullable=True)
+    prompt: Mapped[str | None] = mapped_column(Text, nullable=True)
+    storage_path: Mapped[str | None] = mapped_column(Text, nullable=True)
+    width: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    height: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    format: Mapped[str | None] = mapped_column(String(10), nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow)
+
+    post: Mapped["SocialPost"] = relationship(back_populates="images")

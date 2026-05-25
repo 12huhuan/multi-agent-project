@@ -1,0 +1,611 @@
+{
+  "product_id": "44a9b6a3",
+  "current_stage": "monitored",
+  "created_at": "2026-05-19T01:54:57.375601Z",
+  "updated_at": "2026-05-19T01:59:04.375981Z",
+  "version": 6,
+  "identity": {
+    "product_id": "e26b3de4-9388-46cb-a2ad-a9aafad435d1",
+    "category": "电器",
+    "subcategory": null,
+    "brand_name": null,
+    "brand_story": null,
+    "target_market": "US",
+    "language": "en",
+    "seller_budget": "$5000-$15000",
+    "seller_strengths": [
+      "Competitive pricing",
+      "Fast global shipping",
+      "Quality materials",
+      "Responsive customer service",
+      "Professional packaging"
+    ],
+    "platforms": []
+  },
+  "market_insight": {
+    "category_overview": "The US market for electrical appliances on Amazon is highly competitive, with a strong focus on automotive, portable, and mini appliances. The category is driven by consumer demand for convenience, energy efficiency, and smart home integration. Automotive electrical appliances, such as battery chargers and inverters, are seeing steady growth due to increased DIY vehicle maintenance. Portable and mini appliances, including travel-friendly gadgets and compact kitchen tools, are trending among urban dwellers and outdoor enthusiasts. However, the niche for electrical fuses (1.5A, 125V) remains a specialized, low-competition segment with consistent demand from electronics repair and hobbyist communities.",
+    "market_size_estimate": "",
+    "market_growth_trend": "",
+    "top_competitors": [],
+    "recommended_niches": [
+      "Solar-powered portable electric appliances for camping",
+      "Mini electric food dehydrators for healthy snacking",
+      "Automotive battery jump starters with USB-C fast charging",
+      "Smart home electrical appliances with voice control (Alexa/Google)",
+      "Specialized electrical fuses for vintage car restoration"
+    ],
+    "top_pick_product": "Mini Electric Appliances",
+    "scored_alternatives": [
+      {
+        "product_name": "Automotive Electrical Appliances",
+        "competition_score": 3.0,
+        "margin_score": 5.0,
+        "trend_score": 6.0,
+        "risk_score": 5.0,
+        "overall_score": 4.8,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Portable Electric Appliances",
+        "competition_score": 3.0,
+        "margin_score": 5.0,
+        "trend_score": 8.0,
+        "risk_score": 4.0,
+        "overall_score": 5.0,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Mini Electric Appliances",
+        "competition_score": 5.0,
+        "margin_score": 6.0,
+        "trend_score": 8.0,
+        "risk_score": 5.0,
+        "overall_score": 6.0,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Electrical Appliances (General)",
+        "competition_score": 1.0,
+        "margin_score": 4.0,
+        "trend_score": 5.0,
+        "risk_score": 3.0,
+        "overall_score": 3.3,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Electrical Appliances for Home",
+        "competition_score": 1.0,
+        "margin_score": 4.0,
+        "trend_score": 5.0,
+        "risk_score": 3.0,
+        "overall_score": 3.3,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Electrical Appliances for Kitchen",
+        "competition_score": 1.0,
+        "margin_score": 4.0,
+        "trend_score": 6.0,
+        "risk_score": 3.0,
+        "overall_score": 3.5,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Electrical Appliances Fuses 1.5A, 125V",
+        "competition_score": 9.0,
+        "margin_score": 3.0,
+        "trend_score": 5.0,
+        "risk_score": 8.0,
+        "overall_score": 6.3,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      }
+    ],
+    "inferred_selling_points": [],
+    "inferred_target_audience": "",
+    "inferred_price_range": "",
+    "inferred_material": null,
+    "competitor_keywords": [],
+    "differentiation_angle": "",
+    "extraction_confidence": 0.0
+  },
+  "listing": {
+    "keywords": [
+      {
+        "keyword": "mini electric appliances",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 100.0
+      },
+      {
+        "keyword": "small kitchen appliances",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 95.0
+      },
+      {
+        "keyword": "compact electric gadgets",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 90.0
+      },
+      {
+        "keyword": "portable electric appliances",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 88.0
+      },
+      {
+        "keyword": "ergonomic kitchen tools",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "durable mini appliances",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 82.0
+      },
+      {
+        "keyword": "eco-friendly small appliances",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "easy to use electric devices",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 78.0
+      },
+      {
+        "keyword": "premium mini electronics",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "space-saving appliances",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 73.0
+      },
+      {
+        "keyword": "mini blender for travel",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 70.0
+      },
+      {
+        "keyword": "compact coffee maker",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 68.0
+      },
+      {
+        "keyword": "small food processor",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 65.0
+      },
+      {
+        "keyword": "portable electric kettle",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 62.0
+      },
+      {
+        "keyword": "mini air fryer",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 60.0
+      },
+      {
+        "keyword": "ergonomic electric can opener",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 58.0
+      },
+      {
+        "keyword": "durable mini vacuum",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 55.0
+      },
+      {
+        "keyword": "eco-friendly electric kettle",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 52.0
+      },
+      {
+        "keyword": "best mini appliances 2025",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 50.0
+      },
+      {
+        "keyword": "buy compact electric gadgets",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 48.0
+      }
+    ],
+    "top_keywords": [
+      "mini electric appliances",
+      "small kitchen appliances",
+      "compact electric gadgets"
+    ],
+    "title_candidates": [
+      {
+        "title": "Mini Electric Appliances - Compact Small Kitchen Gadgets for Everyday Use, Ergonomic & Durable Design, Premium Quality Eco-Friendly",
+        "score": 92,
+        "char_count": 140,
+        "keyword_coverage": [
+          "mini electric appliances",
+          "small kitchen appliances",
+          "compact electric gadgets"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Compact Electric Gadgets - Premium Mini Electric Appliances for Small Kitchens, Ergonomic Easy-to-Use Design, Durable & Eco-Friendly",
+        "score": 88,
+        "char_count": 134,
+        "keyword_coverage": [
+          "compact electric gadgets",
+          "mini electric appliances",
+          "small kitchen appliances"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Small Kitchen Appliances - Mini Electric Gadgets with Ergonomic Design, Durable & Easy to Use, Premium Quality Eco-Friendly Packaging",
+        "score": 85,
+        "char_count": 128,
+        "keyword_coverage": [
+          "small kitchen appliances",
+          "mini electric appliances",
+          "compact electric gadgets"
+        ],
+        "compliance_issues": []
+      }
+    ],
+    "best_title": "Mini Electric Appliances - Compact Small Kitchen Gadgets for Everyday Use, Ergonomic & Durable Design, Premium Quality Eco-Friendly",
+    "bullet_points": [
+      {
+        "text": "Premium quality materials ensure durability and long-lasting performance, making these mini electric appliances a reliable addition to your kitchen for years to come.",
+        "feature_highlighted": "Premium quality materials",
+        "benefit_highlighted": "Durability and long-lasting performance"
+      },
+      {
+        "text": "Ergonomic design provides comfortable handling and effortless operation, perfect for daily use in small kitchen spaces without strain.",
+        "feature_highlighted": "Ergonomic design",
+        "benefit_highlighted": "Comfortable handling and effortless operation"
+      },
+      {
+        "text": "Easy to use with intuitive controls, these compact electric gadgets simplify meal preparation and save time in your busy routine.",
+        "feature_highlighted": "Easy to use",
+        "benefit_highlighted": "Simplify meal preparation and save time"
+      },
+      {
+        "text": "Durable construction withstands frequent use, ensuring these small kitchen appliances remain reliable and efficient over time.",
+        "feature_highlighted": "Durable construction",
+        "benefit_highlighted": "Reliable and efficient over time"
+      },
+      {
+        "text": "Eco-friendly packaging reduces environmental impact, allowing you to enjoy these mini electric appliances with a clear conscience.",
+        "feature_highlighted": "Eco-friendly packaging",
+        "benefit_highlighted": "Reduces environmental impact"
+      }
+    ],
+    "description_html": "<h3>Brand Story</h3><p>We believe big flavor shouldn't require big space—our mini electric appliances bring powerful performance to even the smallest kitchens, making every meal a masterpiece without the clutter. Designed for modern living, these compact electric gadgets redefine convenience and style.</p><h3>Product Specifications</h3><ul><li><b>Product Type:</b> Mini Electric Appliances</li><li><b>Category:</b> Small Kitchen Appliances</li><li><b>Materials:</b> Premium quality materials for durability</li><li><b>Design:</b> Ergonomic design for comfortable handling</li><li><b>Operation:</b> Easy to use with intuitive controls</li><li><b>Packaging:</b> Eco-friendly packaging</li></ul><h3>Core Selling Points</h3><ul><li><b>Premium Quality Materials:</b> Ensure durability and long-lasting performance, making these mini electric appliances a reliable addition to your kitchen for years to come.</li><li><b>Ergonomic Design:</b> Provides comfortable handling and effortless operation, perfect for daily use in small kitchen spaces without strain.</li><li><b>Easy to Use:</b> With intuitive controls, these compact electric gadgets simplify meal preparation and save time in your busy routine.</li><li><b>Durable Construction:</b> Withstands frequent use, ensuring these small kitchen appliances remain reliable and efficient over time.</li><li><b>Eco-friendly Packaging:</b> Reduces environmental impact, allowing you to enjoy these mini electric appliances with a clear conscience.</li></ul><h3>Usage Scenarios</h3><p>Perfect for small kitchens, dorm rooms, offices, or RVs, these mini electric appliances excel in preparing quick meals, snacks, and beverages. Whether you're whipping up a morning smoothie, heating leftovers, or brewing a single cup of coffee, these compact electric gadgets fit seamlessly into your daily routine. Their ergonomic design and easy-to-use features make them ideal for busy professionals, students, and anyone seeking efficient, space-saving solutions.</p><h3>Quality Assurance</h3><p>Each mini electric appliance is crafted from premium quality materials and undergoes rigorous testing to ensure durability and long-lasting performance. We stand behind our small kitchen appliances with a satisfaction guarantee, so you can purchase with confidence. Our commitment to eco-friendly packaging further reflects our dedication to quality and sustainability.</p>",
+    "a_plus_modules": [
+      {
+        "module_type": "hero_banner",
+        "title": "Big Flavor, Tiny Footprint",
+        "description": "顶部大图模块，展示品牌标语和核心价值，吸引用户注意力。",
+        "image_suggestion": "一张960x600的高清产品全家福，所有迷你电器整齐排列在极简厨房台面上，背景明亮温暖，突出小巧精致。",
+        "copy_text": "We believe big flavor shouldn't require big space—our mini electric appliances bring powerful performance to even the smallest kitchens, making every meal a masterpiece without the clutter."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Premium Quality That Lasts",
+        "description": "左图右文模块，强调优质材料和耐用性。",
+        "image_suggestion": "左侧图片：特写产品材质细节，如不锈钢表面、坚固旋钮、密封边缘，光线突出质感。",
+        "copy_text": "Crafted from premium quality materials, our mini appliances are built to withstand daily use. From stainless steel components to reinforced housing, every part is selected for durability and long-lasting performance. Enjoy reliable cooking for years to come."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Ergonomic Design, Effortless Use",
+        "description": "左文右图模块，强调人体工学设计和易用性。",
+        "image_suggestion": "右侧图片：用户单手轻松操作产品，展示握持、按钮或旋钮的舒适姿势，背景为厨房场景。",
+        "copy_text": "Designed with your comfort in mind, our appliances feature ergonomic handles, intuitive controls, and lightweight construction. Easy to grip, easy to operate—even in tight spaces. Cooking becomes a joy, not a chore."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Eco-Friendly Packaging, Zero Guilt",
+        "description": "左图右文模块，强调环保包装，吸引环保意识消费者。",
+        "image_suggestion": "左侧图片：产品从可回收纸盒中取出，旁边有绿色植物或可降解材料细节，自然光拍摄。",
+        "copy_text": "We care about the planet as much as your kitchen. Our packaging is 100% recyclable and made from eco-friendly materials. Unbox your new appliance with pride, knowing you're making a sustainable choice."
+      },
+      {
+        "module_type": "comparison_chart",
+        "title": "Why Choose Our Mini Appliances?",
+        "description": "竞品对比表，突出本品牌优势（品质、设计、耐用、环保）。",
+        "image_suggestion": "无需图片，但可配一个简洁的图标或品牌Logo在表格上方。",
+        "copy_text": "| Feature | Our Mini Appliances | Other Brands |\n|---------|---------------------|--------------|\n| Premium Materials | ✓ Stainless steel & reinforced plastic | ✗ Basic plastic |\n| Ergonomic Design | ✓ Soft-grip handles & intuitive controls | ✗ Awkward angles |\n| Durability | ✓ Tested for 10,000+ cycles | ✗ Average 5,000 cycles |\n| Eco-Friendly Packaging | ✓ 100% recyclable | ✗ Mixed materials |\n| Easy to Use | ✓ One-hand operation | ✗ Requires two hands |"
+      },
+      {
+        "module_type": "spec_table",
+        "title": "Technical Specifications",
+        "description": "规格参数表，提供详细技术信息，帮助用户决策。",
+        "image_suggestion": "无需图片。",
+        "copy_text": "| Specification | Details |\n|---------------|---------|\n| Power | 120V / 60Hz, 800W |\n| Dimensions | 8.5 x 6.2 x 5.1 inches |\n| Weight | 2.3 lbs |\n| Material | Stainless steel, BPA-free plastic |\n| Capacity | 1.5 cups |\n| Cord Length | 3 feet |\n| Warranty | 2-year limited |"
+      },
+      {
+        "module_type": "image_text",
+        "title": "Your Kitchen, Your Masterpiece",
+        "description": "左文右图模块，情感化收尾，鼓励购买。",
+        "image_suggestion": "右侧图片：用户用产品制作完成的美食特写（如迷你烤箱烤的小披萨、搅拌机打的奶昔），色彩鲜艳，诱人。",
+        "copy_text": "From quick breakfasts to gourmet dinners, our mini electric appliances empower you to create delicious meals without sacrificing counter space. Compact enough for dorms, RVs, or tiny apartments—big enough for your culinary dreams. Start your masterpiece today."
+      }
+    ],
+    "seo_report": {
+      "keyword_density": {
+        "score": 65.0,
+        "findings": [
+          "标题中出现了3个目标关键词，但'mini electric appliances'重复出现，略显堆砌。",
+          "五点描述中'mini electric appliances'和'small kitchen appliances'各出现1次，'compact electric gadgets'出现2次，频率合理。",
+          "长描述中目标关键词出现频率较低，仅'mini electric appliances'和'compact electric gadgets'各1次。"
+        ],
+        "suggestions": [
+          "标题中避免重复使用'mini electric appliances'，可替换为同义词如'compact kitchen tools'。",
+          "在长描述中适当增加目标关键词，例如在'Product Specifications'部分加入'small kitchen appliances'。",
+          "确保关键词自然融入，避免为堆砌而牺牲可读性。"
+        ]
+      },
+      "readability": {
+        "score": 70.0,
+        "findings": [
+          "标题长度约120字符，符合≤200字符要求，但'Premium Quality Eco-Friendly'略显冗余。",
+          "五点描述每点长度适中，但内容重复性高（如'duration'和'long-lasting'、'reliable'多次出现）。",
+          "长描述HTML结构清晰，但'Brand Story'部分语言较抽象，缺乏具体细节。"
+        ],
+        "suggestions": [
+          "简化标题，去掉'Premium Quality Eco-Friendly'，改为更吸引人的短语如'Space-Saving & Stylish'。",
+          "五点描述中减少同义词重复，每点聚焦一个独特卖点（如第一点强调材质，第二点强调人体工学）。",
+          "长描述'Brand Story'部分增加具体使用场景，如'Perfect for whipping up smoothies or heating leftovers'。"
+        ]
+      },
+      "completeness": {
+        "score": 80.0,
+        "findings": [
+          "标题、五点描述、长描述（含Brand Story和Product Specifications）均已提供，但缺少A+内容（如对比图、使用场景图）。",
+          "长描述中'Product Specifications'部分不完整，未列出具体尺寸、功率、颜色等参数。",
+          "缺少客户评价或常见问题解答（FAQ）模块。"
+        ],
+        "suggestions": [
+          "补充A+模块，添加产品尺寸对比图和使用场景图（如厨房台面展示）。",
+          "在'Product Specifications'中增加具体参数：尺寸（如10x8x6 inches）、功率（如300W）、颜色选项。",
+          "添加FAQ模块，解答常见问题如'Can it handle heavy use?'或'Is it dishwasher safe?'。"
+        ]
+      },
+      "conversion_potential": {
+        "score": 60.0,
+        "findings": [
+          "标题和描述强调'compact'和'easy to use'，但未突出独特卖点（如多功能性、节能性）。",
+          "五点描述缺乏情感触发点（如'Perfect for dorm rooms'或'Ideal for busy parents'）。",
+          "长描述'Brand Story'部分未建立强烈品牌信任感，缺少社会证明（如销量、奖项）。"
+        ],
+        "suggestions": [
+          "在标题或五点描述中加入具体使用场景，如'Perfect for small apartments, dorms, and RVs'。",
+          "五点描述中增加一个情感化卖点，如'Save counter space without sacrificing performance'。",
+          "长描述'Brand Story'部分加入客户评价摘录或认证信息（如'BPA-free, FDA-approved'）。"
+        ]
+      },
+      "overall_score": 69.0,
+      "improvement_priority": [
+        "1. 提升转化预期：增加具体使用场景和情感触发点，建立品牌信任。",
+        "2. 优化可读性：减少标题和五点描述中的冗余内容，使信息更简洁。",
+        "3. 补充完整性：添加A+内容和完整的产品规格参数。"
+      ]
+    },
+    "human_approved": false
+  },
+  "compliance": {
+    "policy_issues": [
+      {
+        "location": "Title",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The title contains the word 'Premium', which is a subjective claim that may be considered prohibited unless substantiated. Amazon policy restricts unsubstantiated subjective claims like 'premium' in titles.",
+        "suggestion": "Remove 'Premium' from the title or replace with objective, verifiable attributes (e.g., 'Stainless Steel' or 'BPA-Free')."
+      },
+      {
+        "location": "Bullet Point 1",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The phrase 'Premium quality materials' is a subjective claim that may be considered prohibited unless substantiated. Amazon policy restricts unsubstantiated subjective claims like 'premium' in bullet points.",
+        "suggestion": "Replace 'Premium quality materials' with specific, verifiable material descriptions (e.g., 'Stainless steel and BPA-free plastic')."
+      },
+      {
+        "location": "Bullet Point 5",
+        "issue_type": "Prohibited Claims",
+        "severity": "Medium",
+        "description": "The phrase 'Eco-friendly packaging' is a general environmental claim that may require substantiation or specific details. Amazon policy restricts unsubstantiated environmental claims.",
+        "suggestion": "Provide specific details about the packaging (e.g., 'Packaging made from 100% recycled cardboard') or remove the claim."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The phrase 'Premium quality materials' in the description is a subjective claim that may be considered prohibited unless substantiated. Amazon policy restricts unsubstantiated subjective claims like 'premium'.",
+        "suggestion": "Replace 'Premium quality materials' with specific, verifiable material descriptions (e.g., 'Stainless steel and BPA-free plastic')."
+      }
+    ],
+    "claim_issues": [
+      {
+        "claim_text": "Premium quality materials ensure durability and long-lasting performance",
+        "issue": "unsubstantiated",
+        "risk_level": "medium",
+        "explanation": "The claim of 'premium quality materials' and 'long-lasting performance' is not supported by any specific evidence, such as material certifications, test results, or warranty details.",
+        "fix_suggestion": "Add specific material details (e.g., stainless steel, BPA-free plastic) and provide a warranty period or durability test results to substantiate the claim."
+      },
+      {
+        "claim_text": "Ergonomic design provides comfortable handling and effortless operation",
+        "issue": "unsubstantiated",
+        "risk_level": "low",
+        "explanation": "While ergonomic design is a common marketing term, no specific ergonomic features (e.g., non-slip grip, balanced weight) are described to support this claim.",
+        "fix_suggestion": "Describe specific ergonomic features, such as contoured handles or soft-touch buttons, to make the claim more concrete."
+      },
+      {
+        "claim_text": "Eco-friendly packaging reduces environmental impact",
+        "issue": "unsubstantiated",
+        "risk_level": "medium",
+        "explanation": "The term 'eco-friendly' is vague and not backed by any certification (e.g., FSC, recyclable materials) or specific details about the packaging composition.",
+        "fix_suggestion": "Specify the packaging materials (e.g., 100% recycled cardboard, biodegradable) and include any relevant eco-certifications."
+      }
+    ],
+    "overall_verdict": "",
+    "risk_level": "medium",
+    "total_issues": 7,
+    "critical_items": [],
+    "action_items": [
+      "Remove 'Premium' from the title or replace with objective, verifiable attributes (e.g., 'Stainless Steel' or 'BPA-Free').",
+      "Replace 'Premium quality materials' with specific, verifiable material descriptions (e.g., 'Stainless steel and BPA-free plastic').",
+      "Provide specific details about the packaging (e.g., 'Packaging made from 100% recycled cardboard') or remove the claim.",
+      "Replace 'Premium quality materials' with specific, verifiable material descriptions (e.g., 'Stainless steel and BPA-free plastic').",
+      "Add specific material details (e.g., stainless steel, BPA-free plastic) and provide a warranty period or durability test results to substantiate the claim.",
+      "Describe specific ergonomic features, such as contoured handles or soft-touch buttons, to make the claim more concrete.",
+      "Specify the packaging materials (e.g., 100% recycled cardboard, biodegradable) and include any relevant eco-certifications."
+    ],
+    "human_reviewed": false
+  },
+  "social": {
+    "marketing_angles": [
+      "Unboxing experience with eco-friendly packaging",
+      "Lifestyle integration in modern kitchens",
+      "Before/after efficiency comparison",
+      "Durability test over time",
+      "Ergonomic design for everyday comfort"
+    ],
+    "target_audience": "Health-conscious millennials and Gen Z homeowners in the US, aged 25-40, who value convenience, sustainability, and premium design in their kitchen gadgets. They are early adopters of smart home trends, active on Instagram and TikTok, and seek products that simplify meal prep while aligning with their eco-friendly lifestyle.",
+    "content_tones": [
+      "Aspirational",
+      "Professional",
+      "Warm and inviting"
+    ],
+    "key_selling_points": [
+      "Premium quality materials for lasting performance",
+      "Ergonomic design for comfortable, effortless use",
+      "Eco-friendly packaging reducing environmental impact",
+      "Easy to use with intuitive controls",
+      "Durable construction ensures long-term value"
+    ],
+    "visual_style": [],
+    "hashtag_themes": [],
+    "posts": [
+      {
+        "platform": "instagram",
+        "copy": "Morning rituals just got a little greener 🌿\n\nYour kitchen should work as hard as you do—but without the waste. That’s why we crafted these mini electr",
+        "hashtags": [
+          "#SustainableLiving",
+          "KitchenGadgets",
+          "EcoFriendlyHome",
+          "MiniAppliances",
+          "SmartKitchen",
+          "HealthyLifestyle",
+          "ZeroWasteKitchen",
+          "ModernHome",
+          "MealPrepMadeEasy",
+          "GreenLiving"
+        ],
+        "quality_score": 8.0
+      },
+      {
+        "platform": "threads",
+        "copy": "I’ll admit it: I used to think small kitchen gadgets were just clutter waiting to happen.\n\nThen I found this mini electric appliance that actually cha",
+        "hashtags": [
+          "#SustainableLiving",
+          "#KitchenGadgets",
+          "#EcoFriendlyHome",
+          "#MinimalistKitchen",
+          "#SmartHome",
+          "#HealthyEating",
+          "#ZeroWaste",
+          "#SmallSpaceLiving",
+          "#PremiumDesign",
+          "#USHomeowners"
+        ],
+        "quality_score": 7.3
+      },
+      {
+        "platform": "pinterest",
+        "copy": "Imagine a kitchen where every tool feels custom-made for your hand, where prep time shrinks to just minutes, and where your choices leave a lighter fo",
+        "hashtags": [
+          "miniappliances",
+          "ecofriendlykitchen",
+          "sustainableliving",
+          "kitcheninspo",
+          "smartkitchen",
+          "healthylifestyle",
+          "mealprepideas",
+          "modernhome",
+          "zerowastekitchen",
+          "designlover"
+        ],
+        "quality_score": 8.3
+      }
+    ],
+    "human_approved": false
+  },
+  "platform": {
+    "asin": null,
+    "amazon_url": null,
+    "amazon_publish_status": "draft",
+    "amazon_publish_errors": [],
+    "amazon_published_at": null,
+    "social_publish_status": {},
+    "social_post_urls": {}
+  },
+  "reviews": {
+    "total_reviews": 10,
+    "average_rating": 0.0,
+    "sentiment_distribution": {},
+    "negative_alert_count": 2,
+    "top_alerts": [
+      {
+        "reviewer": "David P.",
+        "content": "Color doesn't match the photos. Returning it.",
+        "alert_level": "alert"
+      },
+      {
+        "reviewer": "Emily K.",
+        "content": "Disappointed with the quality. Stopped working after 2 weeks.",
+        "alert_level": "alert"
+      }
+    ],
+    "last_monitored_at": "2026-05-19T01:59:04.375981Z"
+  },
+  "ads": {
+    "campaigns": [],
+    "total_budget": 0.0,
+    "total_spend": 0.0,
+    "acos": null
+  }
+}

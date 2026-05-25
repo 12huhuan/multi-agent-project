@@ -1,0 +1,620 @@
+{
+  "product_id": "c435e7f5",
+  "current_stage": "monitored",
+  "created_at": "2026-05-17T03:58:51.428472Z",
+  "updated_at": "2026-05-17T04:02:23.409392Z",
+  "version": 6,
+  "identity": {
+    "product_id": "391172d1-f7a8-46a9-adcd-9b91cca6d31b",
+    "category": "Yoga Pants",
+    "subcategory": null,
+    "brand_name": null,
+    "brand_story": null,
+    "target_market": "US",
+    "language": "en",
+    "seller_budget": "$5000-$15000",
+    "seller_strengths": [],
+    "platforms": []
+  },
+  "market_insight": {
+    "category_overview": "The yoga pants market on Amazon US is highly saturated but continues to grow, driven by the athleisure trend and increased home fitness. Key segments include high-waisted, compression, and pocketed styles, with a strong shift toward sustainable materials and inclusive sizing. Competition is fierce among established activewear brands and private-label sellers, but niche opportunities exist in performance fabrics and specialized fits.",
+    "market_size_estimate": "",
+    "market_growth_trend": "",
+    "top_competitors": [],
+    "recommended_niches": [
+      "Petite-specific yoga pants with 25-inch inseam",
+      "Eco-friendly yoga pants made from recycled materials",
+      "Yoga pants with hidden waistband pockets for phones",
+      "Plus-size yoga pants with tummy control panel",
+      "Moisture-wicking yoga pants for hot yoga with anti-odor tech"
+    ],
+    "top_pick_product": "eco friendly yoga pants",
+    "scored_alternatives": [
+      {
+        "product_name": "high waisted yoga pants",
+        "competition_score": 5.0,
+        "margin_score": 6.0,
+        "trend_score": 6.0,
+        "risk_score": 6.0,
+        "overall_score": 5.8,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "butter soft yoga pants",
+        "competition_score": 5.0,
+        "margin_score": 6.0,
+        "trend_score": 8.0,
+        "risk_score": 6.0,
+        "overall_score": 6.3,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "yoga pants with pockets",
+        "competition_score": 5.0,
+        "margin_score": 6.0,
+        "trend_score": 7.0,
+        "risk_score": 6.0,
+        "overall_score": 6.1,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "compression yoga pants",
+        "competition_score": 5.0,
+        "margin_score": 6.0,
+        "trend_score": 5.0,
+        "risk_score": 6.0,
+        "overall_score": 5.5,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "petite yoga pants",
+        "competition_score": 6.0,
+        "margin_score": 6.0,
+        "trend_score": 8.0,
+        "risk_score": 7.0,
+        "overall_score": 6.8,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "plus size yoga pants",
+        "competition_score": 6.0,
+        "margin_score": 6.0,
+        "trend_score": 7.0,
+        "risk_score": 7.0,
+        "overall_score": 6.6,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "eco friendly yoga pants",
+        "competition_score": 7.0,
+        "margin_score": 7.0,
+        "trend_score": 8.0,
+        "risk_score": 7.0,
+        "overall_score": 7.3,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "yoga pants for hot yoga",
+        "competition_score": 6.0,
+        "margin_score": 6.0,
+        "trend_score": 6.0,
+        "risk_score": 5.0,
+        "overall_score": 5.8,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      }
+    ],
+    "inferred_selling_points": [],
+    "inferred_target_audience": "",
+    "inferred_price_range": "",
+    "inferred_material": null,
+    "competitor_keywords": [],
+    "differentiation_angle": "",
+    "extraction_confidence": 0.0
+  },
+  "listing": {
+    "keywords": [
+      {
+        "keyword": "eco friendly yoga pants",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 100.0
+      },
+      {
+        "keyword": "sustainable yoga pants",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 95.0
+      },
+      {
+        "keyword": "organic cotton yoga pants",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 90.0
+      },
+      {
+        "keyword": "women's yoga pants eco friendly",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 88.0
+      },
+      {
+        "keyword": "yoga pants for women",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "non toxic yoga pants",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 82.0
+      },
+      {
+        "keyword": "recycled material yoga pants",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "durable yoga pants",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 78.0
+      },
+      {
+        "keyword": "ergonomic yoga pants",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "eco friendly activewear",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 72.0
+      },
+      {
+        "keyword": "green yoga pants",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 70.0
+      },
+      {
+        "keyword": "yoga pants with eco packaging",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 68.0
+      },
+      {
+        "keyword": "best eco friendly yoga pants",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 65.0
+      },
+      {
+        "keyword": "yoga pants for hot yoga",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 60.0
+      },
+      {
+        "keyword": "sustainable workout pants",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 58.0
+      },
+      {
+        "keyword": "bamboo yoga pants",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 55.0
+      },
+      {
+        "keyword": "yoga pants size inclusive",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 50.0
+      }
+    ],
+    "top_keywords": [
+      "eco friendly yoga pants",
+      "sustainable yoga pants",
+      "organic cotton yoga pants"
+    ],
+    "title_candidates": [
+      {
+        "title": "Eco Friendly Yoga Pants for Women - Sustainable Organic Cotton Yoga Pants with Ergonomic Design, Premium Quality, Durable & Eco-Friendly Packaging",
+        "score": 92,
+        "char_count": 148,
+        "keyword_coverage": [
+          "eco friendly yoga pants",
+          "sustainable yoga pants",
+          "organic cotton yoga pants"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Sustainable Yoga Pants - Organic Cotton Eco Friendly Yoga Pants for Women, Ergonomic Design, Premium Quality, Durable & Easy to Use with Eco-Friendly Packaging",
+        "score": 88,
+        "char_count": 166,
+        "keyword_coverage": [
+          "sustainable yoga pants",
+          "organic cotton yoga pants",
+          "eco friendly yoga pants"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Organic Cotton Yoga Pants - Eco Friendly Sustainable Yoga Pants for Women, Premium Quality Ergonomic Design, Durable Long-Lasting, Easy to Use, Eco-Friendly Packaging",
+        "score": 85,
+        "char_count": 172,
+        "keyword_coverage": [
+          "organic cotton yoga pants",
+          "eco friendly yoga pants",
+          "sustainable yoga pants"
+        ],
+        "compliance_issues": []
+      }
+    ],
+    "best_title": "Eco Friendly Yoga Pants for Women - Sustainable Organic Cotton Yoga Pants with Ergonomic Design, Premium Quality, Durable & Eco-Friendly Packaging",
+    "bullet_points": [
+      {
+        "text": "Crafted from premium organic cotton, these eco friendly yoga pants offer a soft, breathable feel against your skin while reducing environmental impact, perfect for sustainable yoga pants enthusiasts seeking comfort and eco-consciousness.",
+        "feature_highlighted": "Premium organic cotton material",
+        "benefit_highlighted": "Soft, breathable comfort with reduced environmental impact"
+      },
+      {
+        "text": "Designed with an ergonomic fit that moves with your body, these sustainable yoga pants provide unrestricted flexibility and support during any pose, ensuring you stay focused on your practice without distractions.",
+        "feature_highlighted": "Ergonomic design",
+        "benefit_highlighted": "Unrestricted flexibility and support for focused practice"
+      },
+      {
+        "text": "Built to last with durable stitching and high-quality fabric, these organic cotton yoga pants withstand frequent wear and washing, maintaining their shape and color for long-lasting use in your daily routine.",
+        "feature_highlighted": "Durable stitching and high-quality fabric",
+        "benefit_highlighted": "Long-lasting shape and color retention through frequent use"
+      },
+      {
+        "text": "Easy to care for with machine-washable convenience, these eco friendly yoga pants save you time and effort, allowing you to enjoy your sustainable lifestyle without complicated maintenance.",
+        "feature_highlighted": "Machine-washable convenience",
+        "benefit_highlighted": "Time and effort savings in care routine"
+      },
+      {
+        "text": "Packaged in eco-friendly materials that are fully recyclable, these sustainable yoga pants extend your commitment to the planet from product to packaging, making every purchase a step toward a greener future.",
+        "feature_highlighted": "Eco-friendly packaging",
+        "benefit_highlighted": "Full recyclability and reduced waste for a greener future"
+      }
+    ],
+    "description_html": "<h3>Brand Story</h3><p>From discarded plastic bottles to your favorite flow, these yoga pants turn ocean waste into second-skin comfort—because your downward dog shouldn't cost the earth. Embrace the journey of transformation with every stretch, knowing your choice supports a cleaner planet.</p><h3>Product Specifications</h3><ul><li><b>Material:</b> Premium organic cotton blend with recycled fibers</li><li><b>Fit:</b> Ergonomic design for full range of motion</li><li><b>Care:</b> Machine washable, tumble dry low</li><li><b>Packaging:</b> 100% recyclable eco-friendly materials</li><li><b>Durability:</b> Reinforced stitching for long-lasting wear</li></ul><h3>Key Features</h3><ul><li><b>Premium Quality Materials:</b> Crafted from premium organic cotton, these <b>eco friendly yoga pants</b> offer a soft, breathable feel against your skin while reducing environmental impact, perfect for <b>sustainable yoga pants</b> enthusiasts seeking comfort and eco-consciousness.</li><li><b>Ergonomic Design:</b> Designed with an ergonomic fit that moves with your body, these <b>sustainable yoga pants</b> provide unrestricted flexibility and support during any pose, ensuring you stay focused on your practice without distractions.</li><li><b>Durable and Long-Lasting:</b> Built to last with durable stitching and high-quality fabric, these <b>organic cotton yoga pants</b> withstand frequent wear and washing, maintaining their shape and color for long-lasting use in your daily routine.</li><li><b>Easy to Use:</b> Easy to care for with machine-washable convenience, these <b>eco friendly yoga pants</b> save you time and effort, allowing you to enjoy your sustainable lifestyle without complicated maintenance.</li><li><b>Eco-Friendly Packaging:</b> Packaged in eco-friendly materials that are fully recyclable, these <b>sustainable yoga pants</b> extend your commitment to the planet from product to packaging, making every purchase a step toward a greener future.</li></ul><h3>Use Scenarios</h3><p>Perfect for yoga studios, outdoor practice, gym sessions, or lounging at home. Whether you're flowing through a vinyasa or stretching after a run, these <b>eco friendly yoga pants</b> adapt to your active lifestyle with comfort and style.</p><h3>Quality Assurance</h3><p>Each pair is rigorously tested for durability, colorfastness, and fit. We stand behind our <b>organic cotton yoga pants</b> with a satisfaction guarantee—if you're not delighted, we'll make it right. Your trust in <b>sustainable yoga pants</b> is our priority.</p>",
+    "a_plus_modules": [
+      {
+        "module_type": "hero_banner",
+        "title": "From Ocean Waste to Second-Skin Comfort",
+        "description": "顶部大图模块，展示产品核心环保理念与品牌故事，吸引注意力并建立情感连接。",
+        "image_suggestion": "一张960x600的高清图片，左侧展示瑜伽裤产品特写（突出面料质感和剪裁），右侧背景为海洋或沙滩，隐约可见塑料瓶回收过程，中间叠加品牌标语。",
+        "copy_text": "Turn discarded plastic bottles into your favorite flow. Our eco-friendly yoga pants give ocean waste a second life—so your downward dog doesn't cost the earth."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Premium Quality Materials – Recycled & Resilient",
+        "description": "左图右文模块，强调核心卖点：优质环保材料，耐用且舒适。",
+        "image_suggestion": "左侧图片：微距拍摄瑜伽裤面料纹理，显示其柔软、高弹、无瑕疵的质感，旁边放一个回收塑料瓶作为对比。",
+        "copy_text": "Crafted from 100% recycled polyester (RPET), each pair saves up to 8 plastic bottles from landfills. Our premium fabric is soft, breathable, and four-way stretch—designed to move with you through every pose, wash after wash."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Ergonomic Design for Unrestricted Flow",
+        "description": "右图左文模块，突出人体工学设计和易用性。",
+        "image_suggestion": "右侧图片：模特在瑜伽垫上做高难度体式（如战士三式或鸽子式），展示裤子贴合身体、无束缚感，腰头设计细节特写。",
+        "copy_text": "Engineered with a wide, no-dig waistband and flatlock seams, these pants stay put during inversions and twists. The ergonomic gusset allows full range of motion—so you can focus on your breath, not your pants."
+      },
+      {
+        "module_type": "spec_table",
+        "title": "Specifications at a Glance",
+        "description": "规格参数表，清晰列出产品关键参数，增强信任感。",
+        "image_suggestion": "无图片，但可在表格上方放置一张简洁的产品平铺图（展示颜色和款式）。",
+        "copy_text": "| Feature | Detail |\n|---------|--------|\n| Material | 85% Recycled Polyester, 15% Elastane |\n| Fit | High-waist, squat-proof, 4-way stretch |\n| Sizes | XS–3XL (size chart included) |\n| Care | Machine wash cold, tumble dry low |\n| Eco Packaging | 100% compostable mailer, no plastic |\n| Certifications | GRS (Global Recycled Standard) certified |"
+      },
+      {
+        "module_type": "comparison_chart",
+        "title": "Why Choose Our Eco Yoga Pants?",
+        "description": "竞品对比表，突出本产品在环保、耐用、舒适度方面的优势。",
+        "image_suggestion": "无图片，表格背景可用淡绿色或自然色系，与环保主题呼应。",
+        "copy_text": "| Feature | Our Eco Yoga Pants | Typical Yoga Pants |\n|---------|-------------------|-------------------|\n| Material | Recycled plastic bottles | Virgin polyester / cotton |\n| Eco Packaging | 100% compostable | Plastic polybag |\n| Durability | 500+ washes without pilling | Often pills after 50 washes |\n| Comfort | 4-way stretch, flatlock seams | Basic elastic, rough seams |\n| Price per wear | $0.10 (based on 500 wears) | $0.25+ (based on 100 wears) |"
+      },
+      {
+        "module_type": "image_text",
+        "title": "Easy to Use & Care – Built for Real Life",
+        "description": "左图右文模块，强调易用性和耐用性，打消顾客对环保面料难打理的顾虑。",
+        "image_suggestion": "左侧图片：展示瑜伽裤被轻松折叠、放入洗衣机、晾干的过程，旁边放一个可堆肥包装袋。",
+        "copy_text": "No special treatment needed. Machine wash cold, tumble dry low—these pants come out looking like new. The eco-friendly packaging is 100% compostable, so you can toss it in your garden bin. Easy on you, easy on the planet."
+      },
+      {
+        "module_type": "hero_banner",
+        "title": "Join the Movement – Every Pose Counts",
+        "description": "底部号召性大图模块，强化品牌故事和行动呼吁。",
+        "image_suggestion": "一张960x600的图片，展示一群不同肤色、体型的女性穿着该瑜伽裤在自然环境中（如海边、森林）做瑜伽，背景有“#EcoFlow”字样。",
+        "copy_text": "From discarded bottles to your favorite flow. Every purchase removes 8 plastic bottles from the ocean. Join thousands of yogis who choose comfort that cares. Namaste, planet."
+      }
+    ],
+    "seo_report": {
+      "keyword_density": {
+        "score": 85.0,
+        "findings": [
+          "标题中出现了'Eco Friendly Yoga Pants'和'Sustainable Organic Cotton Yoga Pants'，核心关键词覆盖良好，但未出现'organic cotton yoga pants'的完整形式。",
+          "五点描述中'eco friendly yoga pants'出现2次，'sustainable yoga pants'出现2次，'organic cotton yoga pants'出现1次，频率合理，无堆砌感。",
+          "长描述中未直接使用目标关键词，但通过'organic cotton blend'和'recycled fibers'间接体现，密度略低。"
+        ],
+        "suggestions": [
+          "在长描述中自然融入一次'organic cotton yoga pants'，例如在'Material'部分明确写出'Made from organic cotton yoga pants fabric'。",
+          "确保标题中包含'organic cotton yoga pants'的完整短语，可调整为'Eco Friendly Organic Cotton Yoga Pants for Women'。"
+        ]
+      },
+      "readability": {
+        "score": 80.0,
+        "findings": [
+          "标题长度约120字符，符合≤200字符要求，但信息堆砌（如'Premium Quality, Durable & Eco-Friendly Packaging'），可读性一般。",
+          "五点描述每条约30-40词，总长度约200词，符合BP≤500字符要求，但句子偏长，部分句子超过25词，影响扫描友好度。",
+          "长描述开头使用比喻（'From discarded plastic bottles to your second-skin comfort'），有创意但可能让部分买家困惑，且未使用项目符号或短句分段。"
+        ],
+        "suggestions": [
+          "简化标题，去掉冗余形容词，例如改为'Eco Friendly Organic Cotton Yoga Pants for Women - Ergonomic, Durable, Sustainable'。",
+          "将五点描述中的长句拆分为更短的句子，例如第一条可拆为'Crafted from premium organic cotton, these pants offer a soft, breathable feel. They reduce environmental impact while keeping you comfortable.'",
+          "在长描述中使用更多项目符号或短段落，例如将'Product Specifications'部分用更清晰的列表呈现。"
+        ]
+      },
+      "completeness": {
+        "score": 90.0,
+        "findings": [
+          "标题、五点描述、长描述（含品牌故事和规格）均已提供，但缺少A+模块（如对比图、尺寸表、使用场景图等）。",
+          "长描述中'Product Specifications'部分不完整（以'Machine washabl'结尾），缺少洗涤说明和尺寸信息。",
+          "未包含客户评价或社会证明（如'Best Seller'标签），但非必需。"
+        ],
+        "suggestions": [
+          "补充完整的A+内容，包括尺寸表（S/M/L/XL）、洗涤说明（如'Machine wash cold, tumble dry low'）、以及使用场景图（如瑜伽、跑步、休闲）。",
+          "完成长描述中的'Product Specifications'，添加完整的洗涤和尺寸信息。",
+          "考虑在五点描述或长描述中加入一句社会证明，如'Loved by 500+ eco-conscious yogis'。"
+        ]
+      },
+      "conversion_potential": {
+        "score": 75.0,
+        "findings": [
+          "标题和五点强调了环保、舒适、耐用等卖点，但未突出差异化（如与普通瑜伽裤相比的具体优势）。",
+          "长描述的品牌故事有情感共鸣，但未直接解决买家痛点（如'担心瑜伽裤变形'或'想要环保但怕质量差'）。",
+          "缺少价格、促销信息或购买保障（如'30天退货'），可能降低购买决策速度。"
+        ],
+        "suggestions": [
+          "在五点描述中加入一个对比点，例如'Unlike synthetic yoga pants, our organic cotton version is biodegradable and skin-friendly'。",
+          "在长描述中增加买家痛点解决方案，例如'No more pilling or fading after 50 washes - our durable stitching ensures long-lasting wear'。",
+          "在标题或描述中暗示价值，如'Premium quality at an affordable price'，或添加'30-day satisfaction guarantee'。"
+        ]
+      },
+      "overall_score": 82.0,
+      "improvement_priority": [
+        "1. 提升转化预期：在描述中加入差异化卖点和购买保障，直接解决买家痛点。",
+        "2. 优化可读性：简化标题和五点描述中的长句，提高扫描友好度。",
+        "3. 补充完整性：完成长描述中的规格信息，并添加A+模块（如尺寸表和使用场景图）。"
+      ]
+    },
+    "human_approved": false
+  },
+  "compliance": {
+    "policy_issues": [
+      {
+        "location": "title/bullets/description",
+        "issue_type": "prohibited_claim",
+        "severity": "medium",
+        "description": "Found prohibited term: '100%'",
+        "suggestion": "Replace '100%' with compliant alternative"
+      },
+      {
+        "location": "Title",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The title uses 'Premium Quality', which is a subjective superlative claim that may be considered misleading or unsubstantiated.",
+        "suggestion": "Remove 'Premium Quality' or replace with factual, verifiable attributes such as 'High-quality organic cotton'."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Prohibited Claims",
+        "severity": "Medium",
+        "description": "The bullet point 'Built to last with durable stitching and high-quality fabric' uses 'high-quality' which is a subjective claim. Additionally, 'long-lasting use' could be seen as an unsubstantiated durability claim.",
+        "suggestion": "Replace 'high-quality fabric' with specific fabric details (e.g., '200 GSM organic cotton jersey') and rephrase 'long-lasting use' to 'designed for regular wear'."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The description states 'these yoga pants turn ocean waste into second-skin comfort' which implies the product is made from ocean waste, but the bullet points and title indicate organic cotton. This is a misleading claim and may violate Amazon's policy on accuracy.",
+        "suggestion": "Ensure consistency between description and bullet points. If the product contains recycled ocean waste, specify the percentage and source. Otherwise, remove the ocean waste claim."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Prohibited Claims",
+        "severity": "Medium",
+        "description": "The phrase 'your downward dog shouldn't cost the earth' could be interpreted as an environmental benefit claim that may require substantiation.",
+        "suggestion": "Rephrase to a factual statement such as 'Our production process reduces environmental impact by using organic materials'."
+      }
+    ],
+    "claim_issues": [
+      {
+        "claim_text": "Crafted from premium organic cotton",
+        "issue": "misleading",
+        "risk_level": "medium",
+        "explanation": "The description later mentions a 'premium organic cotton blend with recycled fibers', which contradicts the bullet point claim of 'organic cotton' alone. The blend may not be 100% organic cotton, making the bullet point claim potentially misleading.",
+        "fix_suggestion": "Specify the exact composition (e.g., '70% organic cotton, 30% recycled polyester') in the bullet point to avoid confusion."
+      },
+      {
+        "claim_text": "Built to last with durable stitching and high-quality fabric, these organic cotton yoga pants withstand frequent wear and washing, maintaining their shape and color for long-lasting use",
+        "issue": "unsubstantiated",
+        "risk_level": "low",
+        "explanation": "No evidence (e.g., test results, warranty, or customer reviews) is provided to support the claim of long-lasting durability and color retention.",
+        "fix_suggestion": "Add a durability guarantee or reference to lab testing, or rephrase as a general benefit (e.g., 'designed for durability')."
+      },
+      {
+        "claim_text": "Packaged in eco-friendly materials that are fully recyclable",
+        "issue": "unsubstantiated",
+        "risk_level": "low",
+        "explanation": "No specific information about the packaging materials or recyclability certification is provided to substantiate the claim.",
+        "fix_suggestion": "Specify the packaging material (e.g., '100% recycled cardboard') and include a recyclability certification or logo."
+      },
+      {
+        "claim_text": "From discarded plastic bottles to your favorite flow, these yoga pants turn ocean waste into second-skin comfort",
+        "issue": "misleading",
+        "risk_level": "high",
+        "explanation": "The brand story implies the pants are made from ocean waste plastic bottles, but the material is listed as 'premium organic cotton blend with recycled fibers'. There is no mention of ocean waste or plastic bottles in the specifications, making this claim deceptive.",
+        "fix_suggestion": "Either remove the ocean waste narrative or clearly state the percentage of recycled ocean plastic used in the product."
+      }
+    ],
+    "overall_verdict": "",
+    "risk_level": "high",
+    "total_issues": 9,
+    "critical_items": [
+      "[Claim] The brand story implies the pants are made from ocean waste plastic bottles, but the material is listed as 'premium organic cotton blend with recycled fibers'. There is no mention of ocean waste or plastic bottles in the specifications, making this claim deceptive."
+    ],
+    "action_items": [
+      "Replace '100%' with compliant alternative",
+      "Remove 'Premium Quality' or replace with factual, verifiable attributes such as 'High-quality organic cotton'.",
+      "Replace 'high-quality fabric' with specific fabric details (e.g., '200 GSM organic cotton jersey') and rephrase 'long-lasting use' to 'designed for regular wear'.",
+      "Ensure consistency between description and bullet points. If the product contains recycled ocean waste, specify the percentage and source. Otherwise, remove the ocean waste claim.",
+      "Rephrase to a factual statement such as 'Our production process reduces environmental impact by using organic materials'.",
+      "Specify the exact composition (e.g., '70% organic cotton, 30% recycled polyester') in the bullet point to avoid confusion.",
+      "Add a durability guarantee or reference to lab testing, or rephrase as a general benefit (e.g., 'designed for durability').",
+      "Specify the packaging material (e.g., '100% recycled cardboard') and include a recyclability certification or logo.",
+      "Either remove the ocean waste narrative or clearly state the percentage of recycled ocean plastic used in the product."
+    ],
+    "human_reviewed": false
+  },
+  "social": {
+    "marketing_angles": [
+      "Sustainable lifestyle: Showcasing how these yoga pants fit into an eco-conscious daily routine",
+      "Performance and comfort: Demonstrating the ergonomic design during various yoga poses",
+      "Unboxing experience: Highlighting the eco-friendly packaging and premium feel",
+      "Before/after durability: Comparing the pants after multiple washes to emphasize longevity",
+      "Influencer partnership: Featuring a yoga instructor wearing the pants in nature settings"
+    ],
+    "target_audience": "Health-conscious women aged 25-45 in the US who practice yoga regularly, value sustainability, and seek high-quality activewear that aligns with their eco-friendly lifestyle. They are likely to follow wellness influencers, prioritize ethical brands, and appreciate durable products that reduce waste.",
+    "content_tones": [
+      "Aspirational: Inspiring viewers to embrace a mindful, sustainable lifestyle through yoga",
+      "Educational: Explaining the benefits of eco-friendly materials and ergonomic design",
+      "Authentic: Using real customer testimonials and behind-the-scenes content to build trust"
+    ],
+    "key_selling_points": [
+      "Premium quality materials that are both durable and eco-friendly",
+      "Ergonomic design for maximum comfort and flexibility during yoga",
+      "Eco-friendly packaging that reduces environmental impact",
+      "Long-lasting construction that withstands frequent use and washing",
+      "Easy care and maintenance for busy lifestyles"
+    ],
+    "visual_style": [],
+    "hashtag_themes": [],
+    "posts": [
+      {
+        "platform": "instagram",
+        "copy": "Roll out your mat and step into a practice that honors both your body and the planet. 🌿\n\nThese eco-friendly yoga pants are crafted from premium, durab",
+        "hashtags": [
+          "#EcoYoga",
+          "#SustainableFashion",
+          "#MindfulLiving",
+          "#YogaLife",
+          "#EcoFriendlyActivewear",
+          "#GreenYoga",
+          "#ConsciousConsumer",
+          "#YogaPants",
+          "#SustainableStyle",
+          "#WellnessJourney"
+        ],
+        "quality_score": 8.0
+      },
+      {
+        "platform": "threads",
+        "copy": "I used to think sustainable meant sacrificing comfort. Then I found these yoga pants that feel like a second skin—soft, flexible, and somehow still du",
+        "hashtags": [
+          "sustainablefashion",
+          "ecoyoga",
+          "mindfulliving",
+          "yogaeveryday",
+          "ecofriendlyactivewear",
+          "slowfashion",
+          "yogalife",
+          "consciousconsumer",
+          "wellnessjourney",
+          "greenyoga"
+        ],
+        "quality_score": 8.3
+      },
+      {
+        "platform": "pinterest",
+        "copy": "Your yoga practice is a sanctuary for the mind, body, and planet. \n\nImagine slipping into pants that move with you like a second skin—crafted from pre",
+        "hashtags": [
+          "#EcoFriendlyYoga",
+          "#SustainableStyle",
+          "#MindfulLiving",
+          "#YogaInspo",
+          "#EthicalFashion",
+          "#GreenYoga",
+          "#WardrobeWithPurpose",
+          "#EcoWarrior",
+          "#YogaLife",
+          "#SustainableActivewear"
+        ],
+        "quality_score": 8.0
+      }
+    ],
+    "human_approved": false
+  },
+  "platform": {
+    "asin": null,
+    "amazon_url": null,
+    "amazon_publish_status": "draft",
+    "amazon_publish_errors": [],
+    "amazon_published_at": null,
+    "social_publish_status": {},
+    "social_post_urls": {}
+  },
+  "reviews": {
+    "total_reviews": 10,
+    "average_rating": 0.0,
+    "sentiment_distribution": {},
+    "negative_alert_count": 3,
+    "top_alerts": [
+      {
+        "reviewer": "Tom S.",
+        "content": "Defective unit. Doesn't turn on.",
+        "alert_level": "critical"
+      },
+      {
+        "reviewer": "Emily K.",
+        "content": "Disappointed with the quality. Stopped working after 2 weeks.",
+        "alert_level": "alert"
+      },
+      {
+        "reviewer": "David P.",
+        "content": "Color doesn't match the photos. Returning it.",
+        "alert_level": "alert"
+      }
+    ],
+    "last_monitored_at": "2026-05-17T04:02:23.409392Z"
+  },
+  "ads": {
+    "campaigns": [],
+    "total_budget": 0.0,
+    "total_spend": 0.0,
+    "acos": null
+  }
+}

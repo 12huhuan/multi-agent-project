@@ -60,7 +60,7 @@ class MarketInsight(BaseModel):
 
 
 class ListingContent(BaseModel):
-    """Listing 优化阶段产出"""
+    """Listing 生成阶段产出"""
     keywords: list[dict] = Field(default_factory=list)
     top_keywords: list[str] = Field(default_factory=list)
     title_candidates: list[dict] = Field(default_factory=list)
@@ -258,7 +258,7 @@ class ListingMapper(ContextMapper):
             "top_keywords": top_keywords,
             "target_platform": f"amazon_{identity.target_market.lower()}",
             "target_language": identity.language,
-            "image_descriptions": [],
+            "image_descriptions": getattr(identity, "image_descriptions", None) or [],
         }
 
 

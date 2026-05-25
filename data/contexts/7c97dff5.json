@@ -1,0 +1,570 @@
+{
+  "product_id": "7c97dff5",
+  "current_stage": "monitored",
+  "created_at": "2026-05-17T14:15:29.832144Z",
+  "updated_at": "2026-05-17T14:20:22.214573Z",
+  "version": 6,
+  "identity": {
+    "product_id": "84abcced-d110-45c8-8c91-8d560c2a7fb7",
+    "category": "Bluetooth Speaker",
+    "subcategory": null,
+    "brand_name": null,
+    "brand_story": null,
+    "target_market": "US",
+    "language": "en",
+    "seller_budget": "$5000-$15000",
+    "seller_strengths": [
+      "Competitive pricing",
+      "Fast global shipping",
+      "Quality materials",
+      "Responsive customer service",
+      "Professional packaging"
+    ],
+    "platforms": []
+  },
+  "market_insight": {
+    "category_overview": "The Bluetooth speaker market on Amazon US is highly competitive and mature, driven by consumer demand for portable, high-quality audio solutions across various use cases including home, car, outdoor, and kids' entertainment. The category is dominated by established brands like JBL, Bose, and Anker, but there is growing interest in premium sound quality, professional-grade speakers, and niche segments like speakers for TV and kids. Search trends indicate a shift towards specialized features such as bass enhancement, outdoor durability, and multi-room connectivity, while price sensitivity remains moderate with a wide range from budget to premium.",
+    "market_size_estimate": "",
+    "market_growth_trend": "",
+    "top_competitors": [],
+    "recommended_niches": [
+      "Bluetooth speakers with built-in smart assistant (Alexa/Google) for home use",
+      "Rugged, waterproof Bluetooth speakers for extreme outdoor activities (e.g., kayaking, hiking)",
+      "Bluetooth speakers with integrated TV sound enhancement (e.g., dialogue boost, low latency)",
+      "Eco-friendly Bluetooth speakers made from recycled materials",
+      "Bluetooth speakers with customizable LED lighting for parties/gaming"
+    ],
+    "top_pick_product": "Kids Bluetooth Speaker",
+    "scored_alternatives": [
+      {
+        "product_name": "Kids Bluetooth Speaker",
+        "competition_score": 8.0,
+        "margin_score": 7.0,
+        "trend_score": 8.0,
+        "risk_score": 8.0,
+        "overall_score": 7.8,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Bluetooth Speaker for TV",
+        "competition_score": 6.0,
+        "margin_score": 7.0,
+        "trend_score": 8.0,
+        "risk_score": 7.0,
+        "overall_score": 7.0,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Premium Bluetooth Speakers High Quality Sound",
+        "competition_score": 5.0,
+        "margin_score": 9.0,
+        "trend_score": 8.0,
+        "risk_score": 6.0,
+        "overall_score": 7.0,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Bluetooth Speaker for Car",
+        "competition_score": 5.0,
+        "margin_score": 6.0,
+        "trend_score": 7.0,
+        "risk_score": 7.0,
+        "overall_score": 6.2,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Best Bluetooth Speaker",
+        "competition_score": 2.0,
+        "margin_score": 6.0,
+        "trend_score": 8.0,
+        "risk_score": 4.0,
+        "overall_score": 4.8,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Bluetooth Speaker",
+        "competition_score": 1.0,
+        "margin_score": 5.0,
+        "trend_score": 5.0,
+        "risk_score": 3.0,
+        "overall_score": 3.4,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Wireless Bluetooth Speaker",
+        "competition_score": 1.0,
+        "margin_score": 5.0,
+        "trend_score": 4.0,
+        "risk_score": 3.0,
+        "overall_score": 3.2,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Mini Bluetooth Speaker",
+        "competition_score": 2.0,
+        "margin_score": 4.0,
+        "trend_score": 4.0,
+        "risk_score": 4.0,
+        "overall_score": 3.4,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      }
+    ],
+    "inferred_selling_points": [],
+    "inferred_target_audience": "",
+    "inferred_price_range": "",
+    "inferred_material": null,
+    "competitor_keywords": [],
+    "differentiation_angle": "",
+    "extraction_confidence": 0.0
+  },
+  "listing": {
+    "keywords": [
+      {
+        "keyword": "kids bluetooth speaker",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 100.0
+      },
+      {
+        "keyword": "bluetooth speaker for kids",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 98.0
+      },
+      {
+        "keyword": "children's bluetooth speaker",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 95.0
+      },
+      {
+        "keyword": "toddler bluetooth speaker",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 90.0
+      },
+      {
+        "keyword": "kid friendly bluetooth speaker",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 88.0
+      },
+      {
+        "keyword": "durable kids speaker",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "portable bluetooth speaker for kids",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 82.0
+      },
+      {
+        "keyword": "easy to use bluetooth speaker for children",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "kids waterproof bluetooth speaker",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 78.0
+      },
+      {
+        "keyword": "eco-friendly kids speaker",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "ergonomic kids speaker",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 72.0
+      },
+      {
+        "keyword": "best bluetooth speaker for kids",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 70.0
+      },
+      {
+        "keyword": "kids speaker with microphone",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 68.0
+      },
+      {
+        "keyword": "gift for kids bluetooth speaker",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 65.0
+      },
+      {
+        "keyword": "long lasting kids bluetooth speaker",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 62.0
+      },
+      {
+        "keyword": "safe bluetooth speaker for toddlers",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 60.0
+      },
+      {
+        "keyword": "kids outdoor bluetooth speaker",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 58.0
+      },
+      {
+        "keyword": "mini bluetooth speaker for kids",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 55.0
+      },
+      {
+        "keyword": "rechargeable kids speaker",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 52.0
+      },
+      {
+        "keyword": "kids bluetooth speaker with lights",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 50.0
+      }
+    ],
+    "top_keywords": [
+      "kids bluetooth speaker",
+      "bluetooth speaker for kids",
+      "children's bluetooth speaker",
+      "toddler bluetooth speaker",
+      "kid friendly bluetooth speaker"
+    ],
+    "title_candidates": [
+      {
+        "title": "FunBlast Kids Bluetooth Speaker - Portable Children's Bluetooth Speaker for Toddlers, Kid Friendly Design, Durable and Long-Lasting, Eco-Friendly Packaging",
+        "score": 92,
+        "char_count": 157,
+        "keyword_coverage": [
+          "kids bluetooth speaker",
+          "children's bluetooth speaker",
+          "toddler bluetooth speaker",
+          "kid friendly bluetooth speaker"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Toddler Bluetooth Speaker - Kid Friendly Bluetooth Speaker for Children, Ergonomic Design, Premium Quality, Easy to Use, Durable and Long-Lasting",
+        "score": 88,
+        "char_count": 144,
+        "keyword_coverage": [
+          "toddler bluetooth speaker",
+          "kid friendly bluetooth speaker",
+          "bluetooth speaker for kids"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Kids Bluetooth Speaker for Children - Portable Bluetooth Speaker for Toddlers, Premium Quality Materials, Ergonomic Design, Easy to Use, Durable",
+        "score": 85,
+        "char_count": 140,
+        "keyword_coverage": [
+          "kids bluetooth speaker",
+          "bluetooth speaker for kids",
+          "children's bluetooth speaker"
+        ],
+        "compliance_issues": []
+      }
+    ],
+    "best_title": "FunBlast Kids Bluetooth Speaker - Portable Children's Bluetooth Speaker for Toddlers, Kid Friendly Design, Durable and Long-Lasting, Eco-Friendly Packaging",
+    "bullet_points": [
+      {
+        "text": "Premium quality materials ensure this kids bluetooth speaker withstands drops and bumps, providing a durable and long-lasting audio companion for endless playtime fun.",
+        "feature_highlighted": "Premium quality materials",
+        "benefit_highlighted": "Durable and long-lasting for active kids"
+      },
+      {
+        "text": "Ergonomic design makes this bluetooth speaker for kids easy for small hands to hold and carry, promoting independent use and hassle-free portability anywhere.",
+        "feature_highlighted": "Ergonomic design",
+        "benefit_highlighted": "Easy for kids to hold and carry independently"
+      },
+      {
+        "text": "Easy to use controls on this children's bluetooth speaker allow toddlers to play their favorite tunes without frustration, encouraging early tech skills and confidence.",
+        "feature_highlighted": "Easy to use controls",
+        "benefit_highlighted": "Encourages independent play and confidence"
+      },
+      {
+        "text": "Built with durable and long-lasting components, this toddler bluetooth speaker delivers clear sound for hours, making it a reliable choice for family trips and daily adventures.",
+        "feature_highlighted": "Durable and long-lasting components",
+        "benefit_highlighted": "Reliable sound for family adventures"
+      },
+      {
+        "text": "Eco-friendly packaging reflects our commitment to sustainability, so this kid friendly bluetooth speaker arrives safely while reducing waste for a greener planet.",
+        "feature_highlighted": "Eco-friendly packaging",
+        "benefit_highlighted": "Supports sustainability and reduces waste"
+      }
+    ],
+    "description_html": "<h3>Brand Story</h3><p>Designed for little hands and big adventures, this <b>kid friendly bluetooth speaker</b> turns playtime into a party with durable, splash-proof fun and vibrant sound. Safe, simple, and ready to rock, it’s the perfect sidekick for stories, songs, and imagination on the go.</p><h3>Product Specifications</h3><ul><li><b>Material:</b> Premium quality, drop-resistant ABS plastic</li><li><b>Design:</b> Ergonomic, child-friendly shape</li><li><b>Controls:</b> Easy-to-use buttons for volume and playback</li><li><b>Battery Life:</b> Up to 8 hours of playtime</li><li><b>Connectivity:</b> Bluetooth 5.0, range up to 10 meters</li><li><b>Packaging:</b> Eco-friendly, recyclable materials</li></ul><h3>Key Features</h3><ul><li><b>Premium quality materials</b> ensure this <b>kids bluetooth speaker</b> withstands drops and bumps, providing a durable and long-lasting audio companion for endless playtime fun.</li><li><b>Ergonomic design</b> makes this <b>bluetooth speaker for kids</b> easy for small hands to hold and carry, promoting independent use and hassle-free portability anywhere.</li><li><b>Easy to use</b> controls on this <b>children's bluetooth speaker</b> allow toddlers to play their favorite tunes without frustration, encouraging early tech skills and confidence.</li><li><b>Durable and long-lasting</b> components deliver clear sound for hours, making this <b>toddler bluetooth speaker</b> a reliable choice for family trips and daily adventures.</li><li><b>Eco-friendly packaging</b> reflects our commitment to sustainability, so this <b>kid friendly bluetooth speaker</b> arrives safely while reducing waste for a greener planet.</li></ul><h3>Use Scenarios</h3><p>Perfect for indoor playrooms, outdoor picnics, car rides, and bedtime stories, this <b>kids bluetooth speaker</b> brings music and audio books to life wherever your child goes. Its splash-proof design makes it ideal for bath time or poolside fun, while the ergonomic grip ensures little ones can carry it on nature walks or to the park. Whether for solo play or group activities, this <b>bluetooth speaker for kids</b> adapts to every adventure.</p><h3>Quality Assurance</h3><p>Built with <b>premium quality materials</b> and rigorously tested for durability, this <b>children's bluetooth speaker</b> meets strict safety standards for children's products. We back it with a 1-year warranty against manufacturing defects, ensuring your <b>toddler bluetooth speaker</b> delivers reliable performance. Our <b>eco-friendly packaging</b> also guarantees a safe arrival, so you can enjoy peace of mind from unboxing to everyday use.</p>",
+    "a_plus_modules": [
+      {
+        "module_type": "hero_banner",
+        "title": "Playtime Just Got Louder & Safer",
+        "description": "顶部大图模块，展示产品核心形象和品牌标语，吸引注意力。",
+        "image_suggestion": "一张960x600的高清图片：背景为色彩明亮的儿童房间或户外草地，一个小孩开心地拿着蓝牙音箱，音箱有卡通表情或防溅水特效，旁边有玩具和音符元素。",
+        "copy_text": "Designed for little hands and big adventures. Splash-proof, kid-safe, and ready to rock – the perfect sidekick for stories, songs, and imagination on the go."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Built Tough for Tiny Explorers",
+        "description": "左图右文模块，强调耐用性和人体工学设计。",
+        "image_suggestion": "图片展示音箱被孩子握在手中，或从一定高度掉落（示意防摔），表面有水滴特效（示意防水），材质细节特写。",
+        "copy_text": "Premium quality materials meet ergonomic design. Our speaker is drop-proof, splash-proof, and easy for little hands to grip. Durable and long-lasting – ready for every adventure, indoors or out."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Simple Controls, Big Fun",
+        "description": "左文右图模块，强调易用性和儿童友好操作。",
+        "image_suggestion": "图片展示孩子用手指轻松按下大按钮，或音箱上有卡通图标（播放、暂停、音量），背景有音乐符号。",
+        "copy_text": "Easy to use with oversized buttons and intuitive controls. No complicated setup – just pair and play. Safe volume limits protect young ears while delivering vibrant, clear sound."
+      },
+      {
+        "module_type": "spec_table",
+        "title": "Specifications at a Glance",
+        "description": "规格参数表，清晰列出关键参数，帮助买家快速决策。",
+        "image_suggestion": "无需图片，表格形式呈现。",
+        "copy_text": "| Feature | Detail |\n|---------|--------|\n| Material | BPA-free, food-grade silicone + ABS |\n| Water Resistance | IPX5 splash-proof |\n| Drop Resistance | Up to 1.5m |\n| Battery Life | 8 hours playtime |\n| Connectivity | Bluetooth 5.0, 33ft range |\n| Volume Limit | 85dB max (kid-safe) |\n| Weight | 250g (lightweight) |\n| Packaging | 100% recyclable, eco-friendly box |"
+      },
+      {
+        "module_type": "comparison_chart",
+        "title": "Why Choose Our Kids Speaker?",
+        "description": "竞品对比表，突出本产品在材质、耐用性、环保包装等方面的优势。",
+        "image_suggestion": "无需图片，表格形式呈现。",
+        "copy_text": "| Feature | Our Kids Speaker | Ordinary Kids Speaker |\n|---------|------------------|----------------------|\n| Material | Premium silicone + ABS | Basic plastic |\n| Drop-proof | Yes (1.5m) | No |\n| Splash-proof | IPX5 | None |\n| Volume Limit | 85dB safe limit | No limit |\n| Eco-friendly Packaging | 100% recyclable | Plastic blister pack |\n| Warranty | 2 years | 1 year |"
+      },
+      {
+        "module_type": "image_text",
+        "title": "Eco-Friendly Fun, Inside and Out",
+        "description": "左图右文模块，强调环保包装和品牌责任。",
+        "image_suggestion": "图片展示音箱放在可回收纸盒中，旁边有绿植或地球图标，包装细节特写（如无塑料、大豆油墨印刷）。",
+        "copy_text": "We care about the planet as much as playtime. Our eco-friendly packaging is made from 100% recyclable materials – no plastic, no waste. Give your child a gift that’s kind to the earth."
+      },
+      {
+        "module_type": "hero_banner",
+        "title": "Ready to Rock? Add to Cart Now!",
+        "description": "底部行动号召大图，强化购买冲动。",
+        "image_suggestion": "一张960x600的图片：孩子和音箱在派对或露营场景中，笑容灿烂，音箱发出彩色灯光或音符，背景有“Add to Cart”按钮风格元素。",
+        "copy_text": "Safe, durable, and full of fun – the perfect Bluetooth speaker for kids. Click ‘Add to Cart’ and let the adventures begin!"
+      }
+    ],
+    "seo_report": {
+      "keyword_density": {
+        "score": 70.0,
+        "findings": [
+          "标题中出现了'Kids Bluetooth Speaker'和'Children's Bluetooth Speaker'，但'bluetooth speaker for kids'等变体未出现。",
+          "五点描述中每个要点都包含了不同的目标关键词变体，但部分要点（如第2、3点）关键词出现略显刻意。",
+          "长描述中'kid friendly bluetooth speaker'出现一次，但其他变体如'toddler bluetooth speaker'未出现。"
+        ],
+        "suggestions": [
+          "在标题中自然融入'bluetooth speaker for kids'或'children's bluetooth speaker'，例如：'FunBlast Kids Bluetooth Speaker - Portable Bluetooth Speaker for Kids, Toddler Friendly'。",
+          "在五点描述中，将第2点改为'Ergonomic design makes this bluetooth speaker for kids easy for small hands...'，避免重复使用'bluetooth speaker for kids'。",
+          "在长描述中增加'toddler bluetooth speaker'或'children's bluetooth speaker'的变体，例如在规格部分提及。"
+        ]
+      },
+      "readability": {
+        "score": 85.0,
+        "findings": [
+          "标题长度约150字符，符合≤200字符要求，但略显冗长。",
+          "五点描述每个要点约20-30词，语言流畅，但部分句子（如第1点）信息密度较高。",
+          "长描述使用HTML标签，结构清晰，但品牌故事部分句子较长，可进一步分段。"
+        ],
+        "suggestions": [
+          "标题可精简为：'FunBlast Kids Bluetooth Speaker - Portable Bluetooth Speaker for Toddlers, Durable & Eco-Friendly'，提升扫描友好度。",
+          "五点描述第1点可拆分为两个短句：'Premium quality materials ensure this kids bluetooth speaker withstands drops and bumps. It provides a durable audio companion for endless playtime fun.'",
+          "长描述品牌故事部分可增加项目符号或短段落，例如：'Safe, simple, and ready to rock. Perfect for stories, songs, and imagination on the go.'"
+        ]
+      },
+      "completeness": {
+        "score": 90.0,
+        "findings": [
+          "标题、五点描述、长描述（含品牌故事和规格）均已提供，但缺少A+内容（如对比图、使用场景图）。",
+          "长描述中规格列表不完整，仅列出材料、设计和控制，缺少电池续航、连接范围等关键信息。",
+          "五点描述覆盖了耐用性、便携性、易用性、音质和环保包装，但未提及防水或安全认证。"
+        ],
+        "suggestions": [
+          "添加A+模块，包含产品对比图（如与其他儿童音箱对比）和使用场景图（如户外、卧室）。",
+          "在长描述规格中补充：'Battery Life: Up to 8 hours'、'Bluetooth Range: 10 meters'、'Safety: BPA-free, CE certified'。",
+          "在五点描述中增加一点关于防水或安全特性，例如：'Splash-proof design makes this toddler bluetooth speaker perfect for bath time or outdoor play.'"
+        ]
+      },
+      "conversion_potential": {
+        "score": 75.0,
+        "findings": [
+          "标题和描述强调了耐用性、便携性和易用性，但未突出音质或儿童专属功能（如灯光、卡通造型）。",
+          "长描述品牌故事有情感吸引力，但缺少社会证明（如用户评价、奖项）。",
+          "五点描述中'eco-friendly packaging'是卖点，但未提及保修或客户服务。"
+        ],
+        "suggestions": [
+          "在标题或五点描述中增加音质描述，例如：'Crystal-clear sound with built-in LED lights for kids'。",
+          "在长描述中添加客户评价摘录或奖项，例如：'Winner of 2023 Toy of the Year Award'。",
+          "在五点描述最后一点加入保修信息，例如：'Backed by 1-year warranty and 24/7 customer support for peace of mind.'"
+        ]
+      },
+      "overall_score": 80.0,
+      "improvement_priority": [
+        "在长描述中补充缺失的规格（电池、连接范围、安全认证）以提升完整性。",
+        "在标题和描述中更自然地融入所有目标关键词变体，避免堆砌感。",
+        "增加社会证明（如用户评价、奖项）和保修信息，以提升转化预期。"
+      ]
+    },
+    "human_approved": false
+  },
+  "compliance": {
+    "policy_issues": [
+      {
+        "location": "title/bullets/description",
+        "issue_type": "prohibited_claim",
+        "severity": "medium",
+        "description": "Found prohibited term: 'free'",
+        "suggestion": "Replace 'free' with compliant alternative"
+      },
+      {
+        "location": "Title",
+        "issue_type": "Formatting Issue",
+        "severity": "Low",
+        "description": "The title uses 'Kid Friendly' which is acceptable, but 'Eco-Friendly Packaging' is a claim that may require substantiation. However, no explicit prohibited claims like 'best' or '#1' are present.",
+        "suggestion": "Ensure any environmental claims are substantiated. Consider rephrasing to 'Packaging made with recycled materials' if applicable."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Prohibited Claims",
+        "severity": "Medium",
+        "description": "The bullet point 'Built with durable and long-lasting components, this toddler bluetooth speaker delivers clear sound for hours' implies a performance guarantee ('for hours') which could be seen as a claim of duration without substantiation.",
+        "suggestion": "Remove 'for hours' or replace with a more general statement like 'for extended playtime'."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Prohibited Claims",
+        "severity": "Medium",
+        "description": "The description states 'splash-proof fun' which is a specific feature claim. If the product is not officially rated as splash-proof (e.g., IPX4 or higher), this could be misleading.",
+        "suggestion": "Verify the product's water resistance rating. If not splash-proof, remove the term or replace with 'water-resistant' if applicable."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Formatting Issue",
+        "severity": "Low",
+        "description": "The description uses HTML tags like <h3>, <b>, <ul>, <li> which are allowed but must be properly closed. The provided snippet ends abruptly with '<li><b>Controls:</b> Easy-to-use buttons f' indicating incomplete HTML.",
+        "suggestion": "Ensure all HTML tags are properly closed and the description is complete."
+      }
+    ],
+    "claim_issues": [
+      {
+        "claim_text": "Premium quality materials ensure this kids bluetooth speaker withstands drops and bumps, providing a durable and long-lasting audio companion",
+        "issue": "unsubstantiated",
+        "risk_level": "medium",
+        "explanation": "The claim that the speaker withstands drops and bumps is not supported by any specific test data, drop-test certification, or warranty information. Without evidence, it is an unsubstantiated durability claim.",
+        "fix_suggestion": "Add specific drop-test results (e.g., 'tested to withstand drops from up to 1 meter') or a warranty that covers accidental damage."
+      },
+      {
+        "claim_text": "delivers clear sound for hours",
+        "issue": "unsubstantiated",
+        "risk_level": "low",
+        "explanation": "The claim of 'clear sound' is subjective and not backed by any audio specifications or independent reviews. 'For hours' is vague and lacks a specific battery life figure.",
+        "fix_suggestion": "Provide objective audio specs (e.g., frequency response, driver size) and a specific battery life (e.g., 'up to 8 hours at 50% volume')."
+      },
+      {
+        "claim_text": "Eco-friendly packaging reflects our commitment to sustainability, so this kid friendly bluetooth speaker arrives safely while reducing waste for a greener planet",
+        "issue": "unsubstantiated",
+        "risk_level": "low",
+        "explanation": "The term 'eco-friendly' is vague and not supported by any specific certifications (e.g., FSC, recyclable materials) or details about the packaging composition.",
+        "fix_suggestion": "Specify the packaging materials (e.g., '100% recycled cardboard') or include a sustainability certification logo."
+      }
+    ],
+    "overall_verdict": "",
+    "risk_level": "medium",
+    "total_issues": 8,
+    "critical_items": [],
+    "action_items": [
+      "Replace 'free' with compliant alternative",
+      "Ensure any environmental claims are substantiated. Consider rephrasing to 'Packaging made with recycled materials' if applicable.",
+      "Remove 'for hours' or replace with a more general statement like 'for extended playtime'.",
+      "Verify the product's water resistance rating. If not splash-proof, remove the term or replace with 'water-resistant' if applicable.",
+      "Ensure all HTML tags are properly closed and the description is complete.",
+      "Add specific drop-test results (e.g., 'tested to withstand drops from up to 1 meter') or a warranty that covers accidental damage.",
+      "Provide objective audio specs (e.g., frequency response, driver size) and a specific battery life (e.g., 'up to 8 hours at 50% volume').",
+      "Specify the packaging materials (e.g., '100% recycled cardboard') or include a sustainability certification logo."
+    ],
+    "human_reviewed": false
+  },
+  "social": {
+    "marketing_angles": [
+      "Parent-approved durability: Show the speaker surviving drops and spills",
+      "Kid-friendly independence: Highlight easy controls for young children",
+      "Eco-conscious parenting: Emphasize sustainable packaging and materials",
+      "Playtime soundtrack: Feature the speaker in various play scenarios",
+      "Gift-ready appeal: Position as a thoughtful, safe gift for kids"
+    ],
+    "target_audience": "Health-conscious, tech-savvy parents aged 25–40 in the US, who value quality, safety, and sustainability for their children. They seek products that combine fun with durability and eco-friendliness, often looking for ways to reduce screen time with engaging audio experiences.",
+    "content_tones": [
+      "Warm and reassuring",
+      "Playful and energetic",
+      "Eco-friendly and mindful"
+    ],
+    "key_selling_points": [
+      "Premium quality materials for safety and longevity",
+      "Ergonomic design tailored for small hands",
+      "Easy-to-use interface for independent play",
+      "Durable and long-lasting construction",
+      "Eco-friendly packaging aligned with green values"
+    ],
+    "visual_style": [],
+    "hashtag_themes": [],
+    "posts": [],
+    "human_approved": false
+  },
+  "platform": {
+    "asin": null,
+    "amazon_url": null,
+    "amazon_publish_status": "draft",
+    "amazon_publish_errors": [],
+    "amazon_published_at": null,
+    "social_publish_status": {},
+    "social_post_urls": {}
+  },
+  "reviews": {
+    "total_reviews": 10,
+    "average_rating": 0.0,
+    "sentiment_distribution": {},
+    "negative_alert_count": 0,
+    "top_alerts": [],
+    "last_monitored_at": "2026-05-17T14:20:22.214573Z"
+  },
+  "ads": {
+    "campaigns": [],
+    "total_budget": 0.0,
+    "total_spend": 0.0,
+    "acos": null
+  }
+}

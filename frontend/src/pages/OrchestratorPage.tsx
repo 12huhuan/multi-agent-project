@@ -1,19 +1,39 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { Play, Zap, List, RefreshCw, Loader2, Search } from "lucide-react";
 import { API_BASE } from "../lib/utils";
 import { taskStore } from "../lib/TaskStore";
+import type { TaskInfo } from "../lib/TaskStore";
+import StepDetailCard from "../components/StepDetailCard";
 
 export default function OrchestratorPage() {
   const [logs, setLogs] = useState<any[]>([]);
-  const [running, setRunning] = useState(false);
-  const [lastResult, setLastResult] = useState<any>(null);
-  const [activeTaskId, setActiveTaskId] = useState<string | null>(null);
-  const [progress, setProgress] = useState("");
   const [category, setCategory] = useState("");
+  const [task, setTask] = useState<TaskInfo | null>(null);
+  const runningTaskIdRef = useRef<string | null>(null);
+
+  const syncFromStore = useCallback(() => {
+    const tid = runningTaskIdRef.current;
+    if (!tid) return;
+    const stored = taskStore.get(tid);
+    if (stored) {
+      setTask({ ...stored });
+    }
+  }, []);
 
   useEffect(() => {
+    const orchestratorTasks = taskStore.getAll().filter(
+      (t) => t.type === "orchestrator"
+    );
+    if (orchestratorTasks.length > 0) {
+      const latest = orchestratorTasks[0];
+      runningTaskIdRef.current = latest.id;
+      setTask({ ...latest });
+    }
     fetchLogs();
-  }, []);
+
+    const unsub = taskStore.subscribe(syncFromStore);
+    return unsub;
+  }, [syncFromStore]);
 
   const fetchLogs = async () => {
     try {
@@ -31,10 +51,6 @@ export default function OrchestratorPage() {
   };
 
   const runOrchestrator = async (action: string = "auto") => {
-    setRunning(true);
-    setLastResult(null);
-    setProgress("starting...");
-
     const context = buildContext();
 
     try {
@@ -45,39 +61,22 @@ export default function OrchestratorPage() {
       });
       const data = await res.json();
       const tid = data.task_id;
-      setActiveTaskId(tid);
+      runningTaskIdRef.current = tid;
 
-      taskStore.add({ id: tid, type: "social" as any, status: "running" });
-
-      const poll = setInterval(async () => {
-        try {
-          const sres = await fetch(`${API_BASE}/orchestrator/${tid}/status`);
-          const s = await sres.json();
-          setProgress(`${s.progress || s.status} (${s.completed_steps || 0} steps)`);
-
-          if (s.status === "completed") {
-            clearInterval(poll);
-            const rres = await fetch(`${API_BASE}/orchestrator/${tid}/result`);
-            if (rres.ok) {
-              const r = await rres.json();
-              setLastResult(r);
-            }
-            setRunning(false);
-            setProgress("");
-            fetchLogs();
-          } else if (s.status === "failed") {
-            clearInterval(poll);
-            setRunning(false);
-            setProgress("failed: " + (s.error || ""));
-          }
-        } catch {
-          // retry
-        }
-      }, 3000);
+      taskStore.add({
+        id: tid,
+        type: "orchestrator",
+        status: "running",
+        progress: "starting...",
+      });
+      setTask(taskStore.get(tid) ?? null);
     } catch {
-      setRunning(false);
+      // network error
     }
   };
+
+  const running = task?.status === "running";
+  const lastResult = task?.status === "completed" ? task?.result : null;
 
   return (
     <div className="space-y-6">
@@ -107,7 +106,7 @@ export default function OrchestratorPage() {
           </button>
         </div>
         <p className="text-xs text-slate-400 mt-2">
-          系统将自动完成: 选品 → Listing优化 → 合规审查 → 社媒内容 → 评论监控。
+          系统将自动完成: 选品 → Listing生成 → 合规审查 → 社媒内容 → 评论监控。
           只需提供品类，其余数据由 AI 自动生成。
         </p>
       </div>
@@ -142,7 +141,13 @@ export default function OrchestratorPage() {
       {running && (
         <div className="bg-purple-50 border border-purple-200 rounded p-3 text-sm text-purple-700 flex items-center gap-2">
           <Loader2 size={16} className="animate-spin" />
-          全流程运行中 — {progress} — 页面可切换，任务不中断
+          全流程运行中 — {task?.progress || task?.current_step || ""} — 页面可切换，任务不中断
+        </div>
+      )}
+
+      {task?.status === "failed" && (
+        <div className="bg-red-50 border border-red-200 rounded p-3 text-sm text-red-700">
+          任务失败: {task.error || "未知错误"}
         </div>
       )}
 
@@ -150,84 +155,7 @@ export default function OrchestratorPage() {
         <div className="bg-white rounded-lg border p-4">
           <h3 className="font-medium text-sm mb-3">调度结果: {lastResult.summary}</h3>
           {(lastResult.decisions || []).map((d: any, i: number) => (
-            <div key={i} className="mb-3 border rounded-lg overflow-hidden">
-              <div className="flex items-center gap-2 p-3 bg-gray-50 text-xs">
-                <span className={`px-1.5 py-0.5 rounded font-medium ${
-                  d.status === "done" ? "bg-green-100 text-green-700" :
-                  d.status === "failed" ? "bg-red-100 text-red-700" :
-                  "bg-yellow-100 text-yellow-700"
-                }`}>
-                  {d.status || "?"}
-                </span>
-                <span className="font-medium">{d.action}</span>
-                <span className="text-gray-500">— {d.reason}</span>
-              </div>
-              {d.result && <div className="p-3 text-xs text-gray-700 border-t">{d.result}</div>}
-              {d.data && Object.keys(d.data).length > 0 && (
-                <div className="p-3 border-t bg-gray-50/50 text-xs">
-                  {d.action === "select_product" && d.data.scored_products && (
-                    <div>
-                      <div className="font-medium mb-2">
-                        Top Pick: <span className="text-emerald-700">{d.data.top_pick}</span> ({d.data.product_count} products found)
-                      </div>
-                      {d.data.scored_products.slice(0, 5).map((p: any, j: number) => (
-                        <div key={j} className="flex justify-between py-0.5">
-                          <span>{p.product_name}</span>
-                          <span className="text-gray-500">
-                            score: {typeof p.overall_score === "number" ? p.overall_score.toFixed(1) : p.overall_score} | {p.verdict}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                  {d.action === "run_listing" && d.data.best_title && (
-                    <div>
-                      <div className="font-medium">Best Title:</div>
-                      <div className="text-gray-600 mb-1">{d.data.best_title}</div>
-                      {d.data.seo_score && (
-                        <div className="text-gray-500">SEO Score: {typeof d.data.seo_score === "number" ? d.data.seo_score.toFixed(1) : d.data.seo_score}</div>
-                      )}
-                    </div>
-                  )}
-                  {d.action === "check_compliance" && (
-                    <div>
-                      <span className={`font-medium ${d.data.verdict === "pass" ? "text-green-700" : d.data.verdict === "warning" ? "text-yellow-700" : "text-red-700"}`}>
-                        {d.data.verdict?.toUpperCase()}
-                      </span>
-                      <span className="ml-2 text-gray-500">{d.data.total_issues} issues | Risk: {d.data.risk_level}</span>
-                      {d.data.critical_items?.slice(0, 3).map((c: string, j: number) => (
-                        <div key={j} className="text-red-600">- {c}</div>
-                      ))}
-                      {d.data.action_items?.slice(0, 3).map((a: string, j: number) => (
-                        <div key={j} className="text-blue-600">- {a}</div>
-                      ))}
-                    </div>
-                  )}
-                  {d.action === "generate_social" && d.data.posts && (
-                    <div className="space-y-2">
-                      {d.data.posts.map((p: any, j: number) => (
-                        <div key={j} className="border-l-2 border-pink-300 pl-2">
-                          <span className="font-medium">[{p.platform}]</span>
-                          <span className="ml-1 text-gray-500">score: {p.quality_score}</span>
-                          <div className="text-gray-600 mt-0.5">{p.copy?.slice(0, 100)}...</div>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                  {d.action === "monitor_reviews" && (
-                    <div>
-                      <span>{d.data.total_scraped} reviews scraped, </span>
-                      <span className="text-red-600 font-medium">{d.data.alert_count} alerts</span>
-                      {d.data.alerts?.map((a: any, j: number) => (
-                        <div key={j} className="text-red-600 mt-0.5">
-                          - [{a.alert_level}] {a.content?.slice(0, 60)}...
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              )}
-            </div>
+            <StepDetailCard key={i} step={d} index={i} />
           ))}
         </div>
       )}
@@ -243,7 +171,11 @@ export default function OrchestratorPage() {
               <div key={log.id} className="p-3 text-xs">
                 <span className="text-gray-400 mr-2">#{log.id}</span>
                 <span className="font-medium">{log.action}</span>
+                <span className={`ml-2 px-1.5 py-0.5 rounded text-xs ${
+                  log.status === "completed" ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"
+                }`}>{log.status}</span>
                 <span className="text-gray-500 ml-2">— {log.summary}</span>
+                {log.category && <span className="text-gray-400 ml-2">[{log.category}]</span>}
               </div>
             ))}
           </div>

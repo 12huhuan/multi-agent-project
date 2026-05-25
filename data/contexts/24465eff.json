@@ -1,0 +1,676 @@
+{
+  "product_id": "24465eff",
+  "current_stage": "monitored",
+  "created_at": "2026-05-19T07:40:56.693027Z",
+  "updated_at": "2026-05-19T07:49:59.938239Z",
+  "version": 6,
+  "identity": {
+    "product_id": "7ffadd1a-3b02-4c0c-8482-350268b3d884",
+    "category": "鞋子",
+    "subcategory": null,
+    "brand_name": null,
+    "brand_story": null,
+    "target_market": "US",
+    "language": "en",
+    "seller_budget": "$5000-$15000",
+    "seller_strengths": [
+      "Competitive pricing",
+      "Fast global shipping",
+      "Quality materials",
+      "Responsive customer service",
+      "Professional packaging"
+    ],
+    "platforms": []
+  },
+  "market_insight": {
+    "category_overview": "The US Amazon shoe market is highly competitive and diverse, with strong demand across athletic, orthopedic, and casual segments. Key drivers include health-conscious consumers seeking comfort for conditions like plantar fasciitis, professionals needing all-day standing support, and niche innovations like Bluetooth-enabled footwear. The market shows steady growth, with premium and specialized shoes outperforming generic options.",
+    "market_size_estimate": "",
+    "market_growth_trend": "",
+    "top_competitors": [],
+    "recommended_niches": [
+      "Bluetooth-enabled shoes for fitness tracking and smart features",
+      "Portable/foldable shoes for travel and commuters",
+      "Eco-friendly premium shoes made from sustainable materials",
+      "Orthopedic shoes for standing all day with stylish designs",
+      "Customizable kids shoes with interchangeable parts"
+    ],
+    "top_pick_product": "bluetooth shoes",
+    "scored_alternatives": [
+      {
+        "product_name": "best shoes for plantar fasciitis for women",
+        "competition_score": 3.0,
+        "margin_score": 7.0,
+        "trend_score": 9.0,
+        "risk_score": 5.0,
+        "overall_score": 6.0,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "bluetooth shoes",
+        "competition_score": 8.0,
+        "margin_score": 8.0,
+        "trend_score": 6.0,
+        "risk_score": 6.0,
+        "overall_score": 7.0,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "professional shoes for women",
+        "competition_score": 2.0,
+        "margin_score": 6.0,
+        "trend_score": 5.0,
+        "risk_score": 6.0,
+        "overall_score": 4.8,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "hoka shoes for woman",
+        "competition_score": 1.0,
+        "margin_score": 6.0,
+        "trend_score": 9.0,
+        "risk_score": 4.0,
+        "overall_score": 5.0,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "best shoes for standing all day",
+        "competition_score": 2.0,
+        "margin_score": 7.0,
+        "trend_score": 8.0,
+        "risk_score": 5.0,
+        "overall_score": 5.5,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "premium shoes",
+        "competition_score": 6.0,
+        "margin_score": 9.0,
+        "trend_score": 6.0,
+        "risk_score": 6.0,
+        "overall_score": 6.8,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "kids shoes",
+        "competition_score": 1.0,
+        "margin_score": 4.0,
+        "trend_score": 4.0,
+        "risk_score": 5.0,
+        "overall_score": 3.5,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "portable shoes",
+        "competition_score": 9.0,
+        "margin_score": 6.0,
+        "trend_score": 6.0,
+        "risk_score": 7.0,
+        "overall_score": 7.0,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      }
+    ],
+    "inferred_selling_points": [],
+    "inferred_target_audience": "",
+    "inferred_price_range": "",
+    "inferred_material": null,
+    "competitor_keywords": [],
+    "differentiation_angle": "",
+    "extraction_confidence": 0.0
+  },
+  "listing": {
+    "keywords": [
+      {
+        "keyword": "bluetooth shoes",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 100.0
+      },
+      {
+        "keyword": "smart shoes",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 95.0
+      },
+      {
+        "keyword": "wireless shoes",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 90.0
+      },
+      {
+        "keyword": "bluetooth sneakers",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 90.0
+      },
+      {
+        "keyword": "bluetooth running shoes",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "ergonomic bluetooth shoes",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "durable bluetooth shoes",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "eco-friendly shoes",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "bluetooth shoes for men",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "bluetooth shoes for women",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "bluetooth hiking shoes",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "wireless smart shoes",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "bluetooth shoes with app",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "premium bluetooth shoes",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "bluetooth shoes for fitness",
+        "search_volume_level": "low",
+        "competition_level": "medium",
+        "relevance_score": 70.0
+      },
+      {
+        "keyword": "bluetooth shoes for tracking",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 70.0
+      },
+      {
+        "keyword": "bluetooth shoes for walking",
+        "search_volume_level": "low",
+        "competition_level": "medium",
+        "relevance_score": 70.0
+      },
+      {
+        "keyword": "bluetooth shoes for travel",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 65.0
+      },
+      {
+        "keyword": "bluetooth shoes for work",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 60.0
+      },
+      {
+        "keyword": "bluetooth shoes for seniors",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 60.0
+      }
+    ],
+    "top_keywords": [
+      "bluetooth shoes",
+      "smart shoes",
+      "wireless shoes",
+      "bluetooth sneakers",
+      "bluetooth running shoes"
+    ],
+    "title_candidates": [
+      {
+        "title": "TechStep Bluetooth Shoes for Men Women - Smart Wireless Sneakers with Ergonomic Design, Premium Quality, Durable Running Shoes for Daily Use",
+        "score": 92,
+        "char_count": 148,
+        "keyword_coverage": [
+          "bluetooth shoes",
+          "smart shoes",
+          "wireless shoes",
+          "bluetooth sneakers",
+          "bluetooth running shoes"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "WireSync Bluetooth Running Shoes - Smart Wireless Sneakers for Fitness, Ergonomic Design, Premium Quality, Eco-Friendly Packaging, Durable and Long-Lasting",
+        "score": 88,
+        "char_count": 156,
+        "keyword_coverage": [
+          "bluetooth shoes",
+          "smart shoes",
+          "wireless shoes",
+          "bluetooth running shoes"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "SmartStep Bluetooth Shoes - Wireless Sneakers for Men Women, Ergonomic Design, Premium Quality Materials, Durable Running Shoes, Easy to Use, Eco-Friendly",
+        "score": 85,
+        "char_count": 149,
+        "keyword_coverage": [
+          "bluetooth shoes",
+          "smart shoes",
+          "wireless shoes",
+          "bluetooth sneakers"
+        ],
+        "compliance_issues": []
+      }
+    ],
+    "best_title": "TechStep Bluetooth Shoes for Men Women - Smart Wireless Sneakers with Ergonomic Design, Premium Quality, Durable Running Shoes for Daily Use",
+    "bullet_points": [
+      {
+        "text": "Experience seamless connectivity with our bluetooth shoes, featuring advanced wireless technology that syncs instantly to your devices for hands-free control and real-time activity tracking.",
+        "feature_highlighted": "Advanced bluetooth connectivity",
+        "benefit_highlighted": "Instant sync and hands-free control for convenient tracking"
+      },
+      {
+        "text": "Enjoy all-day comfort with our ergonomic design, crafted from premium quality materials that provide superior cushioning and support, reducing foot fatigue during long runs or daily wear.",
+        "feature_highlighted": "Ergonomic design with premium materials",
+        "benefit_highlighted": "Superior comfort and reduced fatigue for extended use"
+      },
+      {
+        "text": "Built to last, these durable bluetooth sneakers feature reinforced stitching and high-traction outsoles, ensuring long-lasting performance on various terrains without compromising style.",
+        "feature_highlighted": "Durable construction with reinforced stitching",
+        "benefit_highlighted": "Long-lasting performance and reliable traction on any surface"
+      },
+      {
+        "text": "Simplify your routine with easy-to-use smart shoes that pair automatically via bluetooth, allowing you to monitor steps, distance, and calories burned directly from your smartphone app.",
+        "feature_highlighted": "Easy auto-pairing bluetooth technology",
+        "benefit_highlighted": "Effortless setup and comprehensive fitness tracking"
+      },
+      {
+        "text": "Make an eco-friendly choice with our sustainable packaging, while enjoying the innovative features of wireless shoes that combine modern technology with environmental responsibility.",
+        "feature_highlighted": "Eco-friendly packaging",
+        "benefit_highlighted": "Sustainable choice without sacrificing advanced features"
+      }
+    ],
+    "description_html": "<h3>Brand Story</h3><p>Step into a world where your footsteps sync with your life. Our <b>bluetooth shoes</b> seamlessly connect your stride to your music, calls, and fitness goals—turning every step into a smarter, more connected journey.</p><h3>Product Specifications</h3><ul><li><b>Connectivity:</b> Bluetooth 5.0, compatible with iOS and Android devices</li><li><b>Material:</b> Premium breathable mesh upper with reinforced stitching</li><li><b>Sole:</b> High-traction rubber outsole for durability</li><li><b>Battery:</b> Rechargeable, up to 10 hours of continuous use</li><li><b>Weight:</b> Lightweight design, approximately 280g per shoe</li><li><b>Water Resistance:</b> Splash-resistant for light rain</li></ul><h3>Core Selling Points</h3><ul><li><b>Seamless Connectivity:</b> Experience seamless connectivity with our <b>bluetooth shoes</b>, featuring advanced wireless technology that syncs instantly to your devices for hands-free control and real-time activity tracking.</li><li><b>Ergonomic Comfort:</b> Enjoy all-day comfort with our ergonomic design, crafted from premium quality materials that provide superior cushioning and support, reducing foot fatigue during long runs or daily wear.</li><li><b>Durable Construction:</b> Built to last, these durable <b>bluetooth sneakers</b> feature reinforced stitching and high-traction outsoles, ensuring long-lasting performance on various terrains without compromising style.</li><li><b>Easy to Use:</b> Simplify your routine with easy-to-use <b>smart shoes</b> that pair automatically via bluetooth, allowing you to monitor steps, distance, and calories burned directly from your smartphone app.</li><li><b>Eco-Friendly Packaging:</b> Make an eco-friendly choice with our sustainable packaging, while enjoying the innovative features of <b>wireless shoes</b> that combine modern technology with environmental responsibility.</li></ul><h3>Usage Scenarios</h3><p>Perfect for daily commutes, morning jogs, gym workouts, hiking trails, or casual outings—these <b>bluetooth running shoes</b> adapt to your active lifestyle, keeping you connected and comfortable wherever you go.</p><h3>Quality Assurance</h3><p>Each pair of <b>bluetooth shoes</b> undergoes rigorous quality testing to ensure durability, performance, and safety. We offer a 30-day money-back guarantee and a 1-year warranty against manufacturing defects. Your satisfaction is our priority.</p>",
+    "a_plus_modules": [
+      {
+        "module_type": "hero_banner",
+        "title": "Step into the Future of Footwear",
+        "description": "顶部大图模块，展示产品核心形象和品牌标语，吸引用户注意力。",
+        "image_suggestion": "一张高分辨率的产品主图（960x600），展示蓝牙鞋的侧面或动态步态，背景为现代都市或科技感场景，鞋底或鞋面有蓝牙图标或连接信号波特效。",
+        "copy_text": "Your Steps, Connected. Experience the perfect fusion of premium comfort and smart technology. Every stride syncs with your music, calls, and fitness goals."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Premium Quality, Built to Last",
+        "description": "左图右文模块，突出核心卖点：优质材料和耐用性。",
+        "image_suggestion": "特写图片，展示鞋子的材质细节（如高密度网面、加固缝线、耐磨橡胶底），可搭配放大镜效果或材料标签。",
+        "copy_text": "Crafted from premium quality materials, our Bluetooth shoes are engineered for durability and long-lasting performance. The ergonomic design ensures all-day comfort, while the eco-friendly packaging reflects our commitment to sustainability."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Seamless Connectivity, Effortless Control",
+        "description": "左文右图模块，强调易用性和蓝牙连接功能。",
+        "image_suggestion": "展示用户通过手机APP或鞋侧触控按钮控制音乐/通话的场景，鞋子和手机之间有蓝牙连接动画或图标。",
+        "copy_text": "Easy to use and intuitive, our Bluetooth shoes connect instantly to your devices. Control music, take calls, and track your fitness with a simple tap—no fumbling, no distractions."
+      },
+      {
+        "module_type": "spec_table",
+        "title": "Technical Specifications",
+        "description": "规格参数表，清晰列出产品关键参数，增强信任感。",
+        "image_suggestion": "无图片，但可在表格上方添加一个简洁的产品图标或蓝牙标志。",
+        "copy_text": "| Feature | Specification |\n|---------|---------------|\n| Bluetooth Version | 5.3 |\n| Battery Life | Up to 12 hours continuous use |\n| Charging Time | 1.5 hours (fast charge) |\n| Material | Premium breathable mesh + reinforced rubber sole |\n| Water Resistance | IPX5 (splash-proof) |\n| Weight | 280g per shoe |\n| Compatibility | iOS 12+ / Android 8+ |\n| Packaging | 100% recyclable materials |"
+      },
+      {
+        "module_type": "comparison_chart",
+        "title": "Why Choose Our Bluetooth Shoes?",
+        "description": "竞品对比表，突出自身优势（如材料、电池、环保包装）。",
+        "image_suggestion": "无图片，但表格背景可使用品牌色（如科技蓝或活力绿）增强视觉对比。",
+        "copy_text": "| Feature | Our Bluetooth Shoes | Competitor A | Competitor B |\n|---------|---------------------|--------------|--------------|\n| Material | Premium quality mesh + rubber | Standard synthetic | Basic fabric |\n| Battery Life | 12 hours | 8 hours | 6 hours |\n| Ergonomic Design | Yes (arch support + cushion) | No | Partial |\n| Eco-friendly Packaging | Yes (100% recyclable) | No | No |\n| Water Resistance | IPX5 | IPX3 | None |"
+      },
+      {
+        "module_type": "image_text",
+        "title": "Your Story, One Step at a Time",
+        "description": "左图右文模块，讲述品牌故事，建立情感连接。",
+        "image_suggestion": "展示用户穿着蓝牙鞋在自然或城市环境中行走的远景，背景有日出或城市灯光，鞋底有微弱的光效或连接信号。",
+        "copy_text": "Step into a world where your footsteps sync with your life. Our Bluetooth shoes seamlessly connect your stride to your music, calls, and fitness goals—turning every step into a smarter, more connected journey."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Eco-Friendly, Step by Step",
+        "description": "左文右图模块，强调环保包装和可持续理念。",
+        "image_suggestion": "展示环保包装盒的细节（如可回收材料、植物基油墨印刷），旁边放一双鞋，背景有绿叶或地球图标。",
+        "copy_text": "We believe in walking lightly on the planet. Our eco-friendly packaging is made from 100% recyclable materials, reducing waste without compromising protection. Choose comfort, choose connection, choose sustainability."
+      }
+    ],
+    "seo_report": {
+      "keyword_density": {
+        "score": 75.0,
+        "findings": [
+          "目标关键词 'bluetooth shoes' 在标题、五点描述和长描述中出现了多次，但分布合理，没有明显堆砌。",
+          "关键词 'smart shoes' 和 'wireless shoes' 各出现一次，密度适中。",
+          "关键词 'bluetooth sneakers' 和 'bluetooth running shoes' 未在标题或五点描述中出现，仅在长描述中隐含提及，密度偏低。"
+        ],
+        "suggestions": [
+          "在五点描述中适当加入 'bluetooth running shoes' 或 'bluetooth sneakers'，例如在第二点或第四点中替换部分表述。",
+          "在标题中可考虑将 'Smart Wireless Sneakers' 改为 'Smart Bluetooth Sneakers' 以强化 'bluetooth sneakers'。"
+        ]
+      },
+      "readability": {
+        "score": 85.0,
+        "findings": [
+          "标题长度约120字符，符合≤200字符要求，简洁且包含核心卖点。",
+          "五点描述每点约20-30词，语言流畅，信息层次清晰，易于扫描。",
+          "长描述使用HTML标签分段，但部分内容被截断，影响完整性。"
+        ],
+        "suggestions": [
+          "补全长描述中被截断的部分，确保产品规格完整。",
+          "在五点描述中避免重复使用 'bluetooth' 过多（如第一点和第四点），可替换为 'wireless' 或 'smart' 以提升多样性。"
+        ]
+      },
+      "completeness": {
+        "score": 70.0,
+        "findings": [
+          "标题、五点描述和长描述均已提供，但缺少A+内容（如对比图、使用场景图等）。",
+          "长描述中产品规格部分被截断，未完整列出所有规格（如重量、尺寸、电池续航等）。",
+          "未包含客户评价或常见问题解答模块，可能影响买家信任。"
+        ],
+        "suggestions": [
+          "添加A+模块，包含产品对比图、使用场景图（如跑步、通勤）和详细规格表。",
+          "补全长描述中的产品规格，包括电池续航、充电时间、防水等级等。",
+          "考虑在描述中加入简短的客户评价或FAQ，增强可信度。"
+        ]
+      },
+      "conversion_potential": {
+        "score": 80.0,
+        "findings": [
+          "标题和五点描述突出了核心卖点（无线连接、舒适、耐用、智能追踪），能有效吸引目标买家。",
+          "长描述的品牌故事部分具有情感吸引力，但规格部分不完整可能让技术型买家犹豫。",
+          "缺少价格、促销信息或保修承诺，可能影响购买决策。"
+        ],
+        "suggestions": [
+          "在长描述或五点描述中加入保修信息（如“1年保修”）或价格优势（如“性价比之选”）。",
+          "在五点描述中增加一个关于电池续航或充电便利性的要点，解决买家潜在顾虑。",
+          "在标题或描述中强调“适合日常跑步和通勤”，扩大适用场景。"
+        ]
+      },
+      "overall_score": 78.0,
+      "improvement_priority": [
+        "补全长描述中的产品规格，确保完整性。",
+        "在五点描述中增加 'bluetooth running shoes' 或 'bluetooth sneakers' 关键词，提升关键词密度。",
+        "添加A+内容（如对比图、使用场景图）以增强转化预期。"
+      ]
+    },
+    "human_approved": false
+  },
+  "compliance": {
+    "policy_issues": [
+      {
+        "location": "title/bullets/description",
+        "issue_type": "prohibited_claim",
+        "severity": "medium",
+        "description": "Found prohibited term: 'free'",
+        "suggestion": "Replace 'free' with compliant alternative"
+      },
+      {
+        "location": "Title",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The title includes 'Premium Quality' which is a subjective claim that may be considered misleading or unsubstantiated.",
+        "suggestion": "Remove 'Premium Quality' or replace with factual descriptions such as 'High-quality materials' if supported by specifications."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "Bullet point 1 states 'advanced wireless technology' which is a subjective claim without specific evidence.",
+        "suggestion": "Replace with specific technical details, e.g., 'Bluetooth 5.0 technology for stable connectivity'."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "Bullet point 2 claims 'superior cushioning and support' which is a subjective superlative claim.",
+        "suggestion": "Use factual descriptions like 'cushioned insole for comfort' or 'arch support design'."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "Bullet point 3 states 'long-lasting performance' which is a durability claim that may require substantiation.",
+        "suggestion": "Replace with 'reinforced stitching and high-traction outsole for extended use' or similar factual statement."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "Bullet point 5 claims 'eco-friendly choice' which is an environmental claim that must be substantiated with specific certifications or details.",
+        "suggestion": "Remove or specify the eco-friendly aspect, e.g., 'packaging made from recycled materials' if true."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The brand story uses subjective language like 'smarter, more connected journey' which may be considered promotional puffery but could be flagged as unsubstantiated.",
+        "suggestion": "Rephrase to focus on factual features, e.g., 'Bluetooth connectivity for music and calls'."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Formatting Issues",
+        "severity": "Low",
+        "description": "The description uses HTML tags (<h3>, <b>, <ul>, <li>) which are allowed but must be properly closed. The provided snippet ends with '<li><b>Sole:</b> High-traction rubber outsole for durabil' which is incomplete.",
+        "suggestion": "Ensure all HTML tags are properly closed and the description is complete."
+      }
+    ],
+    "claim_issues": [
+      {
+        "claim_text": "Experience seamless connectivity with our bluetooth shoes, featuring advanced wireless technology that syncs instantly to your devices for hands-free control and real-time activity tracking.",
+        "issue": "unsubstantiated",
+        "risk_level": "medium",
+        "explanation": "The claim of 'seamless connectivity' and 'syncs instantly' is not supported by any evidence or user testing data. Additionally, 'real-time activity tracking' implies a specific functionality that may not be proven.",
+        "fix_suggestion": "Remove subjective terms like 'seamless' and 'instantly', or provide verifiable data (e.g., connection time in seconds). Clarify what activity tracking features are actually included."
+      },
+      {
+        "claim_text": "Enjoy all-day comfort with our ergonomic design, crafted from premium quality materials that provide superior cushioning and support, reducing foot fatigue during long runs or daily wear.",
+        "issue": "exaggerated",
+        "risk_level": "medium",
+        "explanation": "'Superior cushioning and support' and 'reducing foot fatigue' are subjective benefits without comparative evidence or clinical studies. 'Premium quality materials' is vague and unsubstantiated.",
+        "fix_suggestion": "Replace 'superior' with specific material descriptions (e.g., 'memory foam insole') and avoid claiming fatigue reduction unless backed by testing."
+      },
+      {
+        "claim_text": "Built to last, these durable bluetooth sneakers feature reinforced stitching and high-traction outsoles, ensuring long-lasting performance on various terrains without compromising style.",
+        "issue": "exaggerated",
+        "risk_level": "low",
+        "explanation": "'Ensuring long-lasting performance' is an absolute claim that cannot be guaranteed for all users. 'High-traction outsoles' is acceptable if true, but the durability claim needs qualification.",
+        "fix_suggestion": "Change 'ensuring long-lasting performance' to 'designed for durability' or provide a warranty period. Avoid absolute terms."
+      },
+      {
+        "claim_text": "Simplify your routine with easy-to-use smart shoes that pair automatically via bluetooth, allowing you to monitor steps, distance, and calories burned directly from your smartphone app.",
+        "issue": "misleading",
+        "risk_level": "high",
+        "explanation": "The claim implies that the shoes themselves monitor steps, distance, and calories, but typically such tracking requires a separate device or app. If the shoes only connect to a phone that does the tracking, this is misleading. Also, 'pair automatically' may not work in all cases.",
+        "fix_suggestion": "Clarify that the shoes sync with a smartphone app that tracks these metrics, and specify that automatic pairing may require initial setup."
+      },
+      {
+        "claim_text": "Make an eco-friendly choice with our sustainable packaging, while enjoying the innovative features of wireless shoes that combine modern technology with environmental responsibility.",
+        "issue": "unsubstantiated",
+        "risk_level": "low",
+        "explanation": "'Sustainable packaging' is vague and not defined. 'Environmental responsibility' is a broad claim without specifics (e.g., recycled materials, carbon offset).",
+        "fix_suggestion": "Specify what makes the packaging sustainable (e.g., '100% recycled cardboard') and avoid general environmental claims without certification."
+      }
+    ],
+    "overall_verdict": "",
+    "risk_level": "high",
+    "total_issues": 13,
+    "critical_items": [
+      "[Claim] The claim implies that the shoes themselves monitor steps, distance, and calories, but typically such tracking requires a separate device or app. If the shoes only connect to a phone that does the tracking, this is misleading. Also, 'pair automatically' may not work in all cases."
+    ],
+    "action_items": [
+      "Replace 'free' with compliant alternative",
+      "Remove 'Premium Quality' or replace with factual descriptions such as 'High-quality materials' if supported by specifications.",
+      "Replace with specific technical details, e.g., 'Bluetooth 5.0 technology for stable connectivity'.",
+      "Use factual descriptions like 'cushioned insole for comfort' or 'arch support design'.",
+      "Replace with 'reinforced stitching and high-traction outsole for extended use' or similar factual statement.",
+      "Remove or specify the eco-friendly aspect, e.g., 'packaging made from recycled materials' if true.",
+      "Rephrase to focus on factual features, e.g., 'Bluetooth connectivity for music and calls'.",
+      "Ensure all HTML tags are properly closed and the description is complete.",
+      "Remove subjective terms like 'seamless' and 'instantly', or provide verifiable data (e.g., connection time in seconds). Clarify what activity tracking features are actually included.",
+      "Replace 'superior' with specific material descriptions (e.g., 'memory foam insole') and avoid claiming fatigue reduction unless backed by testing.",
+      "Change 'ensuring long-lasting performance' to 'designed for durability' or provide a warranty period. Avoid absolute terms.",
+      "Clarify that the shoes sync with a smartphone app that tracks these metrics, and specify that automatic pairing may require initial setup.",
+      "Specify what makes the packaging sustainable (e.g., '100% recycled cardboard') and avoid general environmental claims without certification."
+    ],
+    "human_reviewed": false
+  },
+  "social": {
+    "marketing_angles": [
+      "Tech-savvy lifestyle: Show how Bluetooth shoes seamlessly integrate with daily routines, like tracking steps or controlling music hands-free",
+      "Fitness motivation: Highlight the shoes as a smart fitness companion for runners and gym-goers, with real-time data sync",
+      "Unboxing and first use: Create excitement around the premium unboxing experience and easy Bluetooth pairing",
+      "Sustainability story: Emphasize eco-friendly packaging and durable materials to appeal to environmentally conscious consumers",
+      "Fashion-forward tech: Position the shoes as a stylish accessory for the modern, connected individual"
+    ],
+    "target_audience": "The ideal customer is a tech-savvy, health-conscious American professional aged 25-45, who values both style and function. They are early adopters of smart wearables, enjoy staying active (e.g., jogging, gym workouts), and appreciate sustainable products. They seek convenience and innovation in everyday items, and are active on Instagram and TikTok, following fitness and lifestyle influencers.",
+    "content_tones": [
+      "Aspirational: Inspire viewers to upgrade their lifestyle with cutting-edge technology",
+      "Energetic: Use dynamic language and upbeat energy to match fitness and active wear contexts",
+      "Informative: Clearly explain features and benefits to build trust and credibility"
+    ],
+    "key_selling_points": [
+      "Premium quality materials for comfort and durability",
+      "Ergonomic design for all-day wear and natural movement",
+      "Easy-to-use Bluetooth connectivity for hands-free control",
+      "Eco-friendly packaging aligning with sustainable values",
+      "Long-lasting build, reducing need for frequent replacements"
+    ],
+    "visual_style": [],
+    "hashtag_themes": [],
+    "posts": [
+      {
+        "platform": "instagram",
+        "copy": "Step into the future of movement. 🌟\n\nImagine a shoe that doesn’t just carry you through the day—it connects you to it. Our Bluetooth-enabled shoes are",
+        "hashtags": [
+          "SmartShoes",
+          "WearableTech",
+          "SustainableStyle",
+          "TechSavvyLiving",
+          "FitnessInnovation",
+          "HandsFreeLife",
+          "EcoFriendly",
+          "ActiveLifestyle",
+          "FutureOfFootwear",
+          "BluetoothShoes"
+        ],
+        "quality_score": 7.0
+      },
+      {
+        "platform": "threads",
+        "copy": "Think about the last time you had to stop mid-run to take a call or change your playlist. What if your shoes could handle that for you?\n\nBluetooth sho",
+        "hashtags": [
+          "bluetoothshoes",
+          "smartwearables",
+          "techfashion",
+          "sustainableliving",
+          "fitnessinnovation",
+          "ecofriendly",
+          "handsfree",
+          "activetech",
+          "lifestyleupgrade",
+          "futureoffashion"
+        ],
+        "quality_score": 7.3
+      },
+      {
+        "platform": "pinterest",
+        "copy": "Imagine a morning run where your playlist syncs seamlessly with every stride—no tangled wires, no fumbling with your phone. These Bluetooth shoes make",
+        "hashtags": [
+          "#BluetoothShoes",
+          "#SmartWearables",
+          "#SustainableFashion",
+          "#TechFitness",
+          "#EcoFriendlyLiving",
+          "#ActiveLifestyle",
+          "#WearableTech",
+          "#HandsFree",
+          "#InnovationInMotion",
+          "#GreenTech"
+        ],
+        "quality_score": 7.0
+      }
+    ],
+    "human_approved": false
+  },
+  "platform": {
+    "asin": null,
+    "amazon_url": null,
+    "amazon_publish_status": "draft",
+    "amazon_publish_errors": [],
+    "amazon_published_at": null,
+    "social_publish_status": {},
+    "social_post_urls": {}
+  },
+  "reviews": {
+    "total_reviews": 10,
+    "average_rating": 0.0,
+    "sentiment_distribution": {},
+    "negative_alert_count": 2,
+    "top_alerts": [
+      {
+        "reviewer": "Maria G.",
+        "content": "Arrived damaged. The box was crushed.",
+        "alert_level": "alert"
+      },
+      {
+        "reviewer": "David P.",
+        "content": "Color doesn't match the photos. Returning it.",
+        "alert_level": "alert"
+      }
+    ],
+    "last_monitored_at": "2026-05-19T07:49:59.938239Z"
+  },
+  "ads": {
+    "campaigns": [],
+    "total_budget": 0.0,
+    "total_spend": 0.0,
+    "acos": null
+  }
+}

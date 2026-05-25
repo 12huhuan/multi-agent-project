@@ -7,7 +7,7 @@ from pydantic import BaseModel, Field
 
 
 # ═══════════════════════════════════════════════════════════
-# Listing 优化
+# Listing 生成
 # ═══════════════════════════════════════════════════════════
 
 class ListingTaskCreate(BaseModel):
@@ -64,6 +64,7 @@ class ListingResultResponse(BaseModel):
     a_plus_content: dict = {}
     seo_score: dict = {}
     keywords: list[dict] = []
+    product_images: list[dict] = []
 
 
 # ═══════════════════════════════════════════════════════════

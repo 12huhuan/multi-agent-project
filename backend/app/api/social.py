@@ -7,6 +7,8 @@ from pathlib import Path
 
 from fastapi import APIRouter, HTTPException, WebSocket, WebSocketDisconnect
 
+from backend.app.core.db import async_session
+from backend.app.models.models import SocialTask, SocialPost, SocialImage
 from backend.app.schemas.schemas import (
     SocialGenerateRequest,
     SocialPostResponse,
@@ -20,6 +22,89 @@ router = APIRouter(prefix="/api/v1/social", tags=["social"])
 # 内存存储
 _task_states: dict[str, dict] = {}
 _posts: dict[str, dict] = {}  # post_id → post dict
+
+
+async def _save_social_to_db(task_id: str, request: SocialGenerateRequest, state: dict):
+    """将社媒内容生成结果持久化到数据库"""
+    import uuid as _uuid
+    try:
+        async with async_session() as session:
+            # 检查是否已存在
+            from sqlalchemy import select
+            r = await session.execute(
+                select(SocialTask).where(SocialTask.id == _uuid.UUID(task_id))
+            )
+            existing = r.scalar_one_or_none()
+
+            if existing:
+                existing.status = state.get("status", "completed")
+            else:
+                s_task = SocialTask(
+                    id=_uuid.UUID(task_id),
+                    product_name=request.product_name,
+                    category=request.category,
+                    platforms=request.platforms,
+                    target_languages=request.target_markets,
+                    status=state.get("status", "completed"),
+                )
+                session.add(s_task)
+
+            # 保存帖子
+            for post_data in state.get("posts", []):
+                pid = _uuid.uuid4()
+                post = SocialPost(
+                    id=pid,
+                    task_id=_uuid.UUID(task_id),
+                    platform=post_data.get("platform", ""),
+                    language=post_data.get("language", request.language),
+                    copy=post_data.get("copy", ""),
+                    short_copy=post_data.get("short_copy", ""),
+                    hashtags=post_data.get("hashtags", []),
+                    call_to_action=post_data.get("call_to_action", ""),
+                    image_urls=[img.get("url", "") for img in post_data.get("images", [])],
+                    quality_score=post_data.get("quality_score", 0.0),
+                    quality_verdict=post_data.get("quality_verdict", "approved"),
+                    status="generated",
+                )
+                session.add(post)
+                await session.flush()  # 获取 post.id
+
+                # 保存图片关联
+                for img_data in post_data.get("images", []):
+                    if img_data.get("url"):
+                        img = SocialImage(
+                            post_id=pid,
+                            url=img_data.get("url", ""),
+                            alt_text=img_data.get("alt_text", img_data.get("description", "")),
+                            prompt=img_data.get("prompt", img_data.get("description", "")),
+                            storage_path=img_data.get("storage_path"),
+                            width=img_data.get("width"),
+                            height=img_data.get("height"),
+                            format=img_data.get("format"),
+                        )
+                        session.add(img)
+
+            await session.commit()
+    except Exception:
+        import traceback
+        traceback.print_exc()
+
+
+async def _update_post_status_in_db(post_id: str, status: str):
+    """更新帖子的数据库状态"""
+    try:
+        import uuid as _uuid
+        async with async_session() as session:
+            from sqlalchemy import select
+            r = await session.execute(
+                select(SocialPost).where(SocialPost.id == _uuid.UUID(post_id))
+            )
+            post = r.scalar_one_or_none()
+            if post:
+                post.status = status
+                await session.commit()
+    except Exception:
+        pass
 
 
 @router.post("/generate")
@@ -60,7 +145,8 @@ async def generate_social_content(request: SocialGenerateRequest):
                 for node_name, node_state in chunk.items():
                     if isinstance(node_state, dict):
                         _task_states[task_id].update(node_state)
-            # 将帖子存入 _posts
+            # 将帖子存入 _posts (内存) + 持久化到数据库
+            await _save_social_to_db(task_id, request, _task_states[task_id])
             for post in _task_states[task_id].get("posts", []):
                 pid = str(uuid.uuid4())
                 post["id"] = pid
@@ -223,10 +309,25 @@ async def translate_post(post_id: str, request: SocialPostTranslateRequest):
 @router.post("/posts/{post_id}/approve")
 async def approve_post(post_id: str, approved: bool = True):
     """审核帖子 (approve/reject)"""
+    import uuid as _uuid
     if post_id not in _posts:
         raise HTTPException(status_code=404, detail="Post not found")
-    _posts[post_id]["status"] = "approved" if approved else "rejected"
-    return {"post_id": post_id, "status": _posts[post_id]["status"]}
+    new_status = "approved" if approved else "rejected"
+    _posts[post_id]["status"] = new_status
+    # 同步数据库
+    try:
+        async with async_session() as session:
+            from sqlalchemy import select
+            r = await session.execute(
+                select(SocialPost).where(SocialPost.id == _uuid.UUID(post_id))
+            )
+            post = r.scalar_one_or_none()
+            if post:
+                post.status = new_status
+                await session.commit()
+    except Exception:
+        pass
+    return {"post_id": post_id, "status": new_status}
 
 
 @router.post("/posts/{post_id}/publish")
@@ -243,39 +344,35 @@ async def publish_post(post_id: str):
         return await _publish_to_xiaohongshu(post_id, p)
 
     # 其他平台走 WordPress
-    wp_result = None
     try:
         from backend.app.gateway.social_publisher import SocialPublisher
         publisher = SocialPublisher()
         result = await publisher.publish(p, product_name=p.get("product_name", ""))
         if result.success:
-            wp_result = result.raw_response or {"wordpress_post_id": result.remote_id, "wordpress_url": result.remote_url}
             p["status"] = "published"
             p["wp_post_id"] = result.remote_id
             p["wp_url"] = result.remote_url
+            # 同步数据库
+            await _update_post_status_in_db(post_id, "published")
+            wp_result = result.raw_response or {"wordpress_post_id": result.remote_id, "wordpress_url": result.remote_url}
+            return {
+                "post_id": post_id,
+                "status": "published",
+                "platform": p.get("platform"),
+                "wordpress": wp_result,
+                "message": f"已发布到 WordPress",
+            }
         else:
-            wp_result = {"error": "; ".join(result.errors)}
+            p["status"] = "failed"
+            raise HTTPException(
+                status_code=500,
+                detail=f"WordPress 发布失败: {'; '.join(result.errors)}",
+            )
+    except HTTPException:
+        raise
     except Exception as e:
-        wp_result = {"error": str(e)}
-
-    p["status"] = "published"
-
-    if wp_result and "error" not in wp_result:
-        return {
-            "post_id": post_id,
-            "status": "published",
-            "platform": p.get("platform"),
-            "wordpress": wp_result,
-            "message": f"已发布到 WordPress",
-        }
-
-    return {
-        "post_id": post_id,
-        "status": "published",
-        "platform": p.get("platform"),
-        "feed_url": "/feed",
-        "message": "已发布 — 前往「社媒动态」查看",
-    }
+        p["status"] = "failed"
+        raise HTTPException(status_code=500, detail=f"WordPress 发布异常: {str(e)}")
 
 
 async def _publish_to_xiaohongshu(post_id: str, p: dict) -> dict:
@@ -288,6 +385,7 @@ async def _publish_to_xiaohongshu(post_id: str, p: dict) -> dict:
         if result.success:
             p["status"] = "published"
             p["xhs_url"] = result.remote_url
+            await _update_post_status_in_db(post_id, "published")
             return {
                 "post_id": post_id,
                 "status": "published",
@@ -386,7 +484,7 @@ async def xiaohongshu_posts():
     """获取已发布的小红书笔记列表"""
     try:
         from backend.app.gateway.xiaohongshu_gateway import XiaohongshuGateway
-        gw = XiaohongshuGateway(headless=False)
+        gw = XiaohongshuGateway()
         await gw.start()
         posts = await gw.get_published_posts(max_count=10)
         await gw.stop()

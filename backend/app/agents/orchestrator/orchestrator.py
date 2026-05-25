@@ -134,7 +134,7 @@ class OrchestratorAgent(BaseAgent[OrchestratorInput, OrchestratorOutput]):
 
         pipeline = [
             ("selection", "select_product", "Step 1/5: 智能选品"),
-            ("listing", "run_listing", "Step 2/5: Listing优化"),
+            ("listing", "run_listing", "Step 2/5: Listing生成"),
             ("compliance", "check_compliance", "Step 3/5: 合规审查"),
             ("social", "generate_social", "Step 4/5: 社媒内容"),
             ("review", "monitor_reviews", "Step 5/5: 评论监控"),
@@ -184,7 +184,7 @@ class OrchestratorAgent(BaseAgent[OrchestratorInput, OrchestratorOutput]):
 
         elif domain == "listing":
             if not state.get("product_name"):
-                return state  # 没有产品名无法生成
+                return state
             if not state.get("features"):
                 state["features"] = await self._generate_features(
                     state["product_name"], state.get("category", "")
@@ -192,6 +192,10 @@ class OrchestratorAgent(BaseAgent[OrchestratorInput, OrchestratorOutput]):
             if not state.get("brand_story"):
                 state["brand_story"] = await self._generate_brand_story(
                     state["product_name"], state.get("category", "")
+                )
+            if not state.get("image_descriptions"):
+                state["image_descriptions"] = await self._generate_image_descriptions(
+                    state["product_name"], state.get("category", ""), state.get("features", [])
                 )
 
         elif domain == "social":
@@ -335,6 +339,24 @@ class OrchestratorAgent(BaseAgent[OrchestratorInput, OrchestratorOutput]):
             pass
         return f"Born from a passion for quality {category or 'products'}, we craft premium solutions that enhance everyday life."
 
+    async def _generate_image_descriptions(self, product_name: str, category: str = "", features: list | None = None) -> list[str]:
+        """LLM 生成产品图片描述（用于 Pollinations.ai 图片生成）"""
+        try:
+            feats = ", ".join(features[:5]) if features else product_name
+            system_prompt = "You are an e-commerce product photographer. Given a product, list 3-5 image scene descriptions as a JSON array of strings. Each should describe a product photo scene suitable for Amazon listing images."
+            user_prompt = f"Product: {product_name}\nCategory: {category}\nFeatures: {feats}\nOutput: JSON array of 3-5 strings."
+            raw = await self._call_llm(system_prompt, user_prompt, max_tokens=256, temperature=0.7)
+            data = self._parse_llm_json(raw)
+            if isinstance(data, list) and len(data) > 0:
+                return data[:5]
+        except Exception:
+            pass
+        return [
+            f"{product_name} on white background, studio lighting, product photography",
+            f"{product_name} lifestyle shot, in use by customer, natural light",
+            f"{product_name} close-up detail shot, premium texture and materials",
+        ]
+
     # ── 工作流执行器 ───────────────────────────────────────
 
     async def _run_selection(self, state: dict) -> tuple[str, dict]:
@@ -378,7 +400,7 @@ class OrchestratorAgent(BaseAgent[OrchestratorInput, OrchestratorOutput]):
                 "category": state.get("category", ""),
                 "features": state.get("features", []),
                 "brand_story": state.get("brand_story"),
-                "image_descriptions": [], "target_platform": state.get("target_platform", "amazon_us"),
+                "image_descriptions": state.get("image_descriptions", []), "target_platform": state.get("target_platform", "amazon_us"),
                 "target_language": state.get("target_language", "en"),
                 "keywords": state.get("keywords", []),
                 "top_keywords": state.get("top_keywords", []),
@@ -388,7 +410,8 @@ class OrchestratorAgent(BaseAgent[OrchestratorInput, OrchestratorOutput]):
             }
             result = await listing_workflow.ainvoke(wf_state, {"configurable": {"thread_id": tid}})
             title = result.get("best_title", "N/A")
-            return f"Listing generated: {title[:60]}", {
+            data = {
+                "listing_task_id": tid,
                 "best_title": title,
                 "keywords": result.get("keywords", []),
                 "top_keywords": result.get("top_keywords", []),
@@ -397,9 +420,58 @@ class OrchestratorAgent(BaseAgent[OrchestratorInput, OrchestratorOutput]):
                 "description_html": result.get("description_html", ""),
                 "a_plus_modules": result.get("a_plus_modules", []),
                 "seo_report": result.get("seo_report", {}),
+                "product_images": result.get("product_images", []),
             }
+            await self._save_listing_result(tid, result, state)
+            return f"Listing generated: {title[:60]}", data
         except Exception as e:
             return f"Listing failed: {e}", {"error": str(e)}
+
+    async def _save_listing_result(self, task_id: str, result: dict, state: dict):
+        """持久化 Listing 结果到数据库"""
+        try:
+            from backend.app.core.db import async_session
+            from backend.app.models.models import ListingTask
+            from sqlalchemy import select
+            import uuid as _uuid
+            from datetime import datetime
+
+            async with async_session() as session:
+                stmt = select(ListingTask).where(ListingTask.id == _uuid.UUID(task_id))
+                r = await session.execute(stmt)
+                existing = r.scalar_one_or_none()
+
+                if existing:
+                    existing.keywords = result.get("keywords", []) or []
+                    existing.top_keywords = result.get("top_keywords", []) or []
+                    existing.title_candidates = result.get("title_candidates", []) or []
+                    existing.bullet_points = result.get("bullet_points", []) or []
+                    existing.description_html = result.get("description_html", "") or ""
+                    existing.a_plus_modules = result.get("a_plus_modules", []) or []
+                    existing.seo_report = result.get("seo_report", {}) or {}
+                    existing.product_images = result.get("product_images", []) or []
+                    existing.status = "awaiting_review"
+                    existing.updated_at = datetime.utcnow()
+                else:
+                    task = ListingTask(
+                        id=_uuid.UUID(task_id),
+                        product_name=result.get("product_name", state.get("product_name", "")),
+                        category=result.get("category", state.get("category", "")),
+                        status="awaiting_review",
+                        keywords=result.get("keywords", []) or [],
+                        top_keywords=result.get("top_keywords", []) or [],
+                        title_candidates=result.get("title_candidates", []) or [],
+                        bullet_points=result.get("bullet_points", []) or [],
+                        description_html=result.get("description_html", "") or "",
+                        a_plus_modules=result.get("a_plus_modules", []) or [],
+                        seo_report=result.get("seo_report", {}) or {},
+                        product_images=result.get("product_images", []) or [],
+                    )
+                    session.add(task)
+                await session.commit()
+        except Exception:
+            import traceback
+            traceback.print_exc()
 
     async def _run_compliance(self, state: dict) -> tuple[str, dict]:
         try:
@@ -451,7 +523,7 @@ class OrchestratorAgent(BaseAgent[OrchestratorInput, OrchestratorOutput]):
             }
             result = await social_workflow.ainvoke(wf_state, {"configurable": {"thread_id": tid}})
             posts = result.get("posts", [])
-            return f"Generated {len(posts)} social posts", {
+            data = {
                 "post_count": len(posts),
                 "posts": [{"platform": p.get("platform", ""), "copy": p.get("copy", "")[:150],
                            "hashtags": p.get("hashtags", []),
@@ -461,8 +533,70 @@ class OrchestratorAgent(BaseAgent[OrchestratorInput, OrchestratorOutput]):
                 "content_tones": result.get("content_tones", []),
                 "key_selling_points": result.get("key_selling_points", []),
             }
+            await self._save_social_result(tid, result, state)
+            return f"Generated {len(posts)} social posts", data
         except Exception as e:
             return f"Social failed: {e}", {"error": str(e)}
+
+    async def _save_social_result(self, task_id: str, result: dict, state: dict):
+        """持久化社媒内容结果到数据库"""
+        try:
+            from backend.app.core.db import async_session
+            from backend.app.models.models import SocialTask, SocialPost, SocialImage
+            from sqlalchemy import select
+            import uuid as _uuid
+            from datetime import datetime
+
+            async with async_session() as session:
+                r = await session.execute(
+                    select(SocialTask).where(SocialTask.id == _uuid.UUID(task_id))
+                )
+                existing = r.scalar_one_or_none()
+
+                if existing:
+                    existing.status = "completed"
+                else:
+                    s_task = SocialTask(
+                        id=_uuid.UUID(task_id),
+                        product_name=state.get("product_name", ""),
+                        category=state.get("category", ""),
+                        status="completed",
+                    )
+                    session.add(s_task)
+
+                for post_data in result.get("posts", []):
+                    pid = _uuid.uuid4()
+                    post = SocialPost(
+                        id=pid,
+                        task_id=_uuid.UUID(task_id),
+                        platform=post_data.get("platform", ""),
+                        language=post_data.get("language", state.get("language", "en")),
+                        copy=post_data.get("copy", ""),
+                        short_copy=post_data.get("short_copy", ""),
+                        hashtags=post_data.get("hashtags", []),
+                        call_to_action=post_data.get("call_to_action", ""),
+                        image_urls=[img.get("url", "") for img in post_data.get("images", [])],
+                        quality_score=post_data.get("quality_score", 0.0),
+                        quality_verdict=post_data.get("quality_verdict", "approved"),
+                        status="generated",
+                    )
+                    session.add(post)
+                    await session.flush()
+
+                    for img_data in post_data.get("images", []):
+                        if img_data.get("url"):
+                            img = SocialImage(
+                                post_id=pid,
+                                url=img_data.get("url", ""),
+                                alt_text=img_data.get("alt_text", img_data.get("description", "")),
+                                prompt=img_data.get("prompt", img_data.get("description", "")),
+                            )
+                            session.add(img)
+
+                await session.commit()
+        except Exception:
+            import traceback
+            traceback.print_exc()
 
     async def _run_review_monitor(self, state: dict) -> tuple[str, dict]:
         try:

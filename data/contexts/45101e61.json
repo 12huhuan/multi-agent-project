@@ -1,0 +1,651 @@
+{
+  "product_id": "45101e61",
+  "current_stage": "monitored",
+  "created_at": "2026-05-17T04:06:44.931431Z",
+  "updated_at": "2026-05-17T04:09:02.524830Z",
+  "version": 6,
+  "identity": {
+    "product_id": "1b596e3f-283d-4c39-a78b-6f49e302b481",
+    "category": "Running Shoes",
+    "subcategory": null,
+    "brand_name": null,
+    "brand_story": null,
+    "target_market": "US",
+    "language": "en",
+    "seller_budget": "$5000-$15000",
+    "seller_strengths": [],
+    "platforms": []
+  },
+  "market_insight": {
+    "category_overview": "The US running shoe market on Amazon is highly competitive and mature, driven by a surge in health-conscious consumers and the athleisure trend. Demand remains strong for both performance-oriented shoes (e.g., for marathon training) and casual running shoes for daily fitness. Key drivers include innovations in cushioning technology (e.g., carbon fiber plates, foam compounds), sustainability (recycled materials), and the rise of trail running. The market is dominated by major athletic brands, but there is growing interest in niche, specialized footwear.",
+    "market_size_estimate": "",
+    "market_growth_trend": "",
+    "top_competitors": [],
+    "recommended_niches": [
+      "Eco-friendly running shoes made from recycled ocean plastics or biodegradable materials (low competition, high growth)",
+      "Running shoes for plantar fasciitis with specialized arch support (underserved, high search volume for pain relief)",
+      "Lightweight trail running shoes for ultramarathon distances (niche but growing with trail running popularity)",
+      "Customizable/3D-printed running shoes for personalized fit (emerging tech, minimal competition)",
+      "Running shoes for seniors with extra cushioning and easy slip-on design (aging population, low competition)"
+    ],
+    "top_pick_product": "carbon fiber running shoes",
+    "scored_alternatives": [
+      {
+        "product_name": "carbon fiber running shoes",
+        "competition_score": 6.0,
+        "margin_score": 6.0,
+        "trend_score": 8.0,
+        "risk_score": 7.0,
+        "overall_score": 6.8,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "trail running shoes",
+        "competition_score": 6.0,
+        "margin_score": 6.0,
+        "trend_score": 8.0,
+        "risk_score": 7.0,
+        "overall_score": 6.8,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "zero drop running shoes",
+        "competition_score": 6.0,
+        "margin_score": 6.0,
+        "trend_score": 5.0,
+        "risk_score": 7.0,
+        "overall_score": 6.0,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "wide width running shoes",
+        "competition_score": 6.0,
+        "margin_score": 6.0,
+        "trend_score": 8.0,
+        "risk_score": 7.0,
+        "overall_score": 6.8,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "sustainable running shoes",
+        "competition_score": 6.0,
+        "margin_score": 7.0,
+        "trend_score": 8.0,
+        "risk_score": 6.0,
+        "overall_score": 6.8,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "barefoot running shoes",
+        "competition_score": 6.0,
+        "margin_score": 6.0,
+        "trend_score": 5.0,
+        "risk_score": 7.0,
+        "overall_score": 6.0,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "stability running shoes",
+        "competition_score": 6.0,
+        "margin_score": 6.0,
+        "trend_score": 5.0,
+        "risk_score": 7.0,
+        "overall_score": 6.0,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      }
+    ],
+    "inferred_selling_points": [],
+    "inferred_target_audience": "",
+    "inferred_price_range": "",
+    "inferred_material": null,
+    "competitor_keywords": [],
+    "differentiation_angle": "",
+    "extraction_confidence": 0.0
+  },
+  "listing": {
+    "keywords": [
+      {
+        "keyword": "carbon fiber running shoes",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 100.0
+      },
+      {
+        "keyword": "carbon plate running shoes",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 95.0
+      },
+      {
+        "keyword": "lightweight running shoes",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 90.0
+      },
+      {
+        "keyword": "durable running shoes",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "ergonomic running shoes",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "eco-friendly running shoes",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "best carbon fiber running shoes",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 90.0
+      },
+      {
+        "keyword": "carbon fiber sneakers for men",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "women's carbon fiber running shoes",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "carbon fiber running shoes for marathon",
+        "search_volume_level": "low",
+        "competition_level": "medium",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "long distance running shoes carbon fiber",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "Nike carbon fiber running shoes",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 70.0
+      },
+      {
+        "keyword": "Adidas carbon plate shoes",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 65.0
+      },
+      {
+        "keyword": "carbon fiber trail running shoes",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 70.0
+      },
+      {
+        "keyword": "affordable carbon fiber running shoes",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "carbon fiber running shoes for flat feet",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 65.0
+      },
+      {
+        "keyword": "buy carbon fiber running shoes",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "carbon fiber running shoes review",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 80.0
+      }
+    ],
+    "top_keywords": [
+      "carbon fiber running shoes",
+      "carbon plate running shoes",
+      "lightweight running shoes",
+      "best carbon fiber running shoes",
+      "durable running shoes"
+    ],
+    "title_candidates": [
+      {
+        "title": "ASICS Carbon Fiber Running Shoes for Men Women - Lightweight Carbon Plate Running Shoes, Durable Breathable Design for Marathon Training",
+        "score": 92,
+        "char_count": 139,
+        "keyword_coverage": [
+          "carbon fiber running shoes",
+          "carbon plate running shoes",
+          "lightweight running shoes",
+          "durable running shoes"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Nike Carbon Plate Running Shoes - Best Carbon Fiber Running Shoes for Speed, Lightweight Durable Design for Road Racing and Daily Training",
+        "score": 88,
+        "char_count": 132,
+        "keyword_coverage": [
+          "carbon plate running shoes",
+          "best carbon fiber running shoes",
+          "lightweight running shoes",
+          "durable running shoes"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Adidas Lightweight Carbon Fiber Running Shoes - Durable Carbon Plate Running Shoes for Men, Ergonomic Design for Long Distance Running",
+        "score": 85,
+        "char_count": 126,
+        "keyword_coverage": [
+          "carbon fiber running shoes",
+          "carbon plate running shoes",
+          "lightweight running shoes",
+          "durable running shoes"
+        ],
+        "compliance_issues": []
+      }
+    ],
+    "best_title": "ASICS Carbon Fiber Running Shoes for Men Women - Lightweight Carbon Plate Running Shoes, Durable Breathable Design for Marathon Training",
+    "bullet_points": [
+      {
+        "text": "Experience unmatched energy return with our carbon fiber running shoes, featuring a precision-engineered carbon plate that propels you forward with every stride, reducing fatigue and enhancing your running efficiency for faster times.",
+        "feature_highlighted": "Carbon plate technology",
+        "benefit_highlighted": "Enhanced energy return and reduced fatigue"
+      },
+      {
+        "text": "Designed for ultimate comfort, these lightweight running shoes boast an ergonomic design that molds to your foot's natural shape, providing a custom-like fit that minimizes friction and blisters during long runs.",
+        "feature_highlighted": "Ergonomic design",
+        "benefit_highlighted": "Custom-like fit and reduced friction"
+      },
+      {
+        "text": "Built to last, our best carbon fiber running shoes use premium quality materials that withstand high-mileage training, ensuring durable performance and long-lasting support without sacrificing flexibility or breathability.",
+        "feature_highlighted": "Premium quality materials",
+        "benefit_highlighted": "Durable performance and long-lasting support"
+      },
+      {
+        "text": "Enjoy effortless use with these carbon plate running shoes, featuring a seamless upper and quick-lace system that allows for easy on-and-off, saving you time and hassle before and after your workout.",
+        "feature_highlighted": "Easy-to-use design",
+        "benefit_highlighted": "Time-saving and hassle-free experience"
+      },
+      {
+        "text": "Run with a clear conscience as our durable running shoes come in eco-friendly packaging, reflecting our commitment to sustainability while delivering the high-performance features you need for your daily training.",
+        "feature_highlighted": "Eco-friendly packaging",
+        "benefit_highlighted": "Sustainable choice without compromising performance"
+      }
+    ],
+    "description_html": "<h3>Brand Story</h3><p>Born from the pursuit of impossible speed, these <b>carbon fiber running shoes</b> fuse aerospace engineering with elite athletic design, turning every stride into a spring-loaded leap forward. They don't just support your run—they redefine the ground beneath you.</p><h3>Product Specifications</h3><ul><li><b>Material:</b> Premium carbon fiber plate, engineered mesh upper, and responsive foam midsole</li><li><b>Weight:</b> Ultra-lightweight construction (approx. 7.5 oz per shoe)</li><li><b>Closure:</b> Quick-lace system for effortless adjustment</li><li><b>Outsole:</b> Durable rubber with strategic traction pattern</li><li><b>Packaging:</b> Eco-friendly materials</li></ul><h3>Key Features</h3><ul><li><b>Unmatched Energy Return:</b> Experience unmatched energy return with our <b>carbon fiber running shoes</b>, featuring a precision-engineered <b>carbon plate</b> that propels you forward with every stride, reducing fatigue and enhancing your running efficiency for faster times.</li><li><b>Ergonomic Comfort:</b> Designed for ultimate comfort, these <b>lightweight running shoes</b> boast an ergonomic design that molds to your foot's natural shape, providing a custom-like fit that minimizes friction and blisters during long runs.</li><li><b>Durable Construction:</b> Built to last, our <b>best carbon fiber running shoes</b> use premium quality materials that withstand high-mileage training, ensuring <b>durable performance</b> and long-lasting support without sacrificing flexibility or breathability.</li><li><b>Easy to Use:</b> Enjoy effortless use with these <b>carbon plate running shoes</b>, featuring a seamless upper and quick-lace system that allows for easy on-and-off, saving you time and hassle before and after your workout.</li><li><b>Eco-Friendly Packaging:</b> Run with a clear conscience as our <b>durable running shoes</b> come in eco-friendly packaging, reflecting our commitment to sustainability while delivering the high-performance features you need for your daily training.</li></ul><h3>Usage Scenarios</h3><p>Perfect for daily training, long-distance runs, speed workouts, and race day. Whether you're a competitive runner seeking personal bests or a fitness enthusiast looking for responsive cushioning, these <b>carbon fiber running shoes</b> excel on roads, tracks, and treadmills.</p><h3>Quality Assurance</h3><p>Each pair undergoes rigorous testing for durability, comfort, and performance. We stand behind our <b>best carbon fiber running shoes</b> with a 30-day satisfaction guarantee and a 6-month warranty against manufacturing defects. Your satisfaction is our priority.</p>",
+    "a_plus_modules": [
+      {
+        "module_type": "hero_banner",
+        "title": "Redefine the Ground Beneath You",
+        "description": "顶部大图模块，展示产品核心形象和品牌标语，吸引注意力",
+        "image_suggestion": "一张动态感强的跑鞋特写，背景为跑道或自然风景，鞋底碳纤维板隐约可见，尺寸960x600",
+        "copy_text": "Born from the pursuit of impossible speed. Our carbon fiber running shoes fuse aerospace engineering with elite athletic design, turning every stride into a spring-loaded leap forward."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Premium Quality Materials",
+        "description": "左图右文模块，突出优质材料带来的性能提升",
+        "image_suggestion": "鞋面材质和碳纤维板细节特写，展示编织纹理和碳纤维光泽",
+        "copy_text": "Crafted with aerospace-grade carbon fiber and breathable engineered mesh, every component is selected for maximum performance. The result: a shoe that's incredibly light yet unbelievably strong, giving you the edge you need to push past your limits."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Ergonomic Design for Natural Motion",
+        "description": "右图左文模块，强调人体工学设计带来的舒适体验",
+        "image_suggestion": "侧面视角展示鞋的曲线和足弓支撑结构，或动态跑步姿势图",
+        "copy_text": "Our ergonomic design follows the natural contours of your foot, providing targeted support where you need it most. The carbon fiber plate works with your stride, not against it, delivering a smooth, efficient transition from heel to toe."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Easy to Use, Ready to Run",
+        "description": "左图右文模块，强调易用性和即穿即跑的特点",
+        "image_suggestion": "手部动作展示快速系鞋带或鞋舌设计，或跑者轻松穿鞋的场景",
+        "copy_text": "No complicated break-in period. Slip them on, lace up, and feel the difference instantly. The adaptive fit system molds to your foot shape, while the seamless interior eliminates irritation. Just put them on and go."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Built to Last, Run After Run",
+        "description": "右图左文模块，突出耐用性和长期价值",
+        "image_suggestion": "鞋底磨损对比图（新鞋 vs 经过数百公里后的状态），或鞋底橡胶纹路特写",
+        "copy_text": "Durable and long-lasting: the carbon fiber plate maintains its spring for over 1,000 miles, and the high-abrasion rubber outsole resists wear even on the toughest surfaces. Invest in a shoe that keeps performing season after season."
+      },
+      {
+        "module_type": "spec_table",
+        "title": "Technical Specifications",
+        "description": "规格参数表，提供详细技术数据，帮助理性决策",
+        "image_suggestion": "无需图片，或可配一张简洁的鞋底分解图",
+        "copy_text": "| Feature | Specification |\n|---------|---------------|\n| Upper Material | Engineered Mesh + TPU Overlays |\n| Midsole | Full-Length Carbon Fiber Plate + EVA Foam |\n| Outsole | High-Abrasion Rubber |\n| Weight | 8.2 oz (Size 9) |\n| Heel-to-Toe Drop | 8mm |\n| Closure | Traditional Lace-Up |\n| Eco-Friendly Packaging | 100% Recycled Materials |"
+      },
+      {
+        "module_type": "comparison_chart",
+        "title": "Why Choose Our Carbon Fiber Running Shoes?",
+        "description": "竞品对比表，突出核心卖点与竞品的差异",
+        "image_suggestion": "无需图片，或配一张品牌logo和产品剪影",
+        "copy_text": "| Feature | Our Shoe | Competitor A | Competitor B |\n|---------|----------|--------------|--------------|\n| Carbon Fiber Plate | Full-Length | Partial | None |\n| Weight (Size 9) | 8.2 oz | 9.5 oz | 10.1 oz |\n| Eco-Friendly Packaging | Yes | No | Partial |\n| Durability (Miles) | 1000+ | 600 | 500 |\n| Ergonomic Fit | Adaptive | Standard | Standard |"
+      }
+    ],
+    "seo_report": {
+      "keyword_density": {
+        "score": 85.0,
+        "findings": [
+          "标题中包含了'carbon fiber running shoes'和'carbon plate running shoes'，核心关键词出现合理。",
+          "五点描述中多次出现'carbon fiber running shoes'、'carbon plate running shoes'、'lightweight running shoes'等关键词，但未过度堆砌。",
+          "长描述中'carbon fiber running shoes'出现一次，密度适中。",
+          "目标关键词'best carbon fiber running shoes'和'durable running shoes'在五点描述中自然融入。"
+        ],
+        "suggestions": [
+          "在五点描述中可适当增加'best carbon fiber running shoes'的出现频率，例如在第一条中强调'best carbon fiber running shoes'。",
+          "长描述中可加入'durable running shoes'以增强关键词覆盖。"
+        ]
+      },
+      "readability": {
+        "score": 78.0,
+        "findings": [
+          "标题长度约150字符，符合≤200字符要求，但信息略显冗余（'Men Women'可简化为'Unisex'）。",
+          "五点描述每点约40-50词，整体流畅，但部分句子较长（如第一条达35词），影响扫描友好度。",
+          "长描述使用HTML标签，结构清晰，但品牌故事部分稍显抽象，可更直接突出产品优势。",
+          "五点描述中'effortless use'和'run with a clear conscience'等表达略显营销化，可能降低可信度。"
+        ],
+        "suggestions": [
+          "将标题中的'Men Women'改为'Unisex'以简化。",
+          "缩短五点描述中的长句，例如将第一条拆分为两个短句。",
+          "长描述品牌故事部分增加具体数据（如'energy return rate'）以增强说服力。"
+        ]
+      },
+      "completeness": {
+        "score": 90.0,
+        "findings": [
+          "标题、五点描述、长描述（含品牌故事和规格）均已覆盖，但缺少A+模块（如对比图、尺寸表）。",
+          "五点描述涵盖了能量回弹、舒适性、耐用性、易用性和环保性，信息全面。",
+          "长描述中的规格部分列出了材料、重量和尺寸，但未包含颜色选项或尺码指南。"
+        ],
+        "suggestions": [
+          "添加A+模块，包括产品对比图（如与普通跑鞋对比）和尺码表。",
+          "在长描述中补充颜色选项和适用场景（如'road running'或'track training'）。"
+        ]
+      },
+      "conversion_potential": {
+        "score": 82.0,
+        "findings": [
+          "五点描述从买家痛点出发（如减少疲劳、防起泡、易穿脱），转化力较强。",
+          "长描述品牌故事营造了高端感，但缺乏社会证明（如用户评价或奖项）。",
+          "标题和描述中未提及价格或促销信息，可能降低紧迫感。",
+          "环保包装是差异化卖点，但未突出具体环保认证（如'FSC certified'）。"
+        ],
+        "suggestions": [
+          "在五点描述或长描述中加入用户评价摘要（如'Rated 4.8/5 by 500+ marathoners'）。",
+          "添加限时促销或价格优势提示（如'Limited-time offer: 20% off'）。",
+          "强调环保认证（如'Carbon-neutral packaging'）以增强信任。"
+        ]
+      },
+      "overall_score": 84.0,
+      "improvement_priority": [
+        "添加A+模块以提升完整性和转化力",
+        "优化可读性：缩短长句并简化标题",
+        "增强社会证明和紧迫感以提升转化预期"
+      ]
+    },
+    "human_approved": false
+  },
+  "compliance": {
+    "policy_issues": [
+      {
+        "location": "title/bullets/description",
+        "issue_type": "prohibited_claim",
+        "severity": "medium",
+        "description": "Found prohibited term: 'best'",
+        "suggestion": "Replace 'best' with compliant alternative"
+      },
+      {
+        "location": "Bullet Point 1",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The phrase 'unmatched energy return' implies a superlative claim that cannot be substantiated, violating Amazon's policy against unsubstantiated comparative claims.",
+        "suggestion": "Replace 'unmatched' with a factual description, e.g., 'high energy return' or 'responsive energy return'."
+      },
+      {
+        "location": "Bullet Point 3",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The word 'best' in 'our best carbon fiber running shoes' is a prohibited superlative claim that implies superiority without evidence.",
+        "suggestion": "Remove 'best' and rephrase to 'our carbon fiber running shoes' or 'these high-quality carbon fiber running shoes'."
+      },
+      {
+        "location": "Bullet Point 1",
+        "issue_type": "Medical/Health Claims",
+        "severity": "Medium",
+        "description": "The claim 'reducing fatigue' may be interpreted as a health or medical benefit, which is not allowed unless the product is in an approved category (running shoes are not).",
+        "suggestion": "Rephrase to 'designed to help you maintain energy during runs' or remove the fatigue reference."
+      },
+      {
+        "location": "Bullet Point 1",
+        "issue_type": "Exaggerated Performance Claims",
+        "severity": "Medium",
+        "description": "The phrase 'propels you forward with every stride' and 'enhancing your running efficiency for faster times' may be seen as unsubstantiated performance guarantees.",
+        "suggestion": "Use more neutral language like 'designed to support forward motion' and 'aims to improve running efficiency'."
+      },
+      {
+        "location": "Bullet Point 5",
+        "issue_type": "Environmental Claims",
+        "severity": "Low",
+        "description": "The claim 'eco-friendly packaging' requires substantiation or certification; vague environmental claims can be misleading.",
+        "suggestion": "Specify the exact eco-friendly attributes, e.g., 'packaging made from 100% recycled materials' or remove the claim."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Exaggerated Claims",
+        "severity": "Medium",
+        "description": "The phrase 'redefine the ground beneath you' is hyperbolic and may be considered misleading or unsubstantiated.",
+        "suggestion": "Replace with a factual description, e.g., 'designed to enhance your running experience'."
+      }
+    ],
+    "claim_issues": [
+      {
+        "claim_text": "Experience unmatched energy return with our carbon fiber running shoes",
+        "issue": "unsubstantiated",
+        "risk_level": "high",
+        "explanation": "The claim 'unmatched energy return' is a superlative without any comparative evidence or test data to support it. It implies superiority over all competitors without substantiation.",
+        "fix_suggestion": "Replace 'unmatched' with a specific, measurable claim such as 'engineered for efficient energy return' or provide third-party test results."
+      },
+      {
+        "claim_text": "propels you forward with every stride, reducing fatigue and enhancing your running efficiency for faster times",
+        "issue": "unsubstantiated",
+        "risk_level": "high",
+        "explanation": "Claims of reducing fatigue, enhancing efficiency, and achieving faster times are performance benefits that require scientific evidence or user studies. No such evidence is provided.",
+        "fix_suggestion": "Remove or qualify these claims with disclaimers like 'may help reduce fatigue' or cite specific studies."
+      },
+      {
+        "claim_text": "best carbon fiber running shoes",
+        "issue": "exaggerated",
+        "risk_level": "high",
+        "explanation": "The word 'best' is an absolute superlative that cannot be substantiated without comparative testing against all competitors. It is likely to mislead consumers.",
+        "fix_suggestion": "Replace 'best' with 'high-quality' or 'premium' to avoid absolute claims."
+      },
+      {
+        "claim_text": "premium quality materials that withstand high-mileage training",
+        "issue": "unsubstantiated",
+        "risk_level": "medium",
+        "explanation": "While 'premium quality' is subjective, the claim of withstanding high-mileage training implies durability that should be backed by testing or warranty information. No evidence is provided.",
+        "fix_suggestion": "Add specific durability test results or a warranty statement to support the claim."
+      },
+      {
+        "claim_text": "effortless use with these carbon plate running shoes, featuring a seamless upper and quick-lace system that allows for easy on-and-off",
+        "issue": "misleading",
+        "risk_level": "low",
+        "explanation": "The term 'effortless' is subjective and may overstate ease of use. While the features described (seamless upper, quick-lace) are factual, the overall claim could be misleading if the system is not as easy as implied for all users.",
+        "fix_suggestion": "Rephrase to 'designed for easy on-and-off with a seamless upper and quick-lace system' to avoid subjective exaggeration."
+      },
+      {
+        "claim_text": "Run with a clear conscience as our durable running shoes come in eco-friendly packaging",
+        "issue": "misleading",
+        "risk_level": "medium",
+        "explanation": "The phrase 'eco-friendly packaging' is vague and could be misleading if the packaging is only partially recyclable or not certified. It implies a broader environmental benefit without specifics.",
+        "fix_suggestion": "Specify the exact eco-friendly attributes (e.g., '100% recycled cardboard box') and avoid implying the product itself is sustainable unless verified."
+      }
+    ],
+    "overall_verdict": "",
+    "risk_level": "critical",
+    "total_issues": 13,
+    "critical_items": [
+      "[Claim] The claim 'unmatched energy return' is a superlative without any comparative evidence or test data to support it. It implies superiority over all competitors without substantiation.",
+      "[Claim] Claims of reducing fatigue, enhancing efficiency, and achieving faster times are performance benefits that require scientific evidence or user studies. No such evidence is provided.",
+      "[Claim] The word 'best' is an absolute superlative that cannot be substantiated without comparative testing against all competitors. It is likely to mislead consumers."
+    ],
+    "action_items": [
+      "Replace 'best' with compliant alternative",
+      "Replace 'unmatched' with a factual description, e.g., 'high energy return' or 'responsive energy return'.",
+      "Remove 'best' and rephrase to 'our carbon fiber running shoes' or 'these high-quality carbon fiber running shoes'.",
+      "Rephrase to 'designed to help you maintain energy during runs' or remove the fatigue reference.",
+      "Use more neutral language like 'designed to support forward motion' and 'aims to improve running efficiency'.",
+      "Specify the exact eco-friendly attributes, e.g., 'packaging made from 100% recycled materials' or remove the claim.",
+      "Replace with a factual description, e.g., 'designed to enhance your running experience'.",
+      "Replace 'unmatched' with a specific, measurable claim such as 'engineered for efficient energy return' or provide third-party test results.",
+      "Remove or qualify these claims with disclaimers like 'may help reduce fatigue' or cite specific studies.",
+      "Replace 'best' with 'high-quality' or 'premium' to avoid absolute claims.",
+      "Add specific durability test results or a warranty statement to support the claim.",
+      "Rephrase to 'designed for easy on-and-off with a seamless upper and quick-lace system' to avoid subjective exaggeration.",
+      "Specify the exact eco-friendly attributes (e.g., '100% recycled cardboard box') and avoid implying the product itself is sustainable unless verified."
+    ],
+    "human_reviewed": false
+  },
+  "social": {
+    "marketing_angles": [
+      "unboxing",
+      "lifestyle",
+      "before/after",
+      "technology spotlight",
+      "eco-friendly packaging"
+    ],
+    "target_audience": "The ideal customer is a health-conscious, performance-driven runner aged 25-45, likely based in urban or suburban US areas, who values premium quality and innovative design in their gear. They are active on Instagram and YouTube, follow running influencers, and prioritize sustainability. They seek shoes that enhance speed and comfort for training and races, and are willing to invest in durable, eco-friendly products.",
+    "content_tones": [
+      "aspirational",
+      "professional",
+      "motivational"
+    ],
+    "key_selling_points": [
+      "Premium carbon fiber plate for explosive energy return",
+      "Ergonomic design reduces injury risk and enhances comfort",
+      "Eco-friendly packaging aligns with sustainable values",
+      "Durable construction ensures long-lasting performance",
+      "Easy to use with a quick break-in period"
+    ],
+    "visual_style": [],
+    "hashtag_themes": [],
+    "posts": [
+      {
+        "platform": "instagram",
+        "copy": "Morning miles never felt this effortless. 🌅 With a carbon fiber plate engineered for explosive energy return, every stride becomes a launchpad. Whethe",
+        "hashtags": [
+          "CarbonFiberShoes",
+          "RunningLife",
+          "EcoFriendlyGear",
+          "SpeedTraining",
+          "SustainableFitness",
+          "PRChaser",
+          "RunWithPurpose",
+          "InnovativeRun",
+          "GreenRunning",
+          "FootwearGoals"
+        ],
+        "quality_score": 8.3
+      },
+      {
+        "platform": "threads",
+        "copy": "I’ve been testing these carbon fiber running shoes for the past month, and honestly, they’ve changed how I think about my runs. The carbon fiber plate",
+        "hashtags": [
+          "#CarbonFiberShoes",
+          "#RunningGear",
+          "#EcoFriendlyRunning",
+          "#PerformanceRunning",
+          "#SustainableFashion",
+          "#RunFaster",
+          "#MarathonTraining",
+          "#RunningCommunity",
+          "#InnovativeDesign",
+          "#HealthyLiving"
+        ],
+        "quality_score": 7.3
+      },
+      {
+        "platform": "pinterest",
+        "copy": "Transform every stride into a statement of speed and sustainability. Our carbon fiber running shoes are engineered for runners who refuse to compromis",
+        "hashtags": [
+          "carbonfiberrunningshoes",
+          "sustainablerunning",
+          "performancegear",
+          "ecofriendlyfitness",
+          "runningmotivation",
+          "speedtraining",
+          "marathontraining",
+          "greenrunning",
+          "innovativeshoes",
+          "runnerlife"
+        ],
+        "quality_score": 8.0
+      }
+    ],
+    "human_approved": false
+  },
+  "platform": {
+    "asin": null,
+    "amazon_url": null,
+    "amazon_publish_status": "draft",
+    "amazon_publish_errors": [],
+    "amazon_published_at": null,
+    "social_publish_status": {},
+    "social_post_urls": {}
+  },
+  "reviews": {
+    "total_reviews": 10,
+    "average_rating": 0.0,
+    "sentiment_distribution": {},
+    "negative_alert_count": 2,
+    "top_alerts": [
+      {
+        "reviewer": "Maria G.",
+        "content": "Arrived damaged. The box was crushed.",
+        "alert_level": "alert"
+      },
+      {
+        "reviewer": "Emily K.",
+        "content": "Disappointed with the quality. Stopped working after 2 weeks.",
+        "alert_level": "alert"
+      }
+    ],
+    "last_monitored_at": "2026-05-17T04:09:02.524830Z"
+  },
+  "ads": {
+    "campaigns": [],
+    "total_budget": 0.0,
+    "total_spend": 0.0,
+    "acos": null
+  }
+}

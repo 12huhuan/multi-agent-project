@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Listing 优化工作流 — 命令行测试脚本
+Listing 生成工作流 — 命令行测试脚本
 
 用法: 从项目根目录执行
     python scripts/run_listing.py                    # 交互式选择产品
@@ -81,7 +81,7 @@ def print_seo(state: dict):
 
 
 def print_full_report(state: dict, duration_s: float):
-    print_header(f"LISTING 优化完成 (耗时 {duration_s:.1f}s)")
+    print_header(f"LISTING 生成完成 (耗时 {duration_s:.1f}s)")
     print_keywords(state)
     print_titles(state)
     print_bullets(state)
@@ -179,7 +179,7 @@ async def run_workflow(product: dict, skip_review: bool = False):
 
 
 async def main():
-    parser = argparse.ArgumentParser(description="Listing 优化工作流")
+    parser = argparse.ArgumentParser(description="Listing 生成工作流")
     parser.add_argument("--product", type=int, default=None, help="产品索引 (0-2)")
     parser.add_argument("--skip-review", action="store_true", help="跳过人工审核")
     args = parser.parse_args()

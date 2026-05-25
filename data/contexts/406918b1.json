@@ -1,0 +1,142 @@
+{
+  "product_id": "406918b1",
+  "current_stage": "monitored",
+  "created_at": "2026-05-18T03:55:21.362395Z",
+  "updated_at": "2026-05-18T03:57:22.222466Z",
+  "version": 6,
+  "identity": {
+    "product_id": "931999b8-eb0d-473e-95e8-4fe449e7c267",
+    "category": "",
+    "subcategory": null,
+    "brand_name": null,
+    "brand_story": null,
+    "target_market": "US",
+    "language": "en",
+    "seller_budget": "$5000-$15000",
+    "seller_strengths": [],
+    "platforms": []
+  },
+  "market_insight": {
+    "category_overview": "",
+    "market_size_estimate": "",
+    "market_growth_trend": "",
+    "top_competitors": [],
+    "recommended_niches": [],
+    "top_pick_product": "",
+    "scored_alternatives": [],
+    "inferred_selling_points": [],
+    "inferred_target_audience": "",
+    "inferred_price_range": "",
+    "inferred_material": null,
+    "competitor_keywords": [],
+    "differentiation_angle": "",
+    "extraction_confidence": 0.0
+  },
+  "listing": {
+    "keywords": [],
+    "top_keywords": [],
+    "title_candidates": [],
+    "best_title": "",
+    "bullet_points": [],
+    "description_html": "",
+    "a_plus_modules": [],
+    "seo_report": {},
+    "human_approved": false
+  },
+  "compliance": {
+    "policy_issues": [
+      {
+        "location": "Title",
+        "issue_type": "Prohibited Claims",
+        "severity": "high",
+        "description": "The title contains the word 'best', which is a prohibited claim under Amazon policy.",
+        "suggestion": "Remove 'best' from the title. Use descriptive terms like 'high-quality' or 'premium' instead."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Pricing/Promotional Language",
+        "severity": "medium",
+        "description": "Bullet points include promotional language such as 'limited time offer', which is not allowed in standard listings.",
+        "suggestion": "Remove promotional phrases like 'limited time offer' from bullet points. Keep them factual and feature-focused."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Medical/Health Claims",
+        "severity": "high",
+        "description": "The description makes a medical claim stating the product 'cures headaches', which is not allowed unless the product is in an approved medical category.",
+        "suggestion": "Remove the claim 'cures headaches'. If applicable, rephrase to 'may help relieve tension' or similar non-medical language, and ensure compliance with Amazon's health claims policy."
+      },
+      {
+        "location": "Title",
+        "issue_type": "Formatting Issues",
+        "severity": "low",
+        "description": "The title uses all caps for some words, which violates Amazon's formatting guidelines.",
+        "suggestion": "Convert all caps words to standard capitalization. Only proper nouns should be capitalized."
+      }
+    ],
+    "claim_issues": [],
+    "overall_verdict": "",
+    "risk_level": "critical",
+    "total_issues": 4,
+    "critical_items": [
+      "[Policy] The title contains the word 'best', which is a prohibited claim under Amazon policy.",
+      "[Policy] The description makes a medical claim stating the product 'cures headaches', which is not allowed unless the product is in an approved medical category."
+    ],
+    "action_items": [
+      "Remove 'best' from the title. Use descriptive terms like 'high-quality' or 'premium' instead.",
+      "Remove promotional phrases like 'limited time offer' from bullet points. Keep them factual and feature-focused.",
+      "Remove the claim 'cures headaches'. If applicable, rephrase to 'may help relieve tension' or similar non-medical language, and ensure compliance with Amazon's health claims policy.",
+      "Convert all caps words to standard capitalization. Only proper nouns should be capitalized."
+    ],
+    "human_reviewed": false
+  },
+  "social": {
+    "marketing_angles": [],
+    "target_audience": "",
+    "content_tones": [],
+    "key_selling_points": [],
+    "visual_style": [],
+    "hashtag_themes": [],
+    "posts": [],
+    "human_approved": false
+  },
+  "platform": {
+    "asin": null,
+    "amazon_url": null,
+    "amazon_publish_status": "draft",
+    "amazon_publish_errors": [],
+    "amazon_published_at": null,
+    "social_publish_status": {},
+    "social_post_urls": {}
+  },
+  "reviews": {
+    "total_reviews": 10,
+    "average_rating": 0.0,
+    "sentiment_distribution": {},
+    "negative_alert_count": 3,
+    "top_alerts": [
+      {
+        "reviewer": "Maria G.",
+        "content": "Arrived damaged. The box was crushed.",
+        "alert_level": "alert"
+      },
+      {
+        "reviewer": "David P.",
+        "content": "Color doesn't match the photos. Returning it.",
+        "alert_level": "alert"
+      },
+      {
+        "reviewer": "Tom S.",
+        "content": "Defective unit. Doesn't turn on.",
+        "alert_level": "critical"
+      }
+    ],
+    "last_monitored_at": "2026-05-18T03:57:22.222466Z"
+  },
+  "ads": {
+    "campaigns": [],
+    "total_budget": 0.0,
+    "total_spend": 0.0,
+    "acos": null
+  }
+}

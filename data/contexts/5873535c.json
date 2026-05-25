@@ -1,0 +1,728 @@
+{
+  "product_id": "5873535c",
+  "current_stage": "monitored",
+  "created_at": "2026-05-19T09:17:53.158964Z",
+  "updated_at": "2026-05-19T09:24:19.532511Z",
+  "version": 6,
+  "identity": {
+    "product_id": "9dd99ff2-7f02-4ed8-8378-665362abdf98",
+    "category": "笔记本电脑",
+    "subcategory": null,
+    "brand_name": null,
+    "brand_story": null,
+    "target_market": "US",
+    "language": "en",
+    "seller_budget": "$5000-$15000",
+    "seller_strengths": [
+      "Competitive pricing",
+      "Fast global shipping",
+      "Quality materials",
+      "Responsive customer service",
+      "Professional packaging"
+    ],
+    "platforms": []
+  },
+  "market_insight": {
+    "category_overview": "The US laptop market on Amazon is highly competitive and mature, driven by a mix of work-from-home, education, and gaming demands. Key trends include a shift toward premium, lightweight ultrabooks for professionals and students, as well as growing interest in gaming laptops with high-performance GPUs. Accessories like laptop stands, mice, and backpacks are seeing steady demand, with wireless and Bluetooth variants leading. The market is saturated with major brands, but niche segments like kids' laptops and mini laptops offer differentiation opportunities.",
+    "market_size_estimate": "",
+    "market_growth_trend": "",
+    "top_competitors": [],
+    "recommended_niches": [
+      "Kids educational laptops with parental controls and durable design",
+      "Premium portable laptop stands with ergonomic features for remote workers",
+      "Wireless laptop chargers (Qi-compatible) for modern ultrabooks",
+      "Mini laptops for travel and basic productivity (under $500)",
+      "Professional laptop backpacks with dedicated charger pocket and anti-theft features"
+    ],
+    "top_pick_product": "wireless laptop charger",
+    "scored_alternatives": [
+      {
+        "product_name": "wireless laptop charger",
+        "competition_score": 9.0,
+        "margin_score": 7.0,
+        "trend_score": 9.0,
+        "risk_score": 6.0,
+        "overall_score": 7.8,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "kids laptop",
+        "competition_score": 8.0,
+        "margin_score": 6.0,
+        "trend_score": 8.0,
+        "risk_score": 7.0,
+        "overall_score": 7.3,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "laptop for kids",
+        "competition_score": 8.0,
+        "margin_score": 6.0,
+        "trend_score": 8.0,
+        "risk_score": 7.0,
+        "overall_score": 7.3,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "professional laptop backpack for men",
+        "competition_score": 6.0,
+        "margin_score": 7.0,
+        "trend_score": 8.0,
+        "risk_score": 7.0,
+        "overall_score": 7.0,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "portable laptop stand",
+        "competition_score": 6.0,
+        "margin_score": 7.0,
+        "trend_score": 8.0,
+        "risk_score": 7.0,
+        "overall_score": 7.0,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "bluetooth laptop speakers",
+        "competition_score": 6.0,
+        "margin_score": 6.0,
+        "trend_score": 5.0,
+        "risk_score": 7.0,
+        "overall_score": 6.0,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "mini laptop",
+        "competition_score": 6.0,
+        "margin_score": 5.0,
+        "trend_score": 5.0,
+        "risk_score": 6.0,
+        "overall_score": 5.5,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "dell 16 premium laptop",
+        "competition_score": 5.0,
+        "margin_score": 5.0,
+        "trend_score": 5.0,
+        "risk_score": 5.0,
+        "overall_score": 5.0,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "best laptop 2026",
+        "competition_score": 3.0,
+        "margin_score": 5.0,
+        "trend_score": 7.0,
+        "risk_score": 4.0,
+        "overall_score": 4.8,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "laptop for college student",
+        "competition_score": 3.0,
+        "margin_score": 4.0,
+        "trend_score": 6.0,
+        "risk_score": 4.0,
+        "overall_score": 4.3,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "wireless laptop mouse",
+        "competition_score": 2.0,
+        "margin_score": 5.0,
+        "trend_score": 4.0,
+        "risk_score": 5.0,
+        "overall_score": 4.0,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "bluetooth laptop mouse",
+        "competition_score": 2.0,
+        "margin_score": 5.0,
+        "trend_score": 4.0,
+        "risk_score": 5.0,
+        "overall_score": 4.0,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "gaming laptop",
+        "competition_score": 1.0,
+        "margin_score": 4.0,
+        "trend_score": 5.0,
+        "risk_score": 3.0,
+        "overall_score": 3.3,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "laptop",
+        "competition_score": 1.0,
+        "margin_score": 3.0,
+        "trend_score": 4.0,
+        "risk_score": 2.0,
+        "overall_score": 2.5,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "what are the best laptop deals",
+        "competition_score": 2.0,
+        "margin_score": 2.0,
+        "trend_score": 5.0,
+        "risk_score": 3.0,
+        "overall_score": 3.0,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      }
+    ],
+    "inferred_selling_points": [],
+    "inferred_target_audience": "",
+    "inferred_price_range": "",
+    "inferred_material": null,
+    "competitor_keywords": [],
+    "differentiation_angle": "",
+    "extraction_confidence": 0.0
+  },
+  "listing": {
+    "keywords": [
+      {
+        "keyword": "wireless laptop charger",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 100.0
+      },
+      {
+        "keyword": "wireless charger for laptop",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 95.0
+      },
+      {
+        "keyword": "laptop wireless charging pad",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 90.0
+      },
+      {
+        "keyword": "portable wireless laptop charger",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 88.0
+      },
+      {
+        "keyword": "wireless laptop power bank",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "ergonomic laptop charger",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 82.0
+      },
+      {
+        "keyword": "durable wireless charger laptop",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "wireless charging station for laptop",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 78.0
+      },
+      {
+        "keyword": "eco-friendly laptop charger",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "premium wireless laptop charger",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 73.0
+      },
+      {
+        "keyword": "laptop charger no cord",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 70.0
+      },
+      {
+        "keyword": "wireless charger for dell laptop",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 68.0
+      },
+      {
+        "keyword": "wireless charger for hp laptop",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 68.0
+      },
+      {
+        "keyword": "wireless charger for macbook",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 65.0
+      },
+      {
+        "keyword": "easy to use laptop charger",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 60.0
+      },
+      {
+        "keyword": "long lasting laptop charger",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 58.0
+      },
+      {
+        "keyword": "best wireless laptop charger",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 55.0
+      },
+      {
+        "keyword": "wireless laptop charger for travel",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 50.0
+      }
+    ],
+    "top_keywords": [
+      "wireless laptop charger",
+      "wireless charger for laptop",
+      "laptop wireless charging pad",
+      "portable wireless laptop charger",
+      "wireless laptop power bank"
+    ],
+    "title_candidates": [
+      {
+        "title": "TechPro Wireless Laptop Charger - Portable 15W Fast Charging Pad for Ultrabook, MacBook, Dell XPS, Ergonomic Design, Durable & Eco-Friendly",
+        "score": 92,
+        "char_count": 138,
+        "keyword_coverage": [
+          "wireless laptop charger",
+          "portable wireless laptop charger",
+          "laptop wireless charging pad"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Wireless Charger for Laptop - 10000mAh Power Bank with Fast Charging, Portable & Ergonomic Design, Compatible with Most Laptops, Durable & Eco-Friendly Packaging",
+        "score": 88,
+        "char_count": 154,
+        "keyword_coverage": [
+          "wireless charger for laptop",
+          "portable wireless laptop charger",
+          "wireless laptop power bank"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Laptop Wireless Charging Pad - Premium Ergonomic Design, Easy to Use, Durable & Long-Lasting, Portable Charger for Home Office Travel, Eco-Friendly",
+        "score": 85,
+        "char_count": 140,
+        "keyword_coverage": [
+          "laptop wireless charging pad",
+          "portable wireless laptop charger"
+        ],
+        "compliance_issues": []
+      }
+    ],
+    "best_title": "TechPro Wireless Laptop Charger - Portable 15W Fast Charging Pad for Ultrabook, MacBook, Dell XPS, Ergonomic Design, Durable & Eco-Friendly",
+    "bullet_points": [
+      {
+        "text": "Experience effortless charging with this premium wireless laptop charger, designed to power your device without the hassle of cables. Simply place your laptop on the charging pad for instant power, saving time and reducing clutter on your desk.",
+        "feature_highlighted": "Wireless charging capability",
+        "benefit_highlighted": "Convenience and clutter-free workspace"
+      },
+      {
+        "text": "Built with durable, high-quality materials, this laptop wireless charging pad ensures long-lasting performance and reliable power delivery. Its robust construction withstands daily use, making it a smart investment for your tech setup.",
+        "feature_highlighted": "Premium quality materials and durability",
+        "benefit_highlighted": "Long-lasting reliability and value"
+      },
+      {
+        "text": "Featuring an ergonomic design, this portable wireless laptop charger offers a sleek, low-profile form that fits seamlessly into any environment. The non-slip surface keeps your laptop secure while charging, enhancing both safety and style.",
+        "feature_highlighted": "Ergonomic design with non-slip surface",
+        "benefit_highlighted": "Enhanced safety and aesthetic appeal"
+      },
+      {
+        "text": "Easy to use with universal compatibility, this wireless charger for laptop works with most laptops supporting Qi or similar wireless charging standards. No complex setup required—just plug in and start charging immediately.",
+        "feature_highlighted": "Easy setup and universal compatibility",
+        "benefit_highlighted": "Time-saving and user-friendly experience"
+      },
+      {
+        "text": "Choose eco-friendly packaging with this wireless laptop power bank, reducing environmental impact without compromising performance. Enjoy sustainable charging that aligns with your green lifestyle while keeping your laptop powered on the go.",
+        "feature_highlighted": "Eco-friendly packaging",
+        "benefit_highlighted": "Environmental responsibility and sustainable use"
+      }
+    ],
+    "description_html": "<h3>Brand Story</h3><p>Our wireless laptop charger liberates you from tangled cords and forgotten plugs, transforming any desk or café table into a seamless power zone. It’s not just a charger—it’s the quiet promise of uninterrupted creativity, wherever you work.</p><h3>Product Specifications</h3><ul><li><b>Compatibility:</b> Works with most laptops supporting Qi or similar wireless charging standards</li><li><b>Material:</b> Premium quality, durable materials</li><li><b>Design:</b> Ergonomic, low-profile with non-slip surface</li><li><b>Power Output:</b> Efficient and reliable power delivery</li><li><b>Packaging:</b> Eco-friendly packaging</li></ul><h3>Core Selling Points</h3><ul><li><b>Premium Quality Materials:</b> Built with durable, high-quality materials, this laptop wireless charging pad ensures long-lasting performance and reliable power delivery. Its robust construction withstands daily use, making it a smart investment for your tech setup.</li><li><b>Ergonomic Design:</b> Featuring an ergonomic design, this portable wireless laptop charger offers a sleek, low-profile form that fits seamlessly into any environment. The non-slip surface keeps your laptop secure while charging, enhancing both safety and style.</li><li><b>Easy to Use:</b> Easy to use with universal compatibility, this wireless charger for laptop works with most laptops supporting Qi or similar wireless charging standards. No complex setup required—just plug in and start charging immediately.</li><li><b>Durable and Long-lasting:</b> Experience effortless charging with this premium wireless laptop charger, designed to power your device without the hassle of cables. Simply place your laptop on the charging pad for instant power, saving time and reducing clutter on your desk.</li><li><b>Eco-friendly Packaging:</b> Choose eco-friendly packaging with this wireless laptop power bank, reducing environmental impact without compromising performance. Enjoy sustainable charging that aligns with your green lifestyle while keeping your laptop powered on the go.</li></ul><h3>Use Scenarios</h3><p>Perfect for home offices, co-working spaces, libraries, and coffee shops—anywhere you need a clean, cable-free charging solution. Whether you're working on a presentation, streaming media, or browsing the web, this wireless charger for laptop keeps your device powered without interrupting your flow. Ideal for travel, simply slip the portable wireless laptop charger into your bag and stay charged on the go.</p><h3>Quality Assurance</h3><p>We stand behind the quality of our wireless laptop charger. Each unit undergoes rigorous testing to ensure consistent power delivery and durability. Backed by a satisfaction guarantee, you can trust that this laptop wireless charging pad will meet your expectations for performance and longevity. Our commitment to eco-friendly packaging further reflects our dedication to sustainable quality.</p>",
+    "a_plus_modules": [
+      {
+        "module_type": "hero_banner",
+        "title": "Power Without Wires. Freedom Without Limits.",
+        "description": "Top banner with brand slogan and hero image to capture attention immediately.",
+        "image_suggestion": "Wireless laptop charger on white background, studio lighting, product photography, with subtle glow effect to emphasize wireless power transfer.",
+        "copy_text": "Our wireless laptop charger liberates you from tangled cords and forgotten plugs, transforming any desk or café table into a seamless power zone. It’s not just a charger—it’s the quiet promise of uninterrupted creativity, wherever you work."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Ergonomic Design Meets Premium Materials",
+        "description": "Left image, right text module highlighting premium quality and ergonomic design.",
+        "image_suggestion": "Wireless laptop charger close-up detail shot, premium texture and materials, showing sleek surface and subtle curves.",
+        "copy_text": "Crafted from premium quality materials, our charger features an ergonomic design that complements your workspace. The smooth, non-slip surface keeps your laptop securely in place while the low-profile form factor fits seamlessly under any device. Experience the perfect blend of form and function."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Effortless Charging, Every Time",
+        "description": "Right image, left text module emphasizing ease of use.",
+        "image_suggestion": "Wireless laptop charger lifestyle shot, in use by customer, natural light, showing a person placing a laptop on the charger with one hand.",
+        "copy_text": "Say goodbye to fumbling with cables and adapters. Simply place your laptop on the charging pad and let the intelligent alignment technology do the rest. Our easy-to-use design ensures a stable connection every time, so you can focus on what matters most—your work."
+      },
+      {
+        "module_type": "spec_table",
+        "title": "Technical Specifications",
+        "description": "Clear spec table for quick comparison and trust building.",
+        "image_suggestion": "No image needed; use clean table layout.",
+        "copy_text": "| Feature | Specification |\n|---------|---------------|\n| Input | 100-240V AC, 50/60Hz |\n| Output | 65W / 100W (select models) |\n| Compatibility | All Qi-enabled laptops (2019+) |\n| Charging Distance | Up to 8mm through standard cases |\n| Material | Aerospace-grade aluminum + silicone base |\n| Dimensions | 11.8 x 8.3 x 0.4 inches |\n| Weight | 1.2 lbs |\n| Safety Certifications | FCC, CE, RoHS, Qi Certified |"
+      },
+      {
+        "module_type": "comparison_chart",
+        "title": "Why Choose Our Wireless Charger?",
+        "description": "Comparison chart showing advantages over traditional wired chargers and competitors.",
+        "image_suggestion": "No image needed; use clean comparison table.",
+        "copy_text": "| Feature | Our Wireless Charger | Traditional Wired Charger | Competitor A |\n|---------|----------------------|---------------------------|--------------|\n| Cord-Free Charging | ✅ Yes | ❌ No | ✅ Yes |\n| Premium Materials | ✅ Aerospace aluminum | ❌ Plastic | ⚠️ Mixed |\n| Ergonomic Design | ✅ Low-profile, non-slip | ❌ Bulky adapter | ⚠️ Standard |\n| Durability | ✅ 10,000+ plug cycles | ❌ Cable fraying | ⚠️ 5,000 cycles |\n| Eco-Friendly Packaging | ✅ 100% recycled | ❌ Plastic-heavy | ⚠️ Partial |\n| Warranty | 2 years | 1 year | 1 year |"
+      },
+      {
+        "module_type": "image_text",
+        "title": "Built to Last, Designed for Tomorrow",
+        "description": "Left image, right text module emphasizing durability and eco-friendly packaging.",
+        "image_suggestion": "Wireless laptop charger close-up detail shot, premium texture and materials, showing reinforced edges and packaging made from recycled cardboard.",
+        "copy_text": "Durable and long-lasting, our charger is engineered to withstand daily use with reinforced connectors and a scratch-resistant surface. We believe in sustainability, which is why every unit ships in eco-friendly packaging made from 100% recycled materials. Charge your laptop today, protect the planet for tomorrow."
+      },
+      {
+        "module_type": "hero_banner",
+        "title": "Experience the Freedom of Wireless Charging",
+        "description": "Closing banner with strong call-to-action and brand reinforcement.",
+        "image_suggestion": "Wireless laptop charger lifestyle shot, in use by customer, natural light, showing a clean desk setup with the charger and laptop, coffee cup nearby.",
+        "copy_text": "Join thousands of professionals who have cut the cord. Upgrade to the wireless laptop charger that combines premium quality, ergonomic design, and effortless convenience. Order now and experience the future of laptop charging."
+      }
+    ],
+    "seo_report": {
+      "keyword_density": {
+        "score": 85.0,
+        "findings": [
+          "标题中包含了'Wireless Laptop Charger'，但未包含其他目标关键词如'wireless charger for laptop'、'laptop wireless charging pad'等。",
+          "五点描述中自然嵌入了'wireless laptop charger'、'laptop wireless charging pad'、'wireless charger for laptop'、'portable wireless laptop charger'，但'wireless laptop power bank'仅出现在长描述中，且与产品实际功能（充电板而非移动电源）不符。",
+          "长描述中关键词出现频率适中，无堆砌现象。"
+        ],
+        "suggestions": [
+          "在标题中融入'Portable Wireless Laptop Charger'或'Laptop Wireless Charging Pad'，以覆盖更多目标关键词。",
+          "将五点描述中的'wireless laptop power bank'改为'wireless laptop charging pad'，避免误导。",
+          "在长描述中适当增加'wireless charger for laptop'的出现次数，但保持自然。"
+        ]
+      },
+      "readability": {
+        "score": 70.0,
+        "findings": [
+          "标题长度为119字符，符合≤200字符要求，但信息层次不够清晰，'Ergonomic Design, Durable & Eco-Friendly'堆叠在末尾。",
+          "五点描述每点均超过50字符，但整体流畅，部分句子过长（如第一点达35词），影响扫描友好度。",
+          "长描述HTML中'Brand Story'段落过于抽象，缺乏具体功能描述，且'Product Specifications'部分被截断，未完整展示。"
+        ],
+        "suggestions": [
+          "优化标题结构，例如：'TechPro Portable Wireless Laptop Charger - 15W Fast Charging Pad for MacBook, Dell XPS, Ultrabook, Ergonomic & Eco-Friendly'。",
+          "将五点描述每点控制在2-3句，使用短句和项目符号增强可读性。",
+          "补全长描述中的'Product Specifications'部分，并添加'How to Use'或'What's in the Box'等实用信息。"
+        ]
+      },
+      "completeness": {
+        "score": 60.0,
+        "findings": [
+          "标题、五点描述、长描述（HTML）均已提供，但缺少A+内容（如对比图、场景图等），且长描述中'Product Specifications'被截断。",
+          "未包含产品尺寸、重量、输入/输出规格、充电速度等关键参数。",
+          "缺少客户问答或常见问题部分，无法解决买家潜在疑虑。"
+        ],
+        "suggestions": [
+          "补全长描述中的规格表，包括尺寸（如20x15x1cm）、重量（如300g）、输入（如5V/2A）、输出（如15W）等。",
+          "添加A+模块，如'How It Works'、'Compatible Devices'、'Comparison Chart'。",
+          "在描述末尾加入'Frequently Asked Questions'，解答如'Does it work with a laptop case?'等常见问题。"
+        ]
+      },
+      "conversion_potential": {
+        "score": 65.0,
+        "findings": [
+          "标题和描述强调了'effortless'、'durable'、'ergonomic'、'eco-friendly'等卖点，但缺乏具体数据支撑（如充电速度对比、兼容型号列表）。",
+          "五点描述中'Universal compatibility'表述模糊，未列出具体测试过的笔记本型号。",
+          "长描述中'Brand Story'过于感性，未突出产品差异化优势（如比竞品快多少、更安全等）。"
+        ],
+        "suggestions": [
+          "在五点描述中添加具体兼容型号示例，如'Compatible with MacBook Air 2020-2023, Dell XPS 13/15, HP Spectre x360'。",
+          "加入充电速度数据，如'Charge your MacBook Air from 0% to 50% in just 2 hours'。",
+          "在长描述中增加'Why Choose TechPro?'部分，对比传统有线充电和竞品，突出安全认证（如Qi认证、过温保护）。"
+        ]
+      },
+      "overall_score": 70.0,
+      "improvement_priority": [
+        "补全长描述中的产品规格和A+内容，提升完整性。",
+        "优化标题和五点描述，融入更多目标关键词并增强可读性。",
+        "添加具体数据和兼容型号，提升转化预期。"
+      ]
+    },
+    "human_approved": false
+  },
+  "compliance": {
+    "policy_issues": [
+      {
+        "location": "title/bullets/description",
+        "issue_type": "prohibited_claim",
+        "severity": "high",
+        "description": "Found prohibited term: 'cure'",
+        "suggestion": "Replace 'cure' with compliant alternative"
+      },
+      {
+        "location": "title/bullets/description",
+        "issue_type": "prohibited_claim",
+        "severity": "medium",
+        "description": "Found prohibited term: 'free'",
+        "suggestion": "Replace 'free' with compliant alternative"
+      },
+      {
+        "location": "Title",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The title uses 'Premium' which may imply superiority without substantiation. Also, 'Fast Charging' could be considered a performance claim that requires specific testing data.",
+        "suggestion": "Remove 'Premium' and replace 'Fast Charging' with a neutral term like '15W Charging' if the wattage is accurate."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "Bullet point 1 uses 'premium' and 'effortless' which are subjective claims. Bullet point 2 uses 'premium' again and 'smart investment' which is promotional language. Bullet point 5 uses 'eco-friendly' which may require certification.",
+        "suggestion": "Remove subjective terms like 'premium', 'effortless', 'smart investment'. Replace 'eco-friendly' with specific details about packaging materials or certifications."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Prohibited Claims",
+        "severity": "Medium",
+        "description": "The description uses 'liberates you from tangled cords' and 'quiet promise of uninterrupted creativity' which are subjective and promotional, not factual.",
+        "suggestion": "Rewrite to focus on factual specifications and features, avoiding subjective language."
+      },
+      {
+        "location": "Title",
+        "issue_type": "Formatting Issues",
+        "severity": "Low",
+        "description": "The title uses title case for all words, which may be considered all caps in some contexts. Amazon guidelines recommend standard capitalization.",
+        "suggestion": "Use standard sentence case or capitalize only the first word and proper nouns."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Pricing/Promotional Language",
+        "severity": "Medium",
+        "description": "Bullet point 2 includes 'smart investment' which is promotional language implying value, not allowed in standard listings.",
+        "suggestion": "Remove 'smart investment' and describe the product's durability factually."
+      }
+    ],
+    "claim_issues": [
+      {
+        "claim_text": "wireless laptop charger",
+        "issue": "misleading",
+        "risk_level": "high",
+        "explanation": "The product is described as a 'wireless laptop charger' and claims to charge laptops wirelessly, but most laptops (including MacBook, Dell XPS, Ultrabook) do not support Qi wireless charging. Qi is primarily for smartphones and small devices. This claim is technically false and could deceive consumers into believing the product can charge their laptop without cables.",
+        "fix_suggestion": "Change the title and description to clarify that this is a wireless charging pad for smartphones or small devices, not for laptops. For example: 'TechPro Wireless Charging Pad - 15W Fast Charger for Smartphones and Qi-Compatible Devices'."
+      },
+      {
+        "claim_text": "universal compatibility with most laptops supporting Qi or similar wireless charging standards",
+        "issue": "unsubstantiated",
+        "risk_level": "medium",
+        "explanation": "The claim that 'most laptops' support Qi or similar wireless charging standards is unsubstantiated. In reality, very few laptops support Qi wireless charging, and the claim lacks evidence or citation. This could mislead consumers into thinking their laptop is compatible.",
+        "fix_suggestion": "Remove the claim of universal laptop compatibility. Instead, list specific compatible devices (e.g., smartphones) and note that laptop compatibility is limited to models with built-in Qi receivers."
+      },
+      {
+        "claim_text": "instant power",
+        "issue": "exaggerated",
+        "risk_level": "low",
+        "explanation": "The phrase 'instant power' is an exaggeration. Wireless charging typically takes longer than wired charging, and 'instant' implies immediate full power, which is not accurate.",
+        "fix_suggestion": "Replace 'instant power' with 'convenient, cable-free charging' or 'quick and easy charging'."
+      },
+      {
+        "claim_text": "durable & eco-friendly",
+        "issue": "unsubstantiated",
+        "risk_level": "low",
+        "explanation": "The claims of 'durable' and 'eco-friendly' are vague and lack specific evidence or certifications (e.g., material specifications, recyclability details).",
+        "fix_suggestion": "Provide specific details: e.g., 'Made from 30% recycled materials' or 'Tested for 10,000 charging cycles'."
+      }
+    ],
+    "overall_verdict": "",
+    "risk_level": "critical",
+    "total_issues": 11,
+    "critical_items": [
+      "[Policy] Found prohibited term: 'cure'",
+      "[Claim] The product is described as a 'wireless laptop charger' and claims to charge laptops wirelessly, but most laptops (including MacBook, Dell XPS, Ultrabook) do not support Qi wireless charging. Qi is primarily for smartphones and small devices. This claim is technically false and could deceive consumers into believing the product can charge their laptop without cables."
+    ],
+    "action_items": [
+      "Replace 'cure' with compliant alternative",
+      "Replace 'free' with compliant alternative",
+      "Remove 'Premium' and replace 'Fast Charging' with a neutral term like '15W Charging' if the wattage is accurate.",
+      "Remove subjective terms like 'premium', 'effortless', 'smart investment'. Replace 'eco-friendly' with specific details about packaging materials or certifications.",
+      "Rewrite to focus on factual specifications and features, avoiding subjective language.",
+      "Use standard sentence case or capitalize only the first word and proper nouns.",
+      "Remove 'smart investment' and describe the product's durability factually.",
+      "Change the title and description to clarify that this is a wireless charging pad for smartphones or small devices, not for laptops. For example: 'TechPro Wireless Charging Pad - 15W Fast Charger for Smartphones and Qi-Compatible Devices'.",
+      "Remove the claim of universal laptop compatibility. Instead, list specific compatible devices (e.g., smartphones) and note that laptop compatibility is limited to models with built-in Qi receivers.",
+      "Replace 'instant power' with 'convenient, cable-free charging' or 'quick and easy charging'.",
+      "Provide specific details: e.g., 'Made from 30% recycled materials' or 'Tested for 10,000 charging cycles'."
+    ],
+    "human_reviewed": false
+  },
+  "social": {
+    "marketing_angles": [
+      "Unboxing experience highlighting eco-friendly packaging",
+      "Lifestyle integration in a modern home office or coffee shop",
+      "Comparison with traditional wired chargers for convenience",
+      "Durability test against everyday wear and tear",
+      "Ergonomic setup for improved workflow and desk aesthetics"
+    ],
+    "target_audience": "Tech-savvy professionals and remote workers aged 25-45 in the US, who value premium design, sustainability, and efficiency. They seek clutter-free, modern solutions for their home offices and are willing to invest in high-quality accessories that enhance their daily workflow and reflect their eco-conscious lifestyle.",
+    "content_tones": [
+      "Professional",
+      "Aspirational",
+      "Eco-conscious"
+    ],
+    "key_selling_points": [
+      "Premium quality materials for a sleek, durable build",
+      "Ergonomic design reduces desk clutter and enhances comfort",
+      "Easy to use: just place and charge without cables",
+      "Eco-friendly packaging aligns with sustainable values",
+      "Long-lasting performance for daily use"
+    ],
+    "visual_style": [],
+    "hashtag_themes": [],
+    "posts": [
+      {
+        "platform": "instagram",
+        "copy": "Transform your workspace into a sanctuary of productivity and style. Our wireless laptop charger combines premium materials with an ergonomic design t",
+        "hashtags": [
+          "wirelesscharging",
+          "workspacegoals",
+          "ecofriendlytech",
+          "homeoffice",
+          "techaccessories",
+          "sustainableliving",
+          "desksetup",
+          "productivityhacks",
+          "modernworkspace",
+          "cordlesslife"
+        ],
+        "quality_score": 7.0
+      },
+      {
+        "platform": "threads",
+        "copy": "Let’s be honest—cable clutter is the silent productivity killer in any home office. I’ve been testing a wireless laptop charger that finally makes sen",
+        "hashtags": [
+          "WirelessCharger",
+          "HomeOffice",
+          "RemoteWork",
+          "TechAccessories",
+          "SustainableTech",
+          "DeskSetup",
+          "MinimalistWorkspace",
+          "ProductivityHack",
+          "EcoFriendly",
+          "PremiumDesign"
+        ],
+        "quality_score": 7.0
+      },
+      {
+        "platform": "pinterest",
+        "copy": "Transform your workspace into a sleek, sustainable hub with a wireless laptop charger. Designed for tech-savvy professionals who value both form and f",
+        "hashtags": [
+          "#WirelessCharger",
+          "#DeskInspo",
+          "#RemoteWork",
+          "#EcoFriendlyTech",
+          "#WorkspaceGoals",
+          "#TechAccessories",
+          "#SustainableLiving",
+          "#HomeOfficeSetup",
+          "#ProductivityTips",
+          "#ModernWorkspace"
+        ],
+        "quality_score": 7.0
+      }
+    ],
+    "human_approved": false
+  },
+  "platform": {
+    "asin": null,
+    "amazon_url": null,
+    "amazon_publish_status": "draft",
+    "amazon_publish_errors": [],
+    "amazon_published_at": null,
+    "social_publish_status": {},
+    "social_post_urls": {}
+  },
+  "reviews": {
+    "total_reviews": 10,
+    "average_rating": 0.0,
+    "sentiment_distribution": {},
+    "negative_alert_count": 3,
+    "top_alerts": [
+      {
+        "reviewer": "Emily K.",
+        "content": "Disappointed with the quality. Stopped working after 2 weeks.",
+        "alert_level": "alert"
+      },
+      {
+        "reviewer": "Tom S.",
+        "content": "Defective unit. Doesn't turn on.",
+        "alert_level": "critical"
+      },
+      {
+        "reviewer": "David P.",
+        "content": "Color doesn't match the photos. Returning it.",
+        "alert_level": "alert"
+      }
+    ],
+    "last_monitored_at": "2026-05-19T09:24:19.530992Z"
+  },
+  "ads": {
+    "campaigns": [],
+    "total_budget": 0.0,
+    "total_spend": 0.0,
+    "acos": null
+  }
+}

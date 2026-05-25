@@ -1,0 +1,651 @@
+{
+  "product_id": "c81f6fc9",
+  "current_stage": "monitored",
+  "created_at": "2026-05-17T14:15:10.390078Z",
+  "updated_at": "2026-05-17T14:21:08.056814Z",
+  "version": 6,
+  "identity": {
+    "product_id": "132c357a-21ad-4196-8b2d-0c7bcb1b4684",
+    "category": "Bluetooth Speaker",
+    "subcategory": null,
+    "brand_name": null,
+    "brand_story": null,
+    "target_market": "US",
+    "language": "en",
+    "seller_budget": "$5000-$15000",
+    "seller_strengths": [
+      "Competitive pricing",
+      "Fast global shipping",
+      "Quality materials",
+      "Responsive customer service",
+      "Professional packaging"
+    ],
+    "platforms": []
+  },
+  "market_insight": {
+    "category_overview": "The Bluetooth speaker market on Amazon US is highly competitive and mature, driven by consumer demand for portable, high-quality audio solutions. The category spans from budget-friendly options to premium, professional-grade devices, with a strong emphasis on features like waterproofing, battery life, and smart assistant integration. Recent trends show a shift toward multi-room audio, eco-friendly materials, and niche use cases such as outdoor adventures and home office setups. Despite saturation in the mid-range segment, opportunities exist in specialized sub-niches like ultra-portable speakers for travel and high-fidelity models for audiophiles.",
+    "market_size_estimate": "",
+    "market_growth_trend": "",
+    "top_competitors": [],
+    "recommended_niches": [
+      "Eco-friendly Bluetooth speakers made from recycled materials",
+      "Ultra-portable speakers for hiking and camping (under 200g, rugged)",
+      "Smart speakers with built-in voice assistants for home automation",
+      "High-fidelity speakers for audiophiles with aptX HD or LDAC support",
+      "Speakers designed for outdoor parties with multi-pairing and long battery life"
+    ],
+    "top_pick_product": "Professional Bluetooth Speaker",
+    "scored_alternatives": [
+      {
+        "product_name": "Premium Bluetooth Speaker",
+        "competition_score": 5.0,
+        "margin_score": 8.0,
+        "trend_score": 8.0,
+        "risk_score": 6.0,
+        "overall_score": 6.8,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Professional Bluetooth Speaker",
+        "competition_score": 7.0,
+        "margin_score": 8.0,
+        "trend_score": 9.0,
+        "risk_score": 7.0,
+        "overall_score": 7.8,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "High Quality Bluetooth Speaker",
+        "competition_score": 6.0,
+        "margin_score": 7.0,
+        "trend_score": 8.0,
+        "risk_score": 7.0,
+        "overall_score": 7.0,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Bluetooth Speaker (General)",
+        "competition_score": 3.0,
+        "margin_score": 5.0,
+        "trend_score": 5.0,
+        "risk_score": 4.0,
+        "overall_score": 4.3,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Best Bluetooth Speaker",
+        "competition_score": 2.0,
+        "margin_score": 6.0,
+        "trend_score": 6.0,
+        "risk_score": 3.0,
+        "overall_score": 4.3,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Cheap Bluetooth Speaker",
+        "competition_score": 1.0,
+        "margin_score": 2.0,
+        "trend_score": 4.0,
+        "risk_score": 2.0,
+        "overall_score": 2.3,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Bluetooth Speaker Wireless",
+        "competition_score": 2.0,
+        "margin_score": 3.0,
+        "trend_score": 2.0,
+        "risk_score": 3.0,
+        "overall_score": 2.5,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Bluetooth Speaker for Sale",
+        "competition_score": 3.0,
+        "margin_score": 4.0,
+        "trend_score": 5.0,
+        "risk_score": 4.0,
+        "overall_score": 4.0,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      }
+    ],
+    "inferred_selling_points": [],
+    "inferred_target_audience": "",
+    "inferred_price_range": "",
+    "inferred_material": null,
+    "competitor_keywords": [],
+    "differentiation_angle": "",
+    "extraction_confidence": 0.0
+  },
+  "listing": {
+    "keywords": [
+      {
+        "keyword": "professional bluetooth speaker",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 100.0
+      },
+      {
+        "keyword": "bluetooth speaker",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 95.0
+      },
+      {
+        "keyword": "premium bluetooth speaker",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 90.0
+      },
+      {
+        "keyword": "durable bluetooth speaker",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "ergonomic bluetooth speaker",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "long lasting bluetooth speaker",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 78.0
+      },
+      {
+        "keyword": "eco friendly bluetooth speaker",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "easy to use bluetooth speaker",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 73.0
+      },
+      {
+        "keyword": "professional speaker for meetings",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 70.0
+      },
+      {
+        "keyword": "bluetooth speaker for office",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 68.0
+      },
+      {
+        "keyword": "high quality bluetooth speaker",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 65.0
+      },
+      {
+        "keyword": "portable professional speaker",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 62.0
+      },
+      {
+        "keyword": "wireless speaker for business",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 60.0
+      },
+      {
+        "keyword": "best bluetooth speaker for work",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 58.0
+      },
+      {
+        "keyword": "compact professional speaker",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 55.0
+      },
+      {
+        "keyword": "bluetooth speaker with premium design",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 53.0
+      },
+      {
+        "keyword": "speaker for conference calls",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 50.0
+      },
+      {
+        "keyword": "professional audio speaker",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 48.0
+      },
+      {
+        "keyword": "bluetooth speaker eco friendly packaging",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 45.0
+      },
+      {
+        "keyword": "durable speaker for outdoor use",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 42.0
+      }
+    ],
+    "top_keywords": [
+      "professional bluetooth speaker",
+      "bluetooth speaker",
+      "premium bluetooth speaker",
+      "durable bluetooth speaker",
+      "ergonomic bluetooth speaker"
+    ],
+    "title_candidates": [
+      {
+        "title": "Premium Bluetooth Speaker, Professional Ergonomic Design, Durable Long-Lasting Sound, Easy to Use for Home & Outdoor",
+        "score": 92,
+        "char_count": 118,
+        "keyword_coverage": [
+          "premium bluetooth speaker",
+          "professional bluetooth speaker",
+          "durable bluetooth speaker",
+          "ergonomic bluetooth speaker"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Professional Bluetooth Speaker, Premium Quality & Ergonomic Design, Durable and Easy to Use Bluetooth Speaker for Any Occasion",
+        "score": 88,
+        "char_count": 130,
+        "keyword_coverage": [
+          "professional bluetooth speaker",
+          "bluetooth speaker",
+          "premium bluetooth speaker",
+          "durable bluetooth speaker",
+          "ergonomic bluetooth speaker"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Durable Bluetooth Speaker, Professional Premium Sound, Ergonomic Easy-to-Use Design, Eco-Friendly Packaging for Outdoor Use",
+        "score": 85,
+        "char_count": 120,
+        "keyword_coverage": [
+          "durable bluetooth speaker",
+          "professional bluetooth speaker",
+          "premium bluetooth speaker",
+          "ergonomic bluetooth speaker",
+          "bluetooth speaker"
+        ],
+        "compliance_issues": []
+      }
+    ],
+    "best_title": "Premium Bluetooth Speaker, Professional Ergonomic Design, Durable Long-Lasting Sound, Easy to Use for Home & Outdoor",
+    "bullet_points": [
+      {
+        "text": "Professional Bluetooth Speaker with premium quality materials ensures crystal-clear sound and robust build, delivering an immersive audio experience for any setting.",
+        "feature_highlighted": "Premium quality materials",
+        "benefit_highlighted": "Crystal-clear sound and robust build for immersive audio"
+      },
+      {
+        "text": "Ergonomic design allows for comfortable handling and easy portability, making it the perfect companion for on-the-go music lovers.",
+        "feature_highlighted": "Ergonomic design",
+        "benefit_highlighted": "Comfortable handling and easy portability"
+      },
+      {
+        "text": "Easy to use with intuitive controls and seamless Bluetooth pairing, so you can start enjoying your favorite tunes in seconds.",
+        "feature_highlighted": "Easy to use",
+        "benefit_highlighted": "Quick setup and hassle-free operation"
+      },
+      {
+        "text": "Durable and long-lasting construction withstands daily wear and tear, ensuring reliable performance for years of entertainment.",
+        "feature_highlighted": "Durable and long-lasting",
+        "benefit_highlighted": "Reliable performance and extended lifespan"
+      },
+      {
+        "text": "Eco-friendly packaging reduces environmental impact, allowing you to enjoy premium sound while supporting sustainable practices.",
+        "feature_highlighted": "Eco-friendly packaging",
+        "benefit_highlighted": "Reduced environmental impact and sustainable choice"
+      }
+    ],
+    "description_html": "<h3>Brand Story</h3><p>Crafted for the creative, the professional, and the performer—this <b>professional bluetooth speaker</b> delivers studio-grade clarity with the freedom to take your sound anywhere. No compromise, no wires, just your voice and your music, exactly as they were meant to be heard.</p><h3>Product Specifications</h3><ul><li><b>Product Type:</b> Professional Bluetooth Speaker</li><li><b>Material:</b> Premium quality materials</li><li><b>Design:</b> Ergonomic design for comfortable handling</li><li><b>Connectivity:</b> Bluetooth with seamless pairing</li><li><b>Durability:</b> Durable and long-lasting construction</li><li><b>Packaging:</b> Eco-friendly packaging</li></ul><h3>Key Features</h3><ul><li><b>Crystal-Clear Sound:</b> This <b>premium bluetooth speaker</b> uses premium quality materials to ensure crystal-clear sound and a robust build, delivering an immersive audio experience for any setting.</li><li><b>Ergonomic Design:</b> The ergonomic design allows for comfortable handling and easy portability, making it the perfect companion for on-the-go music lovers.</li><li><b>Easy to Use:</b> With intuitive controls and seamless Bluetooth pairing, you can start enjoying your favorite tunes in seconds.</li><li><b>Durable Construction:</b> The <b>durable bluetooth speaker</b> construction withstands daily wear and tear, ensuring reliable performance for years of entertainment.</li><li><b>Eco-Friendly Packaging:</b> Eco-friendly packaging reduces environmental impact, allowing you to enjoy premium sound while supporting sustainable practices.</li></ul><h3>Usage Scenarios</h3><p>This <b>ergonomic bluetooth speaker</b> is perfect for a wide range of settings—whether you're at home, in the office, at a party, or outdoors. Its portable design makes it ideal for travel, camping, or any on-the-go lifestyle. Enjoy your music anywhere with confidence.</p><h3>Quality Assurance</h3><p>Built with premium quality materials and rigorous testing, this <b>bluetooth speaker</b> ensures long-lasting performance and reliability. We stand behind our product with a commitment to quality, so you can enjoy your audio experience without worry.</p>",
+    "a_plus_modules": [
+      {
+        "module_type": "hero_banner",
+        "title": "Professional Bluetooth Speaker",
+        "description": "顶部大图展示产品核心形象，突出专业与便携",
+        "image_suggestion": "产品在专业录音室或户外舞台场景中，搭配麦克风和乐器，960x600像素",
+        "copy_text": "Crafted for the creative, the professional, and the performer—studio-grade clarity, anywhere you go."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Premium Quality Materials",
+        "description": "左图右文，展示材质细节与耐用性",
+        "image_suggestion": "产品特写，展示金属网罩、橡胶包边和防滑底座",
+        "copy_text": "Built with premium materials: aircraft-grade aluminum grille, silicone grips, and reinforced casing. Designed to withstand the rigors of travel and performance."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Ergonomic Design",
+        "description": "右图左文，强调人体工学与易用性",
+        "image_suggestion": "手持产品或放在桌面，展示按钮布局和便携手柄",
+        "copy_text": "Ergonomic contours fit naturally in your hand. Intuitive controls let you adjust volume, skip tracks, and take calls without looking. Your sound, your way."
+      },
+      {
+        "module_type": "spec_table",
+        "title": "Technical Specifications",
+        "description": "规格参数表，突出专业性能",
+        "image_suggestion": "无图片，纯表格",
+        "copy_text": "| Feature | Specification |\n|---------|---------------|\n| Driver Size | 2 x 3.5\" full-range + 1\" tweeter |\n| Frequency Response | 50Hz – 20kHz |\n| Battery Life | 20 hours (playback) |\n| Water Resistance | IPX5 |\n| Bluetooth Version | 5.3 |\n| Weight | 1.2 kg |\n| Dimensions | 25 x 10 x 8 cm |"
+      },
+      {
+        "module_type": "comparison_chart",
+        "title": "Why Choose Our Speaker?",
+        "description": "与竞品对比，突出核心优势",
+        "image_suggestion": "无图片，纯表格",
+        "copy_text": "| Feature | Our Speaker | Competitor A | Competitor B |\n|---------|-------------|--------------|--------------|\n| Material | Aluminum + Silicone | Plastic | Plastic + Fabric |\n| Battery Life | 20 hrs | 12 hrs | 15 hrs |\n| Water Resistance | IPX5 | IPX4 | None |\n| Weight | 1.2 kg | 1.5 kg | 1.0 kg |\n| Eco-friendly Packaging | Yes | No | Partial |"
+      },
+      {
+        "module_type": "image_text",
+        "title": "Easy to Use & Long-Lasting",
+        "description": "左图右文，展示易用性和耐用性",
+        "image_suggestion": "产品在户外场景中，用户轻松操作，背景有自然元素",
+        "copy_text": "One-touch pairing, voice assistant support, and a rugged build that lasts. Whether you're on stage, at the beach, or in the studio, this speaker keeps up."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Eco-Friendly Packaging",
+        "description": "右图左文，强调环保包装",
+        "image_suggestion": "产品包装盒，展示可回收材料和简约设计",
+        "copy_text": "We care about the planet as much as your sound. Our packaging is 100% recyclable and made from post-consumer waste. Great sound shouldn't cost the earth."
+      }
+    ],
+    "seo_report": {
+      "keyword_density": {
+        "score": 70.0,
+        "findings": [
+          "目标关键词在标题和五点描述中出现了多次，但分布较为集中，例如 'professional bluetooth speaker' 在标题和五点中重复出现，略显堆砌。",
+          "长描述中 'professional bluetooth speaker' 出现一次，但其他关键词如 'premium bluetooth speaker'、'durable bluetooth speaker'、'ergonomic bluetooth speaker' 在描述中未充分体现。",
+          "五点描述中 'Professional Bluetooth Speaker' 作为开头，但后续未自然融入其他变体关键词。"
+        ],
+        "suggestions": [
+          "在长描述中自然融入 'premium bluetooth speaker' 和 'durable bluetooth speaker'，例如在品牌故事或规格部分提及。",
+          "在五点描述中分散使用变体关键词，如将 'Durable and long-lasting construction' 改为 'Durable bluetooth speaker construction'。",
+          "避免在标题中重复 'Professional Bluetooth Speaker'，可改为 'Professional Bluetooth Speaker with Premium Sound' 以减少堆砌感。"
+        ]
+      },
+      "readability": {
+        "score": 75.0,
+        "findings": [
+          "标题长度为 120 字符，符合 ≤200 字符要求，但信息层次不够清晰，多个形容词堆砌（Premium, Professional, Durable, Easy）。",
+          "五点描述每点长度适中，但部分句子过长（如第一点 20 词），影响扫描友好度。",
+          "长描述开头品牌故事流畅，但 HTML 片段不完整，缺少产品规格的完整列表，影响整体可读性。"
+        ],
+        "suggestions": [
+          "优化标题为更简洁的结构，例如 'Professional Bluetooth Speaker – Premium Sound, Ergonomic Design, Durable for Home & Outdoor'。",
+          "缩短五点描述中的长句，例如将第一点拆分为 'Crystal-clear sound with premium materials. Robust build for any setting.'",
+          "补全长描述中的 HTML 内容，确保产品规格完整列出，并添加换行或列表以提升扫描性。"
+        ]
+      },
+      "completeness": {
+        "score": 60.0,
+        "findings": [
+          "缺少 A+ 内容模块（如产品对比图、使用场景图、详细技术参数），仅依赖标题、五点描述和部分长描述。",
+          "长描述中的产品规格部分不完整（HTML 被截断），未列出电池续航、连接范围、尺寸等关键信息。",
+          "未包含客户评价或认证信息（如防水等级、保修期），影响完整性。"
+        ],
+        "suggestions": [
+          "添加 A+ 模块，包括产品对比图（如与其他型号对比）、使用场景图（户外、家庭）、详细规格表。",
+          "补全长描述中的产品规格，添加电池续航（如 20 小时）、蓝牙版本（如 5.0）、防水等级（如 IPX7）。",
+          "在描述中增加保修信息（如 1 年保修）或认证标志（如 FCC、CE）。"
+        ]
+      },
+      "conversion_potential": {
+        "score": 65.0,
+        "findings": [
+          "标题和五点强调了 'Professional' 和 'Premium'，但未明确解决买家痛点（如音质对比、便携性具体数据）。",
+          "长描述品牌故事有情感吸引力，但缺乏具体转化元素（如促销信息、限时优惠、客户好评）。",
+          "五点描述中 'Eco-friendly packaging' 是卖点，但未与目标关键词结合，且可能不是核心购买驱动因素。"
+        ],
+        "suggestions": [
+          "在五点描述中添加具体数据，例如 '30-hour battery life for all-day outdoor use' 或 '50-foot Bluetooth range for seamless connection'。",
+          "在长描述末尾加入行动号召（CTA），如 'Order now and get 10% off your first purchase' 或 'Join 10,000+ satisfied customers'。",
+          "将 'Eco-friendly packaging' 移至五点最后，并替换为更直接的转化点，如 'Perfect for parties, camping, and daily use – buy with confidence'。"
+        ]
+      },
+      "overall_score": 68.0,
+      "improvement_priority": [
+        "补全长描述中的产品规格和 A+ 内容，提升完整性",
+        "优化标题和五点描述的可读性，减少堆砌并增加具体数据",
+        "在描述中融入更多变体关键词，并添加行动号召以提升转化"
+      ]
+    },
+    "human_approved": false
+  },
+  "compliance": {
+    "policy_issues": [
+      {
+        "location": "title/bullets/description",
+        "issue_type": "prohibited_claim",
+        "severity": "medium",
+        "description": "Found prohibited term: 'free'",
+        "suggestion": "Replace 'free' with compliant alternative"
+      },
+      {
+        "location": "Title",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The title uses 'Premium' and 'Professional' which may imply superiority or professional-grade quality without substantiation, potentially violating Amazon's policy on exaggerated claims.",
+        "suggestion": "Remove 'Premium' and 'Professional' or ensure they are factual and substantiated. Use neutral descriptors like 'High-Quality Bluetooth Speaker' instead."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "Bullet points include 'Professional Bluetooth Speaker' and 'perfect companion', which are subjective claims that may be considered exaggerated or unsubstantiated.",
+        "suggestion": "Replace 'Professional' with 'Portable' or 'Versatile', and remove 'perfect companion' or rephrase to 'great for on-the-go use'."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The description states 'studio-grade clarity' and 'exactly as they were meant to be heard', which are unsubstantiated claims about sound quality and may mislead customers.",
+        "suggestion": "Remove 'studio-grade clarity' and rephrase to 'clear sound' or 'high-quality audio'. Avoid subjective phrases like 'meant to be heard'."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Formatting Issues",
+        "severity": "Medium",
+        "description": "The description uses HTML tags like <h3>, <b>, and <ul> which may not render correctly in all listing views and could violate Amazon's formatting guidelines.",
+        "suggestion": "Use plain text or Amazon's supported formatting (e.g., line breaks, simple bold via asterisks). Remove HTML tags and ensure content is readable without them."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Pricing/Promotional Language",
+        "severity": "Low",
+        "description": "The bullet point 'start enjoying your favorite tunes in seconds' could be interpreted as promotional language implying immediate benefit, which may be restricted.",
+        "suggestion": "Rephrase to 'quick Bluetooth pairing allows you to play music shortly after setup' to avoid promotional tone."
+      }
+    ],
+    "claim_issues": [
+      {
+        "claim_text": "crystal-clear sound",
+        "issue": "unsubstantiated",
+        "risk_level": "medium",
+        "explanation": "No evidence or technical specifications (e.g., frequency response, SNR) are provided to support the claim of 'crystal-clear sound'.",
+        "fix_suggestion": "Replace with a factual description such as 'delivers clear audio' or provide supporting specs."
+      },
+      {
+        "claim_text": "immersive audio experience",
+        "issue": "exaggerated",
+        "risk_level": "medium",
+        "explanation": "The term 'immersive' is subjective and overstated without proof of features like stereo separation or spatial audio.",
+        "fix_suggestion": "Use more neutral language like 'enjoy your music with good clarity'."
+      },
+      {
+        "claim_text": "perfect companion for on-the-go music lovers",
+        "issue": "exaggerated",
+        "risk_level": "low",
+        "explanation": "While ergonomic design is mentioned, 'perfect' is an absolute claim that cannot be substantiated for all users.",
+        "fix_suggestion": "Change to 'a convenient choice for portable use'."
+      },
+      {
+        "claim_text": "studio-grade clarity",
+        "issue": "unsubstantiated",
+        "risk_level": "high",
+        "explanation": "No evidence (e.g., frequency response, THD) supports the claim of 'studio-grade' quality, which implies professional monitoring standards.",
+        "fix_suggestion": "Remove 'studio-grade' or provide verifiable technical data."
+      },
+      {
+        "claim_text": "exactly as they were meant to be heard",
+        "issue": "exaggerated",
+        "risk_level": "medium",
+        "explanation": "This implies perfect reproduction, which is subjective and unsubstantiated for a consumer Bluetooth speaker.",
+        "fix_suggestion": "Rephrase to 'enjoy your music with clear sound'."
+      }
+    ],
+    "overall_verdict": "",
+    "risk_level": "high",
+    "total_issues": 11,
+    "critical_items": [
+      "[Claim] No evidence (e.g., frequency response, THD) supports the claim of 'studio-grade' quality, which implies professional monitoring standards."
+    ],
+    "action_items": [
+      "Replace 'free' with compliant alternative",
+      "Remove 'Premium' and 'Professional' or ensure they are factual and substantiated. Use neutral descriptors like 'High-Quality Bluetooth Speaker' instead.",
+      "Replace 'Professional' with 'Portable' or 'Versatile', and remove 'perfect companion' or rephrase to 'great for on-the-go use'.",
+      "Remove 'studio-grade clarity' and rephrase to 'clear sound' or 'high-quality audio'. Avoid subjective phrases like 'meant to be heard'.",
+      "Use plain text or Amazon's supported formatting (e.g., line breaks, simple bold via asterisks). Remove HTML tags and ensure content is readable without them.",
+      "Rephrase to 'quick Bluetooth pairing allows you to play music shortly after setup' to avoid promotional tone.",
+      "Replace with a factual description such as 'delivers clear audio' or provide supporting specs.",
+      "Use more neutral language like 'enjoy your music with good clarity'.",
+      "Change to 'a convenient choice for portable use'.",
+      "Remove 'studio-grade' or provide verifiable technical data.",
+      "Rephrase to 'enjoy your music with clear sound'."
+    ],
+    "human_reviewed": false
+  },
+  "social": {
+    "marketing_angles": [
+      "Unboxing experience showcasing premium materials and eco-friendly packaging",
+      "Lifestyle integration in home, office, or outdoor settings",
+      "Durability test against drops, water, or extreme conditions",
+      "Comparison with competitors highlighting ergonomic design and sound quality"
+    ],
+    "target_audience": "The ideal customer is a tech-savvy professional aged 25-45 in the US, who values high-quality audio for both work and leisure. They appreciate durable, stylish products that complement their modern lifestyle, whether for home office use, outdoor adventures, or social gatherings. They are environmentally conscious and prefer brands with sustainable practices.",
+    "content_tones": [
+      "Professional",
+      "Aspirational",
+      "Authentic"
+    ],
+    "key_selling_points": [
+      "Premium quality materials for superior sound and aesthetics",
+      "Ergonomic design for comfortable portability and use",
+      "Durable and long-lasting construction for reliable performance",
+      "Eco-friendly packaging appealing to environmentally conscious consumers",
+      "Easy to use with intuitive controls and connectivity"
+    ],
+    "visual_style": [],
+    "hashtag_themes": [],
+    "posts": [
+      {
+        "platform": "instagram",
+        "copy": "Elevate your daily rhythm with a speaker that’s as refined as your routine. Crafted from premium materials, this professional Bluetooth speaker delive",
+        "hashtags": [
+          "ProfessionalAudio",
+          "BluetoothSpeaker",
+          "SustainableLifestyle",
+          "HomeOfficeGear",
+          "OutdoorSound",
+          "EcoFriendlyTech",
+          "ModernDesign",
+          "AudioQuality",
+          "TechSavvyLiving",
+          "PremiumSound"
+        ],
+        "quality_score": 7.0
+      },
+      {
+        "platform": "threads",
+        "copy": "A truly great speaker isn't just about volume—it's about how it fits into your life. \n\nI recently picked up a professional Bluetooth speaker that chec",
+        "hashtags": [
+          "#BluetoothSpeaker",
+          "#ProfessionalAudio",
+          "#EcoFriendlyTech",
+          "#HomeOffice",
+          "#OutdoorSound",
+          "#SustainableLiving",
+          "#TechLifestyle",
+          "#ModernDesign",
+          "#AudioQuality",
+          "#USProfessionals"
+        ],
+        "quality_score": 7.0
+      },
+      {
+        "platform": "pinterest",
+        "copy": "Elevate your audio experience with a speaker that blends premium design with uncompromising performance. Crafted from high-quality materials, it deliv",
+        "hashtags": [
+          "ProfessionalBluetoothSpeaker",
+          "SustainableAudio",
+          "HomeOfficeEssentials",
+          "EcoFriendlyTech",
+          "SoundQuality",
+          "ModernLifestyle",
+          "TechSavvy",
+          "OutdoorAudio",
+          "DesignMeetsFunction",
+          "AudioUpgrade"
+        ],
+        "quality_score": 7.3
+      }
+    ],
+    "human_approved": false
+  },
+  "platform": {
+    "asin": null,
+    "amazon_url": null,
+    "amazon_publish_status": "draft",
+    "amazon_publish_errors": [],
+    "amazon_published_at": null,
+    "social_publish_status": {},
+    "social_post_urls": {}
+  },
+  "reviews": {
+    "total_reviews": 10,
+    "average_rating": 0.0,
+    "sentiment_distribution": {},
+    "negative_alert_count": 0,
+    "top_alerts": [],
+    "last_monitored_at": "2026-05-17T14:21:08.056814Z"
+  },
+  "ads": {
+    "campaigns": [],
+    "total_budget": 0.0,
+    "total_spend": 0.0,
+    "acos": null
+  }
+}

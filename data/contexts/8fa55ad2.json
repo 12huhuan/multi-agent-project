@@ -1,0 +1,123 @@
+{
+  "product_id": "8fa55ad2",
+  "current_stage": "monitored",
+  "created_at": "2026-05-18T03:56:05.763973Z",
+  "updated_at": "2026-05-18T03:58:55.019329Z",
+  "version": 6,
+  "identity": {
+    "product_id": "69b2d406-3583-4704-a67b-761c9e86effc",
+    "category": "",
+    "subcategory": null,
+    "brand_name": null,
+    "brand_story": null,
+    "target_market": "US",
+    "language": "en",
+    "seller_budget": "$5000-$15000",
+    "seller_strengths": [],
+    "platforms": []
+  },
+  "market_insight": {
+    "category_overview": "",
+    "market_size_estimate": "",
+    "market_growth_trend": "",
+    "top_competitors": [],
+    "recommended_niches": [],
+    "top_pick_product": "",
+    "scored_alternatives": [],
+    "inferred_selling_points": [],
+    "inferred_target_audience": "",
+    "inferred_price_range": "",
+    "inferred_material": null,
+    "competitor_keywords": [],
+    "differentiation_angle": "",
+    "extraction_confidence": 0.0
+  },
+  "listing": {
+    "keywords": [],
+    "top_keywords": [],
+    "title_candidates": [],
+    "best_title": "",
+    "bullet_points": [],
+    "description_html": "",
+    "a_plus_modules": [],
+    "seo_report": {},
+    "human_approved": false
+  },
+  "compliance": {
+    "policy_issues": [
+      {
+        "location": "Title",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The title contains the phrase 'Best Quality', which is a prohibited superlative claim.",
+        "suggestion": "Remove 'Best Quality' and replace with factual descriptors like 'Premium' or 'High-Quality'."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Pricing/Promotional Language",
+        "severity": "Medium",
+        "description": "Bullet point includes 'Limited Time Offer - 50% Off', which is promotional pricing language not allowed in standard listings.",
+        "suggestion": "Remove promotional pricing language. Use only factual product features."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Medical/Health Claims",
+        "severity": "High",
+        "description": "Description states 'Cures headaches and improves vision', which is an unapproved medical claim.",
+        "suggestion": "Remove all medical claims unless the product is approved for such claims. Use general wellness language like 'supports relaxation'."
+      },
+      {
+        "location": "Title",
+        "issue_type": "Formatting Issues",
+        "severity": "Low",
+        "description": "Title is in all capital letters, which violates formatting guidelines.",
+        "suggestion": "Convert title to standard capitalization (first letter of each word capitalized, except articles and prepositions)."
+      }
+    ],
+    "claim_issues": [],
+    "overall_verdict": "",
+    "risk_level": "medium",
+    "total_issues": 4,
+    "critical_items": [],
+    "action_items": [
+      "Remove 'Best Quality' and replace with factual descriptors like 'Premium' or 'High-Quality'.",
+      "Remove promotional pricing language. Use only factual product features.",
+      "Remove all medical claims unless the product is approved for such claims. Use general wellness language like 'supports relaxation'.",
+      "Convert title to standard capitalization (first letter of each word capitalized, except articles and prepositions)."
+    ],
+    "human_reviewed": false
+  },
+  "social": {
+    "marketing_angles": [],
+    "target_audience": "",
+    "content_tones": [],
+    "key_selling_points": [],
+    "visual_style": [],
+    "hashtag_themes": [],
+    "posts": [],
+    "human_approved": false
+  },
+  "platform": {
+    "asin": null,
+    "amazon_url": null,
+    "amazon_publish_status": "draft",
+    "amazon_publish_errors": [],
+    "amazon_published_at": null,
+    "social_publish_status": {},
+    "social_post_urls": {}
+  },
+  "reviews": {
+    "total_reviews": 10,
+    "average_rating": 0.0,
+    "sentiment_distribution": {},
+    "negative_alert_count": 0,
+    "top_alerts": [],
+    "last_monitored_at": "2026-05-18T03:58:55.018739Z"
+  },
+  "ads": {
+    "campaigns": [],
+    "total_budget": 0.0,
+    "total_spend": 0.0,
+    "acos": null
+  }
+}

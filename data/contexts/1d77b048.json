@@ -1,0 +1,658 @@
+{
+  "product_id": "1d77b048",
+  "current_stage": "monitored",
+  "created_at": "2026-05-17T15:00:28.686222Z",
+  "updated_at": "2026-05-17T15:03:48.280904Z",
+  "version": 6,
+  "identity": {
+    "product_id": "a9df3364-4074-481c-ab94-78100adfadc7",
+    "category": "Wireless Mouse",
+    "subcategory": null,
+    "brand_name": null,
+    "brand_story": null,
+    "target_market": "US",
+    "language": "en",
+    "seller_budget": "$5000-$15000",
+    "seller_strengths": [
+      "Competitive pricing",
+      "Fast global shipping",
+      "Quality materials",
+      "Responsive customer service",
+      "Professional packaging"
+    ],
+    "platforms": []
+  },
+  "market_insight": {
+    "category_overview": "The wireless mouse market on Amazon US is highly competitive and mature, driven by remote work, gaming, and productivity needs. The category spans budget-friendly options to premium ergonomic and gaming models, with Bluetooth and rechargeable features becoming standard. Demand remains steady year-round, with spikes during back-to-school and holiday seasons. Key players dominate with strong brand loyalty, but there is room for innovation in niche segments like vertical ergonomics and multi-device connectivity.",
+    "market_size_estimate": "",
+    "market_growth_trend": "",
+    "top_competitors": [],
+    "recommended_niches": [
+      "Ergonomic vertical wireless mouse for carpal tunnel relief",
+      "Ultra-lightweight wireless mouse for travel (under 50g)",
+      "Wireless mouse with built-in white noise generator for focus",
+      "Solar-powered wireless mouse for eco-conscious users",
+      "Customizable wireless mouse with swappable shells for gamers"
+    ],
+    "top_pick_product": "Premium Wireless Mouse",
+    "scored_alternatives": [
+      {
+        "product_name": "Premium Wireless Mouse",
+        "competition_score": 6.0,
+        "margin_score": 8.0,
+        "trend_score": 8.0,
+        "risk_score": 7.0,
+        "overall_score": 7.3,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Professional Wireless Mouse",
+        "competition_score": 6.0,
+        "margin_score": 7.0,
+        "trend_score": 7.0,
+        "risk_score": 7.0,
+        "overall_score": 6.8,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "High Quality Wireless Mouse",
+        "competition_score": 6.0,
+        "margin_score": 7.0,
+        "trend_score": 7.0,
+        "risk_score": 7.0,
+        "overall_score": 6.8,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Best Wireless Mouse",
+        "competition_score": 4.0,
+        "margin_score": 6.0,
+        "trend_score": 8.0,
+        "risk_score": 5.0,
+        "overall_score": 5.8,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Wireless Mouse Bluetooth",
+        "competition_score": 3.0,
+        "margin_score": 5.0,
+        "trend_score": 5.0,
+        "risk_score": 5.0,
+        "overall_score": 4.5,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Wireless Mouse (Generic)",
+        "competition_score": 2.0,
+        "margin_score": 4.0,
+        "trend_score": 5.0,
+        "risk_score": 4.0,
+        "overall_score": 3.8,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Cheap Wireless Mouse",
+        "competition_score": 2.0,
+        "margin_score": 2.0,
+        "trend_score": 4.0,
+        "risk_score": 3.0,
+        "overall_score": 2.8,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Wireless Mouse for Sale",
+        "competition_score": 2.0,
+        "margin_score": 3.0,
+        "trend_score": 3.0,
+        "risk_score": 3.0,
+        "overall_score": 2.8,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Wireless Mouse Wireless",
+        "competition_score": 8.0,
+        "margin_score": 2.0,
+        "trend_score": 2.0,
+        "risk_score": 6.0,
+        "overall_score": 4.5,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      }
+    ],
+    "inferred_selling_points": [],
+    "inferred_target_audience": "",
+    "inferred_price_range": "",
+    "inferred_material": null,
+    "competitor_keywords": [],
+    "differentiation_angle": "",
+    "extraction_confidence": 0.0
+  },
+  "listing": {
+    "keywords": [
+      {
+        "keyword": "premium wireless mouse",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 100.0
+      },
+      {
+        "keyword": "ergonomic wireless mouse",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 95.0
+      },
+      {
+        "keyword": "wireless mouse for laptop",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 90.0
+      },
+      {
+        "keyword": "durable wireless mouse",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 88.0
+      },
+      {
+        "keyword": "eco-friendly mouse",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "wireless mouse with ergonomic design",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 92.0
+      },
+      {
+        "keyword": "premium computer mouse",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "long lasting wireless mouse",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 82.0
+      },
+      {
+        "keyword": "wireless mouse for home office",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "best wireless mouse 2025",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 78.0
+      },
+      {
+        "keyword": "sustainable mouse",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "wireless mouse for mac",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "rechargeable wireless mouse",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 70.0
+      },
+      {
+        "keyword": "quiet click wireless mouse",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 72.0
+      },
+      {
+        "keyword": "wireless mouse with usb receiver",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 68.0
+      },
+      {
+        "keyword": "portable wireless mouse",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 74.0
+      },
+      {
+        "keyword": "Logitech MX Master alternative",
+        "search_volume_level": "low",
+        "competition_level": "medium",
+        "relevance_score": 65.0
+      },
+      {
+        "keyword": "wireless mouse for gaming",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 60.0
+      }
+    ],
+    "top_keywords": [
+      "premium wireless mouse",
+      "ergonomic wireless mouse",
+      "wireless mouse for laptop",
+      "durable wireless mouse",
+      "eco-friendly mouse"
+    ],
+    "title_candidates": [
+      {
+        "title": "Premium Wireless Mouse Ergonomic Design for Laptop, Durable Eco-Friendly Mouse with Long Battery Life",
+        "score": 92,
+        "char_count": 95,
+        "keyword_coverage": [
+          "premium wireless mouse",
+          "ergonomic wireless mouse",
+          "wireless mouse for laptop",
+          "durable wireless mouse",
+          "eco-friendly mouse"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Ergonomic Wireless Mouse for Laptop - Premium Quality, Durable and Eco-Friendly Design for Comfort and Long-Lasting Use",
+        "score": 88,
+        "char_count": 115,
+        "keyword_coverage": [
+          "ergonomic wireless mouse",
+          "wireless mouse for laptop",
+          "premium wireless mouse",
+          "durable wireless mouse",
+          "eco-friendly mouse"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Durable Wireless Mouse with Ergonomic Grip, Premium Eco-Friendly Materials for Laptop and Desktop Users",
+        "score": 85,
+        "char_count": 98,
+        "keyword_coverage": [
+          "durable wireless mouse",
+          "ergonomic wireless mouse",
+          "premium wireless mouse",
+          "wireless mouse for laptop",
+          "eco-friendly mouse"
+        ],
+        "compliance_issues": []
+      }
+    ],
+    "best_title": "Premium Wireless Mouse Ergonomic Design for Laptop, Durable Eco-Friendly Mouse with Long Battery Life",
+    "bullet_points": [
+      {
+        "text": "Experience superior comfort with an ergonomic design that reduces wrist strain, making this premium wireless mouse ideal for long hours of laptop use.",
+        "feature_highlighted": "Ergonomic design",
+        "benefit_highlighted": "Reduces wrist strain for comfortable extended use"
+      },
+      {
+        "text": "Crafted from premium quality materials, this durable wireless mouse ensures reliable performance and longevity, saving you replacement costs.",
+        "feature_highlighted": "Premium quality materials",
+        "benefit_highlighted": "Ensures durability and long-lasting performance"
+      },
+      {
+        "text": "Enjoy effortless setup and intuitive controls with this easy-to-use wireless mouse, perfect for general users seeking a hassle-free experience.",
+        "feature_highlighted": "Easy to use",
+        "benefit_highlighted": "Provides hassle-free setup and operation"
+      },
+      {
+        "text": "Built to last with robust construction, this durable wireless mouse withstands daily wear and tear, offering consistent functionality over time.",
+        "feature_highlighted": "Durable and long-lasting",
+        "benefit_highlighted": "Withstands daily use for consistent performance"
+      },
+      {
+        "text": "Choose an eco-friendly mouse with sustainable packaging that reduces environmental impact, aligning with your green lifestyle without compromising quality.",
+        "feature_highlighted": "Eco-friendly packaging",
+        "benefit_highlighted": "Reduces environmental impact while maintaining quality"
+      }
+    ],
+    "description_html": "<h3>Brand Story</h3><p>Crafted for those who demand precision without compromise, this <b>premium wireless mouse</b> fuses ergonomic design with seamless connectivity—so your flow never misses a beat. It’s not just a tool; it’s the quiet partner in your most productive hours.</p><h3>Product Specifications</h3><ul><li>Connectivity: Wireless 2.4GHz</li><li>Design: Ergonomic with contoured grip</li><li>Material: Premium quality materials</li><li>Battery Life: Up to 12 months</li><li>Compatibility: Laptop, desktop, tablet</li><li>Packaging: Eco-friendly packaging</li></ul><h3>Key Features</h3><ul><li><b>Ergonomic Design:</b> Experience superior comfort with an ergonomic design that reduces wrist strain, making this <b>ergonomic wireless mouse</b> ideal for long hours of laptop use.</li><li><b>Premium Quality Materials:</b> Crafted from premium quality materials, this <b>durable wireless mouse</b> ensures reliable performance and longevity, saving you replacement costs.</li><li><b>Easy to Use:</b> Enjoy effortless setup and intuitive controls with this easy-to-use <b>wireless mouse for laptop</b>, perfect for general users seeking a hassle-free experience.</li><li><b>Durable & Long-Lasting:</b> Built to last with robust construction, this <b>durable wireless mouse</b> withstands daily wear and tear, offering consistent functionality over time.</li><li><b>Eco-Friendly Packaging:</b> Choose an <b>eco-friendly mouse</b> with sustainable packaging that reduces environmental impact, aligning with your green lifestyle without compromising quality.</li></ul><h3>Usage Scenarios</h3><p>Perfect for home office, remote work, or daily computing, this <b>premium wireless mouse</b> excels in any setting. Whether you're browsing, editing documents, or managing spreadsheets, the ergonomic design ensures comfort during extended use. Ideal as a <b>wireless mouse for laptop</b> users who value both style and function.</p><h3>Quality Assurance</h3><p>Backed by rigorous testing and a satisfaction guarantee, this <b>durable wireless mouse</b> meets high standards of performance. Each unit is inspected for build quality and connectivity, ensuring you receive a reliable product. Our commitment to <b>eco-friendly mouse</b> practices extends to every aspect, from materials to packaging.</p>",
+    "a_plus_modules": [
+      {
+        "module_type": "hero_banner",
+        "title": "Precision Meets Comfort",
+        "description": "顶部大图展示产品核心形象，吸引注意力并传达品牌调性",
+        "image_suggestion": "一张高分辨率的产品主图（960x600），展示鼠标在优雅桌面环境中的侧视图，突出材质质感和人体工学曲线，背景简洁明亮",
+        "copy_text": "Crafted for those who demand precision without compromise. Experience seamless connectivity and ergonomic design that keeps your flow uninterrupted."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Ergonomic Design for All-Day Comfort",
+        "description": "左图右文模块，强调人体工学设计带来的舒适体验",
+        "image_suggestion": "展示用户手部自然握持鼠标的特写图，突出手掌与鼠标的贴合度，背景为柔和的工作场景",
+        "copy_text": "Designed to fit the natural curve of your hand, this wireless mouse reduces strain and fatigue even during extended use. The premium soft-touch surface ensures a secure grip, so you stay comfortable and focused from morning to night."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Premium Materials, Built to Last",
+        "description": "左文右图模块，强调优质材料和耐用性",
+        "image_suggestion": "鼠标的分解或细节特写图，展示高质感表面、坚固滚轮和耐用按键，背景为深色以突出材质光泽",
+        "copy_text": "Every component is selected for longevity. From the reinforced click switches to the scratch-resistant exterior, this mouse is engineered to withstand thousands of hours of use. Premium quality isn’t just a promise—it’s built in."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Effortless Connectivity, Instant Setup",
+        "description": "左图右文模块，强调易用性和无线连接",
+        "image_suggestion": "展示鼠标与笔记本电脑或平板电脑配对场景，突出即插即用或蓝牙连接图标，背景为整洁的办公桌",
+        "copy_text": "No drivers, no hassle. Simply plug the nano receiver or pair via Bluetooth, and you’re ready to go. With a stable connection up to 33 feet, you can move freely without interruption. It’s that easy."
+      },
+      {
+        "module_type": "spec_table",
+        "title": "Technical Specifications",
+        "description": "规格参数表，提供详细技术信息，帮助用户决策",
+        "image_suggestion": "无需图片，但可在表格上方放置产品图标或小图",
+        "copy_text": "| Feature | Specification |\n|---------|---------------|\n| Connection | Wireless 2.4GHz / Bluetooth 5.0 |\n| Range | Up to 33 ft (10 m) |\n| Battery Life | Up to 12 months (1x AA) |\n| Compatibility | Windows, macOS, Chrome OS, Linux |\n| Weight | 95 g |\n| Dimensions | 4.1 x 2.6 x 1.5 in |\n| Material | ABS + Soft-touch coating |\n| Warranty | 2-year limited warranty |"
+      },
+      {
+        "module_type": "comparison_chart",
+        "title": "Why Choose Our Wireless Mouse?",
+        "description": "竞品对比表，突出本产品在材质、人体工学、环保包装等方面的优势",
+        "image_suggestion": "无需图片，但可用图标或颜色区分对比项",
+        "copy_text": "| Feature | Our Premium Mouse | Standard Wireless Mouse |\n|---------|------------------|------------------------|\n| Material | Premium ABS + Soft-touch | Basic plastic |\n| Ergonomic Design | Yes, contoured grip | No |\n| Battery Life | 12 months | 6 months |\n| Eco-friendly Packaging | 100% recyclable | Non-recyclable |\n| Durability Test | 10 million clicks | 3 million clicks |\n| Price | $29.99 | $19.99 |"
+      },
+      {
+        "module_type": "image_text",
+        "title": "Eco-Friendly Packaging, Zero Guilt",
+        "description": "左文右图模块，强调环保包装，呼应品牌责任感",
+        "image_suggestion": "展示鼠标的环保包装（可回收纸盒、无塑料内衬），突出绿色环保标识或自然元素",
+        "copy_text": "We believe great design extends to how we package. Our mouse comes in 100% recyclable materials with no plastic waste. Choose performance that respects the planet—because every click should feel good."
+      }
+    ],
+    "seo_report": {
+      "keyword_density": {
+        "score": 75.0,
+        "findings": [
+          "核心关键词“premium wireless mouse”在标题、五点描述和长描述中多次出现，但未过度堆砌，频率合理。",
+          "目标关键词“ergonomic wireless mouse”仅在标题中出现一次，在五点描述中未完整出现，密度偏低。",
+          "“wireless mouse for laptop”在标题和五点描述中部分体现，但未完全匹配。",
+          "“durable wireless mouse”在标题和五点描述中重复出现，但未造成堆砌感。",
+          "“eco-friendly mouse”在五点描述中出现一次，密度适中。"
+        ],
+        "suggestions": [
+          "在五点描述中增加“ergonomic wireless mouse”的完整出现，例如将第一点改为“Experience superior comfort with this ergonomic wireless mouse...”。",
+          "在长描述中自然融入“wireless mouse for laptop”，例如在兼容性部分提及。",
+          "确保“durable wireless mouse”在长描述中至少出现一次，以强化关键词覆盖。"
+        ]
+      },
+      "readability": {
+        "score": 85.0,
+        "findings": [
+          "标题长度约120字符，符合≤200字符要求，但可更简洁。",
+          "五点描述每点长度适中，但部分句子结构重复（如“this durable wireless mouse”出现两次），略显单调。",
+          "长描述使用HTML标签，层次清晰，但品牌故事部分稍显抽象，可能影响快速理解。",
+          "整体语言流畅，扫描友好度较高，但五点描述中“easy-to-use”和“hassle-free”语义重叠。"
+        ],
+        "suggestions": [
+          "优化五点描述句式多样性，例如将第二点改为“Built with premium materials, this mouse delivers reliable performance and longevity, reducing replacement costs.”。",
+          "在长描述品牌故事中增加具体使用场景，如“Whether you're working from home or in the office, this mouse keeps you productive.”。",
+          "合并五点描述中语义重复的要点，如将第三点和第四点整合为“Effortless setup and robust construction ensure hassle-free daily use.”。"
+        ]
+      },
+      "completeness": {
+        "score": 70.0,
+        "findings": [
+          "标题、五点描述、长描述均存在，但缺少A+模块（如对比图、生活方式图等），影响完整性。",
+          "长描述中包含了品牌故事和产品规格，但缺少客户评价或认证信息。",
+          "五点描述覆盖了舒适性、耐用性、易用性、环保性，但未提及保修或售后支持。",
+          "产品规格中缺少重量、尺寸等关键参数，可能影响买家决策。"
+        ],
+        "suggestions": [
+          "添加A+模块，包含产品对比图、使用场景图（如办公、旅行）和环保材料展示。",
+          "在长描述中增加“Customer Reviews”或“Warranty”部分，例如“Backed by a 1-year warranty for peace of mind.”。",
+          "在五点描述或规格中补充产品尺寸（如“Dimensions: 4.5 x 2.5 x 1.2 inches”）和重量（如“Weight: 3.2 oz”）。"
+        ]
+      },
+      "conversion_potential": {
+        "score": 80.0,
+        "findings": [
+          "标题突出了“Premium”和“Ergonomic”，能吸引追求品质的买家。",
+          "五点描述强调了舒适性、耐用性和环保性，符合目标用户需求。",
+          "长描述的品牌故事营造了情感连接，但缺少紧迫感或促销信息。",
+          "未提及价格优惠、限时折扣或高评分，可能降低购买冲动。"
+        ],
+        "suggestions": [
+          "在五点描述或长描述末尾添加行动号召，如“Order now and enjoy 20% off your first purchase!”或“Join 10,000+ satisfied customers.”。",
+          "在长描述中增加“Best Seller”或“Amazon's Choice”标签（如果适用），增强信任。",
+          "考虑在标题或描述中突出“Free Shipping”或“30-Day Money-Back Guarantee”以降低购买风险。"
+        ]
+      },
+      "overall_score": 78.0,
+      "improvement_priority": [
+        "添加A+模块以提升完整性和视觉吸引力",
+        "优化关键词密度，确保所有目标关键词自然出现",
+        "在描述中增加行动号召和信任元素以提升转化率"
+      ]
+    },
+    "human_approved": false
+  },
+  "compliance": {
+    "policy_issues": [
+      {
+        "location": "title/bullets/description",
+        "issue_type": "prohibited_claim",
+        "severity": "medium",
+        "description": "Found prohibited term: 'free'",
+        "suggestion": "Replace 'free' with compliant alternative"
+      },
+      {
+        "location": "Title",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The title uses 'Premium' which may be considered a subjective superlative claim. Amazon policy restricts unsubstantiated superlatives like 'premium', 'best', 'top', etc. unless verified.",
+        "suggestion": "Remove 'Premium' from the title or replace with a factual descriptor (e.g., 'Ergonomic Wireless Mouse')."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "Bullet point 1 uses 'superior comfort' which is a subjective superlative claim. Bullet point 2 uses 'premium quality materials' which is also a subjective superlative.",
+        "suggestion": "Replace 'superior comfort' with 'comfortable design' and 'premium quality materials' with 'durable materials' or specify the material type (e.g., 'ABS plastic')."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The description uses 'premium wireless mouse' again, which is a subjective superlative claim.",
+        "suggestion": "Remove 'premium' and describe the product factually (e.g., 'wireless mouse with ergonomic design')."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Formatting Issues",
+        "severity": "Low",
+        "description": "Bullet points are well-formatted, but the description contains HTML tags (<h3>, <b>, <ul>, <li>) which may not be fully supported in all listing fields. Amazon's description field supports basic HTML, but ensure no broken tags.",
+        "suggestion": "Check that all HTML tags are properly closed. The <ul> tag appears to be missing a closing </ul> in the provided snippet. Ensure the full description has proper closing tags."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Formatting Issues",
+        "severity": "Low",
+        "description": "The description ends with 'Compatibility: ' which is incomplete. This could be a formatting error or missing content.",
+        "suggestion": "Complete the compatibility information or remove the incomplete line."
+      }
+    ],
+    "claim_issues": [
+      {
+        "claim_text": "Experience superior comfort with an ergonomic design that reduces wrist strain",
+        "issue": "unsubstantiated",
+        "risk_level": "medium",
+        "explanation": "The claim that the design 'reduces wrist strain' is a health-related benefit that requires clinical evidence or ergonomic certification. No such evidence is provided.",
+        "fix_suggestion": "Replace with 'designed for comfort' or add a reference to ergonomic testing results."
+      },
+      {
+        "claim_text": "premium wireless mouse",
+        "issue": "exaggerated",
+        "risk_level": "low",
+        "explanation": "The term 'premium' is subjective and not defined by specific features or materials. It may overstate the product's quality without substantiation.",
+        "fix_suggestion": "Use more specific descriptors like 'high-quality materials' or 'durable construction' instead of 'premium'."
+      },
+      {
+        "claim_text": "Built to last with robust construction, this durable wireless mouse withstands daily wear and tear",
+        "issue": "unsubstantiated",
+        "risk_level": "low",
+        "explanation": "Claims of durability and 'withstanding daily wear and tear' are general and lack specific testing data or warranty details to support them.",
+        "fix_suggestion": "Add a specific durability test result or a warranty period (e.g., 'tested for 100,000 clicks')."
+      },
+      {
+        "claim_text": "Choose an eco-friendly mouse with sustainable packaging that reduces environmental impact",
+        "issue": "unsubstantiated",
+        "risk_level": "medium",
+        "explanation": "The term 'eco-friendly' and 'sustainable packaging' are broad environmental claims that require specific details (e.g., recycled content percentage, certifications like FSC). Without evidence, they may be misleading.",
+        "fix_suggestion": "Specify the packaging material (e.g., '100% recycled cardboard') or provide a certification logo."
+      }
+    ],
+    "overall_verdict": "",
+    "risk_level": "medium",
+    "total_issues": 10,
+    "critical_items": [],
+    "action_items": [
+      "Replace 'free' with compliant alternative",
+      "Remove 'Premium' from the title or replace with a factual descriptor (e.g., 'Ergonomic Wireless Mouse').",
+      "Replace 'superior comfort' with 'comfortable design' and 'premium quality materials' with 'durable materials' or specify the material type (e.g., 'ABS plastic').",
+      "Remove 'premium' and describe the product factually (e.g., 'wireless mouse with ergonomic design').",
+      "Check that all HTML tags are properly closed. The <ul> tag appears to be missing a closing </ul> in the provided snippet. Ensure the full description has proper closing tags.",
+      "Complete the compatibility information or remove the incomplete line.",
+      "Replace with 'designed for comfort' or add a reference to ergonomic testing results.",
+      "Use more specific descriptors like 'high-quality materials' or 'durable construction' instead of 'premium'.",
+      "Add a specific durability test result or a warranty period (e.g., 'tested for 100,000 clicks').",
+      "Specify the packaging material (e.g., '100% recycled cardboard') or provide a certification logo."
+    ],
+    "human_reviewed": false
+  },
+  "social": {
+    "marketing_angles": [
+      "unboxing",
+      "ergonomic lifestyle",
+      "eco-friendly packaging",
+      "productivity boost",
+      "durability test"
+    ],
+    "target_audience": "The ideal customer is a tech-savvy professional or remote worker aged 25-45, based in the US, who values comfort, sustainability, and premium design. They work long hours at a desk and seek products that enhance productivity and reduce strain, while also aligning with their eco-conscious values.",
+    "content_tones": [
+      "professional",
+      "aspirational",
+      "minimalist"
+    ],
+    "key_selling_points": [
+      "Premium quality materials for a luxurious feel",
+      "Ergonomic design reduces wrist strain",
+      "Eco-friendly packaging aligns with sustainability goals",
+      "Durable and long-lasting for daily use",
+      "Easy to use with plug-and-play setup"
+    ],
+    "visual_style": [],
+    "hashtag_themes": [],
+    "posts": [
+      {
+        "platform": "instagram",
+        "copy": "Elevate your workspace with the perfect blend of form and function. Our Premium Wireless Mouse is crafted from high-quality materials, offering a luxu",
+        "hashtags": [
+          "PremiumWirelessMouse",
+          "ErgonomicDesign",
+          "SustainableTech",
+          "RemoteWorkEssentials",
+          "DeskSetupInspo",
+          "EcoFriendlyGadgets",
+          "ProductivityTools",
+          "TechSavvyLife",
+          "WorkFromHome",
+          "LuxuryTech"
+        ],
+        "quality_score": 7.7
+      },
+      {
+        "platform": "threads",
+        "copy": "There’s something about a well-made tool that just makes the workday better. I’ve been using this premium wireless mouse for a few weeks now, and it’s",
+        "hashtags": [
+          "PremiumWirelessMouse",
+          "ErgonomicDesign",
+          "SustainableTech",
+          "RemoteWorkEssentials",
+          "DeskSetup",
+          "EcoFriendlyPackaging",
+          "TechProfessionals",
+          "WorkFromHome",
+          "ProductivityTools",
+          "WirelessMouse"
+        ],
+        "quality_score": 8.0
+      },
+      {
+        "platform": "pinterest",
+        "copy": "Long hours at your desk shouldn't mean compromising on comfort or style. Our Premium Wireless Mouse combines a luxurious feel with ergonomic design to",
+        "hashtags": [
+          "#PremiumWirelessMouse",
+          "#ErgonomicDesign",
+          "#SustainableTech",
+          "#RemoteWorkSetup",
+          "#ProductivityHacks",
+          "#EcoFriendlyPackaging",
+          "#DeskInspiration",
+          "#ComfortAtWork",
+          "#TechSavvy",
+          "#WorkFromHomeEssentials"
+        ],
+        "quality_score": 8.0
+      }
+    ],
+    "human_approved": false
+  },
+  "platform": {
+    "asin": null,
+    "amazon_url": null,
+    "amazon_publish_status": "draft",
+    "amazon_publish_errors": [],
+    "amazon_published_at": null,
+    "social_publish_status": {},
+    "social_post_urls": {}
+  },
+  "reviews": {
+    "total_reviews": 10,
+    "average_rating": 0.0,
+    "sentiment_distribution": {},
+    "negative_alert_count": 2,
+    "top_alerts": [
+      {
+        "reviewer": "Tom S.",
+        "content": "Defective unit. Doesn't turn on.",
+        "alert_level": "critical"
+      },
+      {
+        "reviewer": "David P.",
+        "content": "Color doesn't match the photos. Returning it.",
+        "alert_level": "alert"
+      }
+    ],
+    "last_monitored_at": "2026-05-17T15:03:48.280904Z"
+  },
+  "ads": {
+    "campaigns": [],
+    "total_budget": 0.0,
+    "total_spend": 0.0,
+    "acos": null
+  }
+}

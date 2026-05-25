@@ -61,7 +61,12 @@ class SocialPublisher:
         platform = (post.get("platform") or "").lower().strip()
         copy_text = post.get("copy", "") or post.get("short_copy", "") or ""
         hashtags = post.get("hashtags", []) or []
-        image_urls = post.get("image_urls", []) or []
+        # 兼容两种图片格式: image_urls (list of str) 或 images (list of {url, ...})
+        raw_img = post.get("image_urls") or post.get("images") or []
+        if raw_img and isinstance(raw_img[0], dict):
+            image_urls = [img.get("url", "") for img in raw_img if img.get("url")]
+        else:
+            image_urls = raw_img
 
         # 生成标题
         title = post.get("short_copy", "") or copy_text[:80]
@@ -109,19 +114,32 @@ class SocialPublisher:
         return results
 
     async def _download_images(self, urls: list[str]) -> list[str]:
-        """下载远程图片到本地临时目录"""
+        """下载远程图片到本地临时目录，失败时记录日志并跳过"""
         import httpx
+        import logging
+        logger = logging.getLogger("social.publisher")
+        _D = print  # debug helper — 确保输出到控制台
+
         local_paths = []
         tmp_dir = Path("data/tmp_images")
         tmp_dir.mkdir(parents=True, exist_ok=True)
 
-        async with httpx.AsyncClient(timeout=30) as client:
+        # 清空上轮旧图片
+        for old in tmp_dir.glob("social_img_*"):
+            try:
+                old.unlink()
+            except Exception:
+                pass
+
+        async with httpx.AsyncClient(timeout=60, follow_redirects=True, verify=False) as client:
             for i, url in enumerate(urls):
                 if not url or "[image-gen]" in url:
+                    print(f"[download] SKIP invalid URL: {url[:100] if url else 'None'}")
                     continue
                 try:
+                    print(f"[download] [{i}] fetching: {url[:150]}...")
                     resp = await client.get(url)
-                    if resp.status_code == 200:
+                    if resp.status_code == 200 and len(resp.content) > 500:
                         ext = ".jpg"
                         content_type = resp.headers.get("content-type", "")
                         if "png" in content_type:
@@ -131,8 +149,12 @@ class SocialPublisher:
 
                         path = tmp_dir / f"social_img_{i}{ext}"
                         path.write_bytes(resp.content)
-                        local_paths.append(str(path))
-                except Exception:
+                        local_paths.append(str(path.as_posix()))
+                        print(f"[download] [{i}] OK: {path} ({len(resp.content)} bytes)")
+                    else:
+                        print(f"[download] [{i}] FAIL: HTTP {resp.status_code} size={len(resp.content)}")
+                except Exception as e:
+                    print(f"[download] [{i}] EXCEPTION: {type(e).__name__}: {e}")
                     continue
         return local_paths
 

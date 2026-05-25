@@ -1,0 +1,630 @@
+{
+  "product_id": "949186ae",
+  "current_stage": "monitored",
+  "created_at": "2026-05-17T08:56:41.612409Z",
+  "updated_at": "2026-05-17T09:00:07.781033Z",
+  "version": 6,
+  "identity": {
+    "product_id": "39d83745-564d-426b-a5a9-23443219ced6",
+    "category": "gaming mouse",
+    "subcategory": null,
+    "brand_name": null,
+    "brand_story": null,
+    "target_market": "US",
+    "language": "en",
+    "seller_budget": "$5000-$15000",
+    "seller_strengths": [
+      "Competitive pricing",
+      "Fast global shipping",
+      "Quality materials",
+      "Responsive customer service",
+      "Professional packaging"
+    ],
+    "platforms": []
+  },
+  "market_insight": {
+    "category_overview": "The gaming mouse market on Amazon US is highly competitive and mature, driven by the growing PC gaming community and esports culture. Demand is shifting toward wireless, lightweight, and customizable peripherals, with a strong emphasis on ergonomics and high-performance sensors. The market is dominated by established brands, but there is room for niche products targeting specific user needs like portability, budget-friendly options, and specialized designs for different hand sizes or grip styles.",
+    "market_size_estimate": "",
+    "market_growth_trend": "",
+    "top_competitors": [],
+    "recommended_niches": [
+      "Ultra-lightweight gaming mice under 60g for competitive FPS players",
+      "Ergonomic vertical gaming mice for carpal tunnel prevention",
+      "RGB-free, minimalist gaming mice for professional/office use",
+      "Eco-friendly gaming mice made from recycled materials",
+      "Gaming mice with built-in OLED screens for DPI and profile display"
+    ],
+    "top_pick_product": "Kids Gaming Mouse",
+    "scored_alternatives": [
+      {
+        "product_name": "Wireless Gaming Mouse",
+        "competition_score": 3.0,
+        "margin_score": 6.0,
+        "trend_score": 8.0,
+        "risk_score": 5.0,
+        "overall_score": 5.5,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Best Gaming Mouse Wireless",
+        "competition_score": 2.0,
+        "margin_score": 7.0,
+        "trend_score": 7.0,
+        "risk_score": 4.0,
+        "overall_score": 5.0,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Bluetooth Gaming Mouse",
+        "competition_score": 6.0,
+        "margin_score": 5.0,
+        "trend_score": 8.0,
+        "risk_score": 6.0,
+        "overall_score": 6.3,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Gaming Mouse for Laptop",
+        "competition_score": 6.0,
+        "margin_score": 4.0,
+        "trend_score": 6.0,
+        "risk_score": 6.0,
+        "overall_score": 5.5,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Mini Gaming Mouse",
+        "competition_score": 7.0,
+        "margin_score": 6.0,
+        "trend_score": 8.0,
+        "risk_score": 7.0,
+        "overall_score": 7.0,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Kids Gaming Mouse",
+        "competition_score": 9.0,
+        "margin_score": 5.0,
+        "trend_score": 7.0,
+        "risk_score": 8.0,
+        "overall_score": 7.3,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Professional Gaming Mouse",
+        "competition_score": 3.0,
+        "margin_score": 8.0,
+        "trend_score": 5.0,
+        "risk_score": 4.0,
+        "overall_score": 5.0,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "Gaming Mouse for Mac",
+        "competition_score": 6.0,
+        "margin_score": 6.0,
+        "trend_score": 8.0,
+        "risk_score": 6.0,
+        "overall_score": 6.5,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      }
+    ],
+    "inferred_selling_points": [],
+    "inferred_target_audience": "",
+    "inferred_price_range": "",
+    "inferred_material": null,
+    "competitor_keywords": [],
+    "differentiation_angle": "",
+    "extraction_confidence": 0.0
+  },
+  "listing": {
+    "keywords": [
+      {
+        "keyword": "kids gaming mouse",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 100.0
+      },
+      {
+        "keyword": "ergonomic mouse for kids",
+        "search_volume_level": "medium",
+        "competition_level": "low",
+        "relevance_score": 95.0
+      },
+      {
+        "keyword": "durable gaming mouse for children",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 90.0
+      },
+      {
+        "keyword": "easy to use gaming mouse",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "premium kids mouse",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "gaming mouse for kids 8-12",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 95.0
+      },
+      {
+        "keyword": "eco-friendly gaming mouse",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "small gaming mouse for children",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 90.0
+      },
+      {
+        "keyword": "kids computer mouse gaming",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "ergonomic gaming mouse for small hands",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 92.0
+      },
+      {
+        "keyword": "durable mouse for kids gaming",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 88.0
+      },
+      {
+        "keyword": "best gaming mouse for kids",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 98.0
+      },
+      {
+        "keyword": "wireless gaming mouse for kids",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "kids gaming mouse with rgb",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 70.0
+      },
+      {
+        "keyword": "childrens gaming mouse",
+        "search_volume_level": "medium",
+        "competition_level": "low",
+        "relevance_score": 95.0
+      },
+      {
+        "keyword": "gaming mouse for toddlers",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 60.0
+      },
+      {
+        "keyword": "long lasting kids mouse",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "kid friendly gaming mouse",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 90.0
+      }
+    ],
+    "top_keywords": [
+      "best gaming mouse for kids",
+      "kids gaming mouse",
+      "ergonomic mouse for kids"
+    ],
+    "title_candidates": [
+      {
+        "title": "TechKidz Ergonomic Kids Gaming Mouse - Best Gaming Mouse for Kids, Small Ergonomic Mouse for Children, Durable and Easy to Use with Eco-Friendly Packaging",
+        "score": 92,
+        "char_count": 158,
+        "keyword_coverage": [
+          "best gaming mouse for kids",
+          "kids gaming mouse",
+          "ergonomic mouse for kids"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Kids Ergonomic Gaming Mouse - Best for Children, Easy to Use, Durable and Long-Lasting, Eco-Friendly Design, Small Gaming Mouse for Kids",
+        "score": 85,
+        "char_count": 141,
+        "keyword_coverage": [
+          "kids gaming mouse",
+          "ergonomic mouse for kids",
+          "best gaming mouse for kids"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "Ergonomic Kids Gaming Mouse - Premium Quality, Durable and Long-Lasting, Easy to Use for Children, Best Gaming Mouse for Kids with Eco-Friendly Packaging",
+        "score": 88,
+        "char_count": 149,
+        "keyword_coverage": [
+          "kids gaming mouse",
+          "ergonomic mouse for kids",
+          "best gaming mouse for kids"
+        ],
+        "compliance_issues": []
+      }
+    ],
+    "best_title": "TechKidz Ergonomic Kids Gaming Mouse - Best Gaming Mouse for Kids, Small Ergonomic Mouse for Children, Durable and Easy to Use with Eco-Friendly Packaging",
+    "bullet_points": [
+      {
+        "text": "Ergonomic design tailored for small hands reduces strain during long gaming sessions, making it the best gaming mouse for kids who love to play for hours.",
+        "feature_highlighted": "Ergonomic design",
+        "benefit_highlighted": "Reduces hand strain for comfortable extended use"
+      },
+      {
+        "text": "Built with premium quality materials for durability, this kids gaming mouse withstands drops and spills, ensuring long-lasting performance for young gamers.",
+        "feature_highlighted": "Premium quality materials",
+        "benefit_highlighted": "Ensures durability and long-lasting performance"
+      },
+      {
+        "text": "Easy plug-and-play setup with no drivers required, allowing kids to start gaming immediately—perfect as an ergonomic mouse for kids of all skill levels.",
+        "feature_highlighted": "Easy to use",
+        "benefit_highlighted": "Quick setup for immediate gaming fun"
+      },
+      {
+        "text": "Eco-friendly packaging reflects our commitment to sustainability, so parents can feel good about choosing this kids gaming mouse for their children.",
+        "feature_highlighted": "Eco-friendly packaging",
+        "benefit_highlighted": "Supports environmental sustainability"
+      },
+      {
+        "text": "Designed with a responsive sensor and comfortable grip, this ergonomic mouse for kids enhances accuracy and control in games, boosting their confidence.",
+        "feature_highlighted": "Responsive sensor and comfortable grip",
+        "benefit_highlighted": "Improves gaming accuracy and child's confidence"
+      }
+    ],
+    "description_html": "<p>Every click is an adventure, every game a new world to explore. Designed for small hands and big imaginations, this <b>kids gaming mouse</b> turns playtime into epic quests. Crafted with care, it's the perfect companion for young explorers ready to conquer virtual realms.</p><h3>Product Parameters</h3><ul><li><b>Connection:</b> USB wired, plug-and-play</li><li><b>Sensor:</b> Responsive optical sensor for precise tracking</li><li><b>Design:</b> Ergonomic shape tailored for small hands</li><li><b>Material:</b> Premium quality, durable plastic with comfortable grip</li><li><b>Compatibility:</b> Windows, Mac, Chrome OS</li><li><b>Cable Length:</b> 1.5 meters</li></ul><h3>Core Selling Points</h3><ul><li><b>Ergonomic design tailored for small hands</b> reduces strain during long gaming sessions, making it the <b>best gaming mouse for kids</b> who love to play for hours.</li><li><b>Built with premium quality materials</b> for durability, this <b>kids gaming mouse</b> withstands drops and spills, ensuring long-lasting performance for young gamers.</li><li><b>Easy plug-and-play setup</b> with no drivers required, allowing kids to start gaming immediately—perfect as an <b>ergonomic mouse for kids</b> of all skill levels.</li><li><b>Eco-friendly packaging</b> reflects our commitment to sustainability, so parents can feel good about choosing this <b>kids gaming mouse</b> for their children.</li><li><b>Designed with a responsive sensor and comfortable grip</b>, this <b>ergonomic mouse for kids</b> enhances accuracy and control in games, boosting their confidence.</li></ul><h3>Use Scenarios</h3><p>Ideal for home gaming setups, school computer labs, and on-the-go play. Whether your child is exploring Minecraft, racing in Roblox, or battling in Fortnite, this <b>kids gaming mouse</b> delivers reliable performance. Its compact size fits easily into backpacks, making it a great choice for gaming sessions at a friend's house or during travel.</p><h3>Quality Assurance</h3><p>We stand behind the durability of our <b>best gaming mouse for kids</b>. Each unit undergoes rigorous testing to ensure it meets high standards for drop resistance, button longevity, and sensor accuracy. Backed by a 12-month warranty, you can trust that this <b>ergonomic mouse for kids</b> is built to last. Plus, our eco-friendly packaging aligns with our commitment to reducing environmental impact.</p>",
+    "a_plus_modules": [
+      {
+        "module_type": "hero_banner",
+        "title": "Epic Adventures Start Here",
+        "description": "顶部大图模块，展示产品整体形象和品牌标语，吸引注意力",
+        "image_suggestion": "一张960x600的图片，展示孩子使用鼠标玩游戏时的快乐场景，背景为奇幻游戏世界风格，鼠标居中或置于孩子手中",
+        "copy_text": "Every click is an adventure, every game a new world to explore. Designed for small hands and big imaginations."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Built for Little Champions",
+        "description": "左图右文模块，强调人体工学设计和优质材料，适合儿童手型",
+        "image_suggestion": "左侧图片展示孩子手握鼠标的侧面特写，突出鼠标贴合小手的人体工学曲线，背景柔和",
+        "copy_text": "Ergonomically sculpted for small hands, our gaming mouse provides a comfortable grip for hours of play. Premium materials ensure durability through countless quests."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Easy to Use, Hard to Put Down",
+        "description": "右图左文模块，强调易用性和耐用性，适合儿童操作",
+        "image_suggestion": "右侧图片展示鼠标按键特写，孩子手指轻松点击，或鼠标在桌面上快速移动的动感画面",
+        "copy_text": "Simple plug-and-play setup and responsive buttons make it easy for kids to jump right into the action. Built to withstand drops, spills, and endless gaming sessions."
+      },
+      {
+        "module_type": "spec_table",
+        "title": "Specifications at a Glance",
+        "description": "规格参数表模块，清晰列出产品关键参数，增强信任感",
+        "image_suggestion": "无图片，使用表格展示规格参数",
+        "copy_text": "| Feature | Detail |\n|---------|--------|\n| Connection | USB Wired |\n| Buttons | 6 (left, right, scroll, DPI, forward, back) |\n| DPI | 800/1200/1600 adjustable |\n| Cable Length | 1.5m braided |\n| Weight | 65g |\n| Compatibility | Windows/Mac/Chrome OS |\n| Materials | ABS + silicone grip |\n| Packaging | 100% recyclable eco-friendly box |"
+      },
+      {
+        "module_type": "comparison_chart",
+        "title": "Why Choose Our Mouse?",
+        "description": "竞品对比表模块，突出本产品在儿童友好、耐用性和环保包装方面的优势",
+        "image_suggestion": "无图片，使用对比表格展示",
+        "copy_text": "| Feature | Our Kids Gaming Mouse | Standard Adult Mouse | Other Kids Mouse |\n|---------|----------------------|---------------------|------------------|\n| Ergonomic for kids | ✅ Yes | ❌ Too large | ✅ Yes |\n| Premium materials | ✅ Silicone + ABS | ✅ Plastic | ❌ Cheap plastic |\n| Durable & long-lasting | ✅ Drop-tested | ❌ Fragile | ⚠️ Moderate |\n| Eco-friendly packaging | ✅ 100% recyclable | ❌ Plastic wrap | ❌ Mixed |\n| Adjustable DPI | ✅ 3 levels | ✅ Yes | ❌ Fixed |\n| Warranty | 2 years | 1 year | 1 year |"
+      },
+      {
+        "module_type": "image_text",
+        "title": "Play Green, Play Long",
+        "description": "左图右文模块，强调环保包装和品牌责任感",
+        "image_suggestion": "左侧图片展示环保包装盒打开后的样子，内含鼠标和可回收材料填充物，背景自然光",
+        "copy_text": "We believe every adventure should leave a light footprint. Our mouse comes in 100% eco-friendly packaging made from recycled materials. Play responsibly, explore endlessly."
+      },
+      {
+        "module_type": "hero_banner",
+        "title": "Ready for the Next Quest?",
+        "description": "底部大图模块，强化品牌故事和行动号召，鼓励购买",
+        "image_suggestion": "一张960x600的图片，展示鼠标放在奇幻地图或游戏场景中，周围有星星、小旗帜等冒险元素，鼠标突出",
+        "copy_text": "Every click is an adventure. Every game a new world. Give your little hero the tool they deserve. Click 'Add to Cart' and start the journey today!"
+      }
+    ],
+    "seo_report": {
+      "keyword_density": {
+        "score": 70.0,
+        "findings": [
+          "目标关键词在标题和五点描述中重复出现，如'best gaming mouse for kids'出现2次，'kids gaming mouse'出现4次，'ergonomic mouse for kids'出现3次，密度较高但未达到堆砌程度。",
+          "长描述中关键词出现频率较低，仅'kids gaming mouse'出现一次，分布不均。"
+        ],
+        "suggestions": [
+          "在五点描述中减少'kids gaming mouse'的重复，可替换为'this mouse'或'it'等代词。",
+          "在长描述中适当增加目标关键词，如'ergonomic mouse for kids'，以平衡整体密度。"
+        ]
+      },
+      "readability": {
+        "score": 85.0,
+        "findings": [
+          "标题长度约为180字符，符合≤200字符要求，但略显冗长，包含多个重复关键词。",
+          "五点描述每点长度适中，语言流畅，但部分句子结构稍显复杂，如第一点。",
+          "长描述使用HTML格式，段落清晰，但缺少项目符号或短句来提升扫描友好度。"
+        ],
+        "suggestions": [
+          "简化标题，例如：'TechKidz Ergonomic Kids Gaming Mouse - Small, Durable, Eco-Friendly'。",
+          "在五点描述中使用更短的句子，如第一点可改为：'Ergonomic design for small hands reduces strain during long gaming sessions.'",
+          "在长描述中添加项目符号或短段落，以提升可扫描性。"
+        ]
+      },
+      "completeness": {
+        "score": 90.0,
+        "findings": [
+          "标题、五点描述、长描述（含产品参数）均已提供，但缺少A+内容（如对比图、品牌故事等）。",
+          "产品参数部分仅列出连接、传感器、设计，缺少尺寸、重量、颜色等关键信息。"
+        ],
+        "suggestions": [
+          "在长描述中添加A+模块，如尺寸对比图或使用场景图，以增强完整性。",
+          "补充产品参数：尺寸（如10x6x4 cm）、重量（如80g）、颜色选项（如蓝色、红色）。"
+        ]
+      },
+      "conversion_potential": {
+        "score": 75.0,
+        "findings": [
+          "标题和五点描述强调了耐用性、易用性和环保包装，对家长有吸引力，但缺少具体性能数据（如DPI范围）。",
+          "长描述中的故事性语言（'Every click is an adventure'）能激发情感，但未直接解决家长对安全性和质量的顾虑。",
+          "未提及保修或客户评价，降低了信任度。"
+        ],
+        "suggestions": [
+          "在五点描述中添加具体性能数据，如'1600 DPI optical sensor for smooth tracking'。",
+          "在长描述中增加安全认证（如FCC、CE）或保修信息（如1年保修）。",
+          "添加客户评价或评分（如'Rated 4.8 stars by parents'）以增强信任。"
+        ]
+      },
+      "overall_score": 80.0,
+      "improvement_priority": [
+        "补充产品参数（尺寸、重量、颜色）和A+内容以提升完整性。",
+        "在五点描述和长描述中增加具体性能数据和安全认证以增强转化预期。",
+        "优化标题和五点描述的可读性，减少关键词重复并简化句子结构。"
+      ]
+    },
+    "human_approved": false
+  },
+  "compliance": {
+    "policy_issues": [
+      {
+        "location": "title/bullets/description",
+        "issue_type": "prohibited_claim",
+        "severity": "medium",
+        "description": "Found prohibited term: 'best'",
+        "suggestion": "Replace 'best' with compliant alternative"
+      },
+      {
+        "location": "Title",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The title contains 'Best Gaming Mouse for Kids', which is a subjective superlative claim that is not allowed in Amazon listings.",
+        "suggestion": "Remove 'Best' from the title. Use descriptive terms like 'Ergonomic Kids Gaming Mouse' instead."
+      },
+      {
+        "location": "Bullet Point 1",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The phrase 'the best gaming mouse for kids' is a prohibited superlative claim.",
+        "suggestion": "Rephrase to avoid 'best'. For example: 'Ergonomic design tailored for small hands reduces strain during long gaming sessions, ideal for kids who love to play for hours.'"
+      },
+      {
+        "location": "Bullet Point 4",
+        "issue_type": "Unsupported Claims",
+        "severity": "Medium",
+        "description": "The claim 'Eco-friendly packaging' may require substantiation or certification. Without proof, it could be considered misleading.",
+        "suggestion": "Either remove the claim or provide specific details about the eco-friendly materials used, and ensure compliance with Amazon's sustainability guidelines."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Formatting Issues",
+        "severity": "Low",
+        "description": "The description uses HTML tags (<p>, <b>, <h3>, <ul>, <li>) which are not allowed in Amazon product descriptions. Amazon only supports plain text or basic formatting via the standard editor.",
+        "suggestion": "Remove all HTML tags and rewrite the description using plain text. Use line breaks for readability."
+      }
+    ],
+    "claim_issues": [
+      {
+        "claim_text": "best gaming mouse for kids",
+        "issue": "unsubstantiated",
+        "risk_level": "medium",
+        "explanation": "The claim 'best gaming mouse for kids' is a superlative statement that requires objective evidence (e.g., comparative testing, awards, or verified reviews). No such evidence is provided in the listing.",
+        "fix_suggestion": "Replace with a factual statement such as 'popular choice for kids' or 'designed for young gamers' and support with verifiable data if possible."
+      },
+      {
+        "claim_text": "reduces strain during long gaming sessions",
+        "issue": "unsubstantiated",
+        "risk_level": "medium",
+        "explanation": "The claim that the ergonomic design reduces strain is a health-related benefit that should be supported by ergonomic studies or expert endorsements. No evidence is provided.",
+        "fix_suggestion": "Add a disclaimer like 'ergonomic design may help reduce strain for some users' or reference a study if available."
+      },
+      {
+        "claim_text": "built with premium quality materials for durability",
+        "issue": "unsubstantiated",
+        "risk_level": "low",
+        "explanation": "The term 'premium quality materials' is vague and not backed by specific material descriptions or durability test results.",
+        "fix_suggestion": "Specify the materials used (e.g., 'ABS plastic with reinforced casing') and include any relevant durability certifications."
+      },
+      {
+        "claim_text": "withstands drops and spills",
+        "issue": "unsubstantiated",
+        "risk_level": "high",
+        "explanation": "This is a specific performance claim about resistance to drops and spills. Without testing data or certification (e.g., IP rating for spills, drop test results), it is unsubstantiated and could mislead consumers.",
+        "fix_suggestion": "Remove the claim or add a qualifier like 'tested to withstand drops from up to 1 meter' and provide evidence."
+      },
+      {
+        "claim_text": "enhances accuracy and control in games, boosting their confidence",
+        "issue": "exaggerated",
+        "risk_level": "medium",
+        "explanation": "The claim that the mouse 'boosts confidence' is an emotional benefit that is subjective and not directly attributable to the product's features. It overstates the impact of the mouse.",
+        "fix_suggestion": "Rephrase to focus on objective features: 'responsive sensor and comfortable grip may help improve accuracy and control for young gamers.'"
+      }
+    ],
+    "overall_verdict": "",
+    "risk_level": "high",
+    "total_issues": 10,
+    "critical_items": [
+      "[Claim] This is a specific performance claim about resistance to drops and spills. Without testing data or certification (e.g., IP rating for spills, drop test results), it is unsubstantiated and could mislead consumers."
+    ],
+    "action_items": [
+      "Replace 'best' with compliant alternative",
+      "Remove 'Best' from the title. Use descriptive terms like 'Ergonomic Kids Gaming Mouse' instead.",
+      "Rephrase to avoid 'best'. For example: 'Ergonomic design tailored for small hands reduces strain during long gaming sessions, ideal for kids who love to play for hours.'",
+      "Either remove the claim or provide specific details about the eco-friendly materials used, and ensure compliance with Amazon's sustainability guidelines.",
+      "Remove all HTML tags and rewrite the description using plain text. Use line breaks for readability.",
+      "Replace with a factual statement such as 'popular choice for kids' or 'designed for young gamers' and support with verifiable data if possible.",
+      "Add a disclaimer like 'ergonomic design may help reduce strain for some users' or reference a study if available.",
+      "Specify the materials used (e.g., 'ABS plastic with reinforced casing') and include any relevant durability certifications.",
+      "Remove the claim or add a qualifier like 'tested to withstand drops from up to 1 meter' and provide evidence.",
+      "Rephrase to focus on objective features: 'responsive sensor and comfortable grip may help improve accuracy and control for young gamers.'"
+    ],
+    "human_reviewed": false
+  },
+  "social": {
+    "marketing_angles": [
+      "Parent-child gaming sessions: Showcase the mouse as a tool for bonding over family gaming time.",
+      "Ergonomic first steps: Highlight how the design supports proper hand development for young gamers.",
+      "Eco-conscious parenting: Emphasize the eco-friendly packaging as a selling point for environmentally aware families.",
+      "Durability challenge: Feature the mouse surviving drops and rough play to prove its long-lasting build."
+    ],
+    "target_audience": "Tech-savvy parents in the US, aged 28-45, who are gamers themselves or have children aged 5-12 showing interest in gaming. They value quality, safety, and sustainability, and seek products that balance fun with practical features like ergonomics and durability. They are active on platforms like Instagram and TikTok, following family lifestyle and gaming content.",
+    "content_tones": [
+      "Playful and energetic",
+      "Reassuring and trustworthy",
+      "Aspirational for young gamers"
+    ],
+    "key_selling_points": [
+      "Ergonomic design tailored for small hands to prevent strain",
+      "Premium, durable materials withstand drops and heavy use",
+      "Eco-friendly packaging aligns with sustainable family values",
+      "Easy-to-use buttons for young beginners"
+    ],
+    "visual_style": [],
+    "hashtag_themes": [],
+    "posts": [
+      {
+        "platform": "instagram",
+        "copy": "Level up your little gamer’s setup without the worry! 🎮✨\n\nThis ergonomic gaming mouse is built for tiny hands—no more awkward grips or tired wrists af",
+        "hashtags": [
+          "#KidsGaming",
+          "#GamingMouse",
+          "#ErgonomicDesign",
+          "#FamilyGaming",
+          "#SustainableParenting",
+          "#TechSavvyKids",
+          "#GamerParents",
+          "#ParentingTips",
+          "#EcoFriendlyGear",
+          "#LittleGamers"
+        ],
+        "quality_score": 8.0
+      },
+      {
+        "platform": "threads",
+        "copy": "Let’s be real—watching your kid’s tiny hands grip a full-size mouse is equal parts adorable and terrifying. 😅\n\nWe designed this gaming mouse specifica",
+        "hashtags": [
+          "KidsGaming",
+          "ErgonomicMouse",
+          "FamilyGaming",
+          "EcoFriendlyParenting",
+          "GamerKids",
+          "TechSavvyParents",
+          "ParentingHacks",
+          "SustainableLiving",
+          "GamingSetup",
+          "LittleGamers"
+        ],
+        "quality_score": 8.0
+      },
+      {
+        "platform": "pinterest",
+        "copy": "Level up your little gamer’s setup without the worry! 🎮 Our kids gaming mouse is built tiny-hand tough—ergonomic curves that say goodbye to strain, an",
+        "hashtags": [
+          "KidsGamingMouse",
+          "GamingForKids",
+          "ErgonomicDesign",
+          "SustainableGaming",
+          "TechSavvyParents",
+          "FamilyGaming",
+          "MinecraftSetup",
+          "RobloxGear",
+          "EcoFriendlyToys",
+          "ParentingHacks"
+        ],
+        "quality_score": 8.0
+      }
+    ],
+    "human_approved": false
+  },
+  "platform": {
+    "asin": null,
+    "amazon_url": null,
+    "amazon_publish_status": "draft",
+    "amazon_publish_errors": [],
+    "amazon_published_at": null,
+    "social_publish_status": {},
+    "social_post_urls": {}
+  },
+  "reviews": {
+    "total_reviews": 10,
+    "average_rating": 0.0,
+    "sentiment_distribution": {},
+    "negative_alert_count": 2,
+    "top_alerts": [
+      {
+        "reviewer": "Tom S.",
+        "content": "Defective unit. Doesn't turn on.",
+        "alert_level": "critical"
+      },
+      {
+        "reviewer": "David P.",
+        "content": "Color doesn't match the photos. Returning it.",
+        "alert_level": "alert"
+      }
+    ],
+    "last_monitored_at": "2026-05-17T09:00:07.781033Z"
+  },
+  "ads": {
+    "campaigns": [],
+    "total_budget": 0.0,
+    "total_spend": 0.0,
+    "acos": null
+  }
+}

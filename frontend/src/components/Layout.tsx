@@ -14,7 +14,7 @@ const navGroups = [
     icon: Package,
     items: [
       { to: "/selection", icon: TrendingUp, label: "智能选品" },
-      { to: "/listing", icon: FileText, label: "Listing 优化" },
+      { to: "/listing", icon: FileText, label: "Listing 生成" },
       { to: "/compliance", icon: Shield, label: "合规审查" },
     ],
   },

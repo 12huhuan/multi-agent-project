@@ -8,7 +8,7 @@
 
 import { API_BASE } from "./utils";
 
-export type WorkflowType = "listing" | "review" | "social" | "selection" | "compliance";
+export type WorkflowType = "listing" | "review" | "social" | "selection" | "compliance" | "orchestrator";
 
 export interface TaskInfo {
   id: string;
@@ -30,6 +30,7 @@ const API_PATHS: Record<WorkflowType, string> = {
   social: "social",
   selection: "selection",
   compliance: "compliance",
+  orchestrator: "orchestrator",
 };
 
 class TaskStore {
@@ -75,9 +76,10 @@ class TaskStore {
       this.tasks.set(id, {
         ...task,
         status: data.status,
-        current_step: data.current_step,
-        progress: data.current_step,
+        current_step: data.current_step || data.progress,
+        progress: data.current_step || data.progress,
         error: data.error,
+        result: data.result,
       });
 
       if (["awaiting_review", "completed"].includes(data.status)) {

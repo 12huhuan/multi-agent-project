@@ -1,0 +1,656 @@
+{
+  "product_id": "856923e0",
+  "current_stage": "monitored",
+  "created_at": "2026-05-17T14:09:13.508687Z",
+  "updated_at": "2026-05-17T14:12:38.346003Z",
+  "version": 6,
+  "identity": {
+    "product_id": "181b61da-a292-454b-8067-8168c6684f52",
+    "category": "Wireless Earbuds",
+    "subcategory": null,
+    "brand_name": null,
+    "brand_story": null,
+    "target_market": "US",
+    "language": "en",
+    "seller_budget": "$5000-$15000",
+    "seller_strengths": [
+      "Competitive pricing",
+      "Fast global shipping",
+      "Quality materials",
+      "Responsive customer service",
+      "Professional packaging"
+    ],
+    "platforms": []
+  },
+  "market_insight": {
+    "category_overview": "The wireless earbuds market on Amazon US is highly saturated and competitive, driven by strong consumer demand for convenience, audio quality, and compatibility with smartphones. The category is dominated by major brands like Apple, Samsung, and Sony, but there is significant fragmentation in the mid-to-low price segments. Recent trends show a shift toward premium features such as active noise cancellation (ANC), spatial audio, and long battery life, while budget-friendly options focus on value and basic functionality. The market is mature but continues to grow, with increasing interest in specialized use cases like professional audio, kids' safety, and miniaturized designs.",
+    "market_size_estimate": "",
+    "market_growth_trend": "",
+    "top_competitors": [],
+    "recommended_niches": [
+      "Kids wireless earbuds with volume-limiting and durable design",
+      "Mini wireless earbuds for small ears with secure fit",
+      "Professional wireless earbuds for musicians with low latency and high-fidelity audio",
+      "Premium wireless earbuds for iPhone with spatial audio and seamless integration",
+      "Wireless earbuds for sports with IPX7+ rating and ear hooks"
+    ],
+    "top_pick_product": "kids wireless earbuds",
+    "scored_alternatives": [
+      {
+        "product_name": "kids wireless earbuds",
+        "competition_score": 8.0,
+        "margin_score": 7.0,
+        "trend_score": 9.0,
+        "risk_score": 8.0,
+        "overall_score": 8.0,
+        "verdict": "strong_buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "professional wireless earbuds",
+        "competition_score": 6.0,
+        "margin_score": 8.0,
+        "trend_score": 8.0,
+        "risk_score": 7.0,
+        "overall_score": 7.3,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "mini wireless earbuds",
+        "competition_score": 6.0,
+        "margin_score": 5.0,
+        "trend_score": 8.0,
+        "risk_score": 7.0,
+        "overall_score": 6.5,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "premium wireless earbuds",
+        "competition_score": 4.0,
+        "margin_score": 9.0,
+        "trend_score": 8.0,
+        "risk_score": 5.0,
+        "overall_score": 6.5,
+        "verdict": "buy",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "best wireless earbuds",
+        "competition_score": 2.0,
+        "margin_score": 6.0,
+        "trend_score": 8.0,
+        "risk_score": 4.0,
+        "overall_score": 5.0,
+        "verdict": "consider",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "wireless earbuds for iphone",
+        "competition_score": 3.0,
+        "margin_score": 5.0,
+        "trend_score": 5.0,
+        "risk_score": 5.0,
+        "overall_score": 4.5,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "wireless earbuds",
+        "competition_score": 1.0,
+        "margin_score": 4.0,
+        "trend_score": 4.0,
+        "risk_score": 3.0,
+        "overall_score": 3.0,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      },
+      {
+        "product_name": "wireless earbuds bluetooth",
+        "competition_score": 1.0,
+        "margin_score": 3.0,
+        "trend_score": 2.0,
+        "risk_score": 2.0,
+        "overall_score": 2.0,
+        "verdict": "skip",
+        "pros": [],
+        "cons": []
+      }
+    ],
+    "inferred_selling_points": [],
+    "inferred_target_audience": "",
+    "inferred_price_range": "",
+    "inferred_material": null,
+    "competitor_keywords": [],
+    "differentiation_angle": "",
+    "extraction_confidence": 0.0
+  },
+  "listing": {
+    "keywords": [
+      {
+        "keyword": "kids wireless earbuds",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 100.0
+      },
+      {
+        "keyword": "wireless earbuds for kids",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 98.0
+      },
+      {
+        "keyword": "kids bluetooth earbuds",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 95.0
+      },
+      {
+        "keyword": "durable kids earbuds",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 90.0
+      },
+      {
+        "keyword": "ergonomic earbuds for children",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 85.0
+      },
+      {
+        "keyword": "easy to use kids earbuds",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 82.0
+      },
+      {
+        "keyword": "long lasting kids headphones",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 80.0
+      },
+      {
+        "keyword": "premium kids wireless earbuds",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 78.0
+      },
+      {
+        "keyword": "eco friendly earbuds for kids",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 75.0
+      },
+      {
+        "keyword": "kids earbuds for school",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 73.0
+      },
+      {
+        "keyword": "toddler wireless earbuds",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 70.0
+      },
+      {
+        "keyword": "safe earbuds for kids",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 68.0
+      },
+      {
+        "keyword": "kids wireless earbuds with mic",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 65.0
+      },
+      {
+        "keyword": "best kids earbuds 2024",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 62.0
+      },
+      {
+        "keyword": "waterproof kids earbuds",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 60.0
+      },
+      {
+        "keyword": "kids earbuds for travel",
+        "search_volume_level": "low",
+        "competition_level": "low",
+        "relevance_score": 58.0
+      },
+      {
+        "keyword": "childrens bluetooth earbuds",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 55.0
+      },
+      {
+        "keyword": "wireless earbuds for teenagers",
+        "search_volume_level": "medium",
+        "competition_level": "medium",
+        "relevance_score": 52.0
+      },
+      {
+        "keyword": "kids noise cancelling earbuds",
+        "search_volume_level": "high",
+        "competition_level": "high",
+        "relevance_score": 50.0
+      },
+      {
+        "keyword": "budget kids earbuds",
+        "search_volume_level": "medium",
+        "competition_level": "high",
+        "relevance_score": 48.0
+      }
+    ],
+    "top_keywords": [
+      "kids wireless earbuds",
+      "wireless earbuds for kids",
+      "kids bluetooth earbuds",
+      "durable kids earbuds",
+      "safe earbuds for kids"
+    ],
+    "title_candidates": [
+      {
+        "title": "KidzSafe Kids Wireless Earbuds for Kids - Bluetooth 5.3 Safe Volume Limited, Durable Ergonomic Design, Easy to Use for School & Travel",
+        "score": 92,
+        "char_count": 148,
+        "keyword_coverage": [
+          "kids wireless earbuds",
+          "wireless earbuds for kids",
+          "kids bluetooth earbuds",
+          "durable kids earbuds",
+          "safe earbuds for kids"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "TinyTunes Kids Wireless Earbuds - Bluetooth Earbuds for Kids, Durable & Safe Volume Control, Ergonomic Fit for Small Ears, Eco-Friendly Packaging",
+        "score": 88,
+        "char_count": 155,
+        "keyword_coverage": [
+          "kids wireless earbuds",
+          "kids bluetooth earbuds",
+          "durable kids earbuds",
+          "safe earbuds for kids"
+        ],
+        "compliance_issues": []
+      },
+      {
+        "title": "HappyEars Kids Wireless Earbuds - Safe Bluetooth Earbuds for Kids, Durable Design with Ergonomic Comfort, Easy to Use for Learning & Play",
+        "score": 85,
+        "char_count": 143,
+        "keyword_coverage": [
+          "kids wireless earbuds",
+          "wireless earbuds for kids",
+          "kids bluetooth earbuds",
+          "durable kids earbuds",
+          "safe earbuds for kids"
+        ],
+        "compliance_issues": []
+      }
+    ],
+    "best_title": "KidzSafe Kids Wireless Earbuds for Kids - Bluetooth 5.3 Safe Volume Limited, Durable Ergonomic Design, Easy to Use for School & Travel",
+    "bullet_points": [
+      {
+        "text": "Premium Quality Materials: Crafted from durable, non-toxic materials, these kids wireless earbuds ensure long-lasting use and safety for your child's ears, providing peace of mind for parents.",
+        "feature_highlighted": "Premium quality materials",
+        "benefit_highlighted": "Durable and safe for kids"
+      },
+      {
+        "text": "Ergonomic Design: Designed with a comfortable, secure fit, these wireless earbuds for kids stay in place during active play, reducing the risk of loss and ensuring your child enjoys music or stories without discomfort.",
+        "feature_highlighted": "Ergonomic design",
+        "benefit_highlighted": "Comfortable and secure fit for active kids"
+      },
+      {
+        "text": "Easy to Use: Simple one-button controls make these kids bluetooth earbuds effortless for little hands to operate, allowing your child to independently play, pause, or adjust volume with ease.",
+        "feature_highlighted": "Easy to use",
+        "benefit_highlighted": "Child-friendly operation for independence"
+      },
+      {
+        "text": "Durable and Long-Lasting: Built to withstand drops and daily wear, these durable kids earbuds offer extended battery life for hours of entertainment, reducing the need for frequent charging.",
+        "feature_highlighted": "Durable and long-lasting",
+        "benefit_highlighted": "Reliable performance for extended use"
+      },
+      {
+        "text": "Eco-Friendly Packaging: Packaged in recyclable materials, these safe earbuds for kids align with eco-conscious values, teaching children about sustainability while enjoying their audio experience.",
+        "feature_highlighted": "Eco-friendly packaging",
+        "benefit_highlighted": "Supports environmental responsibility"
+      }
+    ],
+    "description_html": "<h3>Brand Story</h3><p>Every parent knows the struggle—tangled wires, lost buds, and volumes that spike without warning. Our kids wireless earbuds give kids the freedom to explore their world through sound, while giving you total peace of mind with safe, durable, and parent-controlled listening.</p><h3>Product Specifications</h3><ul><li><b>Connectivity:</b> Bluetooth 5.3 for stable pairing with tablets, phones, and other devices</li><li><b>Battery Life:</b> Up to 8 hours of playtime on a single charge</li><li><b>Charging Case:</b> Compact case provides an additional 16 hours of battery</li><li><b>Weight:</b> Ultra-lightweight at just 3.5 grams per earbud</li><li><b>Water Resistance:</b> IPX5 rating for sweat and splash protection</li><li><b>Materials:</b> Non-toxic, BPA-free silicone and ABS plastic</li><li><b>Compatibility:</b> Works with iOS, Android, and most Bluetooth-enabled devices</li></ul><h3>Key Features</h3><ul><li><b>Premium Quality Materials:</b> Crafted from durable, non-toxic materials, these kids wireless earbuds ensure long-lasting use and safety for your child's ears, providing peace of mind for parents.</li><li><b>Ergonomic Design:</b> Designed with a comfortable, secure fit, these wireless earbuds for kids stay in place during active play, reducing the risk of loss and ensuring your child enjoys music or stories without discomfort.</li><li><b>Easy to Use:</b> Simple one-button controls make these kids bluetooth earbuds effortless for little hands to operate, allowing your child to independently play, pause, or adjust volume with ease.</li><li><b>Durable and Long-Lasting:</b> Built to withstand drops and daily wear, these durable kids earbuds offer extended battery life for hours of entertainment, reducing the need for frequent charging.</li><li><b>Eco-Friendly Packaging:</b> Packaged in recyclable materials, these safe earbuds for kids align with eco-conscious values, teaching children about sustainability while enjoying their audio experience.</li></ul><h3>Usage Scenarios</h3><p>Perfect for school commutes, road trips, quiet time at home, or outdoor adventures. Whether your child is listening to audiobooks, educational apps, or their favorite tunes, these kids wireless earbuds deliver clear sound and a secure fit for any activity.</p><h3>Quality Assurance</h3><p>Each pair of wireless earbuds for kids undergoes rigorous testing for durability, sound quality, and safety. We back our product with a 12-month warranty and responsive customer support, ensuring your investment in safe earbuds for kids is worry-free.</p>",
+    "a_plus_modules": [
+      {
+        "module_type": "hero_banner",
+        "title": "Safe Sound, Happy Kids",
+        "description": "顶部大图模块，展示产品核心形象和品牌标语，吸引注意力并建立信任。",
+        "image_suggestion": "一张明亮、温馨的家庭场景图：一个孩子（约6-10岁）戴着无线耳机，在沙发上或户外草地上开心地听音乐或故事，父母在旁微笑。背景柔和，突出耳机。尺寸960x600。",
+        "copy_text": "Premium quality wireless earbuds designed for kids. Safe volume, durable build, and parent-controlled listening—freedom for them, peace of mind for you."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Built to Last, Designed for Comfort",
+        "description": "左图右文模块，展示产品的耐用性和人体工学设计，强调高品质材料和舒适佩戴。",
+        "image_suggestion": "特写图片：一只小手拿着耳机，展示耳机的柔软硅胶耳塞和坚固外壳，背景有轻微磨损测试或玩具元素，暗示耐用。",
+        "copy_text": "Crafted from premium quality materials, these earbuds withstand drops, tugs, and daily adventures. The ergonomic design ensures a snug, comfortable fit for small ears—no slipping, no irritation, just pure listening joy."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Parent-Controlled Volume for Total Safety",
+        "description": "左文右图模块，突出安全卖点，强调家长控制音量功能，解决核心痛点。",
+        "image_suggestion": "分屏图片：左侧是家长在手机App上调节音量限制的界面（模拟），右侧是孩子戴着耳机微笑，音量图标显示安全范围。",
+        "copy_text": "Worried about loud volumes? Our earbuds feature built-in volume limiting (max 85dB) and easy parent controls. Set the safe zone and let your child explore sound without risk. Easy to use for both kids and parents."
+      },
+      {
+        "module_type": "image_text",
+        "title": "Eco-Friendly Packaging, Earth-Friendly Choice",
+        "description": "左图右文模块，展示环保包装，吸引注重可持续性的家长。",
+        "image_suggestion": "图片展示产品包装盒：可回收纸盒、植物基墨水印刷、内部无塑料填充物，旁边放一片绿叶或地球图标。",
+        "copy_text": "We care about the planet as much as your child's safety. Our packaging is 100% recyclable and made from sustainable materials. No plastic waste, just a clean start for your little one's audio journey."
+      },
+      {
+        "module_type": "spec_table",
+        "title": "Specifications at a Glance",
+        "description": "规格参数表，清晰列出关键参数，帮助家长快速决策。",
+        "image_suggestion": "无需图片，但可在表格上方加一个小图标（如耳机轮廓）。",
+        "copy_text": "| Feature | Detail |\n|---------|--------|\n| Battery Life | Up to 8 hours playtime |\n| Charging Case | 24 hours total, USB-C |\n| Volume Limit | 85dB max (parent adjustable) |\n| Water Resistance | IPX5 (sweat & splash proof) |\n| Material | Medical-grade silicone, ABS |\n| Weight | 3.5g per earbud |\n| Compatibility | All Bluetooth devices |\n| Warranty | 1 year |"
+      },
+      {
+        "module_type": "comparison_chart",
+        "title": "Why Choose Our Earbuds?",
+        "description": "竞品对比表，突出本产品在安全、耐用、环保方面的优势。",
+        "image_suggestion": "无需图片，表格本身即可。",
+        "copy_text": "| Feature | Our Kids Earbuds | Typical Kids Earbuds | Adult Earbuds |\n|---------|-----------------|---------------------|---------------|\n| Volume Limit | 85dB (parent control) | 85dB fixed | No limit |\n| Material | Medical-grade silicone | Basic plastic | Varies |\n| Durability | Drop-proof (1.5m) | Standard | Standard |\n| Eco Packaging | 100% recyclable | Often plastic | Often plastic |\n| Ergonomic Fit | Designed for kids | One-size | Adult size |\n| Parent Controls | Yes (app & button) | No | No |"
+      },
+      {
+        "module_type": "hero_banner",
+        "title": "Give the Gift of Safe Sound",
+        "description": "底部大图模块，作为行动号召，鼓励购买。",
+        "image_suggestion": "一张欢乐的儿童群像或家庭合照，孩子们戴着耳机在玩耍，背景是彩色气球或自然风景，传递快乐和安全感。尺寸960x600。",
+        "copy_text": "Ready to untangle the mess? Click 'Add to Cart' and let your child enjoy wireless freedom—safely. Durable, easy to use, and built to last. Your peace of mind is just a click away."
+      }
+    ],
+    "seo_report": {
+      "keyword_density": {
+        "score": 85.0,
+        "findings": [
+          "目标关键词在标题、五点描述和长描述中均有自然出现，未出现堆砌现象。",
+          "标题中包含了'kids wireless earbuds'和'wireless earbuds for kids'的变体，但'kids bluetooth earbuds'仅在五点中出现一次。",
+          "长描述中关键词出现频率较低，但整体分布合理。"
+        ],
+        "suggestions": [
+          "在长描述中适当增加'kids bluetooth earbuds'或'durable kids earbuds'的出现，以提升关键词覆盖。",
+          "避免在五点描述中重复使用相同关键词，目前已经足够。"
+        ]
+      },
+      "readability": {
+        "score": 90.0,
+        "findings": [
+          "标题长度约150字符，符合≤200字符要求，信息层次清晰。",
+          "五点描述每点约30-50词，总长度约400字符，符合≤500字符要求，语言流畅。",
+          "长描述使用了HTML标签（h3、p、ul、li），结构清晰，扫描友好。",
+          "部分五点描述句子稍长（如第一点），但整体可读性高。"
+        ],
+        "suggestions": [
+          "将五点描述中较长的句子（如第一点）拆分为更短的句子，提升扫描友好度。",
+          "在长描述中增加更多分段或项目符号，以增强视觉层次。"
+        ]
+      },
+      "completeness": {
+        "score": 95.0,
+        "findings": [
+          "标题、五点描述、长描述（含品牌故事和产品规格）均已覆盖，信息模块完整。",
+          "缺少A+模块（如对比图、使用场景图），但基础内容已满足要求。",
+          "产品规格中电池寿命信息不完整（'on a single'后缺失），影响完整性。"
+        ],
+        "suggestions": [
+          "补充长描述中电池寿命的完整信息，例如'up to 8 hours of playtime on a single charge'。",
+          "考虑添加A+模块（如尺寸对比、使用场景图）以提升转化。"
+        ]
+      },
+      "conversion_potential": {
+        "score": 88.0,
+        "findings": [
+          "标题突出了安全、耐用、易用等核心卖点，能吸引家长买家。",
+          "五点描述从材质、设计、易用性、耐用性、环保包装等角度全面说服买家。",
+          "长描述中的品牌故事情感化，能引发家长共鸣，但缺少具体使用场景描述。",
+          "缺少客户评价或社会证明（如'万好评'），可能影响信任度。"
+        ],
+        "suggestions": [
+          "在长描述或五点描述中增加使用场景（如学校、旅行、睡前故事）的描述。",
+          "考虑在长描述中加入'家长推荐'或'儿童测试'等社会证明元素。"
+        ]
+      },
+      "overall_score": 89.0,
+      "improvement_priority": [
+        "1. 补充长描述中电池寿命的完整信息（当前不完整）。",
+        "2. 在长描述中增加使用场景描述，提升转化预期。",
+        "3. 考虑添加A+模块或社会证明元素，增强信任度。"
+      ]
+    },
+    "human_approved": false
+  },
+  "compliance": {
+    "policy_issues": [
+      {
+        "location": "title/bullets/description",
+        "issue_type": "prohibited_claim",
+        "severity": "high",
+        "description": "Found prohibited term: 'cure'",
+        "suggestion": "Replace 'cure' with compliant alternative"
+      },
+      {
+        "location": "title/bullets/description",
+        "issue_type": "prohibited_claim",
+        "severity": "medium",
+        "description": "Found prohibited term: 'free'",
+        "suggestion": "Replace 'free' with compliant alternative"
+      },
+      {
+        "location": "Title",
+        "issue_type": "Prohibited Claims",
+        "severity": "High",
+        "description": "The title includes 'Safe Volume Limited' which implies a safety claim regarding hearing protection. Such claims require specific certifications or approvals and may be considered a medical/health claim.",
+        "suggestion": "Remove 'Safe Volume Limited' or replace with a factual statement like 'Volume Limited' without implying safety benefits."
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Medical/Health Claims",
+        "severity": "High",
+        "description": "The bullet point 'Premium Quality Materials' states 'ensuring safety for your child's ears' and 'providing peace of mind for parents.' This implies a health/safety benefit that may require substantiation or approval.",
+        "suggestion": "Rephrase to focus on material quality without making safety claims, e.g., 'Crafted from durable, non-toxic materials for long-lasting use.'"
+      },
+      {
+        "location": "Bullet Points",
+        "issue_type": "Medical/Health Claims",
+        "severity": "High",
+        "description": "The bullet point 'Eco-Friendly Packaging' uses 'safe earbuds for kids' which implies a general safety claim. This may be considered misleading without proper certification.",
+        "suggestion": "Remove 'safe earbuds for kids' and instead say 'earbuds for kids' or 'kid-friendly earbuds.'"
+      },
+      {
+        "location": "Description",
+        "issue_type": "Medical/Health Claims",
+        "severity": "High",
+        "description": "The description states 'total peace of mind with safe, durable, and parent-controlled listening.' The word 'safe' implies a health/safety benefit that requires substantiation.",
+        "suggestion": "Remove 'safe' or replace with 'parent-controlled listening' without the safety implication."
+      },
+      {
+        "location": "Description",
+        "issue_type": "Formatting Issues",
+        "severity": "Medium",
+        "description": "The description uses HTML tags like <h3>, <p>, <ul>, <li>, <b>. While HTML is allowed, improper nesting or excessive use may cause display issues. The snippet ends abruptly with 'single' which suggests incomplete content.",
+        "suggestion": "Ensure HTML is properly closed and complete. Review the full description for any truncation or errors."
+      }
+    ],
+    "claim_issues": [
+      {
+        "claim_text": "Safe Volume Limited",
+        "issue": "unsubstantiated",
+        "risk_level": "medium",
+        "explanation": "The title claims the earbuds have a safe volume limit, but no specific decibel limit or certification (e.g., WHO-recommended 85dB) is provided in the listing. Without evidence, this claim is unsubstantiated.",
+        "fix_suggestion": "Specify the maximum volume in decibels (e.g., 'limited to 85dB') and reference any safety certifications (e.g., ASTM, CE)."
+      },
+      {
+        "claim_text": "Premium Quality Materials: Crafted from durable, non-toxic materials",
+        "issue": "unsubstantiated",
+        "risk_level": "medium",
+        "explanation": "The claim of 'non-toxic materials' is not supported by any certification or test results. Parents rely on this for safety, so it requires substantiation.",
+        "fix_suggestion": "Add a statement like 'Tested to be free of BPA, phthalates, and lead' or reference a third-party certification (e.g., CPSIA compliant)."
+      },
+      {
+        "claim_text": "Durable and Long-Lasting: Built to withstand drops and daily wear",
+        "issue": "unsubstantiated",
+        "risk_level": "low",
+        "explanation": "The claim of durability is vague and not backed by any drop-test data or warranty details. While common, it should be supported.",
+        "fix_suggestion": "Provide specific durability testing results (e.g., 'passed 1.5m drop test') or offer a warranty that reinforces the claim."
+      },
+      {
+        "claim_text": "Extended battery life for hours of entertainment",
+        "issue": "misleading",
+        "risk_level": "low",
+        "explanation": "The description mentions 'up to 8 hours of playtime' but the bullet point says 'extended battery life for hours' without specifying conditions. This could mislead if actual usage yields less.",
+        "fix_suggestion": "Clarify battery life as 'up to 8 hours at 50% volume' or include typical usage scenarios."
+      }
+    ],
+    "overall_verdict": "",
+    "risk_level": "high",
+    "total_issues": 11,
+    "critical_items": [
+      "[Policy] Found prohibited term: 'cure'"
+    ],
+    "action_items": [
+      "Replace 'cure' with compliant alternative",
+      "Replace 'free' with compliant alternative",
+      "Remove 'Safe Volume Limited' or replace with a factual statement like 'Volume Limited' without implying safety benefits.",
+      "Rephrase to focus on material quality without making safety claims, e.g., 'Crafted from durable, non-toxic materials for long-lasting use.'",
+      "Remove 'safe earbuds for kids' and instead say 'earbuds for kids' or 'kid-friendly earbuds.'",
+      "Remove 'safe' or replace with 'parent-controlled listening' without the safety implication.",
+      "Ensure HTML is properly closed and complete. Review the full description for any truncation or errors.",
+      "Specify the maximum volume in decibels (e.g., 'limited to 85dB') and reference any safety certifications (e.g., ASTM, CE).",
+      "Add a statement like 'Tested to be free of BPA, phthalates, and lead' or reference a third-party certification (e.g., CPSIA compliant).",
+      "Provide specific durability testing results (e.g., 'passed 1.5m drop test') or offer a warranty that reinforces the claim.",
+      "Clarify battery life as 'up to 8 hours at 50% volume' or include typical usage scenarios."
+    ],
+    "human_reviewed": false
+  },
+  "social": {
+    "marketing_angles": [
+      "Parenting hacks: Show how these earbuds keep kids entertained during car rides or flights, reducing screen time battles.",
+      "Durability test: Fun, real-life scenarios like drops, spills, or rough play to highlight long-lasting build.",
+      "Eco-conscious family: Unboxing and showcasing the eco-friendly packaging to appeal to green-minded parents.",
+      "Ergonomic fit: Close-ups of kids wearing the earbuds comfortably during activities like reading or drawing.",
+      "Easy setup: Step-by-step guide for parents on pairing and using with tablets or phones."
+    ],
+    "target_audience": "Health-conscious, tech-savvy parents aged 25-45 in the US, who value premium, durable, and eco-friendly products for their children. They seek hassle-free solutions to manage screen time and keep kids engaged during travel or quiet time, while prioritizing safety and quality.",
+    "content_tones": [
+      "Playful and reassuring: Lighthearted yet trustworthy, emphasizing fun and safety.",
+      "Aspirational: Showcasing a well-organized, modern family lifestyle with premium tech.",
+      "Educational: Informative but friendly, focusing on ease of use and durability."
+    ],
+    "key_selling_points": [
+      "Premium quality materials: Safe, non-toxic, and kid-friendly build.",
+      "Ergonomic design: Comfortable fit for small ears, stays put during active play.",
+      "Easy to use: Simple pairing and controls, perfect for young children.",
+      "Durable and long-lasting: Withstands drops and daily wear, backed by warranty.",
+      "Eco-friendly packaging: Sustainable materials that reduce waste."
+    ],
+    "visual_style": [],
+    "hashtag_themes": [],
+    "posts": [
+      {
+        "platform": "instagram",
+        "copy": "Little ears deserve big adventures—and total safety! 🎧✨\n\nOur kids' wireless earbuds are made with premium, non-toxic materials, so you can relax while",
+        "hashtags": [
+          "KidsEarbuds",
+          "ParentingHacks",
+          "ScreenTimeSolutions",
+          "EcoFriendlyKids",
+          "SafeTechForKids",
+          "KidApproved",
+          "WirelessEarbuds",
+          "PlayfulParenting",
+          "DurableAndFun",
+          "MindfulMoments"
+        ],
+        "quality_score": 8.0
+      },
+      {
+        "platform": "threads",
+        "copy": "Let’s be real—keeping kids entertained during a road trip or quiet time can feel like a parenting puzzle. 🧩 \n\nThat’s why I’m genuinely excited about t",
+        "hashtags": [
+          "#KidsTech",
+          "#ParentingHacks",
+          "#EcoFriendlyLiving",
+          "#WirelessEarbuds",
+          "#ScreenTimeBalance",
+          "#MomLife",
+          "#DadLife",
+          "#SafeForKids",
+          "#DurableDesign",
+          "#PlayfulParenting"
+        ],
+        "quality_score": 8.0
+      },
+      {
+        "platform": "pinterest",
+        "copy": "Little ears deserve big adventures—without the worry. 🎧\n\nMeet our kids wireless earbuds: made with premium, non-toxic materials that are safe for even",
+        "hashtags": [
+          "KidsEarbuds",
+          "ParentingTips",
+          "EcoFriendlyKids",
+          "ScreenFreePlay",
+          "TravelWithKids",
+          "SafeTechForKids",
+          "QuietTimeActivities",
+          "KidsHeadphones",
+          "NonToxicToys",
+          "PlayfulParenting"
+        ],
+        "quality_score": 8.0
+      }
+    ],
+    "human_approved": false
+  },
+  "platform": {
+    "asin": null,
+    "amazon_url": null,
+    "amazon_publish_status": "draft",
+    "amazon_publish_errors": [],
+    "amazon_published_at": null,
+    "social_publish_status": {},
+    "social_post_urls": {}
+  },
+  "reviews": {
+    "total_reviews": 10,
+    "average_rating": 0.0,
+    "sentiment_distribution": {},
+    "negative_alert_count": 1,
+    "top_alerts": [
+      {
+        "reviewer": "Tom S.",
+        "content": "Defective unit. Doesn't turn on.",
+        "alert_level": "critical"
+      }
+    ],
+    "last_monitored_at": "2026-05-17T14:12:38.345003Z"
+  },
+  "ads": {
+    "campaigns": [],
+    "total_budget": 0.0,
+    "total_spend": 0.0,
+    "acos": null
+  }
+}

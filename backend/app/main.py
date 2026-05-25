@@ -1,7 +1,7 @@
 """
 Cross-Border Agents — FastAPI 主入口
 
-Phase 1: Listing 优化 + 智能客服
+Phase 1: Listing 生成 + 智能客服
 提供 REST API + WebSocket 实时推送
 """
 
@@ -26,16 +26,17 @@ from backend.app.api.orchestrator import router as orchestrator_router
 from backend.app.api.ads import router as ads_router
 from backend.app.api.charts import router as charts_router
 from backend.app.core.config import settings
-from backend.app.core.db import init_db
+from backend.app.core.db import init_db, run_migrations
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """应用生命周期"""
-    # 启动时初始化数据库表
+    # 启动时初始化数据库表 + 幂等迁移
     if settings.debug:
         try:
             await init_db()
+            await run_migrations()
         except Exception:
             pass
     yield
